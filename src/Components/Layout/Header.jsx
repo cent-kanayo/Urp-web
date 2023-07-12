@@ -1,26 +1,28 @@
 import { Search } from '@mui/icons-material';
-import Logo from '../../assets/urp-green.png';
+
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import { Link } from 'react-router-dom';
+import UrpLogo from '../Resuables/UrpLogo';
 const Header = () => {
   return (
     <nav className="h-[140px]">
       <section className="bg-[#011717]">
         <div className="nav-small max">
           <span>
-            <a href="/">Staff</a>
+            <Link to="/">Staff</Link>
           </span>
           <span>
-            <a href="/">Students</a>
+            <Link to="/student-login">Students</Link>
           </span>
           <span>
-            <a href="/">Alumni</a>
+            <Link to="/">Alumni</Link>
           </span>
         </div>
       </section>
       <section className="bg-[#F5FFF6] py-[10px]">
         <header className="flex justify-between items-center max">
           <div>
-            <img src={Logo} alt="The official Logo of the Department" />
+            <UrpLogo type="green" />
           </div>
           <div>
             <ul className="flex gap-[10px] items-center capitalize">

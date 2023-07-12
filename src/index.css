@@ -11,7 +11,6 @@
 .typo-3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #fdfffd;
 }
 .typo-p {
   font-size: 0.875rem;
@@ -49,6 +48,8 @@
   height: 36px;
   text-align: center;
   display: flex;
+  font-size: 1rem;
+  color: #011717;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -75,4 +76,179 @@
 }
 .footer {
   height: 534px;
+}
+
+.login-bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(58, 57, 57, 0.38) 0%,
+      rgba(58, 57, 57, 0.38) 100%
+    ),
+    url('./assets/bg.png'), lightgray 50% / cover no-repeat;
+}
+
+.login-h1 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #02211f;
+}
+.login-q {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.login-btn {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #02211f;
+  background: #03312e;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+.login-btn:hover {
+  background: #011614;
+  transition: all 0.25s linear;
+}
+.form-control {
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #5b5756;
+}
+
+/* =================
+
+Home page
+
+==================== */
+.hero-bg {
+  height: 686px;
+  background: linear-gradient(
+      0deg,
+      rgba(1, 23, 23, 0.67) 0%,
+      rgba(1, 23, 23, 0.67) 100%
+    ),
+    url('./assets/hero.png'), lightgray 50% / cover no-repeat;
+}
+.home-h1 {
+  color: #f5fff6;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+.box {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.box .p1 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #090302;
+}
+.box .p2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #090302;
+  line-height: 150%;
+}
+.about {
+  max-width: 1249px;
+  width: 100%;
+}
+.about-box {
+  display: flex;
+  background-color: white;
+  max-width: 571px;
+  width: 100%;
+  height: 360px;
+  padding: 48px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+.journal {
+  display: flex;
+  height: 404px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    url('./assets/journal.png'), #fdfffd 50% / cover no-repeat;
+  color: white;
+}
+.journal-div {
+  max-width: 1169px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.spotlight-box {
+  max-width: 403px;
+  width: 100%;
+  height: 516px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 8px 0px rgba(3, 49, 46, 0.12);
+}
+
+@media screen and (min-width: 900px) {
+  .spotlight-box {
+    margin: 0;
+  }
+}
+
+.spotlight-box h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #011717;
+}
+.spotlight-box p {
+  font-size: 1rem;
+  line-height: 150%;
+  color: #010a09;
+}
+.spotlight-box button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #02211f;
+}
+.cta {
+  background-color: #5b5756;
 }
