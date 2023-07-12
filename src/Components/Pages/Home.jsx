@@ -54,10 +54,10 @@ const Home = () => {
               <img src={HOD} alt="Image of the HOD" />
             </div>
             <div className="about-box -translate-x-[100px] place-self-end">
-              <h2 className="text-[#011717] text-[2.5rem] font-bold capitalize underline underline-offset-[10px]">
+              <h2 className="text-[#011717] text-[2.25rem] font-bold capitalize underline underline-offset-[10px]">
                 About Urp
               </h2>
-              <p className="text-[1.25rem] leading-[150%]">
+              <p className="text-[1.15rem] leading-[150%]">
                 I would like to express my pride of belonging to the Department
                 of Urban and Regional Planning, Faculty of Environmental
                 Science, University of Lagos. It is taught in a few and highly
@@ -83,7 +83,7 @@ const Home = () => {
             universal standards to master the requisite skills of architectural
             design. Since its foundation...
           </p>
-          <button className="capitalize bg-[#F5FFF6] rounded-md px-8 py-2 text-[] hover:animate-pulse">
+          <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-md px-8 py-2 text-[] hover:animate-pulse">
             get access
           </button>
         </div>

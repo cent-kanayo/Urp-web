@@ -54,7 +54,7 @@ const StudentLogin = () => {
                   type={type}
                   id="password"
                   placeholder="*********"
-                  className="flex-1 focus:outline"
+                  className="flex-1 focus:outline-none"
                 />
                 <div onClick={onVisibilityToggle} role="button">
                   {type === 'password' ? (
