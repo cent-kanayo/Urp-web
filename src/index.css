@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
 }
 
 .typo-3 {
@@ -256,4 +260,63 @@ Home page
 .urp {
   border-radius: 0 50% 50% 0;
   overflow: hidden;
+}
+.exco {
+  position: relative;
+  display: flex;
+  width: 403px;
+  height: 300px;
+  padding-top: 220px;
+  align-items: flex-end;
+  border-radius: 8px;
+}
+.exco header {
+  background: lightgray 0px -120.5px / 100% 201.625% no-repeat;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  opacity: 0.8;
+}
+.help-box {
+  width: 100%;
+  max-width: 396px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: #cecdcc;
+  font-size: 1.5rem;
+  line-height: 150%; /* 36px */
+  text-transform: capitalize;
+  border: none;
+}
+.border-1 {
+  border-left: 29px solid #02211f;
+  color: #02211f;
+}
+.border-2 {
+  border-left: 29px solid #577674;
+  color: #577674;
+}
+.border-3 {
+  border-left: 29px solid #037171;
+  color: #037171;
+}
+.border-4 {
+  border-left: 29px solid #57a0a0;
+  color: #57a0a0;
+}
+.border-5 {
+  border-left: 29px solid #024b4b;
+  color: #024b4b;
+}
+.event-box {
+  width: 403px;
+  height: 368px;
+  display: flex;
+  padding: 194px 28px 34px 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }

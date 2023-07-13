@@ -16,7 +16,23 @@ import Image10 from '../../assets/Students/10.png';
 import Image11 from '../../assets/Students/11.png';
 import Image12 from '../../assets/Students/12.png';
 import Image13 from '../../assets/Students/13.png';
+
+import Exco1 from '../../assets/Excos/exco1.png';
+import Exco2 from '../../assets/Excos/exco2.png';
+import Exco3 from '../../assets/Excos/exco3.png';
+import Exco4 from '../../assets/Excos/exco4.png';
+import Exco5 from '../../assets/Excos/exco5.png';
+import Exco6 from '../../assets/Excos/exco6.png';
+
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+
+import Excocard from '../Resuables/Excocard';
+import Cta from '../Resuables/Cta';
+import Contact from '../Resuables/Contact';
+
+import GetHelp from '../Resuables/GetHelp';
+import EventBox from '../Resuables/EventBox';
 const StudentPage = () => {
   return (
     <main>
@@ -112,6 +128,78 @@ const StudentPage = () => {
           <p className="capitalize text-[1rem] font-[500]">see more</p>
         </div>
       </section>
+      <section className="my-[200px] max-w-[1249px] mx-auto">
+        <div className="flex justify-center mb-[60px] items-center relative">
+          <h2 className="text-center text-[2.5rem] text-black font-medium capitalize ">
+            student executives
+          </h2>
+          <div className="flex items-center gap-2 absolute right-0">
+            <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
+              see all
+            </span>
+            <span>
+              <ArrowForwardIosOutlinedIcon
+                htmlColor="#934B00"
+                fontSize="small"
+              />
+            </span>
+          </div>
+        </div>
+        <div className="flex justify-center flex-wrap gap-5 max-w-[1249px] mx-auto">
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco1}
+          />
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco2}
+          />
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco3}
+          />
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco4}
+          />
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco5}
+          />
+          <Excocard
+            name="Dr. o Olubode"
+            role="head of department"
+            image={Exco6}
+          />
+        </div>
+      </section>
+      <Cta
+        h2="get inspired by previous projects"
+        p="A compilation of literary works born from years of research and placeholder text till our design gets a writer .Faculty of Environmental Science, University of Lagos. It is taught in a few and highly elitist universities in Nigeria, hence the need to meet universal standards to master the requisite skills of architectural design. Since its foundation..."
+        btn="get access"
+      />
+      <section className="mt-[121px] max-w-[1249px] mx-auto px-2">
+        <GetHelp
+          h2="Get help, reach out to us and contribute to our growth"
+          p="Experience seamless interaction with the department effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
+          text1="share your story"
+          text2="student Hub"
+          text3="requests"
+          text4="make a donation"
+          text5="Suggestions"
+        />
+      </section>
+      <section className="flex justify-center flex-wrap gap-5 mt-[139px]">
+        <EventBox quote="EnigmaQuest: The Great Academic Adventure" />
+        <EventBox quote="EnigmaQuest: The Great Academic Adventure" />
+        <EventBox quote="EnigmaQuest: The Great Academic Adventure" />
+      </section>
+      <Contact h2="need help?" />
     </main>
   );
 };

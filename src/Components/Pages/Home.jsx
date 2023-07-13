@@ -95,7 +95,7 @@ const Home = () => {
         btn="learn more"
         p="A compilation of literary works born from years of research and placeholder text till our design gets a writer .Faculty of Environmental Science, University of Lagos. It is taught in a few and highly elitist universities in Nigeria, hence the need to meet universal standards to master the requisite skills of architectural design. Since its foundation..."
       />
-      <Contact />
+      <Contact h2="contact us for sponsorship or partnership" />
     </main>
   );
 };

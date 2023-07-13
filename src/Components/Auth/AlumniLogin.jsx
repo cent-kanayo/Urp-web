@@ -5,10 +5,10 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { useState } from 'react';
 
-const StudentLogin = () => {
+const AlumniLogin = () => {
   const [type, setType] = useState('password');
   const navigate = useNavigate();
-  document.title = 'Student Login';
+  document.title = 'Alumni Login';
 
   const onVisibilityToggle = () => {
     if (type === 'password') {
@@ -19,7 +19,7 @@ const StudentLogin = () => {
   };
   const onSubmitClicked = (e) => {
     e.preventDefault();
-    navigate('/students');
+    navigate('/alumni');
   };
   return (
     <section className="h-[100hv] flex gap-6">
@@ -29,7 +29,7 @@ const StudentLogin = () => {
         </Link>
         <div className="max-w-[560px] w-[100%]  mt-[116px]">
           <div className="mb-[40px] flex flex-col gap-1">
-            <h1 className="login-h1">Login to your student account</h1>
+            <h1 className="login-h1">Login to your alumni account</h1>
             <q className="login-q text-[#090302]">
               Networking, updates, and seamless event registration. Join now!
             </q>
@@ -91,4 +91,4 @@ const StudentLogin = () => {
   );
 };
 
-export default StudentLogin;
+export default AlumniLogin;
