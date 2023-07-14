@@ -47,7 +47,8 @@ const Footer = () => {
       </section>
       <section className="h-[75px] flex justify-center items-center bg-white shadow-md py-4 lg:py-0">
         <p className="text-center">
-          Copyright &copy; 2022 department of urban and regional planning
+          Copyright &copy; {new Date().getFullYear()} department of urban and
+          regional planning
         </p>
       </section>
     </footer>
