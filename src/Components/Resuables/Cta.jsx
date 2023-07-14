@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cta = ({ h2, p, btn }) => {
   return (
-    <section className="cta grid place-items-center text-center mt-[150px] py-[68px]">
+    <section className="cta grid place-items-center text-center mt-[150px] py-[68px] px-2 lg:px-0">
       <div className="max-w-[1169px] mx-auto text-">
         <h2 className="capitalize text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] font-bold text-[#FDFFFD] mb-6">
           {h2}

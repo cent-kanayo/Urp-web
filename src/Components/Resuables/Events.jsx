@@ -3,12 +3,12 @@ import EventCard from './EventCard';
 
 const Events = () => {
   return (
-    <section className="mt-[200px]">
+    <section className="mt-[200px] px-[8px] lg:px-0">
       <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[64px]">
         News & events
       </h2>
       <div className="grid place-items-center">
-        <div className="flex gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           <div>
             <div className="h-[440px] lg:w-[614px] relative mb-4">
               <img

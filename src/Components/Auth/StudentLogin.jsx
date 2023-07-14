@@ -23,7 +23,7 @@ const StudentLogin = () => {
   };
   return (
     <section className="h-[100hv] flex gap-6">
-      <div className="flex-1 py-[40px] pl-[8px] xl:pl-[240px]">
+      <div className="flex-1 py-[40px] pl-2 pr-2 lg:pr-0 xl:pl-[240px]">
         <Link to="/">
           <UrpLogo type="green" />
         </Link>
@@ -86,7 +86,7 @@ const StudentLogin = () => {
           </form>
         </div>
       </div>
-      <div className="flex-1 login-bg"></div>
+      <div className="hidden lg:block flex-1 login-bg"></div>
     </section>
   );
 };

@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <main>
       <section className="hero-bg text-center grid place-items-center">
-        <h1 className="home-h1 text-[4rem]">
+        <h1 className="home-h1 text-[2.5rem] md:text-[3rem] lg:text-[4rem]">
           Welcome to the department of <br /> urban & regional planning
         </h1>
       </section>
@@ -72,7 +72,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[200px] journal">
+      <section className="mt-[200px] journal py-10 px-2 lg:px-0">
         <div className="journal-div text-center">
           <h2 className="h2">Introducing The Journal</h2>
           <p>

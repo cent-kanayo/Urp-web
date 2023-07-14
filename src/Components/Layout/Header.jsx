@@ -21,8 +21,8 @@ const Header = () => {
   }, [location.pathname]);
   return (
     <nav className="h-[140px]">
-      <section className="bg-[#011717]">
-        <div className="nav-small max">
+      <section className="bg-[#011717] px-3 lg:px-0">
+        <div className="nav-small max ">
           {circle && (
             <span>
               <CircleIcon htmlColor="#ADABAB" fontSize="medium" />
@@ -66,14 +66,14 @@ const Header = () => {
           </span>
         </div>
       </section>
-      <section className="bg-[#F5FFF6] py-[10px] px-[8px] xl:px-0">
+      <section className="bg-[#F5FFF6] py-[10px] px-2 xl:px-0 h-[100px] flex items-center">
         <header className="flex justify-between items-center max">
           <div>
             <Link to="/">
               <UrpLogo type="green" />
             </Link>
           </div>
-          <div>
+          <div className="hidden lg:block">
             <ul className="flex gap-[10px] items-center capitalize">
               <li className="btn">
                 <p className="relative z-10">research</p>
@@ -89,7 +89,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="gap-x-3 items-center hidden lg:flex">
             <span>
               <MoreVertOutlinedIcon />
             </span>

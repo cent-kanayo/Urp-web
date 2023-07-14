@@ -163,9 +163,15 @@ Home page
 }
 
 .h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 150%;
+}
+
+@media screen and (min-width: 900px) {
+  .h2 {
+    font-size: 3.5rem;
+  }
 }
 .box .p1 {
   text-align: center;
@@ -196,7 +202,6 @@ Home page
 }
 .journal {
   display: flex;
-  height: 404px;
   justify-content: center;
   align-items: center;
   background: linear-gradient(
