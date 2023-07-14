@@ -2,7 +2,7 @@ import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 
 const EventCard = () => {
   return (
-    <div className="h-[231px] lg:w-[595px] flex gap-[20px]">
+    <div className="lg:h-[231px] lg:w-[595px] flex gap-[20px]">
       <div className="relative mb-4 flex-1">
         <img
           src="https://media.istockphoto.com/id/1414024629/photo/teacher-reading-lecture-at-university.webp?b=1&s=170667a&w=0&k=20&c=_uGbnxBofRGnJDN08N-PIvkQV0INrXVcdKRYlL2SasE="
