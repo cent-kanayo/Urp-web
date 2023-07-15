@@ -321,7 +321,8 @@ Home page
   color: #024b4b;
 }
 .event-box {
-  width: 403px;
+  max-width: 403px;
+  width: 100%;
   height: 368px;
   display: flex;
   padding: 194px 28px 34px 28px;
