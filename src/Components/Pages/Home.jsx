@@ -72,7 +72,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[200px] journal py-10 px-2 lg:px-0">
+      <section className="mt-[200px] journal py-10 px-4 lg:px-0">
         <div className="journal-div text-center">
           <h2 className="h2">Introducing The Journal</h2>
           <p>

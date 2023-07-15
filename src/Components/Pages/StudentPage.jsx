@@ -167,7 +167,7 @@ const StudentPage = () => {
         p="A compilation of literary works born from years of research and placeholder text till our design gets a writer .Faculty of Environmental Science, University of Lagos. It is taught in a few and highly elitist universities in Nigeria, hence the need to meet universal standards to master the requisite skills of architectural design. Since its foundation..."
         btn="get access"
       />
-      <section className="mt-[121px] max-w-[1249px] mx-auto px-2">
+      <section className="mt-[121px] max-w-[1249px] mx-auto px-4 lg:px-0">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"
           p="Experience seamless interaction wpresident effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
