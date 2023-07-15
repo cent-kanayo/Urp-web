@@ -40,7 +40,7 @@ const Events = () => {
               <ChevronRightOutlinedIcon htmlColor="#934B00" />
             </div>
           </div>
-          <div className="flex flex-col gap-[20px] px-4 lg:px-0">
+          <div className="flex flex-col gap-[20px]">
             <EventCard />
             <EventCard />
             <EventCard />

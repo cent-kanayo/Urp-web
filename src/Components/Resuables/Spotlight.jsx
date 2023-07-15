@@ -6,7 +6,7 @@ import City from '../../assets/city.png';
 
 const Spotlight = () => {
   return (
-    <section className="mt-[100px] lg:mt-[200px] px-[8px] lg:px-0">
+    <section className="mt-[100px] lg:mt-[200px] px-4 lg:px-0">
       <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[64px]">
         student spotlight
       </h2>
