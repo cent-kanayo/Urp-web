@@ -2,7 +2,7 @@ import React from 'react';
 
 const SpotlightBox = ({ image, h2, p, btn }) => {
   return (
-    <article className="flex flex-col spotlight-box hover:shadow-xl duration-300 transition-all ease-linear">
+    <article className="flex flex-col spotlight-box hover:shadow-xl duration-300 transition-all ease-linear max-w-[403px]">
       <div className="flex-1">
         <img src={image} alt="Spotlight avatar" />
       </div>
