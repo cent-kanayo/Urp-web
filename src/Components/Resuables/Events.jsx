@@ -3,7 +3,7 @@ import EventCard from './EventCard';
 
 const Events = () => {
   return (
-    <section className="mt-[200px] px-[8px] lg:px-0">
+    <section className="mt-[100px] lg:mt-[200px] px-4 lg:px-0">
       <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[64px]">
         News & events
       </h2>
@@ -25,7 +25,7 @@ const Events = () => {
                 Professor KYC is being congratulated for his meritorious deeds
                 and actions in combating the decay of education
               </h3>
-              <p className="text-[1rem] text-[#010A09] mb-6">
+              <p className="text-[0.85rem] md:text-[1rem] text-[#010A09] mb-6">
                 Ph.D. student and affiliate faculty member in African American
                 studies connects research and community, amplifying marginalized
                 voices in the process.
@@ -40,7 +40,7 @@ const Events = () => {
               <ChevronRightOutlinedIcon htmlColor="#934B00" />
             </div>
           </div>
-          <div className="flex flex-col gap-[20px] px-2 lg:px-0">
+          <div className="flex flex-col gap-[20px] px-4 lg:px-0">
             <EventCard />
             <EventCard />
             <EventCard />

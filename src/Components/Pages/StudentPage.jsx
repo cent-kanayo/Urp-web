@@ -36,16 +36,16 @@ import EventBox from '../Resuables/EventBox';
 const StudentPage = () => {
   return (
     <main>
-      <section className="about flex gap-5 relative mx-auto pt-[84px]">
+      <section className="about flex flex-col lg:flex-row gap-5 relative mx-auto pt-[84px] px-4 lg:px-0">
         <div className="">
           <img src={Student} alt="Student of the month" />
         </div>
         <div className="pt-14">
-          <h1 className="capitalize text-[2.25rem] font-[600] text-[#011717]">
+          <h1 className="capitalize text-[2.25rem] font-[600] text-[#011717] text-center lg:text-left">
             student of the month
           </h1>
         </div>
-        <div className="about-box absolute right-0 bottom-14">
+        <div className="about-box lg:absolute lg:right-0 lg:bottom-14">
           <div className="flex items-end gap-4 ">
             <h2 className="text-[#011717] text-[2.25rem] font-bold capitalize underline underline-offset-[10px]">
               Cent Kanayo
@@ -128,12 +128,12 @@ const StudentPage = () => {
           <p className="capitalize text-[1rem] font-[500]">see more</p>
         </div>
       </section>
-      <section className="my-[200px] max-w-[1249px] mx-auto">
+      <section className="my-[200px] max-w-[1249px] mx-auto px-4 lg:px-0">
         <div className="flex justify-center mb-[60px] items-center relative">
           <h2 className="text-center text-[2.5rem] text-black font-medium capitalize ">
             student executives
           </h2>
-          <div className="flex items-center gap-2 absolute right-0">
+          <div className="hidden lg:flex items-center gap-2 lg:absolute right-0 pr-5">
             <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
               see all
             </span>
@@ -146,36 +146,20 @@ const StudentPage = () => {
           </div>
         </div>
         <div className="flex justify-center flex-wrap gap-5 max-w-[1249px] mx-auto">
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco1}
-          />
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco2}
-          />
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco3}
-          />
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco4}
-          />
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco5}
-          />
-          <Excocard
-            name="Dr. o Olubode"
-            role="head of department"
-            image={Exco6}
-          />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco1} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco2} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco3} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
+        </div>
+        <div className="flex items-center justify-center mt-10 lg:hidden">
+          <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
+            see all
+          </span>
+          <span>
+            <ArrowForwardIosOutlinedIcon htmlColor="#934B00" fontSize="small" />
+          </span>
         </div>
       </section>
       <Cta
@@ -186,7 +170,7 @@ const StudentPage = () => {
       <section className="mt-[121px] max-w-[1249px] mx-auto px-2">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"
-          p="Experience seamless interaction with the department effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
+          p="Experience seamless interaction wpresident effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
           text1="share your story"
           text2="student Hub"
           text3="requests"
@@ -194,7 +178,7 @@ const StudentPage = () => {
           text5="Suggestions"
         />
       </section>
-      <section className="flex justify-center flex-wrap gap-5 mt-[139px]">
+      <section className="flex justify-center flex-wrap gap-5 mt-[139px] px-4 lg:px-0">
         <EventBox quote="EnigmaQuest: The Great Academic Adventure" />
         <EventBox quote="EnigmaQuest: The Great Academic Adventure" />
         <EventBox quote="EnigmaQuest: The Great Academic Adventure" />

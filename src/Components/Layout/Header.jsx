@@ -12,7 +12,7 @@ const Header = () => {
     if (
       location.pathname === '/students' ||
       location.pathname === '/staff' ||
-      location.pathname === '/alumi'
+      location.pathname === '/alumni'
     ) {
       setCircle(true);
     } else {

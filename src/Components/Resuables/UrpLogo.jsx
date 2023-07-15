@@ -1,5 +1,5 @@
-import LogoGreen from '../../assets/urp-green.png';
-import LogoWhite from '../../assets/urp-white.png';
+import LogoGreen from '../../assets/green.svg';
+import LogoWhite from '../../assets/white.svg';
 
 const UrpLogo = ({ type }) => {
   if (type === 'green') {

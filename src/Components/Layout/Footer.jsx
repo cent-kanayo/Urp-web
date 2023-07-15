@@ -3,7 +3,7 @@ import UrpLogo from '../Resuables/UrpLogo';
 const Footer = () => {
   return (
     <footer className="flex flex-col footer">
-      <section className="bg-[#010A09] text-white flex-1 pt-[96px] px-[8px] md:px-8 pb-8 lg:pb-0">
+      <section className="bg-[#010A09] text-white flex-1 pt-[96px] px-4 md:px-8 pb-8 lg:pb-0">
         <header className="max flex flex-col lg:flex-row justify-between gap-[50px]">
           <div>
             <UrpLogo type="white" />
