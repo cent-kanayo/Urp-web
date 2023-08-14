@@ -1,9 +1,9 @@
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 
 const EventCard = () => {
   return (
-    <div className="lg:h-[231px] lg:w-[595px] flex gap-[20px]">
-      <div className="relative mb-4 flex-1">
+    <div className="lg:flex gap-[20px] max-w-[528px]">
+      <div className="relative mb-4 flex-1 lg:h-[200px] lg:w-[262px] ">
         <img
           src="https://media.istockphoto.com/id/1414024629/photo/teacher-reading-lecture-at-university.webp?b=1&s=170667a&w=0&k=20&c=_uGbnxBofRGnJDN08N-PIvkQV0INrXVcdKRYlL2SasE="
           alt=""
@@ -16,13 +16,13 @@ const EventCard = () => {
           Professor KYC is being congratulated for his meritorious deeds and
           actions in combating the decay of education
         </h3>
-        <div>
+        <div className="w-[150px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px]">
           <span>
-            <a href="#" className="text-[1rem] text-[#010A09] capitalize">
-              read more
+            <a href="#" className="text-[14px] text-[#010A09] capitalize">
+              view event
             </a>
           </span>
-          <ChevronRightOutlinedIcon htmlColor="#934B00" />
+          <EastOutlinedIcon />
         </div>
       </div>
     </div>

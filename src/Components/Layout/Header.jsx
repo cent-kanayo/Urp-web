@@ -1,5 +1,6 @@
 import { Search } from '@mui/icons-material';
-import CircleIcon from '@mui/icons-material/Circle';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 import { Link, NavLink, useLocation } from 'react-router-dom';
@@ -20,89 +21,52 @@ const Header = () => {
     }
   }, [location.pathname]);
   return (
-    <nav className="h-[140px]">
-      <section className="bg-[#011717] px-3 lg:px-0">
-        <div className="nav-small max ">
-          {circle && (
-            <span>
-              <CircleIcon htmlColor="#ADABAB" fontSize="medium" />
-            </span>
-          )}
-          <span>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-[#FDFFFD] border-b border-[#FDFFFD]'
-                  : 'text-[#FDFFFD] hover:border-b border-[#FDFFFD]'
-              }
-              to="/staff-login"
-            >
-              Staff
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-[#FDFFFD] border-b border-[#FDFFFD]'
-                  : 'text-[#FDFFFD] hover:border-b border-[#FDFFFD]'
-              }
-              to="/alumni-login"
-            >
-              Alumni
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-[#FDFFFD] border-b border-[#FDFFFD]'
-                  : 'text-[#FDFFFD] hover:border-b border-[#FDFFFD]'
-              }
-              to="/student-login"
-            >
-              Student
-            </NavLink>
-          </span>
-        </div>
-      </section>
-      <section className="bg-[#F5FFF6] py-[10px] px-2 xl:px-0 h-[100px] flex items-center">
-        <header className="flex justify-between items-center max">
-          <div>
+    <nav className="h-[80px] py-3 bg-[#F5FFF6]">
+      <section className="px-2 xl:px-0 h-[100%]">
+        <header className="flex justify-center items-center gap-x-[318.29px]">
+          <div className="w-[169.213px]">
             <Link to="/">
               <UrpLogo type="green" />
             </Link>
           </div>
-          <div className="hidden lg:block">
-            <ul className="flex gap-[10px] items-center capitalize">
-              <li className="btn">
-                <p className="relative z-10">research</p>
+          <div className="hidden lg:flex items-center gap-4">
+            <ul className="flex gap-[16px] items-center capitalize text-[14px]">
+              <li className="px-2 flex items-center gap-2">
+                <span className="relative z-10">academics</span>
+                <span>
+                  <ExpandMoreIcon />
+                </span>
               </li>
-              <li className="btn">
-                <p className="relative z-10">projects</p>
+              <li className="px-2 flex items-center gap-2">
+                <span className="relative z-10">staff</span>
+                <span>
+                  <ExpandMoreIcon />
+                </span>
               </li>
-              <li className="btn">
-                <p className="relative z-10">highlights</p>
+              <li className="px-2 flex items-center gap-2">
+                <span className="">students</span>
+                <span>
+                  <ExpandMoreIcon />
+                </span>
               </li>
-              <li className="btn">
-                <p className="relative z-10">executives</p>
+              <li className="px-2 flex items-center gap-2">
+                <span className="">resources</span>
+                <span>
+                  <ExpandMoreIcon />
+                </span>
               </li>
             </ul>
-          </div>
-          <div className="gap-x-3 items-center hidden lg:flex">
-            <span>
-              <MoreVertOutlinedIcon />
-            </span>
-            <form>
-              <div className="search">
+            <div className="flex items-center gap-4">
+              <span>
                 <Search />
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="outline-none bg-transparent w-[100%]"
-                />
-              </div>
-            </form>
+              </span>
+              <button className="px-6 py-2 flex justify-center items-center gap-2 bg-[#03312E] rounded-md text-white">
+                <span>
+                  <AccountCircleOutlinedIcon fontSize="small" />
+                </span>
+                <span className="whitespace-nowrap">Sign in</span>
+              </button>
+            </div>
           </div>
         </header>
       </section>

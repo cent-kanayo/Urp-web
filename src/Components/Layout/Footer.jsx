@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <footer className="flex flex-col footer">
       <section className="bg-[#010A09] text-white flex-1 pt-[96px] px-4 md:px-8 pb-8 lg:pb-0">
-        <header className="max flex flex-col lg:flex-row justify-between gap-[50px]">
+        <header className="flex flex-col lg:flex-row justify-center  gap-x-[314px]">
           <div>
             <UrpLogo type="white" />
           </div>
           <div className="h-[1px] w-[80%] mx-auto lg:hidden bg-white"></div>
-          <div className="flex flex-col lg:flex-row justify-between gap-[100px]">
+          <div className="flex flex-col lg:flex-row justify-center gap-[40px]">
             <div className="capitalize">
               <h3 className="typo-3 mb-[16px]">Menu</h3>
               <ul className="typo-p flex flex-col gap-[8px]">

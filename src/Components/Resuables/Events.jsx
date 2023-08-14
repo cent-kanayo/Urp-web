@@ -1,23 +1,23 @@
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import EventCard from './EventCard';
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 
 const Events = () => {
   return (
-    <section className="mt-[100px] lg:mt-[200px] px-4 lg:px-0">
-      <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[64px]">
+    <section className="mt-[80px] lg:mt-[80px] px-4 lg:px-0">
+      <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[60px]">
         News & events
       </h2>
       <div className="grid place-items-center">
-        <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col lg:flex-row gap-[44px]">
           <div>
-            <div className="h-[440px] lg:w-[614px] relative mb-4">
+            <div className="h-[440px] lg:w-[548px] relative mb-4">
               <img
                 src="https://media.istockphoto.com/id/1414024629/photo/teacher-reading-lecture-at-university.webp?b=1&s=170667a&w=0&k=20&c=_uGbnxBofRGnJDN08N-PIvkQV0INrXVcdKRYlL2SasE="
                 alt=""
                 className="block w-[100%] h-[100%] object-cover"
               />
             </div>
-            <div className="max-w-[614px]">
+            <div className="max-w-[548px]">
               <p className="text-[#934B00] text-[1rem] capitalize mb-3">
                 June, 2023
               </p>
@@ -31,13 +31,13 @@ const Events = () => {
                 voices in the process.
               </p>
             </div>
-            <div>
+            <div className="w-[150px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px]">
               <span>
                 <a href="#" className="text-[1rem] text-[#010A09] capitalize">
                   read more
                 </a>
               </span>
-              <ChevronRightOutlinedIcon htmlColor="#934B00" />
+              <EastOutlinedIcon />
             </div>
           </div>
           <div className="flex flex-col gap-[20px]">
