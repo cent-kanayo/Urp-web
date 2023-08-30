@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="h-[1px] w-[80%] mx-auto lg:hidden bg-white"></div>
           <div className="flex flex-col lg:flex-row justify-center gap-[40px]">
             <div className="capitalize">
-              <h3 className="typo-3 mb-[16px]">Menu</h3>
-              <ul className="typo-p flex flex-col gap-[8px]">
+              <h3 className="text-[20px] font-medium mb-[16px]">Menu</h3>
+              <ul className="text-[14px] font-[300] text-[#FDFFFD] flex flex-col gap-[8px]">
                 <li>Home</li>
                 <li>about</li>
                 <li>Academics</li>
@@ -21,26 +21,28 @@ const Footer = () => {
               </ul>
             </div>
             <div className="capitalize">
-              <h3 className="typo-3 mb-[16px]">contact</h3>
-              <ul className="typo-p flex flex-col gap-[8px]">
+              <h3 className="text-[20px] font-medium mb-[16px]">contact</h3>
+              <ul className="text-[14px] font-[300] text-[#FDFFFD]  flex flex-col gap-[8px]">
                 <li>mail</li>
                 <li>phone number</li>
               </ul>
             </div>
             <div className="capitalize">
-              <h3 className="typo-3">university of lagos</h3>
-              <p className="typo-p mb-[16px]">
+              <h3 className="text-[20px] font-medium">university of lagos</h3>
+              <p className="text-[14px] font-[300] text-[#FDFFFD]  mb-[8px]">
                 faculty of environmental sciences.
               </p>
               <div className="mb-3">
-                <address className="typo-p">
+                <p className="text-[14px] font-[300] text-[#FDFFFD]">
                   akoka rd, yaba, lagos nigeria
-                </address>
-                <p className="typo-p">
+                </p>
+                <p className="text-[14px] font-[300] text-[#FDFFFD]">
                   open monday - friday from 8:00am to 4:00pm
                 </p>
               </div>
-              <p className="text-[#EAA966]">visit university website</p>
+              <p className="text-[#EAA966] text-[14px]">
+                visit university website
+              </p>
             </div>
           </div>
         </header>

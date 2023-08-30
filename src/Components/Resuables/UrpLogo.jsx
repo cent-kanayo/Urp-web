@@ -16,7 +16,7 @@ const UrpLogo = ({ type }) => {
     <img
       src={LogoWhite}
       alt="The official Logo of the Department py-3"
-      className="block"
+      className="block w-[260px]"
     />
   );
 };

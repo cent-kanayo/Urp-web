@@ -18,20 +18,20 @@ const Events = () => {
               />
             </div>
             <div className="max-w-[548px]">
-              <p className="text-[#934B00] text-[1rem] capitalize mb-3">
+              <p className="text-[#934B00] text-[20px] capitalize mb-3">
                 June, 2023
               </p>
               <h3 className="typo-3 text-[#010A09] leading-8 mb-3">
                 Professor KYC is being congratulated for his meritorious deeds
                 and actions in combating the decay of education
               </h3>
-              <p className="text-[0.85rem] md:text-[1rem] text-[#010A09] mb-6">
+              <p className="text-[14px] md:text-[14px] text-[#010A09] mb-6">
                 Ph.D. student and affiliate faculty member in African American
                 studies connects research and community, amplifying marginalized
                 voices in the process.
               </p>
             </div>
-            <div className="w-[150px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px]">
+            <div className="w-[144px] flex justify-center items-center gap-x-2 border-[0.5px] border-[#010A09] rounded-[2px]  py-2">
               <span>
                 <a href="#" className="text-[1rem] text-[#010A09] capitalize">
                   read more

@@ -34,25 +34,25 @@ const Header = () => {
               <li className="px-2 flex items-center gap-2">
                 <span className="relative z-10">academics</span>
                 <span>
-                  <ExpandMoreIcon />
+                  <ExpandMoreIcon fontSize="small" />
                 </span>
               </li>
               <li className="px-2 flex items-center gap-2">
                 <span className="relative z-10">staff</span>
                 <span>
-                  <ExpandMoreIcon />
+                  <ExpandMoreIcon fontSize="small" />
                 </span>
               </li>
               <li className="px-2 flex items-center gap-2">
                 <span className="">students</span>
                 <span>
-                  <ExpandMoreIcon />
+                  <ExpandMoreIcon fontSize="small" />
                 </span>
               </li>
               <li className="px-2 flex items-center gap-2">
                 <span className="">resources</span>
                 <span>
-                  <ExpandMoreIcon />
+                  <ExpandMoreIcon fontSize="small" />
                 </span>
               </li>
             </ul>
@@ -60,7 +60,7 @@ const Header = () => {
               <span>
                 <Search />
               </span>
-              <button className="px-6 py-2 flex justify-center items-center gap-2 bg-[#03312E] rounded-md text-white">
+              <button className="px-6 py-2 flex justify-center items-center gap-2 bg-[#03312E] rounded-[2px] text-white">
                 <span>
                   <AccountCircleOutlinedIcon fontSize="small" />
                 </span>

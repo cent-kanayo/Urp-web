@@ -11,12 +11,12 @@ const EventCard = () => {
         />
       </div>
       <div className="max-w-[614px] flex-1">
-        <p className="text-[#934B00] text-[1rem] capitalize mb-3">June, 2023</p>
-        <h3 className="text-[1.25rem] text-[#010A09] leading-7 mb-3">
+        <p className="text-[#934B00] text-[14px] capitalize mb-3">June, 2023</p>
+        <h3 className="text-[14px] text-[#010A09] leading-7 mb-3">
           Professor KYC is being congratulated for his meritorious deeds and
           actions in combating the decay of education
         </h3>
-        <div className="w-[150px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px]">
+        <div className="w-[146px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px] py-2">
           <span>
             <a href="#" className="text-[14px] text-[#010A09] capitalize">
               view event

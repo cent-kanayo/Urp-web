@@ -19,7 +19,7 @@ const Home = () => {
       <section className="hero-bg text-center py-[204.5px]">
         <div className="flex justify-center items-center gap-x-[126px]">
           <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowBackIosNewOutlinedIcon htmlColor="white" />
+            <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
           </span>
           <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
             <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
@@ -30,13 +30,13 @@ const Home = () => {
             </h1>
           </div>
           <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowForwardIosOutlinedIcon htmlColor="white" />
+            <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
           </span>
         </div>
       </section>
       <section className="grid place-items-center">
         <div>
-          <h3 className="typo-3 text-center text-[#03312E] my-[80px] leading-[150%] w-[713px] mx-auto">
+          <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] w-[713px] mx-auto">
             Giving definition to an undefined world, Welcome to URP, <br />
             where standards are created.
           </h3>
@@ -71,7 +71,11 @@ const Home = () => {
       <section className="my-[80px] py-[80px]">
         <div className="relative h-[800px]">
           <div className="absolute h-[100%] left-0 w-[50%]">
-            <img src={HODLight} alt="" className="block w-[100%] h-[100%]" />
+            <img
+              src={HODLight}
+              alt=""
+              className="block w-[100%] h-[100%] object-cover"
+            />
           </div>
           <div className="absolute h-[100%] right-0 w-[50%]">
             <img
@@ -97,7 +101,7 @@ const Home = () => {
                 architectural design. Since its foundation....
               </p>
               <div>
-                <button className="bg-[#57A0A0] px-6 py-2 rounded-md text-[#F5FFF6]">
+                <button className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6]">
                   Learn more
                 </button>
               </div>
@@ -124,7 +128,7 @@ const Home = () => {
               architectural design. Since its foundation...
             </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-md px-8 py-2 text-[] hover:animate-pulse">
+              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[] hover:animate-pulse">
                 get access
               </button>
             </div>
@@ -151,7 +155,7 @@ const Home = () => {
               architectural design. Since its foundation...
             </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-md px-8 py-2 text-[] hover:animate-pulse">
+              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[] hover:animate-pulse">
                 Learn More
               </button>
             </div>
