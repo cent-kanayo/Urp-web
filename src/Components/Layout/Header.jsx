@@ -37,23 +37,29 @@ const Header = () => {
                   <ExpandMoreIcon fontSize="small" />
                 </span>
               </li>
-              <li className="px-2 flex items-center gap-2">
-                <span className="relative z-10">staff</span>
-                <span>
-                  <ExpandMoreIcon fontSize="small" />
-                </span>
+              <li>
+                <Link to="/staff" className="px-2 flex items-center gap-2">
+                  <span className="">staff</span>
+                  <span>
+                    <ExpandMoreIcon fontSize="small" />
+                  </span>
+                </Link>
               </li>
-              <li className="px-2 flex items-center gap-2">
-                <span className="">students</span>
-                <span>
-                  <ExpandMoreIcon fontSize="small" />
-                </span>
+              <li>
+                <Link to="/students" className="px-2 flex items-center gap-2">
+                  <span className="">students</span>
+                  <span>
+                    <ExpandMoreIcon fontSize="small" />
+                  </span>
+                </Link>
               </li>
-              <li className="px-2 flex items-center gap-2">
-                <span className="">resources</span>
-                <span>
-                  <ExpandMoreIcon fontSize="small" />
-                </span>
+              <li>
+                <Link to="/alumni" className="px-2 flex items-center gap-2">
+                  <span className="">resources</span>
+                  <span>
+                    <ExpandMoreIcon fontSize="small" />
+                  </span>
+                </Link>
               </li>
             </ul>
             <div className="flex items-center gap-4">

@@ -3,9 +3,11 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 const Excocard = ({ image, role, name, link }) => {
   return (
     <article className="exco">
-      <div className="w-[100%] h-[100%] absolute -z-20">
-        <img src={image} alt="Executives" />
-      </div>
+      {/* <img
+        src={image}
+        alt="Executives"
+        className="absolute w-[100%] h-[100%]"
+      /> */}
       <header className="flex flex-col p-5">
         <div className="flex justify-between items-center w-[100%]">
           <h3 className="capitalize font-medium text-[1rem]">{name}</h3>
