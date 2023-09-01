@@ -308,3 +308,9 @@ Home page
   align-items: center;
   border-radius: 4px;
 }
+.abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

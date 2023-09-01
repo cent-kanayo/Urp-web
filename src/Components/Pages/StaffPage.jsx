@@ -6,6 +6,11 @@ import Exco3 from '../../assets/Excos/exco3.png';
 import Exco4 from '../../assets/Excos/exco4.png';
 import Exco5 from '../../assets/Excos/exco5.png';
 import Exco6 from '../../assets/Excos/exco6.png';
+import Jet from '../../assets/jet.png';
+import Bg from '../../assets/staff1.png';
+import Bg1 from '../../assets/staff2.png';
+import Bg2 from '../../assets/staff3.png';
+import Bg3 from '../../assets/staff4.png';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
@@ -62,7 +67,28 @@ const StaffPage = () => {
           </span>
         </div>
       </section>
-
+      <section className="py-[80px] h-[680px] relative mt-[180px] flex flex-col justify-center">
+        <div className="abs h-[520px] bg-[#934B00] w-[497px] mx-auto rounded-br-[50%] rounded-bl-[50%] flex flex-col items-center py-[46px] px-[56px]">
+          <div className="mb-[46px]">
+            <img src={Jet} alt="Jet icon" />
+          </div>
+          <h3 className="text-[#F0FFF1] text-[32px] font-[600] leading-[150%] mb-6 text-center capitalize">
+            The forefront of urban and regional planning
+          </h3>
+          <p className="text-[#F0FFF1] text-[20px] mb-6">
+            URP research clusters
+          </p>
+          <p className="text-[#F0FFF1] text-[14px] mb-6">
+            Ongoing and completed
+          </p>
+        </div>
+        <div className="h-[320px] grid grid-cols-4">
+          <img src={Bg} alt="" className="w-[100%] h-[320px] block" />
+          <img src={Bg1} alt="" className="w-[100%] h-[320px] block" />
+          <img src={Bg2} alt="" className="w-[100%] h-[320px] block" />
+          <img src={Bg3} alt="" className="w-[100%] h-[320px] block" />
+        </div>
+      </section>
       <section className="mt-[160px] h-[404px] bg-[#5B5756] flex items-center">
         <div className="flex-1 h-[100%]">
           <img src={Journal} alt="" className="block h-[100%]" />
