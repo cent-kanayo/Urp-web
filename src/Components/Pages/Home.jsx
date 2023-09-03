@@ -11,6 +11,7 @@ import Contact from '../Resuables/Contact';
 
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   document.title = 'URP UNILAG';
@@ -101,9 +102,12 @@ const Home = () => {
                 architectural design. Since its foundation....
               </p>
               <div>
-                <button className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6]">
-                  Learn more
-                </button>
+                <Link
+                  to="/welcome-message"
+                  className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6]"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
           </div>

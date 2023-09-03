@@ -1,6 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SharedLayout from './Components/Layout/SharedLayout';
-import { AlumniPage, Home, StaffPage, StudentPage } from './Components/Pages';
+import {
+  AlumniPage,
+  HodWelcome,
+  Home,
+  StaffPage,
+  StudentPage,
+} from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 
 function App() {
@@ -12,6 +18,7 @@ function App() {
           <Route path="students" element={<StudentPage />} />
           <Route path="staff" element={<StaffPage />} />
           <Route path="alumni" element={<AlumniPage />} />
+          <Route path="welcome-message" element={<HodWelcome />} />
         </Route>
         <Route path="student-login" element={<StudentLogin />} />
         <Route path="staff-login" element={<StaffLogin />} />
