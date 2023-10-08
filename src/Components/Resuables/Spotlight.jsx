@@ -8,12 +8,12 @@ const Spotlight = () => {
   return (
     <section className="px-4 lg:px-0">
       <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[40px]">
-        student spotlight
+        Urban Planning Hub
       </h2>
       <div className="flex justify-center flex-wrap gap-[20px]">
         <SpotlightBox
           image={City}
-          h2="final year projects"
+          h2="Design Projects"
           p="Request access to past projects."
           btn="View projects"
         />

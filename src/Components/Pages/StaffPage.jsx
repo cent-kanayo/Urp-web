@@ -1,11 +1,19 @@
 import Journal from '../../assets/journals.png';
 
-import Exco1 from '../../assets/Excos/exco1.png';
-import Exco2 from '../../assets/Excos/exco2.png';
-import Exco3 from '../../assets/Excos/exco3.png';
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
+import AG from '../../assets/admin/agu.png';
+import Vic from '../../assets/admin/victor.png';
+import Odu from '../../assets/admin/odu.png';
+import Law from '../../assets/admin/lawan.png';
+import Nwa from '../../assets/admin/nwa.png';
+import Loye from '../../assets/admin/loye.png';
+import Farin from '../../assets/admin/farin.png';
+import jimoh from '../../assets/admin/jimoh.png';
+import Kunle from '../../assets/admin/kunle.png';
+import Fade from '../../assets/admin/onifade.png';
+import Laja from '../../assets/admin/orelaja.png';
+import Deju from '../../assets/admin/deju.png';
+import Yemi from '../../assets/admin/adeyemi.png';
+import Niji from '../../assets/admin/adeniji.png';
 import Jet from '../../assets/jet.png';
 import Bg from '../../assets/staff1.png';
 import Bg1 from '../../assets/staff2.png';
@@ -26,37 +34,103 @@ import GetHelp from '../Resuables/GetHelp';
 const StaffPage = () => {
   return (
     <main>
-      <section className="hero-bg text-center py-[204.5px] mb-[80px]">
-        <div className="flex justify-center items-center gap-x-[126px]">
-          <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
-          </span>
-          <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
-            <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
-              Where Innovation Meets Excellence!
-            </p>
-            <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[40px] font-bold text-[#F5FFF6]">
-              Urban & Regional Planning
-            </h1>
-          </div>
-          <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
-          </span>
-        </div>
-      </section>
+      <section className="staff-hero text-center py-[204.5px] mb-[80px]"></section>
       <section className="mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-[60px] items-center relative">
-          <h2 className="text-center text-[2.5rem] text-black font-medium capitalize ">
+          <h2 className="text-center text-[2.5rem] text[#011717] font-bold capitalize ">
             administrators
           </h2>
         </div>
         <div className="flex justify-center flex-wrap gap-5 max-w-[1249px] mx-auto">
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco1} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco2} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco3} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
+          <Excocard
+            name="Dr. M. E. AGUNBIADE"
+            role="Associate Professor and HOD"
+            image={AG}
+            link={'muyiwa-agunbiade'}
+          />
+          <Excocard
+            name="Professor L. ODUWAYE"
+            role="Professor"
+            image={Odu}
+            link={'leke-oduwaye'}
+          />
+          <Excocard
+            name="Prof. I.I.C. NWOKORO"
+            role="Professor"
+            image={Nwa}
+            link={'immaculate-nwaokoro'}
+          />
+          <Excocard
+            name="Dr. T. LAWANSON"
+            role="Associate Professor"
+            image={Law}
+            link={'taibat-lawanson'}
+          />
+
+          <Excocard
+            name="Dr. V.U. ILECHUKWU"
+            role="Senior Lecturer"
+            image={Vic}
+            link={'victor-ilechukwu'}
+          />
+
+          <Excocard
+            name="Dr. O.O. AGUNLOYE"
+            role="Senior Lecturer"
+            image={Loye}
+            link={'o-agunloye'}
+          />
+          <Excocard
+            name="Dr. A. FARINMADE"
+            role="Senior Lecturer"
+            image={Farin}
+            link={'a-farinmade'}
+          />
+          <Excocard
+            name="Dr S.A. ADEYEMI"
+            role="Senior Lecturer"
+            image={Yemi}
+            link={'a-adeyemi'}
+          />
+          <Excocard
+            name="Dr O.P. ORELAJA"
+            role="Senior Lecturer"
+            image={Laja}
+            link={'p-orelaja'}
+          />
+          <Excocard
+            name="Dr. V.A. ONIFADE"
+            role="Senior Lecturer"
+            image={Fade}
+            link={'a-onifade'}
+          />
+
+          <Excocard
+            name="Mr. H.O. JIMOH"
+            role="Lecturer I"
+            image={jimoh}
+            link={'h-jimoh'}
+          />
+          <Excocard
+            name="Dr. F.O. AKINDEJU"
+            role="Lecturer I"
+            image={Deju}
+            link={'f-akindeju'}
+          />
+
+          <Excocard
+            name="Mr. O.A. ADENIJI"
+            role="Lecturer II"
+            image={Niji}
+            link={'a-adeniji'}
+          />
+
+          <Excocard
+            name="Ms. M.D. ODEKUNLE"
+            role="Lecturer II"
+            image={Kunle}
+            link={'d-odekunle'}
+          />
         </div>
         <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">

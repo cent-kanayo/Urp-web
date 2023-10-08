@@ -1,5 +1,6 @@
 import EventCard from './EventCard';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
+import Prof from '../../assets/mainDesktop/law.png';
 
 const Events = () => {
   return (
@@ -12,7 +13,7 @@ const Events = () => {
           <div>
             <div className="h-[440px] lg:w-[548px] relative mb-4">
               <img
-                src="https://media.istockphoto.com/id/1414024629/photo/teacher-reading-lecture-at-university.webp?b=1&s=170667a&w=0&k=20&c=_uGbnxBofRGnJDN08N-PIvkQV0INrXVcdKRYlL2SasE="
+                src={Prof}
                 alt=""
                 className="block w-[100%] h-[100%] object-cover"
               />
@@ -22,13 +23,11 @@ const Events = () => {
                 June, 2023
               </p>
               <h3 className="typo-3 text-[#010A09] leading-8 mb-3">
-                Professor KYC is being congratulated for his meritorious deeds
-                and actions in combating the decay of education
+                “Grand ideas are good, but people need to survive”
               </h3>
               <p className="text-[14px] md:text-[14px] text-[#010A09] mb-6">
-                Ph.D. student and affiliate faculty member in African American
-                studies connects research and community, amplifying marginalized
-                voices in the process.
+                Professor Lawanson Calls for Human-Centred Urban Development
+                Approach
               </p>
             </div>
             <div className="w-[144px] flex justify-center items-center gap-x-2 border-[0.5px] border-[#010A09] rounded-[2px]  py-2">

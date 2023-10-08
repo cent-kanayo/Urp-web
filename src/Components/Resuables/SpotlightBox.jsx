@@ -11,7 +11,7 @@ const SpotlightBox = ({ image, h2, p, btn }) => {
           className="block h-[100%] w-[100%]"
         />
       </div>
-      <div className="py-[24px] px-[8px]">
+      <div className="py-[24px] w-[310px] mx-auto">
         <h2 className="mb-4 whitespace-nowrap">{h2}</h2>
         <p className="mb-4">{p}</p>
         <div className="px-0">

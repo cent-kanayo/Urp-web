@@ -1,14 +1,11 @@
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
+import Fj from '../../assets/mainDesktop/fj.png';
 
 const EventCard = () => {
   return (
     <div className="lg:flex gap-[20px] max-w-[528px]">
       <div className="relative mb-4 flex-1 lg:h-[200px] lg:w-[262px] ">
-        <img
-          src="https://media.istockphoto.com/id/1414024629/photo/teacher-reading-lecture-at-university.webp?b=1&s=170667a&w=0&k=20&c=_uGbnxBofRGnJDN08N-PIvkQV0INrXVcdKRYlL2SasE="
-          alt=""
-          className="block w-[100%] h-[100%] object-cover"
-        />
+        <img src={Fj} alt="" className="block w-[100%] h-[100%] object-cover" />
       </div>
       <div className="max-w-[614px] flex-1">
         <p className="text-[#934B00] text-[14px] capitalize mb-3">June, 2023</p>

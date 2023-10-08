@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NumberBox from '../Resuables/NumberBox';
-import HODDark from '../../assets/fra.png';
-import HODLight from '../../assets/Fram.png';
+import HODDark from '../../assets/mainDesktop/DrAD.webp';
+import HODLight from '../../assets/mainDesktop/DrAL.png';
 import Journal from '../../assets/journals.png';
 
 import Spotlight from '../Resuables/Spotlight';
@@ -9,39 +9,109 @@ import Events from '../Resuables/Events';
 import Cta from '../Resuables/Cta';
 import Contact from '../Resuables/Contact';
 
+import Bg1 from '../../assets/mainDesktop/homebg1.webp';
+import Bg2 from '../../assets/mainDesktop/homebg2.webp';
+import Bg3 from '../../assets/mainDesktop/homebg3.webp';
+import Bg4 from '../../assets/mainDesktop/homebg4.webp';
+import Bg5 from '../../assets/mainDesktop/homebg5.webp';
+
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { Link } from 'react-router-dom';
 
+const BGS = [Bg1, Bg2, Bg3, Bg4, Bg5];
+
 const Home = () => {
   document.title = 'URP UNILAG';
+  const [bgs, setBgs] = useState(BGS);
+  const [index, setIndex] = useState(0);
+
+  const handleClick = (type) => {
+    if (type === 'next') {
+      setIndex((prev) => (prev > BGS?.length - 2 ? 0 : prev + 1));
+    } else {
+      setIndex((prev) => (prev < 0 ? BGS?.length - 2 : prev - 1));
+    }
+  };
+
+  useEffect(() => {
+    const lastIndex = BGS.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, BGS]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 5000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
   return (
     <main>
-      <section className="hero-bg text-center py-[204.5px]">
-        <div className="flex justify-center items-center gap-x-[126px]">
-          <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
-          </span>
-          <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
-            <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
-              Where Innovation Meets Excellence!
-            </p>
-            <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[40px] font-bold text-[#F5FFF6]">
-              Urban & Regional Planning
-            </h1>
+      <section className="hero-bg text-center">
+        {BGS.map((pic, picIndex) => {
+          let position = 'nextSlide';
+          if (picIndex === index) {
+            position = 'activeSlide';
+          }
+          if (
+            picIndex === index - 1 ||
+            (index === 0 && picIndex === BGS.length - 1)
+          ) {
+            position = 'lastSlide';
+          }
+
+          return (
+            <div className={`bgSlide ${position}`} key={picIndex}>
+              <img
+                src={pic}
+                alt="Background carousel 1"
+                className="w-full h-full"
+              />
+            </div>
+          );
+        })}
+
+        <div className="py-[204.5px]">
+          <div className="flex justify-center items-center gap-x-[126px]">
+            <span
+              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              role="button"
+              onClick={() => handleClick('prev')}
+            >
+              <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
+            </span>
+            <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
+              <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
+                Where Innovation Meets Excellence!
+              </p>
+              <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[40px] font-bold text-[#F5FFF6]">
+                Urban & Regional Planning
+              </h1>
+            </div>
+            <span
+              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              role="button"
+              onClick={() => handleClick('next')}
+            >
+              <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
+            </span>
           </div>
-          <span className="border-[2px] border-[#F0C808] p-2">
-            <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
-          </span>
         </div>
       </section>
-      <section className="grid place-items-center">
+      <section className="lg:grid place-items-center">
         <div>
-          <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] w-[713px] mx-auto">
+          <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
             Giving definition to an undefined world, Welcome to URP, <br />
             where standards are created.
           </h3>
-          <div className="flex justify-between w-[1120px] mx-auto">
+          <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
             <NumberBox
               text="urban"
               heading="#1"
@@ -86,7 +156,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] w-[540px] gap-6 flex flex-col border-l-[4px] border-[#57A0A0] rounded-[4px]">
+            <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[36px] font-bold capitalize underline underline-offset-[10px]">
                   Dr. Odunayo
@@ -103,7 +173,7 @@ const Home = () => {
               </p>
               <div>
                 <Link
-                  to="/welcome-message"
+                  to="/about"
                   className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6]"
                 >
                   Read more
