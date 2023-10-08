@@ -105,7 +105,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="lg:grid place-items-center">
+      <section className="lg:flex flex-col justify-center">
         <div>
           <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
             Giving definition to an undefined world, Welcome to URP, <br />
