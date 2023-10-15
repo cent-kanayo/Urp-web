@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Contact = ({ h2 }) => {
   return (
-    <section className="grid place-items-center px-2 lg:px-0 my-[80px]">
+    <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-white">
       <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
         <h2 className="text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
           {h2}

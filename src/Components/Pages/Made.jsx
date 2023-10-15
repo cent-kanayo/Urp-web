@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Nwa from '../../assets/lecturers/Lfarin.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';

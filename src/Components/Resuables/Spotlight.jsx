@@ -16,18 +16,21 @@ const Spotlight = () => {
           h2="Design Projects"
           p="Request access to past projects."
           btn="View projects"
+          link="/projects"
         />
         <SpotlightBox
           image={Pen}
           h2="The Planner’s pen"
           p="Request access to past projects."
           btn="open planner’s pen"
+          link="/planners-pen"
         />
         <SpotlightBox
           image={Student}
           h2="Student of the month"
           p="Request access to past projects."
           btn="Open profile"
+          link="/student-of-the-month"
         />
       </div>
     </section>

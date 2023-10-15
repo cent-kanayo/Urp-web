@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <nav className="h-[80px] py-3 bg-[#F5FFF6]">
       <section className="px-2 xl:px-0 h-[100%]">
-        <header className="flex justify-center items-center gap-x-[318.29px]">
+        <header className="flex justify-center items-center gap-x-[130.79px]">
           <div className="w-[169.213px]">
             <Link to="/">
               <UrpLogo type="green" />
@@ -94,7 +94,7 @@ const Header = () => {
 
                   <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
                     <div className="flex flex-col">
-                      <Link to="#">
+                      <Link to="/research-cluster">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -107,7 +107,7 @@ const Header = () => {
                           Research Clusters
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/projects">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -133,7 +133,7 @@ const Header = () => {
 
                   <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
                     <div className="flex flex-col">
-                      <Link to="#">
+                      <Link to="/student-of-the-month">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -185,7 +185,7 @@ const Header = () => {
 
                   <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
                     <div className="flex flex-col">
-                      <Link to="#">
+                      <Link to="urp-journal">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -198,7 +198,7 @@ const Header = () => {
                           The URP Journal
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/urp-handbook">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -212,7 +212,7 @@ const Header = () => {
                           Department Handbook
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/planners-pen">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{
@@ -368,9 +368,12 @@ const Header = () => {
                   </Popover.Panel>
                 </Popover>
               </span>
-              <button className="px-6 py-3 flex justify-center items-center bg-[#037171] hover:bg-[#03312E] rounded-[4px] text-white">
+              <Link
+                to="/urp-journal"
+                className="px-6 py-3 flex justify-center items-center bg-[#037171] hover:bg-[#03312E] rounded-[4px] text-white"
+              >
                 <span className="whitespace-nowrap">Download Journal</span>
-              </button>
+              </Link>
             </div>
           </div>
         </header>

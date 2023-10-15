@@ -105,7 +105,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="lg:flex flex-col justify-center">
+      <section className="lg:flex flex-col justify-center bg-white">
         <div>
           <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
             Giving definition to an undefined world, Welcome to URP, <br />
@@ -159,7 +159,7 @@ const Home = () => {
             <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[36px] font-bold capitalize underline underline-offset-[10px]">
-                  Dr. Odunayo
+                  Dr. Agunbiade
                 </h2>
                 <p className="translate-y-2">HOD</p>
               </div>
@@ -174,7 +174,7 @@ const Home = () => {
               <div>
                 <Link
                   to="/about"
-                  className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6]"
+                  className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6] hover:bg-[#123f3f]"
                 >
                   Read more
                 </Link>

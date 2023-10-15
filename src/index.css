@@ -378,7 +378,7 @@ Staff Page
 
 /* ==============
 
-Staff Page
+About Page
 
 ================ */
 
@@ -399,6 +399,66 @@ Staff Page
 .about-welcome {
   border-radius: 4px;
   background: rgba(27, 27, 27, 0.5);
+  max-width: 789px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* ==============
+
+RS Page
+
+================ */
+
+.rs-bg {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.pen-box {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.25);
+}
+.pen-box > div > img {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.projects-bg {
+  background: linear-gradient(
+      0deg,
+      rgba(3, 49, 46, 0.19) 0%,
+      rgba(3, 49, 46, 0.19) 100%
+    ),
+    url('./assets/mainDesktop/projects.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.journal-bg {
+  background: url('./assets/mainDesktop/journalbg.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.journal-welcome {
+  border-radius: 4px;
+  background: #1b1b1b;
   max-width: 789px;
   height: 108px;
   display: flex;

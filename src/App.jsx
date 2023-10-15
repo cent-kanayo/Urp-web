@@ -21,6 +21,14 @@ import {
   Yemi,
   Laja,
   About,
+  ResearchCluster,
+  StudentSpotlight,
+  NewsPage,
+  PlannersPen,
+  Journal,
+  Projects,
+  SingleProject,
+  Handbook,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 
@@ -50,6 +58,14 @@ function App() {
           <Route path="staff/a-adeniji" element={<Niji />} />
           <Route path="staff/d-odekunle" element={<Kunle />} />
           <Route path="about" element={<About />} />
+          <Route path="research-cluster" element={<ResearchCluster />} />
+          <Route path="student-of-the-month" element={<StudentSpotlight />} />
+          <Route path="news" element={<NewsPage />} />
+          <Route path="planners-pen" element={<PlannersPen />} />
+          <Route path="urp-journal" element={<Journal />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="projects/single-project" element={<SingleProject />} />
+          <Route path="urp-handbook" element={<Handbook />} />
         </Route>
         <Route path="student-login" element={<StudentLogin />} />
         <Route path="staff-login" element={<StaffLogin />} />

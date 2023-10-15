@@ -18,6 +18,14 @@ import Kunle from './Kunle';
 import Yemi from './Yemi';
 import Laja from './Laja';
 import About from './About';
+import ResearchCluster from './ResearchCluster';
+import StudentSpotlight from './StudentSpotlight';
+import NewsPage from './NewsPage';
+import PlannersPen from './PlannersPen';
+import Journal from './Journal';
+import Projects from './Projects';
+import SingleProject from './SingleProject';
+import Handbook from './Handbook';
 export {
   Home,
   StudentPage,
@@ -39,4 +47,12 @@ export {
   Yemi,
   Laja,
   About,
+  ResearchCluster,
+  StudentSpotlight,
+  NewsPage,
+  PlannersPen,
+  Journal,
+  Projects,
+  SingleProject,
+  Handbook,
 };
