@@ -146,7 +146,7 @@ const Header = () => {
                           Student Spotlight
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/honours-list">
                         <Popover.Button
                           className="px-6 py-2 mb-2 text-[14px]"
                           style={{

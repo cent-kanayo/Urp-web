@@ -22,7 +22,7 @@ const ResearchCluster = () => {
     <main>
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
-          <img src={rsbg} alt="" className="w-full absolute -z-10" />
+          <img src={rsbg} alt="" className="w-full h-[600px] absolute -z-10" />
           <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[147px]">
             <div className="flex items-center space-x-2">
               <article className="w-[24px] h-[2px] bg-white"></article>

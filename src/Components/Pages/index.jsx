@@ -26,6 +26,7 @@ import Journal from './Journal';
 import Projects from './Projects';
 import SingleProject from './SingleProject';
 import Handbook from './Handbook';
+import Honours from './Honours';
 export {
   Home,
   StudentPage,
@@ -55,4 +56,5 @@ export {
   Projects,
   SingleProject,
   Handbook,
+  Honours,
 };
