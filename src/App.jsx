@@ -30,6 +30,9 @@ import {
   SingleProject,
   Handbook,
   Honours,
+  Programs,
+  Faq,
+  Contact,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 
@@ -68,6 +71,9 @@ function App() {
           <Route path="projects/single-project" element={<SingleProject />} />
           <Route path="urp-handbook" element={<Handbook />} />
           <Route path="honours-list" element={<Honours />} />
+          <Route path="urp-programs" element={<Programs />} />
+          <Route path="faqs" element={<Faq />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="student-login" element={<StudentLogin />} />
         <Route path="staff-login" element={<StaffLogin />} />

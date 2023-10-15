@@ -77,6 +77,21 @@ body {
   height: 100%;
   color: white;
 }
+
+.popup {
+  all: 'unset';
+  padding: 8px 24px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+}
+.popup:hover {
+  transition: all 0.25s linear;
+  background: #037171;
+  color: white;
+}
 .footer {
   height: 534px;
 }
@@ -465,4 +480,55 @@ RS Page
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+}
+
+.honours-bg {
+  background: url('./assets/mainDesktop/honoursbg.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.programs-bg {
+  background: url('./assets/mainDesktop/programsbg.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq-bg {
+  background: url('./assets/mainDesktop/faq.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-bg {
+  background: url('./assets/mainDesktop/contactbg.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment {
+  border-radius: 2px;
+  background: #fdfffd;
+  box-shadow: 0px 4px 12px 0px rgba(166, 197, 181, 0.26);
 }

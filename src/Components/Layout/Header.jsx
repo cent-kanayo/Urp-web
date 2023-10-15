@@ -40,44 +40,20 @@ const Header = () => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 top-6 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 top-6 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
                       <Link to="/staff">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Administrative Staff
                         </Popover.Button>
                       </Link>
                       <Link to="/students">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Executives
                         </Popover.Button>
                       </Link>
                       <Link to="/alumni">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Alumni
                         </Popover.Button>
                       </Link>
@@ -92,31 +68,15 @@ const Header = () => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
                       <Link to="/research-cluster">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Research Clusters
                         </Popover.Button>
                       </Link>
                       <Link to="/projects">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Projects
                         </Popover.Button>
                       </Link>
@@ -131,44 +91,20 @@ const Header = () => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
                       <Link to="/student-of-the-month">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Spotlight
                         </Popover.Button>
                       </Link>
                       <Link to="/honours-list">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Honors list
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                      <Link to="/urp-programs">
+                        <Popover.Button className="popup">
                           Programmes
                         </Popover.Button>
                       </Link>
@@ -183,73 +119,30 @@ const Header = () => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
                       <Link to="urp-journal">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           The URP Journal
                         </Popover.Button>
                       </Link>
                       <Link to="/urp-handbook">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                            whiteSpace: 'nowrap',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Department Handbook
                         </Popover.Button>
                       </Link>
                       <Link to="/planners-pen">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Planner’s Pen
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                      <Link to="/contact">
+                        <Popover.Button className="popup">
                           Contact Us
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
-                          FAQ’s
-                        </Popover.Button>
+                      <Link to="/faqs">
+                        <Popover.Button className="popup">FAQ’s</Popover.Button>
                       </Link>
                     </div>
                   </Popover.Panel>
@@ -262,44 +155,20 @@ const Header = () => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           News & Events
                         </Popover.Button>
                       </Link>
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Gallery
                         </Popover.Button>
                       </Link>
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           IT Team
                         </Popover.Button>
                       </Link>
@@ -315,52 +184,30 @@ const Header = () => {
                     <Search htmlColor="#011717" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-20 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-20 bg-white w-[228px] py-4">
                     <div className="flex flex-col">
-                      <div className="border-[#ADABAB] border-[0.5px] rounded-[2px] px-4 py-2 flex items-center w-full space-x-4 mb-4">
-                        <Search htmlColor="#ADABAB" />
-                        <input
-                          type="text"
-                          className="w-full focus:outline-none"
-                          placeholder="Search keyword"
-                        />
-                      </div>
+                      <article className="px-4">
+                        <div className="border-[#ADABAB] border-[0.5px] rounded-[2px] px-4 py-2 flex items-center w-full space-x-4 mb-4">
+                          <Search htmlColor="#ADABAB" />
+                          <input
+                            type="text"
+                            className="w-full focus:outline-none"
+                            placeholder="Search keyword"
+                          />
+                        </div>
+                      </article>
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Spotlight
                         </Popover.Button>
                       </Link>
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Spotlight
                         </Popover.Button>
                       </Link>
                       <Link to="#">
-                        <Popover.Button
-                          className="px-6 py-2 mb-2 text-[14px]"
-                          style={{
-                            all: 'unset',
-                            padding: '8px 24px',
-                            marginBottom: '8px',
-                            fontSize: '14px',
-                          }}
-                        >
+                        <Popover.Button className="popup">
                           Student Spotlight
                         </Popover.Button>
                       </Link>
