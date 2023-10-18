@@ -30,6 +30,8 @@ import Honours from './Honours';
 import Programs from './Programs';
 import Faq from './Faq';
 import Contact from './Contact';
+import It from './It';
+import Gallery from './Gallery';
 export {
   Home,
   StudentPage,
@@ -63,4 +65,6 @@ export {
   Programs,
   Faq,
   Contact,
+  It,
+  Gallery,
 };

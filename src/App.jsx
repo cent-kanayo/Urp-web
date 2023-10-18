@@ -33,6 +33,8 @@ import {
   Programs,
   Faq,
   Contact,
+  It,
+  Gallery,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 
@@ -74,6 +76,8 @@ function App() {
           <Route path="urp-programs" element={<Programs />} />
           <Route path="faqs" element={<Faq />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="it-department" element={<It />} />
+          <Route path="galleries" element={<Gallery />} />
         </Route>
         <Route path="student-login" element={<StudentLogin />} />
         <Route path="staff-login" element={<StaffLogin />} />

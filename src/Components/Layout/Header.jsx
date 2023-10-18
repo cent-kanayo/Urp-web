@@ -162,12 +162,12 @@ const Header = () => {
                           News & Events
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/galleries">
                         <Popover.Button className="popup">
                           Gallery
                         </Popover.Button>
                       </Link>
-                      <Link to="#">
+                      <Link to="/it-department">
                         <Popover.Button className="popup">
                           IT Team
                         </Popover.Button>

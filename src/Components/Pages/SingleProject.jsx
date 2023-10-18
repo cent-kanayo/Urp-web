@@ -1,19 +1,28 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
 import RightIcon from '../../assets/AR.png';
+import { projectImages } from '../data';
 
 const SingleProject = () => {
+  const [index, setIndex] = useState(0);
+  const [image, setImage] = useState(projectImages[index]);
+  useEffect(() => {
+    setImage(projectImages[index]);
+  }, [index]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
     <main>
       <section className="flex mb-[80px] h-[600px] bg-[#02211F] justify-center items-center">
-        <div className="-translate-x-32">
-          <h1 className="text-[4rem] font-bold text-white">Project</h1>
-          <p className="text-[20px] text-white">By Muyiwa Ibrahim</p>
+        <div className="w-full h-full">
+          <img
+            src={projectImages[0]}
+            alt=""
+            className="w-full object-cover h-full"
+          />
         </div>
       </section>
       <section className="mt-[120px] max-w-[1119px] mx-auto">
@@ -29,7 +38,11 @@ const SingleProject = () => {
           </p>
         </div>
       </section>
-      <section className="mt-[80px] max-w-[1119px] mx-auto bg-[#D4CDCD] h-[664px]"></section>
+      <section className="mt-[80px] max-w-[1119px] mx-auto bg-[#D4CDCD] h-[664px]">
+        <div className="w-full h-full">
+          <img src={projectImages[4]} alt="" className="w-full h-full" />
+        </div>
+      </section>
       <section className="mt-[80px] max-w-[1119px] mx-auto bg-white">
         <div>
           <article className="flex items-center mb-10">
@@ -68,13 +81,35 @@ const SingleProject = () => {
       <section className="max-w-[1119px] mx-auto bg-white mt-[80px]">
         <div>
           <div className="max-w-[1112px] mx-auto bg-white">
-            <div className="bg-[#D4CDCD] h-[600px] mb-6"></div>
+            <div className="bg-[#D4CDCD] h-[600px] mb-6">
+              <div className="w-full h-full">
+                <img
+                  src={image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <p className="text-[#5B5756] text-[14px]">Base Map</p>
             <div className="flex justify-between items-center mt-[40px]">
-              <span>
+              <span
+                role="button"
+                onClick={() =>
+                  setIndex((prev) =>
+                    prev <= 0 ? projectImages.length - 1 : prev - 1
+                  )
+                }
+              >
                 <img src={LeftIcon} alt="left toggle button" />
               </span>
-              <span>
+              <span
+                role="button"
+                onClick={() =>
+                  setIndex((prev) =>
+                    prev >= projectImages.length - 1 ? 0 : prev + 1
+                  )
+                }
+              >
                 <img src={RightIcon} alt="right toggle button" />
               </span>
             </div>
