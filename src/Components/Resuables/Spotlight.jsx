@@ -10,7 +10,7 @@ const Spotlight = () => {
       <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[40px]">
         Urban Planning Hub
       </h2>
-      <div className="flex justify-center flex-wrap gap-[20px]">
+      <div className="flex flex-col lg:flex-row lg:justify-center flex-wrap gap-[20px]">
         <SpotlightBox
           image={City}
           h2="Design Projects"

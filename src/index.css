@@ -245,7 +245,6 @@ Home page
 }
 
 .spotlight-box {
-  max-width: 358px;
   width: 100%;
   border-radius: 8px;
   background: #fff;
@@ -256,6 +255,7 @@ Home page
 @media screen and (min-width: 900px) {
   .spotlight-box {
     margin: 0;
+    max-width: 358px;
   }
 }
 

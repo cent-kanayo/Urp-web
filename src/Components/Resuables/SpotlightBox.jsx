@@ -5,7 +5,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
   return (
     <Link
       to={link}
-      className="flex flex-col spotlight-box hover:shadow-xl duration-300 transition-all ease-linear max-w-[358px]"
+      className="lg:flex flex-col spotlight-box hover:shadow-xl duration-300 transition-all ease-linear"
     >
       <div className="h-[200px] relative">
         <img
@@ -14,7 +14,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
           className="block h-[100%] w-[100%]"
         />
       </div>
-      <div className="py-[24px] w-[310px] mx-auto">
+      <div className="py-[24px] lg:w-[310px] mx-auto">
         <h2 className="mb-4 whitespace-nowrap">{h2}</h2>
         <p className="mb-4">{p}</p>
         <div className="px-0">
