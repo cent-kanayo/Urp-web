@@ -72,31 +72,31 @@ const Home = () => {
               <img
                 src={pic}
                 alt="Background carousel 1"
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
           );
         })}
 
-        <div className="py-[204.5px]">
-          <div className="flex justify-center items-center gap-x-[126px]">
+        <div className="py-[100px] lg:py-[204.5px]">
+          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] px-4 lg:px-0">
             <span
-              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[4px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('prev')}
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span>
-            <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
-              <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
+            <div className="flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] bg-[#090302] py-3 lg:py-6 px-6 lg:px-10 items-center">
+              <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
                 Where Innovation Meets Excellence!
               </p>
-              <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[40px] font-bold text-[#F5FFF6]">
+              <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#F5FFF6]">
                 Urban & Regional Planning
               </h1>
             </div>
             <span
-              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[4px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('next')}
             >
@@ -107,7 +107,7 @@ const Home = () => {
       </section>
       <section className="lg:flex flex-col justify-center bg-white">
         <div>
-          <h3 className="text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
+          <h3 className="text-[14px] md:text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
             Giving definition to an undefined world, Welcome to URP, <br />
             where standards are created.
           </h3>
@@ -156,7 +156,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
+            <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] lg:w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[36px] font-bold capitalize underline underline-offset-[10px]">
                   Dr. Agunbiade

@@ -22,9 +22,9 @@ const Header = () => {
     }
   }, [location.pathname]);
   return (
-    <nav className="h-[80px] py-3 bg-[#F5FFF6]">
-      <section className="px-2 xl:px-0 h-[100%]">
-        <header className="flex justify-center items-center gap-x-[130.79px]">
+    <nav className="h-[80px]  py-3 bg-[#F5FFF6] w-full">
+      <section className="px-6  xl:px-0 h-[100%]">
+        <header className="lg:flex lg:justify-center items-center gap-x-[130.79px]">
           <div className="w-[169.213px]">
             <Link to="/">
               <UrpLogo type="green" />

@@ -10,6 +10,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
+  background-color: white;
 }
 
 .typo-3 {
@@ -157,6 +158,11 @@ Home page
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .hero-bg {
+    height: 308px;
+  }
+}
 .bgSlide {
   position: absolute;
   top: 0;
@@ -206,12 +212,10 @@ Home page
 }
 .box .p1 {
   text-align: center;
-  font-size: 1.25rem;
   color: #090302;
 }
 .box .p2 {
   text-align: center;
-  font-size: 1rem;
   color: #090302;
   line-height: 150%;
 }
