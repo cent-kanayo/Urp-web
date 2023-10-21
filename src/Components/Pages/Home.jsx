@@ -141,14 +141,14 @@ const Home = () => {
       </section>
       <section className="my-[80px] py-[80px]">
         <div className="relative h-[800px]">
-          <div className="absolute h-[100%] left-0 w-[50%]">
+          <div className="absolute h-[100%] left-0 lg:w-[50%]">
             <img
               src={HODLight}
               alt=""
               className="block w-[100%] h-[100%] object-cover"
             />
           </div>
-          <div className="absolute h-[100%] right-0 w-[50%]">
+          <div className="hidden lg:absolute h-[100%] right-0 w-[50%]">
             <img
               src={HODDark}
               alt=""
@@ -156,7 +156,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <div className="bg-[#FDFFFD] px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] lg:w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
+            <div className="bg-[#FDFFFD] z-10 px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] lg:w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[36px] font-bold capitalize underline underline-offset-[10px]">
                   Dr. Agunbiade
