@@ -9,6 +9,9 @@ import Events from '../Resuables/Events';
 import Cta from '../Resuables/Cta';
 import Contact from '../Resuables/Contact';
 
+import Hod from '../../assets/mainMobile/hod.png';
+import Book from '../../assets/mainMobile/bookbg.png';
+
 import Bg1 from '../../assets/mainDesktop/homebg1.webp';
 import Bg2 from '../../assets/mainDesktop/homebg2.webp';
 import Bg3 from '../../assets/mainDesktop/homebg3.webp';
@@ -139,9 +142,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] py-[80px]">
-        <div className="relative h-[800px]">
-          <div className="absolute h-[100%] left-0 lg:w-[50%]">
+      <section className="my-[80px] py-6 lg:py-[80px]">
+        <div className="relative h-[400px] lg:h-[800px] flex items-end">
+          <div className="hidden lg:block absolute h-[100%] left-0 lg:w-[50%] -z-10">
             <img
               src={HODLight}
               alt=""
@@ -154,16 +157,28 @@ const Home = () => {
               alt=""
               className="block w-[100%] h-[100%] object-cover"
             />
+            <img
+              src={Hod}
+              alt=""
+              className="block w-[100%] h-[100%] object-cover absolute lg:hidden"
+            />
           </div>
-          <div>
-            <div className="bg-[#FDFFFD] z-10 px-10 py-6 lg:absolute lg:left-[48%] lg:top-[251px] lg:w-[540px] gap-6 flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
+          <div className="lg:hidden absolute h-[100%] w-full">
+            <img
+              src={Hod}
+              alt=""
+              className="block w-[100%] h-[100%] object-cover absolute lg:hidden"
+            />
+          </div>
+          <div className="h-[201px] lg:h-auto  lg:mx-0 max-w-[342px] lg:max-w-none mx-auto">
+            <div className="bg-[#FDFFFD] relative z-30 px-4 lg:px-10 py-3 lg:py-6 lg:absolute lg:left-[48%] mx-8 lg:top-[251px] lg:w-[540px] gap-4 lg:gap-6  flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
-                <h2 className="text-[#011717] text-[36px] font-bold capitalize underline underline-offset-[10px]">
+                <h2 className="text-[#011717] text-[24px] lg:text-[36px] font-bold capitalize underline underline-offset-[10px]">
                   Dr. Agunbiade
                 </h2>
                 <p className="translate-y-2">HOD</p>
               </div>
-              <p className="text-[14px] leading-[150%]">
+              <p className="text-[14px] leading-[150%] hidden lg:block">
                 I would like to express my pride of belonging to the Department
                 of Urban and Regional Planning, Faculty of Environmental
                 Science, University of Lagos. It is taught in a few and highly
@@ -171,10 +186,16 @@ const Home = () => {
                 universal standards to master the requisite skills of
                 architectural design. Since its foundation....
               </p>
+              <p className="text-[12px] leading-[150%] lg:hidden">
+                I would like to express my pride of belonging to the Department
+                of Urban and Regional Planning, Faculty of Environmental
+                Science, University of Lagos. It is taught in a few and highly
+                elitist universities in Nigeria...
+              </p>
               <div>
                 <Link
                   to="/about"
-                  className="bg-[#57A0A0] px-6 py-2 rounded-[2px] text-[#F5FFF6] hover:bg-[#123f3f]"
+                  className="bg-[#57A0A0] text-[14px] px-6 py-2 rounded-[2px] text-[#F5FFF6] hover:bg-[#123f3f]"
                 >
                   Read more
                 </Link>
@@ -184,9 +205,10 @@ const Home = () => {
         </div>
       </section>
       <Spotlight />
-      <section className="mt-[160px] h-[404px] journal flex items-center">
-        <div className="flex-1 h-[100%]">
-          <img src={Journal} alt="" className="block h-[100%]" />
+      <section className="mt-[160px] h-[404px] journal flex items-center  relative">
+        <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%]">
+          <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
+          <img src={Book} alt="" className="lg:hidden h-[100%]" />
         </div>
         <div className="flex-1 flex flex-col">
           <div className="lg:w-[564px] flex flex-col gap-6">
@@ -211,11 +233,12 @@ const Home = () => {
       </section>
 
       <Events />
-      <section className="mt-[80px] h-[404px] bg-[#5B5756] flex items-center">
-        <div className="flex-1 h-[100%]">
-          <img src={Journal} alt="" className="block h-[100%]" />
+      <section className="mt-[80px] h-[404px] lg:bg-[#5B5756] flex items-center relative">
+        <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%]">
+          <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
+          <img src={Book} alt="" className="lg:hidden h-[100%]" />
         </div>
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col m-6 bg-[#5B5756]">
           <div className="lg:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[40px] font-bold">
               Innovative research hubs

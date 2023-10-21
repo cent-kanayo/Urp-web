@@ -5,27 +5,28 @@ const Footer = () => {
     <footer className="flex flex-col footer">
       <section className="bg-[#010A09] text-white flex-1 pt-[96px] px-4 md:px-8 pb-8 lg:pb-0">
         <header className="flex flex-col lg:flex-row justify-center  gap-x-[314px]">
-          <div>
+          <div className="mb-[53px] lg:mb-0">
             <UrpLogo type="white" />
           </div>
-          <div className="h-[1px] w-[80%] mx-auto lg:hidden bg-white"></div>
-          <div className="flex flex-col lg:flex-row justify-center gap-[40px]">
-            <div className="capitalize">
-              <h3 className="text-[20px] font-medium mb-[16px]">Menu</h3>
-              <ul className="text-[14px] font-[300] text-[#FDFFFD] flex flex-col gap-[8px]">
-                <li>Home</li>
-                <li>about</li>
-                <li>Academics</li>
-                <li>research</li>
-                <li>contact</li>
-              </ul>
-            </div>
-            <div className="capitalize">
-              <h3 className="text-[20px] font-medium mb-[16px]">contact</h3>
-              <ul className="text-[14px] font-[300] text-[#FDFFFD]  flex flex-col gap-[8px]">
-                <li>mail</li>
-                <li>phone number</li>
-              </ul>
+          <div className="flex lg:flex-row justify-center gap-[35px] lg:gap-[40px]">
+            <div className="flex flex-col lg:flex-row justify-center gap-[35px] lg:gap-[40px]">
+              <div className="capitalize">
+                <h3 className="text-[20px] font-medium mb-[16px]">Menu</h3>
+                <ul className="text-[14px] font-[300] text-[#FDFFFD] flex flex-col gap-[8px]">
+                  <li>Home</li>
+                  <li>about</li>
+                  <li>Academics</li>
+                  <li>research</li>
+                  <li>contact</li>
+                </ul>
+              </div>
+              <div className="capitalize">
+                <h3 className="text-[20px] font-medium mb-[16px]">contact</h3>
+                <ul className="text-[14px] font-[300] text-[#FDFFFD]  flex flex-col gap-[8px]">
+                  <li>mail</li>
+                  <li>phone number</li>
+                </ul>
+              </div>
             </div>
             <div className="capitalize">
               <h3 className="text-[20px] font-medium">university of lagos</h3>
