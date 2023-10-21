@@ -17,7 +17,11 @@ const NumberBox = ({ text, heading, sub, color }) => {
           {heading}
         </h2>
       )}
-      {color === 'red' && <h2 className="text-[#DD1C1A] h2">{heading}</h2>}
+      {color === 'red' && (
+        <h2 className="text-[#DD1C1A] text-[40xp] md:text-[56px] font-bold leading-[150%]">
+          {heading}
+        </h2>
+      )}
       <p className="p2 text-[12px] md:text-[16px]">{sub}</p>
     </article>
   );

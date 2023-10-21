@@ -148,7 +148,7 @@ const Home = () => {
               className="block w-[100%] h-[100%] object-cover"
             />
           </div>
-          <div className="hidden lg:absolute h-[100%] right-0 w-[50%]">
+          <div className="hidden lg:block lg:absolute h-[100%] right-0 w-[50%]">
             <img
               src={HODDark}
               alt=""
@@ -189,7 +189,7 @@ const Home = () => {
           <img src={Journal} alt="" className="block h-[100%]" />
         </div>
         <div className="flex-1 flex flex-col">
-          <div className="w-[564px] flex flex-col gap-6">
+          <div className="lg:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[40px] font-bold">
               Introducing The Journal
             </h2>
@@ -216,7 +216,7 @@ const Home = () => {
           <img src={Journal} alt="" className="block h-[100%]" />
         </div>
         <div className="flex-1 flex flex-col">
-          <div className="w-[564px] flex flex-col gap-6">
+          <div className="lg:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[40px] font-bold">
               Innovative research hubs
             </h2>
