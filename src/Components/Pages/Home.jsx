@@ -90,7 +90,7 @@ const Home = () => {
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span>
-            <div className="flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] bg-[#090302] py-3 lg:py-6 px-6 lg:px-10 items-center">
+            <div className="flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] bg-[#090302] py-3 lg:py-6 px-3 lg:px-10 items-center">
               <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
                 Where Innovation Meets Excellence!
               </p>
