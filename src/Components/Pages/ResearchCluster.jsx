@@ -22,7 +22,11 @@ const ResearchCluster = () => {
     <main>
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
-          <img src={rsbg} alt="" className="w-full h-[600px] absolute -z-10" />
+          <img
+            src={rsbg}
+            alt=""
+            className="w-full h-[320px] lg:h-[600px] absolute -z-10"
+          />
           <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[147px]">
             <div className="flex items-center space-x-2">
               <article className="w-[24px] h-[2px] bg-white"></article>
@@ -32,7 +36,7 @@ const ResearchCluster = () => {
             </div>
             <div className="max-w-[598px]">
               <div>
-                <h1 className="text-[2.5rem] font-bold mb-4 leading-[150%]">
+                <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
                   A Treatise on the Importance of Urban Planning In Modern Day
                 </h1>
                 <p className="text-[20px] max-w-[491px]">

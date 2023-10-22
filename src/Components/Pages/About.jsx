@@ -20,18 +20,20 @@ const About = () => {
   }, []);
   return (
     <main>
-      <section className="flex mb-[80px] about-bg">
-        <div className="about-welcome flex-1">
-          <h1 className="text-[2.5rem] font-bold text-center text-white">
+      <section className="flex mb-[80px] about-bg px-[60px] lg:px-0">
+        <div className="about-welcome flex-1 h-[64px] lg:h-[108px] px-[60px] lg:px-0">
+          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
             About Us
           </h1>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Dr. Muyiwa E. AGUNBIADE</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] font-semibold lg:text-[20px]">
+            Dr. Muyiwa E. AGUNBIADE
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -53,11 +55,11 @@ const About = () => {
           </span>
         </div>
       </section>
-      <section className="max-w-[800px] mx-auto">
-        <h2 className="text-center text-[32px] font-[600] mb-6">
+      <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
+        <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
           HOD’s Address
         </h2>
-        <div className="text-[20px] leading-[150%] flex flex-col">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
           <p className="mb-6">
             I would like to express my pride of belonging to the Department of
             Urban and Regional Planning, Faculty of Environmental Science,
@@ -98,7 +100,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="max-w-[1119px] mx-auto mt-[80px]">
+      <section className="max-w-[1119px] mx-auto mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
         <div className="mb-6 py-3 px-4">
           <div className="flex justify-between items-center max-w-[1000px]">
             <span>About URP Department</span>
@@ -132,30 +134,39 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px]">
-        <div className="bg-[#303648] py-20 h-[346px] flex justify-center">
-          <div className="text-center max-w-[546px] mx-auto">
-            <h3 className="text-[#FDFFFD] font-bold text-[40px]">
+      <section className="my-[64px] lg:my-[80px]">
+        <div className="bg-[#303648] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
+          <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
+            <h3 className="text-[#FDFFFD] font-bold text-[24px] lg:text-[40px]">
               Connect Now
             </h3>
-            <p className="text-[14px] text-[#FDFFFD] mb-[60px]">
+            <p className="text-[12px] lg:text-[14px] text-[#FDFFFD] mb-10 lg:mb-[60px]">
               Don’t miss out on the opportunity to learn from the best! Immerse
               yourself in the world of physics with Dr. Odunayo!
             </p>
             <div className="flex gap-x-6 justify-center">
-              <div className="border-[#FDFFFD] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
+              <div className="border-[#FDFFFD] border-[1px] rounded-[2px] px-4 lg:px-6 py-2 flex items-center gap-x-2">
+                <span className="lg:hidden">
+                  <PhoneOutlinedIcon htmlColor="#FDFFFD" fontSize="small" />
+                </span>
+                <span className="hidden lg:block">
                   <PhoneOutlinedIcon htmlColor="#FDFFFD" />
                 </span>
-                <span className="text-[14px] text-[#FDFFFD]">
+                <span className="text-[12px] lg:text-[14px] text-[#FDFFFD]">
                   Call Dr. Agunbiade
                 </span>
               </div>
-              <div className="bg-[#FDFFFD] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
+              <div className="bg-[#FDFFFD] rounded-[2px] px-4 lg:px-6 py-2 flex items-center gap-x-2">
+                <span className="lg:hidden">
+                  <MarkunreadOutlinedIcon
+                    htmlColor="#1B1B1B"
+                    fontSize="small"
+                  />
+                </span>
+                <span className="hidden lg:block">
                   <MarkunreadOutlinedIcon htmlColor="#1B1B1B" />
                 </span>
-                <span className="text-[#1B1B1B] text-[14px] hover:animate-pulse">
+                <span className="text-[#1B1B1B] text-[12px] lg:text-[14px] hover:animate-pulse">
                   <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
