@@ -20,7 +20,7 @@ const About = () => {
   }, []);
   return (
     <main>
-      <section className="flex mb-[80px] about-bg px-[60px] lg:px-0">
+      <section className="flex mb-[64px] lg:mb-[80px] about-bg px-[60px] lg:px-0">
         <div className="about-welcome flex-1 h-[64px] lg:h-[108px] px-[60px] lg:px-0">
           <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
             About Us

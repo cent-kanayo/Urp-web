@@ -29,36 +29,38 @@ const StudentSpotlight = () => {
   }, []);
   return (
     <main>
-      <section className="h-[600px] flex mb-[80px]">
+      <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
             src={Nwa}
             alt="Our HOD"
-            className="h-[600px] w-[100%] object-cover"
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#2C410A] flex justify-center items-center">
-          <div className="w-[525px] mx-auto">
+        <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+          <div className="lg:w-[525px] mx-auto">
             <div className="flex">
-              <img src={LQ} alt="" />
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
-            <p className="text-white text-[20px] leading-[150%] my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-[20px] lg:my-[59px]">
               The problem is constantly evolving, with adversaries adapting to
               whatever defense researchers might develop to keep carrying out
               their malicious activities. You can never say that your job is
               done.
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Crest Bankole-Radcliffe</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] lg:text-[20px]">
+            Crest Bankole-Radcliffe
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -81,10 +83,10 @@ const StudentSpotlight = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[40px] font-bold text-[#011717] mb-6">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Student Of the Month
         </h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-[35px] lg:px-0">
           <p>
             Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
             trailblazing rockstar of academia, with revolutionary ideas that
@@ -117,13 +119,13 @@ const StudentSpotlight = () => {
             traditionally male-dominated domains.
           </p>
         </div>
-        <div className="mt-[80px]">
-          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-4 mb-6">
+        <div className="mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
+          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-2 lg:space-x-4 mb-6">
             <div>
               <img src={OpenB} alt="" />
             </div>
             <div>
-              <h4 className="mb-2 text-[#1B1B1B] text-[16px]">
+              <h4 className="mb-2 text-[#1B1B1B] text-[14px] lg:text-[16px]">
                 Author Extraordinaire
               </h4>
               <p className="max-w-[355px] text-[#5B5756] text-[12px]">
@@ -132,12 +134,12 @@ const StudentSpotlight = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-4 mb-6">
+          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-2 lg:space-x-4 mb-6">
             <div>
               <img src={Activity} alt="" />
             </div>
             <div>
-              <h4 className="mb-2 text-[#1B1B1B] text-[16px]">
+              <h4 className="mb-2 text-[#1B1B1B] text-[14px] lg:text-[16px]">
                 Author Extraordinaire
               </h4>
               <p className="max-w-[355px] text-[#5B5756] text-[12px]">
@@ -146,12 +148,12 @@ const StudentSpotlight = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-4">
+          <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-2 lg:space-x-4">
             <div>
               <img src={Bike} alt="" />
             </div>
             <div>
-              <h4 className="mb-2 text-[#1B1B1B] text-[16px]">
+              <h4 className="mb-2 text-[#1B1B1B] text-[14px] lg:text-[16px]">
                 Author Extraordinaire
               </h4>
               <p className="max-w-[355px] text-[#5B5756] text-[12px]">
@@ -162,17 +164,17 @@ const StudentSpotlight = () => {
           </div>
         </div>
       </section>
-      <section className="h-[680px] bg-[#010A09] py-[52px] my-[80px]">
+      <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[52px] my-[80px] px-6 lg:px-0">
         <div>
-          <h3 className="text-center text-[#FDFFFD] text-[2.5rem] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
             Previous Urp Heroes
           </h3>
           <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+            <div className="flex lg:justify-center justify-between items-center gap-x-[24px]">
+              <div className="hidden relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end">
                 <div className="w-full h-[72px] bg-white py-[18px] px-[54px] z-10 opacity-[0.92]">
                   <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2">
+                    <p className="flex justify-center items-center space-x-2 lg:space-x-2">
                       <a
                         href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
                         target="_blank"
@@ -184,10 +186,10 @@ const StudentSpotlight = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="hidden relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end">
                 <div className="w-full h-[72px] bg-white py-[18px] px-[54px]  z-10 opacity-[0.92]">
                   <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2">
+                    <p className="flex justify-center items-center space-x-2 lg:space-x-2">
                       <a
                         href="https://doi.org/10.1016/j.jum.2018.03.001"
                         target="_blank"
@@ -199,10 +201,10 @@ const StudentSpotlight = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <div className="w-full h-[72px] bg-white py-[18px] px-[54px]  z-10 opacity-[0.92]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <div className="w-full lg:h-[72px] bg-white py-2 lg:py-[18px] px-4 lg:px-[54px]   z-10 opacity-[0.92]">
                   <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2">
+                    <p className="flex justify-center items-center space-x-2 lg:space-x-2 text-[12px]">
                       <a
                         href="https://doi.org/10.1080/23792949.2017.1399804"
                         target="_blank"
@@ -214,10 +216,10 @@ const StudentSpotlight = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <div className="w-full h-[72px] bg-white py-[18px] px-[54px]  z-10 opacity-[0.92]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <div className="w-full lg:h-[72px] bg-white py-2 lg:py-[18px] px-4 lg:px-[54px]  z-10 opacity-[0.92]">
                   <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2">
+                    <p className="flex justify-center items-center space-x-2 lg:space-x-2 text-[12px]">
                       <a
                         href="https://doi.org/10.1080/23792949.2017.1399804"
                         target="_blank"
@@ -230,12 +232,20 @@ const StudentSpotlight = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center mt-[40px]">
+            <div className="flex justify-between items-center mt-6 lg:mt-[40px]">
               <span>
-                <img src={LeftIcon} alt="left toggle button" />
+                <img
+                  src={LeftIcon}
+                  alt="left toggle button"
+                  className="w-[32px] lg:w-auto"
+                />
               </span>
               <span>
-                <img src={RightIcon} alt="right toggle button" />
+                <img
+                  src={RightIcon}
+                  alt="right toggle button"
+                  className="w-[32px] lg:w-auto"
+                />
               </span>
             </div>
           </div>
