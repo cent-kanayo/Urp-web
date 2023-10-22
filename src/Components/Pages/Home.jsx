@@ -82,9 +82,9 @@ const Home = () => {
         })}
 
         <div className="py-[100px] lg:py-[204.5px]">
-          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] px-4 lg:px-0">
+          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] lg:px-0">
             <span
-              className="border-[2px] border-[#F0C808] p-[4px] lg:p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('prev')}
             >
@@ -99,7 +99,7 @@ const Home = () => {
               </h1>
             </div>
             <span
-              className="border-[2px] border-[#F0C808] p-[4px] lg:p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('next')}
             >
@@ -114,7 +114,7 @@ const Home = () => {
             Giving definition to an undefined world, Welcome to URP, <br />
             where standards are created.
           </h3>
-          <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
+          <div className="flex flex-col gap-[64px] lg:gap-0 justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
             <NumberBox
               text="urban"
               heading="#1"
@@ -142,7 +142,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] py-6 lg:py-[80px]">
+      <section className="my-[64px] py-6 lg:py-[80px]">
         <div className="relative h-[400px] md:h-[600px] lg:h-[800px] flex items-end justify-center">
           <div className="hidden lg:block absolute h-[100%] left-0 lg:w-[50%] -z-10">
             <img
@@ -205,17 +205,17 @@ const Home = () => {
         </div>
       </section>
       <Spotlight />
-      <section className="mt-[160px] h-[404px] lg:bg-[#011717] flex items-end lg:items-center  relative">
+      <section className="mt-[64px] lg:mt-[160px] h-[404px] lg:bg-[#011717] flex items-end lg:items-center  relative">
         <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%] w-full">
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
           <img src={Book} alt="" className="lg:hidden h-[100%] w-full" />
         </div>
-        <div className="lg:flex-1 flex flex-col bg-[#011717] mx-4 md:mx-auto md:w-[564px]">
-          <div className="md:w-[564px] flex flex-col gap-6">
-            <h2 className="text-[#F5FFF6] text-[40px] font-bold">
+        <div className="lg:flex-1 flex flex-col bg-[#011717] mx-4 md:mx-auto md:w-[564px] py-6 lg:py-0 px-4 lg:px-0 mb-[25px] lg:mb-0">
+          <div className="md:w-[564px] flex flex-col gap-4 lg:gap-6">
+            <h2 className="text-[#F5FFF6] text-[24px] lg:text-[40px] font-bold">
               Introducing The Journal
             </h2>
-            <p className="text-[#FDFFFD] text-[14px] leading-[150%]">
+            <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
               A compilation of literary works born from years of research and
               placeholder text till our design gets a writer .Faculty of
               Environmental Science, University of Lagos. It is taught in a few
@@ -223,8 +223,15 @@ const Home = () => {
               universal standards to master the requisite skills of
               architectural design. Since its foundation...
             </p>
+            <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
+              A compilation of literary works born from years of research and
+              placeholder text till our design gets a writer .Faculty of
+              Environmental Science, University of Lagos. It is taught in a few
+              and highly elitist universities in Nigeria, hence the need to meet
+              universal standards to master the requisite skills ...
+            </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[] hover:animate-pulse">
+              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
                 get access
               </button>
             </div>
@@ -238,12 +245,12 @@ const Home = () => {
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
           <img src={Book} alt="" className="lg:hidden h-[100%] w-full" />
         </div>
-        <div className="lg:flex-1 flex flex-col bg-[#5B5756] mx-4  md:mx-auto md:w-[564px]">
+        <div className="lg:flex-1 flex flex-col bg-[#5B5756] mx-4  md:mx-auto md:w-[564px] py-6 lg:py-0 px-4 lg:px-0 mb-[25px] lg:mb-0">
           <div className="lg:w-[564px] flex flex-col gap-6">
-            <h2 className="text-[#F5FFF6] text-[40px] font-bold">
+            <h2 className="text-[#F5FFF6] text-[24px] lg:text-[40px] font-bold">
               Innovative research hubs
             </h2>
-            <p className="text-[#FDFFFD] text-[14px] leading-[150%]">
+            <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
               A compilation of literary works born from years of research and
               placeholder text till our design gets a writer .Faculty of
               Environmental Science, University of Lagos. It is taught in a few
@@ -251,8 +258,15 @@ const Home = () => {
               universal standards to master the requisite skills of
               architectural design. Since its foundation...
             </p>
+            <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
+              A compilation of literary works born from years of research and
+              placeholder text till our design gets a writer .Faculty of
+              Environmental Science, University of Lagos. It is taught in a few
+              and highly elitist universities in Nigeria, hence the need to meet
+              universal standards to master the requisite skills...
+            </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[] hover:animate-pulse">
+              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
                 Learn More
               </button>
             </div>

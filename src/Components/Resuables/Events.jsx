@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Events = () => {
   return (
-    <section className="mt-[80px] lg:mt-[80px] px-4 lg:px-0 bg-white">
-      <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[60px]">
+    <section className="mt-[64px] lg:mt-[80px] px-4 lg:px-0 bg-white">
+      <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-10 lg:mb-[60px]">
         News & events
       </h2>
       <div className="grid place-items-center">
@@ -15,7 +15,7 @@ const Events = () => {
             to="/news"
             className="hover:scale-105 transition-all ease-linear"
           >
-            <div className="h-[440px] lg:w-[548px] relative mb-4">
+            <div className="h-[200px] lg:h-[440px] lg:w-[548px] relative mb-4">
               <img
                 src={Prof}
                 alt=""
@@ -46,7 +46,7 @@ const Events = () => {
               <EastOutlinedIcon />
             </div>
           </Link>
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-6 lg:gap-[20px]">
             <EventCard />
             <EventCard />
             <EventCard />

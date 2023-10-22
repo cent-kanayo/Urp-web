@@ -4,7 +4,7 @@ import Fj from '../../assets/mainDesktop/fj.png';
 const EventCard = () => {
   return (
     <div className="lg:flex gap-[20px] max-w-[528px]">
-      <div className="relative mb-4 flex-1 lg:h-[200px] lg:w-[262px] ">
+      <div className="relative mb-4 flex-1 h-[200px] lg:w-[262px] ">
         <img src={Fj} alt="" className="block w-[100%] h-[100%] object-cover" />
       </div>
       <div className="max-w-[614px] flex-1">

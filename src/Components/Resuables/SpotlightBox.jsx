@@ -14,7 +14,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
           className="block h-[100%] w-[100%]"
         />
       </div>
-      <div className="py-[24px] lg:w-[310px] mx-auto">
+      <div className="py-[24px] lg:w-[310px] mx-auto px-4 lg:px-0">
         <h2 className="mb-4 whitespace-nowrap">{h2}</h2>
         <p className="mb-4">{p}</p>
         <div className="px-0">
@@ -22,7 +22,9 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
             to="/student-of-the-month"
             className="hover:animate-pulse flex items-center gap-x-2"
           >
-            <span className="underline underline-offset-4">{btn}</span>
+            <span className="text-[12px] lg:text-[14px] underline underline-offset-4">
+              {btn}
+            </span>
             <span>
               <EastOutlinedIcon htmlColor="#57A0A0" />
             </span>

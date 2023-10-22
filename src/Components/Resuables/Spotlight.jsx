@@ -7,7 +7,7 @@ import City from '../../assets/city.png';
 const Spotlight = () => {
   return (
     <section className="px-4 lg:px-0">
-      <h2 className="text-center text-[2.5rem] font-[600] capitalize mb-[40px]">
+      <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
         Urban Planning Hub
       </h2>
       <div className="flex flex-col md:flex-row md:justify-center flex-wrap gap-[20px]">
