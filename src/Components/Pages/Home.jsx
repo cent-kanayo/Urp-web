@@ -143,7 +143,7 @@ const Home = () => {
         </div>
       </section>
       <section className="my-[80px] py-6 lg:py-[80px]">
-        <div className="relative h-[400px] lg:h-[800px] flex items-end">
+        <div className="relative h-[400px] md:h-[600px] lg:h-[800px] flex items-end justify-center">
           <div className="hidden lg:block absolute h-[100%] left-0 lg:w-[50%] -z-10">
             <img
               src={HODLight}
@@ -167,11 +167,11 @@ const Home = () => {
             <img
               src={Hod}
               alt=""
-              className="block w-[100%] h-[100%] object-cover absolute lg:hidden"
+              className="block w-[100%] h-[100%] object-cover md:object-fill absolute lg:hidden"
             />
           </div>
-          <div className="h-[201px] lg:h-auto  lg:mx-0 max-w-[342px] lg:max-w-none mx-auto">
-            <div className="bg-[#FDFFFD] relative z-30 px-4 lg:px-10 py-3 lg:py-6 lg:absolute lg:left-[48%] mx-8 lg:top-[251px] lg:w-[540px] gap-4 lg:gap-6  flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
+          <div className="h-[201px] lg:h-auto w-full  lg:mx-0  lg:max-w-none">
+            <div className="bg-[#FDFFFD] relative z-30 px-4 lg:px-10 py-3 lg:py-6 lg:absolute lg:left-[48%] mx-4 lg:top-[251px] md:w-[540px] md:mx-auto gap-4 lg:gap-6  flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[24px] lg:text-[36px] font-bold capitalize underline underline-offset-[10px]">
                   Dr. Agunbiade
@@ -205,13 +205,13 @@ const Home = () => {
         </div>
       </section>
       <Spotlight />
-      <section className="mt-[160px] h-[404px] journal flex items-center  relative">
-        <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%]">
+      <section className="mt-[160px] h-[404px] lg:bg-[#011717] flex items-end lg:items-center  relative">
+        <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%] w-full">
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
-          <img src={Book} alt="" className="lg:hidden h-[100%]" />
+          <img src={Book} alt="" className="lg:hidden h-[100%] w-full" />
         </div>
-        <div className="flex-1 flex flex-col">
-          <div className="lg:w-[564px] flex flex-col gap-6">
+        <div className="lg:flex-1 flex flex-col bg-[#011717] mx-4 md:mx-auto md:w-[564px]">
+          <div className="md:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[40px] font-bold">
               Introducing The Journal
             </h2>
@@ -233,12 +233,12 @@ const Home = () => {
       </section>
 
       <Events />
-      <section className="mt-[80px] h-[404px] lg:bg-[#5B5756] flex items-center relative">
-        <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%]">
+      <section className="mt-[80px] h-[404px] lg:bg-[#5B5756] flex items-end lg:items-center relative">
+        <div className="absolute w-full -z-10 lg:static lg:z-10 flex-1 h-[100%]">
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />
-          <img src={Book} alt="" className="lg:hidden h-[100%]" />
+          <img src={Book} alt="" className="lg:hidden h-[100%] w-full" />
         </div>
-        <div className="flex-1 flex flex-col m-6 bg-[#5B5756]">
+        <div className="lg:flex-1 flex flex-col bg-[#5B5756] mx-4  md:mx-auto md:w-[564px]">
           <div className="lg:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[40px] font-bold">
               Innovative research hubs
