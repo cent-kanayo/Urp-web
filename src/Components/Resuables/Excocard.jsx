@@ -17,7 +17,7 @@ const Excocard = ({ image, role, name, link }) => {
             </h3>
             <span>
               <a href="#" className="block">
-                <CallOutlinedIcon />
+                <CallOutlinedIcon fontSize="small" />
               </a>
             </span>
           </div>
@@ -25,7 +25,7 @@ const Excocard = ({ image, role, name, link }) => {
             <h3 className="capitalize text-[12px]">{role}</h3>
             <span>
               <a href={link}>
-                <EmailOutlinedIcon />
+                <EmailOutlinedIcon fontSize="small" s />
               </a>
             </span>
           </div>
