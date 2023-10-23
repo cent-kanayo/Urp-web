@@ -120,7 +120,7 @@ const StudentPage = () => {
             the executives
           </h2>
         </div>
-        <div className="flex justify-center flex-wrap gap ma2-w-[1249px] mx-auto">
+        <div className="flex justify-center flex-wrap gap-[22px] lg:gap-6 max-w-[1249px] mx-auto">
           <Excocard name="John Favour" role="president" image={Fj} />
           <Excocard name="Aminu Gbenga" role="Vice President" image={John} />
           <Excocard

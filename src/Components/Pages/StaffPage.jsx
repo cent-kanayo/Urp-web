@@ -41,7 +41,7 @@ const StaffPage = () => {
             administrators
           </h2>
         </div>
-        <div className="flex justify-center flex-wrap gap-5 max-w-[1249px] mx-auto">
+        <div className="flex justify-center flex-wrap gap-[22px]  lg:gap-6 max-w-[1249px] mx-auto">
           <Excocard
             name="Dr. M. E. AGUNBIADE"
             role="Associate Professor and HOD"
