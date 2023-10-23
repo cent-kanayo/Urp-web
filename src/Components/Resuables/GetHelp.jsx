@@ -2,12 +2,12 @@ const GetHelp = ({ text1, text2, text3, text4, text5, h2, p }) => {
   return (
     <>
       <div className="mb-[60px] max-w-[935px] mx-auto">
-        <h2 className="text-black font-medium text-center text-[2rem] mb-3">
+        <h2 className="text-black font-bold text-center text-[24px] lg:text-[2rem] mb-3">
           {h2}
         </h2>
-        <p className="text-black text-center text-[1rem]">{p}</p>
+        <p className="text-black text-center text-[12px] lg:text-[1rem]">{p}</p>
       </div>
-      <div className="max-w-[885px] mx-auto flex flex-wrap gap-x-5 gap-y-6">
+      <div className="max-w-[342px] lg:max-w-[885px] mx-auto flex flex-wrap gap-x-5 gap-y-6">
         <div className="help-box border-1">
           <p>{text1}</p>
         </div>

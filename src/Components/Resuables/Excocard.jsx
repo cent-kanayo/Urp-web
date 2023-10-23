@@ -10,9 +10,11 @@ const Excocard = ({ image, role, name, link }) => {
           alt="Executives"
           className="absolute w-[100%] h-[100%] object-cover"
         />
-        <header className="flex flex-col p-5">
+        <header className="flex flex-col p-2 lg:p-5">
           <div className="flex justify-between items-center w-[100%]">
-            <h3 className="capitalize font-medium text-[1rem]">{name}</h3>
+            <h3 className="capitalize font-medium text-[12px] lg:text-[1rem]">
+              {name}
+            </h3>
             <span>
               <a href="#" className="block">
                 <CallOutlinedIcon />
@@ -20,7 +22,7 @@ const Excocard = ({ image, role, name, link }) => {
             </span>
           </div>
           <div className="flex justify-between items-center">
-            <h3 className="capitalize">{role}</h3>
+            <h3 className="capitalize text-[12px]">{role}</h3>
             <span>
               <a href={link}>
                 <EmailOutlinedIcon />
@@ -38,10 +40,12 @@ const Excocard = ({ image, role, name, link }) => {
         alt="Executives"
         className="absolute w-[100%] h-[100%]"
       />
-      <header className="flex flex-col p-5">
-        <div className="flex flex-col justify-center items-center w-[100%]">
-          <h3 className="capitalize font-medium text-[1rem]">{name}</h3>
-          <h3 className="capitalize">{role}</h3>
+      <header className="flex flex-col p-2 lg:p-5">
+        <div className="flex flex-col justify-center items-start lg:items-center w-[100%]">
+          <h3 className="capitalize font-medium text-[12px] lg:text-[1rem]">
+            {name}
+          </h3>
+          <h3 className="capitalize text-[12px]">{role}</h3>
         </div>
       </header>
     </Link>
