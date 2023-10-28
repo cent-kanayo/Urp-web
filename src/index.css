@@ -97,6 +97,11 @@ body {
 .footer {
   height: 534px;
 }
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+  }
+}
 
 .login-bg {
   width: 100%;
