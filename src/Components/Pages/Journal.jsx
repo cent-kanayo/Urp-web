@@ -21,7 +21,7 @@ const Journal = () => {
     <main>
       <section className="flex mb-[80px] journal-bg">
         <div className="journal-welcome flex-1">
-          <h1 className="text-[2.5rem] font-bold text-center text-white">
+          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
             The URP Journal
           </h1>
         </div>
@@ -121,7 +121,7 @@ const Journal = () => {
           </div>
         </section>
 
-        <section className="max-w-[800px] px-6">
+        <section className="max-w-[800px] px-6 lg:px-0">
           <h2 className="text-center text-[24px] lg:text-[32px] font-bold mb-6">
             About The Journal
           </h2>
@@ -159,27 +159,27 @@ const Journal = () => {
             </p>
           </div>
           <div className="h-[200px] lg:h-[400px] bg-[#CECDCC] my-[64px] lg:my-[80px]"></div>
-          <div className="flex items-center gap-6 flex-wrap mt-[80px]">
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="max-w-[228px] mx-auto lg:max-w-none flex items-center gap-3 lg:gap-6 flex-wrap mt-[80px] justify-center lg:justify-start">
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
-            <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-              <p className="text-[#57A0A0] text-[20px]">Tags</p>
+            <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+              <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
             </div>
           </div>
         </section>

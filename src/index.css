@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   font-family: 'Inter', sans-serif;
@@ -562,6 +563,18 @@ RS Page
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .journal-bg {
+    background: url('./assets/mainMobile/journal.png'), lightgray 50%;
+    height: 320px;
+  }
+  .journal-welcome {
+    max-width: 270px;
+    height: 60px;
+    padding: 12px 16px;
+  }
 }
 
 .honours-bg {

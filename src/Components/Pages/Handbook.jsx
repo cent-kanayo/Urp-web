@@ -21,13 +21,13 @@ const Handbook = () => {
     <main>
       <section className="flex mb-[80px] journal-bg">
         <div className="journal-welcome flex-1">
-          <h1 className="text-[2.5rem] font-bold text-center text-white">
+          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
             The Handbook
           </h1>
         </div>
       </section>
-      <div className="flex gap-[80px] xl:pl-[7%]">
-        <section className="max-w-[358px]">
+      <div className="flex flex-col lg:flex-row gap-[80px] xl:pl-[7%]">
+        <section className="max-w-[320px] lg:max-w-[358px] mx-auto lg:mx-0">
           <div className="bg-[#934B00] p-10 mb-10">
             <div className=" flex justify-between items-start mb-[32px]">
               <p className="text-[#FDFFFD]">2023</p>
@@ -52,11 +52,11 @@ const Handbook = () => {
           </div>
         </section>
 
-        <section className="max-w-[800px]">
-          <h2 className="text-center text-[32px] font-[600] mb-6">
+        <section className="max-w-[800px] px-6 lg:px-0">
+          <h2 className="text-center text-[24px] lg:text-[40px] font-[600] mb-6">
             Short Introduction
           </h2>
-          <div className="text-[20px] leading-[150%] flex flex-col">
+          <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
             <p className="mb-12">
               Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
               trailblazing rockstar of academia, with revolutionary ideas that
