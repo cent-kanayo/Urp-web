@@ -4,12 +4,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import GetHelp from '../Resuables/GetHelp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
-import rsbg from '../../assets/mainDesktop/rsbg.png';
-import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Pen from '../../assets/mainDesktop/pen.png';
 import { useEffect } from 'react';
 
@@ -18,7 +12,7 @@ const PlannersPen = () => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <section className="mb-[64px] lg:mb-[72px] h-[505px] lg:h-[720px] bg-[#9D9E9D] py-[106px] lg:py-[172px] flex items-end justify-start ">
         <div className="max-w-[1212px] mx-auto flex-1 px-[52px] lg:px-0">
           <div className="flex flex-col text-white">
