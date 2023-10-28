@@ -26,19 +26,19 @@ const Journal = () => {
           </h1>
         </div>
       </section>
-      <div className="flex gap-[80px] xl:pl-[7%]">
-        <section className="max-w-[358px]">
-          <div className="bg-[#934B00] p-10 mb-10">
+      <div className="flex flex-col lg:flex-row gap-[80px] xl:pl-[7%]">
+        <section className="max-w-[320px] lg:max-w-[358px] mx-auto lg:mx-0">
+          <div className="bg-[#934B00] py-10 px-6 lg:px-10 mb-10">
             <div className=" flex justify-between items-start mb-[32px]">
               <p className="text-[#FDFFFD]">2023</p>
               <img src={Alarm} alt="" />
             </div>
             <div>
-              <h2 className="text-[#FDFFFD] text-[2.5rem] font-bold mb-[141px]">
+              <h2 className="text-[#FDFFFD] text-[32px] lg:text-[2.5rem] font-bold mb-[106px] lg:mb-[141px]">
                 The <br /> Journal
               </h2>
-              <p className="text-[#FDFFFD] text-[16px]">
-                The Department of Urban and Regiional Planning
+              <p className="text-[#FDFFFD] text-[14px] lg:text-[16px]">
+                The Department of Urban and Regional Planning
               </p>
             </div>
           </div>
@@ -121,11 +121,11 @@ const Journal = () => {
           </div>
         </section>
 
-        <section className="max-w-[800px]">
-          <h2 className="text-center text-[32px] font-[600] mb-6">
+        <section className="max-w-[800px] px-6">
+          <h2 className="text-center text-[24px] lg:text-[32px] font-bold mb-6">
             About The Journal
           </h2>
-          <div className="text-[20px] leading-[150%] flex flex-col">
+          <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
             <p className="mb-6">
               Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
               trailblazing rockstar of academia, with revolutionary ideas that
@@ -158,7 +158,7 @@ const Journal = () => {
               in traditionally male-dominated domains.
             </p>
           </div>
-          <div className="h-[400px] bg-[#CECDCC] my-[80px]"></div>
+          <div className="h-[200px] lg:h-[400px] bg-[#CECDCC] my-[64px] lg:my-[80px]"></div>
           <div className="flex items-center gap-6 flex-wrap mt-[80px]">
             <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
               <p className="text-[#57A0A0] text-[20px]">Tags</p>

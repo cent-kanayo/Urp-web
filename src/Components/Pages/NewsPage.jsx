@@ -29,21 +29,19 @@ const NewsPage = () => {
           <img
             src={rsbg}
             alt=""
-            className="w-full absolute -z-10 object-cover"
+            className="w-full h-full absolute -z-10 object-cover"
           />
-          <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[147px]">
-            <div className="flex items-center space-x-2">
+          <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[67px] lg:py-[147px] px-6 lg:px-0">
+            <div className="flex items-center space-x-2 mb-4 lg:mb-6">
               <article className="w-[24px] h-[2px] bg-white"></article>
-              <article>
-                <p className="mb-6">August 8, 2023</p>
-              </article>
+              <p className="text-[14px]">August 8, 2023</p>
             </div>
             <div className="max-w-[598px]">
               <div>
-                <h1 className="text-[2.5rem] font-bold mb-4 leading-[150%]">
+                <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
                   “Grand ideas are good, but people need to survive”
                 </h1>
-                <p className="text-[20px] max-w-[491px]">
+                <p className="text-[12px] lg:text-[20px] max-w-[491px]">
                   Professor Lawanson Calls for Human-Centred Urban Development
                   Approach
                 </p>
@@ -52,19 +50,32 @@ const NewsPage = () => {
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
-        <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Cluster Name</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[30px] lg:px-0">
+        <div className="flex items-center space-x-2 text-[14px] lg:text-[20px] text-[#5B5756]">
+          <span>5 min Read</span>
+          <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
+          <span>1st Edition</span>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
+          <span className="lg:hidden">
+            <FacebookIcon htmlColor="#090302" fontSize="small" />
+          </span>
+          <span className="lg:hidden">
+            <a
+              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
+              target="_blank"
+              aria-label="Link to LinkedIn"
+            >
+              <LinkedInIcon
+                fontSize="small"
+                className="text-[#090302] hover:text-[#192C69]"
+              />
+            </a>
+          </span>
+          <span className="hidden lg:block">
             <FacebookIcon htmlColor="#090302" fontSize="medium" />
           </span>
-          <span>
+          <span className="hidden lg:block">
             <a
               href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
               target="_blank"
@@ -78,11 +89,11 @@ const NewsPage = () => {
           </span>
         </div>
       </section>
-      <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[500] mb-6">
-          The Headline Of Alumni News
+      <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-6">
+          A Treatise on the Importance of Urban Planning In Modern Day
         </h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
           <p>
             Professor Lawanson Calls for Human-Centred Urban Development
             Approach
@@ -183,14 +194,14 @@ const NewsPage = () => {
         </div>
       </section>
 
-      <section className="h-[896px] bg-[#1B1B1B] py-[52px] my-[80px]">
+      <section className="lg:h-[896px] bg-[#1B1B1B] py-[24px] my-[80px] px-[30px] lg:px-0">
         <div>
-          <h3 className="text-center text-[#FDFFFD] text-[2.5rem] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
             Other News Articles
           </h3>
           <div className="max-w-[1112px] mx-auto">
             <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[358px] h-[484px] bg-[#FDFFFD] rounded-[2px] p-4">
+              <div className="hidden lg:block relative w-[358px] h-[484px] bg-[#FDFFFD] rounded-[2px] p-4">
                 <div>
                   <p className="text-[#934B00] text-[14px] mb-2">June, 2020</p>
                   <h2 className="text-[#1B1B1B] text-[24px] font-medium mb-2">
@@ -205,7 +216,7 @@ const NewsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative w-[358px] h-[484px] bg-[#FDFFFD] rounded-[2px] p-4">
+              <div className="hidden lg:block relative w-[358px] h-[484px] bg-[#FDFFFD] rounded-[2px] p-4">
                 <div>
                   <p className="text-[#934B00] text-[14px] mb-2">June, 2020</p>
                   <h2 className="text-[#1B1B1B] text-[24px] font-medium mb-2">
