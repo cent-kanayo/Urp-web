@@ -325,9 +325,17 @@ const Agunbiade = () => {
       </section>
       <section className="mb-[64px] lg:mb-[80px] bg-white lg:py-[104px] lg:h-[700px] px-6 lg:px-0">
         <div className="max-w-[1110px] mx-auto flex flex-col lg:flex-row justify-between h-[400px]">
-          <div className="lg:max-w-[540px] info-box">
+          <div className="lg:hidden lg:max-w-[540px] info-box">
             <h3
               className="text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
+              role="button"
+              onClick={() => handleClick('ach')}
+              ref={ref1}
+            >
+              Achievements/Accolades/ <br /> Awards/Honours
+            </h3>
+            <h3
+              className="hidden lg:block text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
               role="button"
               onClick={() => handleClick('ach')}
               ref={ref1}
@@ -421,7 +429,7 @@ const Agunbiade = () => {
                 <span>
                   <PhoneOutlinedIcon htmlColor="black" />
                 </span>
-                <span className="text-[12px] lg:text-[14px]">
+                <span className="text-[12px] lg:text-[14px] whitespace-nowrap">
                   Call Dr. Agunbiade
                 </span>
               </div>
@@ -432,7 +440,7 @@ const Agunbiade = () => {
                 <span className="hidden lg:block">
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
-                <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse">
+                <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
                   <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
