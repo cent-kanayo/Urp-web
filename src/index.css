@@ -504,11 +504,7 @@ RS Page
   width: 100%;
   position: relative;
 }
-@media (max-width: 768px) {
-  .rs-bg {
-    height: 320px;
-  }
-}
+
 .pen-box {
   border-radius: 4px;
   background: #fff;
@@ -627,6 +623,14 @@ RS Page
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .rs-bg,
+  .faq-bg,
+  .contact-bg {
+    height: 320px;
+  }
+}
+
 .comment {
   border-radius: 2px;
   background: #fdfffd;

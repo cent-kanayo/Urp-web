@@ -1,8 +1,8 @@
 const Comment = () => {
   return (
     <section className="bg-white mb-20">
-      <div className="max-w-[960px] mx-auto py-10 px-20 comment">
-        <h2 className="text-[2rem] text-[#011717] font-medium mb-4">
+      <div className="max-w-[960px] mx-auto  lg:py-10 px-6 lg:px-20 comment">
+        <h2 className="text-[24px] lg:text-[2rem] text-[#011717] font-bold mb-4">
           Leave a comment
         </h2>
         <p className="text-[#090302] text-[14px] mb-6">

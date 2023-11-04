@@ -16,6 +16,7 @@ import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import rsbg from '../../assets/mainDesktop/rsbg.png';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import MobileBg from '../../assets/mainMobile/research.png';
 
 const ResearchCluster = () => {
   return (
@@ -23,23 +24,26 @@ const ResearchCluster = () => {
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
           <img
+            src={MobileBg}
+            alt=""
+            className="w-full h-[320px] lg:hidden absolute -z-10"
+          />
+          <img
             src={rsbg}
             alt=""
-            className="w-full h-[320px] lg:h-[600px] absolute -z-10"
+            className="hidden w-full lg:block h-[600px] absolute -z-10"
           />
-          <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[147px]">
-            <div className="flex items-center space-x-2">
+          <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[67px] lg:py-[147px] px-6 lg:px-0">
+            <div className="flex items-center space-x-2 mb-4 lg:mb-6">
               <article className="w-[24px] h-[2px] bg-white"></article>
-              <article>
-                <p className="mb-6">August 8, 2023</p>
-              </article>
+              <p className="text-[14px]">August 8, 2023</p>
             </div>
             <div className="max-w-[598px]">
               <div>
                 <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
                   A Treatise on the Importance of Urban Planning In Modern Day
                 </h1>
-                <p className="text-[20px] max-w-[491px]">
+                <p className="text-[12px] lg:text-[20px] max-w-[491px]">
                   Launch of new bureau advances U.S. global health mission.
                 </p>
               </div>
@@ -47,11 +51,13 @@ const ResearchCluster = () => {
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Cluster Name</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] lg:text-[20px]">
+            Crest Bankole-Radcliffe
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -73,11 +79,11 @@ const ResearchCluster = () => {
           </span>
         </div>
       </section>
-      <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[500] mb-6">
+      <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           A Treatise on the Importance of Urban Planning In Modern Day
         </h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
           <p>
             Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
             trailblazing rockstar of academia, with revolutionary ideas that
@@ -95,27 +101,27 @@ const ResearchCluster = () => {
             planning.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-6 flex-wrap mt-[80px]">
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+        <div className="max-w-[228px] mx-auto lg:max-w-none flex items-center gap-3 lg:gap-6 flex-wrap mt-[80px] justify-center lg:justify-start">
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
-          <div className="w-[123px] h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[20px]">Tags</p>
+          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
+            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
           </div>
         </div>
       </section>
@@ -127,50 +133,70 @@ const ResearchCluster = () => {
           <div className="max-w-[548px] flex-1">
             <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
@@ -179,50 +205,70 @@ const ResearchCluster = () => {
           <div className="max-w-[548px] flex-1">
             <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
             <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
               <div>
-                <p>Dr. O Olubode</p>
-                <p>Head of Department</p>
+                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
+                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:hidden">
+                <PhoneOutlinedIcon fontSize="small" />
+                <EmailIcon ontSize="small" />
+              </div>
+              <div className="hidden lg:flex flex-col gap-2">
                 <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
@@ -245,7 +291,7 @@ const ResearchCluster = () => {
                 />
                 <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px]">May 2015</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
                     <a
                       href="https://www.ceeol.com/search/article-detail?id=330196"
                       target="_blank"
@@ -276,7 +322,7 @@ const ResearchCluster = () => {
                 />
                 <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px]">2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
                     <a
                       href="https://ir.unilag.edu.ng/handle/123456789/7764"
                       target="_blank"
@@ -307,7 +353,7 @@ const ResearchCluster = () => {
                 />
                 <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px]">2009</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
                     <a
                       href="https://doi.org/10.1080/23792949.2017.1399804"
                       target="_blank"
@@ -338,7 +384,7 @@ const ResearchCluster = () => {
                 />
                 <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px]">December 1998</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px] leading-[150%]">
+                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px] leading-[150%]">
                     <a
                       target="_blank"
                       href="https://doi.org/10.1080/23792949.2017.1399804"
