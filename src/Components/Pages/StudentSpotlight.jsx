@@ -54,7 +54,7 @@ const StudentSpotlight = () => {
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
           <h5 className="mb-4 text-[14px] lg:text-[20px]">
             Crest Bankole-Radcliffe
@@ -86,7 +86,7 @@ const StudentSpotlight = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Student Of the Month
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-[35px] lg:px-0">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
             trailblazing rockstar of academia, with revolutionary ideas that

@@ -4,15 +4,9 @@ import RightIcon from '../../assets/right.png';
 
 import Contact from '../Resuables/Contact';
 
-import GetHelp from '../Resuables/GetHelp';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import rsbg from '../../assets/mainDesktop/news.png';
-import BookCover from '../../assets/mainDesktop/bookCover.png';
 
 import NewsCover from '../../assets/mainDesktop/newsflash.png';
 import Women from '../../assets/mainDesktop/women.png';
