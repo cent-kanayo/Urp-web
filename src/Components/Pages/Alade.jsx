@@ -57,35 +57,37 @@ const Alade = () => {
   }, []);
   return (
     <main>
-      <section className="h-[600px] flex mb-[80px]">
+      <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1 bg-[#9B9FAB]">
           {/* <img
             src={Lawanson}
             alt="Our HOD"
-            className="h-[600px] w-[100%] object-cover"
+           className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           /> */}
         </div>
-        <div className="flex-1 bg-[#1C2954] flex justify-center items-center">
-          <div className="w-[525px] mx-auto">
+        <div className="flex-1 bg-[#1C2954] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+          <div className="lg:w-[525px] mx-auto">
             <div className="flex">
-              <img src={LQ} alt="" />
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
-            <p className="text-white text-[20px] leading-[150%] my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Adewale Alade is recognized as a quiet yet visionary mentor and a
               dedicated team player who consistently contributes to the success
               and growth of those around him
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Dr. Adewale ALADE</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+            Dr. Adewale ALADE
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -108,8 +110,10 @@ const Alade = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[600] mb-6">Bio</h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          Bio
+        </h3>
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Dr. Adewale Alade joined the Urban and Regional Planning Department,
             University of Lagos in 2004 and rose to be an Associate Professor in
@@ -150,22 +154,24 @@ const Alade = () => {
           </p>
         </div>
       </section>
-      <section className="h-[680px] bg-[#FAFAFA] py-[52px] my-[80px]">
+      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
-          <h3 className="text-center text-[#011717] text-[32px] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
           </h3>
           <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+            <div className="flex justify-center items-center flex-wrap gap-x-4 gap-y-6 lg:gap-x-[24px]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">June 2022</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    June 2022
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://www.routledge.com/Promoting-Statistical-Practice-and-Collaboration-in-Developing-Countries/Awe-Love-Vance/p/book/9781032195551"
                       target="_blank"
@@ -175,8 +181,8 @@ const Alade = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://www.routledge.com/Promoting-Statistical-Practice-and-Collaboration-in-Developing-Countries/Awe-Love-Vance/p/book/9781032195551"
@@ -188,15 +194,17 @@ const Alade = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">February 2012</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    February 2012
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://d1wqtxts1xzle7.cloudfront.net/84842285/08ea97ec612421c315d6afe4ce42cf190ba1-libre.pdf?1650880609=&response-content-disposition=inline%3B+filename%3DVision_20_2020_and_the_Challenges_of_Inf.pdf&Expires=1695122670&Signature=OIqmQjmVaw5JyICxNh~rq9eEHQq8qx2fulbk5jC8e3Ok9OV~rw6F9ERRUxrD~tQ3KWkhow1GNW3MaqADmhelx476V8Wl9I~SPp7ebw~UDCxspfnFYB947yDinITEfqUSYX4FEax05NZIadizo0vPT9DrWtN5YWfdEG16gt8Pgyi2Xc2dwUBKq7LxtEs5cqoim5EbVKba5kCOwgfU5ZOyDfscgLHGqNK0qTC-xTXJ1fB8APVtMR7Gj-U5Z8Ct8MLdUmvlSnXsR4QcazV-wnqyxd~sxYRXUB1cS69jrS0RJOBCmBnJGBPdP7RDK9LVBV3KWxOi0APlt2qozFBsNXouNQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
                       target="_blank"
@@ -206,8 +214,8 @@ const Alade = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://d1wqtxts1xzle7.cloudfront.net/84842285/08ea97ec612421c315d6afe4ce42cf190ba1-libre.pdf?1650880609=&response-content-disposition=inline%3B+filename%3DVision_20_2020_and_the_Challenges_of_Inf.pdf&Expires=1695122670&Signature=OIqmQjmVaw5JyICxNh~rq9eEHQq8qx2fulbk5jC8e3Ok9OV~rw6F9ERRUxrD~tQ3KWkhow1GNW3MaqADmhelx476V8Wl9I~SPp7ebw~UDCxspfnFYB947yDinITEfqUSYX4FEax05NZIadizo0vPT9DrWtN5YWfdEG16gt8Pgyi2Xc2dwUBKq7LxtEs5cqoim5EbVKba5kCOwgfU5ZOyDfscgLHGqNK0qTC-xTXJ1fB8APVtMR7Gj-U5Z8Ct8MLdUmvlSnXsR4QcazV-wnqyxd~sxYRXUB1cS69jrS0RJOBCmBnJGBPdP7RDK9LVBV3KWxOi0APlt2qozFBsNXouNQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
@@ -219,15 +227,17 @@ const Alade = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">May 2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    May 2011
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://conference.corp.at/archive/CORP2011_233.pdf"
                       target="_blank"
@@ -237,8 +247,8 @@ const Alade = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://conference.corp.at/archive/CORP2011_233.pdf"
@@ -250,15 +260,15 @@ const Alade = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[15px] leading-[150%]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2011</p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       target="_blank"
                       href="https://d1wqtxts1xzle7.cloudfront.net/90592670/CORP2011_42-libre.pdf?1662162072=&response-content-disposition=inline%3B+filename%3DLocational_Analysis_of_Telecommunication.pdf&Expires=1695122868&Signature=aK7N1mKsReRWpVc91Tcd~cZLclQoHNN0gjZxkRwI7tBIG9XqWuJuiYGR7GGFMRRwhJlc3RTLj9IvOJ~uWWPe9GR9RN8cRGxM~C-sOaXgnVTQm6nHO3LfmUnC9WpIqdn8IU7tZW0TQ-2NDED5gYcW78sfI4bBxsGMNUaCs2Q4Dn-YvoHIVUkYycBRpZiA4D6EM5IWDHkExEmV2hN2HWHLKtkJz5IhqQrT59C3moc-WOyeoRUSaV1xTovK4JOLDzsizYNjmGAZogDbU1Vo1Z6m7n~Yt1BSzWyGia2E4A~x-5DjBFlsqXoS6pMOrQ6y4i6DFK2eTsbLF5Lb4EVSGVBS1w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
@@ -268,8 +278,8 @@ const Alade = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://d1wqtxts1xzle7.cloudfront.net/90592670/CORP2011_42-libre.pdf?1662162072=&response-content-disposition=inline%3B+filename%3DLocational_Analysis_of_Telecommunication.pdf&Expires=1695122868&Signature=aK7N1mKsReRWpVc91Tcd~cZLclQoHNN0gjZxkRwI7tBIG9XqWuJuiYGR7GGFMRRwhJlc3RTLj9IvOJ~uWWPe9GR9RN8cRGxM~C-sOaXgnVTQm6nHO3LfmUnC9WpIqdn8IU7tZW0TQ-2NDED5gYcW78sfI4bBxsGMNUaCs2Q4Dn-YvoHIVUkYycBRpZiA4D6EM5IWDHkExEmV2hN2HWHLKtkJz5IhqQrT59C3moc-WOyeoRUSaV1xTovK4JOLDzsizYNjmGAZogDbU1Vo1Z6m7n~Yt1BSzWyGia2E4A~x-5DjBFlsqXoS6pMOrQ6y4i6DFK2eTsbLF5Lb4EVSGVBS1w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
@@ -282,7 +292,7 @@ const Alade = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[24px]">
+            <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
                 <a
                   href="https://orcid.org/0000-0002-1718-3574"
@@ -314,18 +324,25 @@ const Alade = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] bg-white py-[104px] h-[700px]">
-        <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
+      <section className="mb-[64px] lg:mb-[80px] bg-white lg:py-[104px] lg:h-[700px] px-6 lg:px-0">
+        <div className="max-w-[1110px] mx-auto flex flex-col lg:flex-row justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
+              className="text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
+              role="button"
+              onClick={() => handleClick('ach')}
+              ref={ref1}
+            >
+              Achievements/Accolades/ <br /> Awards/Honours
+            </h3>
+            <h3
+              className="hidden lg:block text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
               role="button"
               onClick={() => handleClick('ach')}
               ref={ref1}
             >
               Achievements/Accolades/Awards/ Honours
             </h3>
-
             <h3
               className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity-75"
               role="button"
@@ -602,27 +619,32 @@ const Alade = () => {
         </div>
       </section>
       <section className="my-[80px]">
-        <div className="bg-[#FAFAFA] py-20 h-[346px] flex justify-center">
-          <div className="text-center">
-            <h3 className="text-[#1B1B1B] font-bold text-[40px]">
+        <div className="bg-[#FAFAFA] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
+          <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
+            <h3 className="text-[#1B1B1B] font-bold text-[24px] lg:text-[40px]">
               Connect Now
             </h3>
-            <p className="text-[14px] text-[#1B1B1B] mb-[60px]">
+            <p className="text-[12px] lg:text-[14px] text-[#1B1B1B] mb-10 lg:mb-[60px]">
               Have questions or need assistance? Reach out to our lecturer below
             </p>
-            <div className="flex gap-x-6 justify-center">
+            <div className="flex gap-x-2 lg:gap-x-6 justify-center">
               <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
                 <span>
                   <PhoneOutlinedIcon htmlColor="black" />
                 </span>
-                <span className="text-[14px]">Call Professor Lawanson</span>
+                <span className="text-[12px] lg:text-[14px] whitespace-nowrap">
+                  Call Dr. Adewale
+                </span>
               </div>
-              <div className="bg-[#1B1B1B] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
+              <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
+                <span className="lg:hidden">
+                  <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />
+                </span>
+                <span className="hidden lg:block">
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
-                <span className="text-[#FDFFFD] text-[14px] underline hover:animate-pulse">
-                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
+                <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
+                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>
