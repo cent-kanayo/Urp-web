@@ -9,6 +9,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import Oduwaye from '../../assets/lecturers/oduwaye.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
@@ -52,35 +58,37 @@ const Leke = () => {
   }, []);
   return (
     <main>
-      <section className="h-[600px] flex mb-[80px]">
+      <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
             src={Oduwaye}
             alt="Our HOD"
-            className="h-[600px] w-[100%] object-cover"
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#141A2D] flex justify-center items-center">
-          <div className="w-[525px] mx-auto">
+        <div className="flex-1 bg-[#192C69]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+          <div className="lg:w-[525px] mx-auto">
             <div className="flex">
-              <img src={LQ} alt="" />
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
-            <p className="text-white text-[20px] leading-[150%] my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Professor Leke Oduwaye is well-known for his deep appreciation of
               knowledge sharing and his unwavering commitment to fostering an
               environment of mutual respect among colleagues and peers
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Professor Leke ODUWAYE</h5>
+          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+            Professor Leke ODUWAYE
+          </h5>
           <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -90,7 +98,7 @@ const Leke = () => {
           </span>
           <span>
             <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
+              href="https://www.linkedin.com/in/leke-oduwaye-a737a11aa/"
               target="_blank"
               aria-label="Link to LinkedIn"
             >
@@ -103,8 +111,10 @@ const Leke = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[600] mb-6">Bio</h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          Bio
+        </h3>
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Professor Leke Oduwaye is a Town Planner, an Architect, former Head
             of Department and former Dean of the Department of Urban and
@@ -149,22 +159,24 @@ const Leke = () => {
           </p>
         </div>
       </section>
-      <section className="h-[680px] bg-[#FAFAFA] py-[52px] my-[80px]">
+      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
-          <h3 className="text-center text-[#011717] text-[32px] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
           </h3>
           <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+            <div className="flex justify-center items-center flex-wrap gap-x-4 gap-y-6 lg:gap-x-[24px]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">May 2015</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    May 2015
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://www.ceeol.com/search/article-detail?id=330196"
                       target="_blank"
@@ -174,11 +186,11 @@ const Leke = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
+                        href="https://www.ceeol.com/search/article-detail?id=330196"
                         target="_blank"
                       >
                         View Publication
@@ -187,15 +199,15 @@ const Leke = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2011</p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://ir.unilag.edu.ng/handle/123456789/7764"
                       target="_blank"
@@ -205,11 +217,11 @@ const Leke = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
+                        href="https://ir.unilag.edu.ng/handle/123456789/7764"
                         target="_blank"
                       >
                         View Publication
@@ -218,15 +230,15 @@ const Leke = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2009</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2009</p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       href="https://doi.org/10.1080/23792949.2017.1399804"
                       target="_blank"
@@ -236,8 +248,8 @@ const Leke = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://doi.org/10.1080/23792949.2017.1399804"
@@ -249,15 +261,17 @@ const Leke = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">December 1998</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px] leading-[150%]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    December 1998
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
                     <a
                       target="_blank"
                       href="https://doi.org/10.1080/23792949.2017.1399804"
@@ -266,8 +280,8 @@ const Leke = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://doi.org/10.1080/23792949.2017.1399804"
@@ -280,10 +294,10 @@ const Leke = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[24px]">
+            <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
                 <a
-                  href="https://scholar.google.com/citations?user=Z2meq_cAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?hl=en&user=JHyX2KMAAAAJ"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -292,7 +306,7 @@ const Leke = () => {
               </p>
               <p className="mb-4">
                 <a
-                  href="https://www.researchgate.net/profile/Muyiwa-Agunbiade"
+                  href="https://www.researchgate.net/profile/Leke-Oduwaye"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -303,7 +317,7 @@ const Leke = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] bg-white py-[104px] h-[700px]">
+      <section className="my-[80px] bg-white py-[104px] h-[700px] hidden lg:block">
         <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
@@ -335,91 +349,39 @@ const Leke = () => {
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
             <article className="hidden" ref={refB1}>
               <div className="mb-10">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  2010 - 2012
+                </p>
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Distinguished Alumnus Award, Faculty of Environmental Design
-                  and Management
+                  Australian Postgraduate Awards
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  Industry
+                </p>
+              </div>
+              <div className="mb-10">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p>
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Overall Best graduating Student, Urban and Regional Planning
+                  Department,
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
               <div className="mb-10">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p>
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Deserving Alumnus Award, Faculty of Environmental Design and
-                  Management
+                  Most consistent student from Part IV to V, Faculty of
+                  Environmental Design and Management
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Exemplary Leadership Award, Department of Urban and Regional
-                  Planning
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Environmental Planning Association Award of Excellence
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Obafemi Awolowo University, Ile Ife.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Excellence Award
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Nigerian Institute of Town Planners, Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Award for Development of Town Planning
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Nigerian Institute of Town Planners, Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Distinguished Member Award
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Nigerian Institute of Town Planners, Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Best Researcher Award
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Faculty of Environmental Sciences, University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  University of Lagos Central Research Grant
-                </h4>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Association of African Planning Schools Grant.
-                </h4>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  African Urban Research Initiative/Cities Alliance Grant.
-                </h4>
-              </div>
-              <div className="mb-10">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  United Nations - Habitat Grant.
-                </h4>
               </div>
             </article>
             <article className="hidden" ref={refB2}>
@@ -439,28 +401,94 @@ const Leke = () => {
           </div>
         </div>
       </section>
+      <section className="lg:hidden px-6 lg:px-0">
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+              >
+                Achievements/Accolades/Awards/ Honours
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref2}
+              >
+                Research Interests
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref3}
+              >
+                Extracurricular Activities
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </section>
       <section className="my-[80px]">
-        <div className="bg-[#FAFAFA] py-20 h-[346px] flex justify-center">
-          <div className="text-center">
-            <h3 className="text-[#1B1B1B] font-bold text-[40px]">
+        <div className="bg-[#FAFAFA] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
+          <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
+            <h3 className="text-[#1B1B1B] font-bold text-[24px] lg:text-[40px]">
               Connect Now
             </h3>
-            <p className="text-[14px] text-[#1B1B1B] mb-[60px]">
+            <p className="text-[12px] lg:text-[14px] text-[#1B1B1B] mb-10 lg:mb-[60px]">
               Have questions or need assistance? Reach out to our lecturer below
             </p>
-            <div className="flex gap-x-6 justify-center">
-              <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
-                  <PhoneOutlinedIcon htmlColor="black" />
+            <div className="flex gap-x-2 lg:gap-x-6 justify-center">
+              <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
+                <span className="lg:hidden">
+                  <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />
                 </span>
-                <span className="text-[14px]">Call Professor Oduwaye</span>
-              </div>
-              <div className="bg-[#1B1B1B] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
+                <span className="hidden lg:block">
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
-                <span className="text-[#FDFFFD] text-[14px] underline hover:animate-pulse">
-                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
+                <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
+                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>

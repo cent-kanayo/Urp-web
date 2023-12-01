@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import UrpLogo from '../Resuables/UrpLogo';
 
 const Footer = () => {
@@ -15,11 +16,36 @@ const Footer = () => {
                   Menu
                 </h3>
                 <ul className="text-[12px] lg:text-[14px] font-[300] text-[#FDFFFD] flex flex-col gap-[8px]">
-                  <li>Home</li>
-                  <li>about</li>
-                  <li>Academics</li>
-                  <li>research</li>
-                  <li>contact</li>
+                  <li className="hover:underline">
+                    <Link onClick={() => window.scrollTo({ top: 0 })} to="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link
+                      to="/about"
+                      onClick={() => window.scrollTo({ top: 0 })}
+                    >
+                      about
+                    </Link>
+                  </li>
+                  <li className="hover:underline">Academics</li>
+                  <li className="hover:underline">
+                    <Link
+                      to="/research-cluster"
+                      onClick={() => window.scrollTo({ top: 0 })}
+                    >
+                      research
+                    </Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link
+                      to="/contact"
+                      onClick={() => window.scrollTo({ top: 0 })}
+                    >
+                      contact
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="capitalize">

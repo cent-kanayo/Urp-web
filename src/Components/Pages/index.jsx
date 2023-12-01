@@ -32,6 +32,7 @@ import Faq from './Faq';
 import Contact from './Contact';
 import It from './It';
 import Gallery from './Gallery';
+import Taofik from './Taofik';
 export {
   Home,
   StudentPage,
@@ -52,6 +53,7 @@ export {
   Kunle,
   Yemi,
   Laja,
+  Taofik,
   About,
   ResearchCluster,
   StudentSpotlight,

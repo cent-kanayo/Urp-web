@@ -9,6 +9,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import Ilechukwu from '../../assets/lecturers/ilechukwu.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
@@ -57,34 +63,36 @@ const Victor = () => {
   }, []);
   return (
     <main>
-      <section className="h-[600px] flex mb-[80px]">
-        <div className="flex-1 bg-[#9B9FAB]">
+      <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
+        <div className="flex-1">
           <img
             src={Ilechukwu}
-            alt="Our HOD"
-            className="h-[600px] w-[100%] object-cover"
+            alt="Dr. Victor U. ILECHUKWU"
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#1C2954] flex justify-center items-center">
-          <div className="w-[525px] mx-auto">
+        <div className="flex-1 bg-[#0F1F39]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+          <div className="lg:w-[525px] mx-auto">
             <div className="flex">
-              <img src={LQ} alt="" />
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
-            <p className="text-white text-[20px] leading-[150%] my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Dr. Ilechukwu is a diligent and innovative Urban and Regional
               Planner, who is happily married with four children.
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Dr. Victor U. ILECHUKWU</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+            Dr. Victor U. ILECHUKWU
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -94,7 +102,7 @@ const Victor = () => {
           </span>
           <span>
             <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
+              href="https://www.linkedin.com/in/ilechukwu-victor-25647137/"
               target="_blank"
               aria-label="Link to LinkedIn"
             >
@@ -107,8 +115,10 @@ const Victor = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[600] mb-6">Bio</h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          Bio
+        </h3>
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Dr. Victor Uju Ilechukwu holds the esteemed position of Associate
             Professor, specializing in Urban Housing and Sustainable
@@ -172,24 +182,26 @@ const Victor = () => {
           </p>
         </div>
       </section>
-      <section className="h-[680px] bg-[#FAFAFA] py-[52px] my-[80px]">
+      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
-          <h3 className="text-center text-[#011717] text-[32px] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
           </h3>
           <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+            <div className="flex justify-center items-center flex-wrap gap-x-4 gap-y-6 lg:gap-x-[24px]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">November 2019</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    November 2019
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://www.routledge.com/Promoting-Statistical-Practice-and-Collaboration-in-Developing-Countries/Awe-Love-Vance/p/book/9781032195551"
+                      href="https://ir.unilag.edu.ng/handle/123456789/7347"
                       target="_blank"
                     >
                       Transport and Sustainable Livelihood in Lagos - Badagry
@@ -197,11 +209,11 @@ const Victor = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://www.routledge.com/Promoting-Statistical-Practice-and-Collaboration-in-Developing-Countries/Awe-Love-Vance/p/book/9781032195551"
+                        href="https://ir.unilag.edu.ng/handle/123456789/7347"
                         target="_blank"
                       >
                         View Publication
@@ -210,17 +222,19 @@ const Victor = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">December 2016</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    December 2016
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://d1wqtxts1xzle7.cloudfront.net/84842285/08ea97ec612421c315d6afe4ce42cf190ba1-libre.pdf?1650880609=&response-content-disposition=inline%3B+filename%3DVision_20_2020_and_the_Challenges_of_Inf.pdf&Expires=1695122670&Signature=OIqmQjmVaw5JyICxNh~rq9eEHQq8qx2fulbk5jC8e3Ok9OV~rw6F9ERRUxrD~tQ3KWkhow1GNW3MaqADmhelx476V8Wl9I~SPp7ebw~UDCxspfnFYB947yDinITEfqUSYX4FEax05NZIadizo0vPT9DrWtN5YWfdEG16gt8Pgyi2Xc2dwUBKq7LxtEs5cqoim5EbVKba5kCOwgfU5ZOyDfscgLHGqNK0qTC-xTXJ1fB8APVtMR7Gj-U5Z8Ct8MLdUmvlSnXsR4QcazV-wnqyxd~sxYRXUB1cS69jrS0RJOBCmBnJGBPdP7RDK9LVBV3KWxOi0APlt2qozFBsNXouNQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+                      href="https://doi.org/10.1016/j.jum.2018.03.001"
                       target="_blank"
                     >
                       The urban environment and leisure physical activity during
@@ -228,42 +242,11 @@ const Victor = () => {
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://d1wqtxts1xzle7.cloudfront.net/84842285/08ea97ec612421c315d6afe4ce42cf190ba1-libre.pdf?1650880609=&response-content-disposition=inline%3B+filename%3DVision_20_2020_and_the_Challenges_of_Inf.pdf&Expires=1695122670&Signature=OIqmQjmVaw5JyICxNh~rq9eEHQq8qx2fulbk5jC8e3Ok9OV~rw6F9ERRUxrD~tQ3KWkhow1GNW3MaqADmhelx476V8Wl9I~SPp7ebw~UDCxspfnFYB947yDinITEfqUSYX4FEax05NZIadizo0vPT9DrWtN5YWfdEG16gt8Pgyi2Xc2dwUBKq7LxtEs5cqoim5EbVKba5kCOwgfU5ZOyDfscgLHGqNK0qTC-xTXJ1fB8APVtMR7Gj-U5Z8Ct8MLdUmvlSnXsR4QcazV-wnqyxd~sxYRXUB1cS69jrS0RJOBCmBnJGBPdP7RDK9LVBV3KWxOi0APlt2qozFBsNXouNQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
-                        target="_blank"
-                      >
-                        View Cluster
-                      </a>
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2010</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
-                    <a
-                      href="https://conference.corp.at/archive/CORP2011_233.pdf"
-                      target="_blank"
-                    >
-                      Socio-Economic Determinants of Urban Poor Housing Types in
-                      Makoko Area, Lagos
-                    </a>
-                  </h3>
-                </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p>
-                      <a
-                        href="https://conference.corp.at/archive/CORP2011_233.pdf"
+                        href="https://doi.org/10.1016/j.jum.2018.03.001"
                         target="_blank"
                       >
                         View Publication
@@ -272,30 +255,64 @@ const Victor = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[68px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">December 2018</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px] leading-[150%]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2010</p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
+                      href="https://corp.at/archive/CORP2011_152.pdf"
                       target="_blank"
-                      href="https://d1wqtxts1xzle7.cloudfront.net/90592670/CORP2011_42-libre.pdf?1662162072=&response-content-disposition=inline%3B+filename%3DLocational_Analysis_of_Telecommunication.pdf&Expires=1695122868&Signature=aK7N1mKsReRWpVc91Tcd~cZLclQoHNN0gjZxkRwI7tBIG9XqWuJuiYGR7GGFMRRwhJlc3RTLj9IvOJ~uWWPe9GR9RN8cRGxM~C-sOaXgnVTQm6nHO3LfmUnC9WpIqdn8IU7tZW0TQ-2NDED5gYcW78sfI4bBxsGMNUaCs2Q4Dn-YvoHIVUkYycBRpZiA4D6EM5IWDHkExEmV2hN2HWHLKtkJz5IhqQrT59C3moc-WOyeoRUSaV1xTovK4JOLDzsizYNjmGAZogDbU1Vo1Z6m7n~Yt1BSzWyGia2E4A~x-5DjBFlsqXoS6pMOrQ6y4i6DFK2eTsbLF5Lb4EVSGVBS1w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
                     >
                       Socio-Economic Determinants of Urban Poor Housing Types in
                       Makoko Area, Lagos
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://d1wqtxts1xzle7.cloudfront.net/90592670/CORP2011_42-libre.pdf?1662162072=&response-content-disposition=inline%3B+filename%3DLocational_Analysis_of_Telecommunication.pdf&Expires=1695122868&Signature=aK7N1mKsReRWpVc91Tcd~cZLclQoHNN0gjZxkRwI7tBIG9XqWuJuiYGR7GGFMRRwhJlc3RTLj9IvOJ~uWWPe9GR9RN8cRGxM~C-sOaXgnVTQm6nHO3LfmUnC9WpIqdn8IU7tZW0TQ-2NDED5gYcW78sfI4bBxsGMNUaCs2Q4Dn-YvoHIVUkYycBRpZiA4D6EM5IWDHkExEmV2hN2HWHLKtkJz5IhqQrT59C3moc-WOyeoRUSaV1xTovK4JOLDzsizYNjmGAZogDbU1Vo1Z6m7n~Yt1BSzWyGia2E4A~x-5DjBFlsqXoS6pMOrQ6y4i6DFK2eTsbLF5Lb4EVSGVBS1w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+                        href="https://doi.org/10.1080/23792949.2017.1399804"
                         target="_blank"
+                      >
+                        View Publication
+                      </a>
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <img
+                  src={BookCover}
+                  alt=""
+                  className="absolute w-full h-full"
+                />
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    December 2018
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
+                    <a
+                      target="_blank"
+                      href=" https://jsd-africa.com/Jsda/2018%20Winter%20Vol20No4/PDFs/A%20Paradigm%20Shift%20in%20Urban%20Economic%20Theories_Victor%20Ilechukwu.pdf"
+                    >
+                      A PARADIGM SHIFT IN URBAN ECONOMIC THEORIES: THE
+                      RE-EXAMINATION OF RESIDENTIAL LAND AND HOUSING VALUES
+                      DETERMI
+                    </a>
+                  </h3>
+                </div>
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
+                    <p>
+                      <a
+                        target="_blank"
+                        href=" https://jsd-africa.com/Jsda/2018%20Winter%20Vol20No4/PDFs/A%20Paradigm%20Shift%20in%20Urban%20Economic%20Theories_Victor%20Ilechukwu.pdf"
                       >
                         View Publication
                       </a>
@@ -304,10 +321,10 @@ const Victor = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[24px]">
+            <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
                 <a
-                  href="https://orcid.org/0000-0002-1718-3574"
+                  href="https://orcid.org/0000-0002-1445-5925"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -316,7 +333,7 @@ const Victor = () => {
               </p>
               <p className="mb-4">
                 <a
-                  href="https://scholar.google.com/citations?user=Z2meq_cAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?hl=en&user=kOgDy9wAAAAJ"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -325,7 +342,7 @@ const Victor = () => {
               </p>
               <p className="mb-4">
                 <a
-                  href="https://www.researchgate.net/profile/Muyiwa-Agunbiade"
+                  href="https://www.researchgate.net/profile/Victor-Ilechukwu-2"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -336,7 +353,7 @@ const Victor = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] bg-white py-[104px] h-[700px]">
+      <section className="my-[80px] bg-white py-[104px] h-[700px] hidden lg:block">
         <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
@@ -412,6 +429,75 @@ const Victor = () => {
           </div>
         </div>
       </section>
+      <section className="lg:hidden px-6 lg:px-0">
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+              >
+                Achievements/Accolades/Awards/ Honours
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref2}
+              >
+                Research Interests
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref3}
+              >
+                Extracurricular Activities
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </section>
       <section className="my-[80px]">
         <div className="bg-[#FAFAFA] py-20 h-[346px] flex justify-center">
           <div className="text-center">
@@ -422,12 +508,6 @@ const Victor = () => {
               Have questions or need assistance? Reach out to our lecturer below
             </p>
             <div className="flex gap-x-6 justify-center">
-              <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
-                  <PhoneOutlinedIcon htmlColor="black" />
-                </span>
-                <span className="text-[14px]">Call Dr Ilechukwu</span>
-              </div>
               <div className="bg-[#1B1B1B] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
                 <span>
                   <MarkunreadOutlinedIcon htmlColor="white" />

@@ -9,6 +9,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import AG from '../../assets/lecturers/agunbiade.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
@@ -323,19 +329,11 @@ const Agunbiade = () => {
           </div>
         </div>
       </section>
-      <section className="mb-[64px] lg:mb-[80px] bg-white lg:py-[104px] lg:h-[700px] px-6 lg:px-0">
-        <div className="max-w-[1110px] mx-auto flex flex-col lg:flex-row justify-between h-[400px]">
-          <div className="lg:hidden lg:max-w-[540px] info-box">
+      <section className="my-[80px] bg-white py-[104px] h-[700px] hidden lg:block">
+        <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
+          <div className="max-w-[540px] info-box">
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
-              role="button"
-              onClick={() => handleClick('ach')}
-              ref={ref1}
-            >
-              Achievements/Accolades/ <br /> Awards/Honours
-            </h3>
-            <h3
-              className="hidden lg:block text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
+              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
               role="button"
               onClick={() => handleClick('ach')}
               ref={ref1}
@@ -360,7 +358,7 @@ const Agunbiade = () => {
               Extracurricular Activities
             </h3>
           </div>
-          <div className="max-w-[400px] lg:pr-[24px] h-[400px] accordion overflow-y-scroll">
+          <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
             <article className="hidden" ref={refB1}>
               <div className="mb-10">
                 <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
@@ -369,7 +367,7 @@ const Agunbiade = () => {
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
                   Australian Postgraduate Awards
                 </h4>
-                <p className="text-[#5B5756] text-[10px] lg:text-[16px] leading-[150%]">
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Industry
                 </p>
               </div>
@@ -381,7 +379,7 @@ const Agunbiade = () => {
                   Overall Best graduating Student, Urban and Regional Planning
                   Department,
                 </h4>
-                <p className="text-[#5B5756] text-[10px] lg:text-[16px] leading-[150%]">
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
@@ -393,7 +391,7 @@ const Agunbiade = () => {
                   Most consistent student from Part IV to V, Faculty of
                   Environmental Design and Management
                 </h4>
-                <p className="text-[#5B5756] text-[10px] lg:text-[16px] leading-[150%]">
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
@@ -413,6 +411,75 @@ const Agunbiade = () => {
               </div>
             </article>
           </div>
+        </div>
+      </section>
+      <section className="lg:hidden px-6 lg:px-0">
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+              >
+                Achievements/Accolades/Awards/ Honours
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref2}
+              >
+                Research Interests
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref3}
+              >
+                Extracurricular Activities
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </section>
       <section className="my-[80px]">

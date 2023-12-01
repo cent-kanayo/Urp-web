@@ -56,35 +56,37 @@ const Deju = () => {
   }, []);
   return (
     <main>
-      <section className="h-[600px] flex mb-[80px]">
+      <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
             src={Nwa}
             alt="Our HOD"
-            className="h-[600px] w-[100%] object-cover"
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#7F554C] flex justify-center items-center">
-          <div className="w-[525px] mx-auto">
+        <div className="flex-1 bg-[#7F554C] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+          <div className="lg:w-[525px] mx-auto">
             <div className="flex">
-              <img src={LQ} alt="" />
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
-            <p className="text-white text-[20px] leading-[150%] my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Professor Leke Oduwaye is well-known for his deep appreciation of
               knowledge sharing and his unwavering commitment to fostering an
               environment of mutual respect among colleagues and peers
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px]">
+      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[20px]">Prof. Immaculata I.C. NWOKORO</h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[14px]">1st July,2023</p>
+          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+            Dr. Folayele .O. AKINDEJU
+          </h5>
+          <div className="flex items-center gap-x-2 lg:gap-x-6">
+            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
           </div>
         </div>
@@ -107,79 +109,62 @@ const Deju = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <h3 className="text-center text-[32px] font-[600] mb-6">Bio</h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          Bio
+        </h3>
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
-            Professor Leke Oduwaye is a Town Planner, an Architect, former Head
-            of Department and former Dean of the Department of Urban and
-            Regional Planning and Faculty of Environmental Sciences, University
-            of Lagos respectfully.
+            Dr. Adeyemi is an Urban and Regional Planner who specializes in
+            Physical Planning administration, urban policy formulation,
+            development control, and urban governance. He earned his first
+            degree in Urban and Regional Planning in 2004 from Obafemi Awolowo
+            University, Ile-Ife, followed by a Master of Science degree in Urban
+            and Regional Planning in 2011 and a Ph.D. in Urban and Regional
+            Planning from Obafemi Awolowo University, Ile-Ife, in 2016. He is a
+            corporate member of the Nigerian Institute of Town Planners and a
+            registered member of the Town Planners Registration Council.
           </p>
           <p>
-            He was a Visiting Professor at the following universities: Lagos
-            State University, Lagos; Bells University, Ota, Nigeria; Covenant
-            University, Ota and Ogun State University, Ago Iwoye, Nigeria. He
-            was appointed a Visiting Professor at Bayero University, Kano and
-            Osun State University, Osogbo, Nigeria.
-          </p>
-          <p>
-            Professor Oduwaye attended Rivers State University, Port Harcourt,
-            Obafemi Awolowo University, Ile Ife, and the University of Ibadan
-            where he obtained his B.Sc, M.Sc, and Ph.D degrees. He is a Fellow
-            of the Nigerian Institute of Town Planners, Registered Town Planner
-            with the Town Planners Registration Council of Nigeria, Member of
-            the Nigerian Institute of Architects, Registered Architect with the
-            Architects Registration Council of Nigeria, and Member of the
-            Nigerian Institute of Management.
-          </p>
-          <p>
-            Professor Oduwaye's research areas are on the city, urban land use
-            planning, and sustainable development on which he has made
-            significant and outstanding contributions to the theoretical and
-            empirical understanding of urban land use dynamics, geospatial
-            structure of cities, urban land values, cities and globalization,
-            urban regeneration and branding, climate change, clean and green
-            development among others. He has published in many scholarly
-            journals and delivered papers at many local and international
-            conferences. He has also supervised many Ph.D. theses. He is on the
-            editorial boards of many reputable journals. He has also served as
-            an expert to the World Bank, the United Nations agencies, Federal
-            and State Governments on land use, urban policy, and development. He
-            also served on many committees of the Nigerian Institute of Town
-            Planners, which includes Chairman of the 10 Year Strategic Plan
-            Committee, Education Committee, Membership Committee, Practice
-            Committee, and member of the Lagos State Elders Committee. He was a
-            member of Oshodi-Isolo and Apapa Local Planning Authority, Lagos.
+            Dr. Adeniyi gained valuable experience as a Town Planning Officer
+            with Ekiti State Local Government Service Commission, where he
+            worked for almost a decade before transitioning to a career in
+            lecturing. In 2013, he joined the Department of Urban and Regional
+            Planning at the University of Lagos, where he currently serves as a
+            Senior Lecturer. Throughout his career, Dr. Adeniyi has mentored and
+            supervised a significant number of students, both within and outside
+            the department.
           </p>
         </div>
       </section>
       <section className="h-[680px] bg-[#FAFAFA] py-[52px] my-[80px]">
         <div>
-          <h3 className="text-center text-[#011717] text-[32px] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
           </h3>
           <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+            <div className="flex justify-center items-center flex-wrap gap-x-4 gap-y-6 lg:gap-x-[24px]">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">May 2015</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    November 2018
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://www.ceeol.com/search/article-detail?id=330196"
+                      href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
                       target="_blank"
                     >
-                      Urban Sprawl and Loss of Agricultural Land in Peri-urban
-                      Areas of Lagos
+                      Spatio-temporal land cover dynamics and emerging landscape
+                      patterns in western part of Lagos State, Nigeria
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
@@ -191,26 +176,28 @@ const Deju = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
                   className="absolute w-full h-full"
                 />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    November 2018
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
+                      href="https://doi.org/10.1016/j.jum.2018.03.001"
                       target="_blank"
                     >
-                      Factors influencing the quality of rail transport services
-                      in metropolitan Lagos
+                      SDGs and Geospatial Information Perspective From
+                      Nigeria-Africa
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
                         href="https://doi.org/10.1016/j.jum.2018.03.001"
@@ -222,69 +209,17 @@ const Deju = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2009</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px]">
-                    <a
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
-                      target="_blank"
-                    >
-                      Challenges of sustainable physical planning and
-                      development in metropolitan Lagos
-                    </a>
-                  </h3>
-                </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p>
-                      <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
-                        target="_blank"
-                      >
-                        View Publication
-                      </a>
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">December 1998</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[16px] leading-[150%]">
-                    <a
-                      target="_blank"
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
-                    >
-                      Urban landscape planning experience in Nigeria
-                    </a>
-                  </h3>
-                </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p>
-                      <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
-                        target="_blank"
-                      >
-                        View Publication
-                      </a>
-                    </p>
-                  </article>
-                </div>
-              </div>
             </div>
-            <div className="mt-[24px]">
+            <div className="mt-[24px] px-6 lg:px-0 md:w-[544px] mx-auto">
+              <p className="mb-4">
+                <a
+                  href="https://orcid.org/0000-0002-1718-3574"
+                  target="_blank"
+                  className="text-[#024B4B] hover:text-[#037171] underline"
+                >
+                  Orcid Link
+                </a>
+              </p>
               <p className="mb-4">
                 <a
                   href="https://scholar.google.com/citations?user=Z2meq_cAAAAJ&hl=en"
@@ -307,11 +242,19 @@ const Deju = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] bg-white py-[104px] h-[700px]">
-        <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
+      <section className="mb-[64px] lg:mb-[80px] bg-white lg:py-[104px] lg:h-[700px] px-6 lg:px-0">
+        <div className="max-w-[1110px] mx-auto flex flex-col lg:flex-row justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
+              className="lg:hidden text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
+              role="button"
+              onClick={() => handleClick('ach')}
+              ref={ref1}
+            >
+              Achievements/Accolades/ <br /> Awards/Honours
+            </h3>
+            <h3
+              className="hidden lg:block text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
               role="button"
               onClick={() => handleClick('ach')}
               ref={ref1}
@@ -390,27 +333,32 @@ const Deju = () => {
         </div>
       </section>
       <section className="my-[80px]">
-        <div className="bg-[#FAFAFA] py-20 h-[346px] flex justify-center">
-          <div className="text-center">
-            <h3 className="text-[#1B1B1B] font-bold text-[40px]">
+        <div className="bg-[#FAFAFA] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
+          <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
+            <h3 className="text-[#1B1B1B] font-bold text-[24px] lg:text-[40px]">
               Connect Now
             </h3>
-            <p className="text-[14px] text-[#1B1B1B] mb-[60px]">
+            <p className="text-[12px] lg:text-[14px] text-[#1B1B1B] mb-10 lg:mb-[60px]">
               Have questions or need assistance? Reach out to our lecturer below
             </p>
-            <div className="flex gap-x-6 justify-center">
+            <div className="flex gap-x-2 lg:gap-x-6 justify-center">
               <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
                 <span>
                   <PhoneOutlinedIcon htmlColor="black" />
                 </span>
-                <span className="text-[14px]">Call Professor Nwokoro</span>
+                <span className="text-[12px] lg:text-[14px] whitespace-nowrap">
+                  Dr. F.O. AKINDEJU
+                </span>
               </div>
-              <div className="bg-[#1B1B1B] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
+              <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
+                <span className="lg:hidden">
+                  <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />
+                </span>
+                <span className="hidden lg:block">
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
-                <span className="text-[#FDFFFD] text-[14px] underline hover:animate-pulse">
-                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
+                <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
+                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>
