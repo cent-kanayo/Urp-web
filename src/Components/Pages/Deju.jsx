@@ -21,58 +21,57 @@ const Deju = () => {
   const refB2 = useRef(null);
   const refB3 = useRef(null);
 
-  const handleClick = (current) => {
-    if (current === 'ach') {
-      ref1.current.classList.add('opacity');
-      refB1.current.classList.add('tabs');
-    } else {
-      ref1.current.classList.remove('opacity');
-      refB1.current.classList.remove('tabs');
-    }
-    if (current === 'res') {
-      ref2.current.classList.add('opacity');
-      refB2.current.classList.add('tabs');
-    } else {
-      ref2.current.classList.remove('opacity');
-      refB2.current.classList.remove('tabs');
-    }
-    if (current === 'ex') {
-      ref3.current.classList.add('opacity');
-      refB3.current.classList.add('tabs');
-    } else {
-      ref3.current.classList.remove('opacity');
-      refB3.current.classList.remove('tabs');
-    }
-  };
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-    ref1.current.classList.add('opacity');
-    ref2.current.classList.remove('opacity');
-    ref3.current.classList.remove('opacity');
+  // const handleClick = (current) => {
+  //   if (current === 'ach') {
+  //     ref1.current.classList.add('opacity');
+  //     refB1.current.classList.add('tabs');
+  //   } else {
+  //     ref1.current.classList.remove('opacity');
+  //     refB1.current.classList.remove('tabs');
+  //   }
+  //   if (current === 'res') {
+  //     ref2.current.classList.add('opacity');
+  //     refB2.current.classList.add('tabs');
+  //   } else {
+  //     ref2.current.classList.remove('opacity');
+  //     refB2.current.classList.remove('tabs');
+  //   }
+  //   if (current === 'ex') {
+  //     ref3.current.classList.add('opacity');
+  //     refB3.current.classList.add('tabs');
+  //   } else {
+  //     ref3.current.classList.remove('opacity');
+  //     refB3.current.classList.remove('tabs');
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0 });
+  //   ref1.current.classList.add('opacity');
+  //   ref2.current.classList.remove('opacity');
+  //   ref3.current.classList.remove('opacity');
 
-    refB1.current.classList.add('tabs');
-    refB2.current.classList.remove('tabs');
-    refB3.current.classList.remove('tabs');
-  }, []);
+  //   refB1.current.classList.add('tabs');
+  //   refB2.current.classList.remove('tabs');
+  //   refB3.current.classList.remove('tabs');
+  // }, []);
   return (
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
             src={Nwa}
-            alt="Our HOD"
+            alt="Dr Olabode P. ORELAJA"
             className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#7F554C] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-[#072856]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
-              Professor Leke Oduwaye is well-known for his deep appreciation of
-              knowledge sharing and his unwavering commitment to fostering an
-              environment of mutual respect among colleagues and peers
+              Dr. Adeyemi is often described as a 'quiet storm,' known for
+              making a significant impact in a subtle and powerful manner.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -96,7 +95,7 @@ const Deju = () => {
           </span>
           <span>
             <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
+              href="https://www.linkedin.com/in/olabode-orelaja-86201a207/"
               target="_blank"
               aria-label="Link to LinkedIn"
             >
@@ -136,7 +135,7 @@ const Deju = () => {
           </p>
         </div>
       </section>
-      <section className="h-[680px] bg-[#FAFAFA] py-[52px] my-[80px]">
+      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
           <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
@@ -151,11 +150,11 @@ const Deju = () => {
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                    November 2018
+                    September 2021
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
+                      href="https://sciendo.com/article/10.2478/environ-2021-0017"
                       target="_blank"
                     >
                       Spatio-temporal land cover dynamics and emerging landscape
@@ -167,7 +166,7 @@ const Deju = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
+                        href="https://sciendo.com/article/10.2478/environ-2021-0017"
                         target="_blank"
                       >
                         View Publication
@@ -184,11 +183,11 @@ const Deju = () => {
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                    November 2018
+                    August 2019
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1016/j.jum.2018.03.001"
+                      href="https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9780429290626-19/sdgs-geospatial-information-perspective-nigeria-africa-muyiwa-agunbiade-olajide-oluwafemi-oluyemi-akindeju"
                       target="_blank"
                     >
                       SDGs and Geospatial Information Perspective From
@@ -200,7 +199,70 @@ const Deju = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
+                        href="https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9780429290626-19/sdgs-geospatial-information-perspective-nigeria-africa-muyiwa-agunbiade-olajide-oluwafemi-oluyemi-akindeju"
+                        target="_blank"
+                      >
+                        View Publication
+                      </a>
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <img
+                  src={BookCover}
+                  alt=""
+                  className="absolute w-full h-full"
+                />
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    May 2013
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
+                    <a
+                      href="https://journals.co.za/doi/abs/10.10520/EJC136878"
+                      target="_blank"
+                    >
+                      Conceptualizing the liveable African city
+                    </a>
+                  </h3>
+                </div>
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
+                    <p>
+                      <a
+                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        target="_blank"
+                      >
+                        View Publication
+                      </a>
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <img
+                  src={BookCover}
+                  alt=""
+                  className="absolute w-full h-full"
+                />
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2013</p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
+                    <a
+                      href="https://ir.unilag.edu.ng/handle/123456789/10137"
+                      target="_blank"
+                    >
+                      Amoebic Urbanization in Nigerian Cities: The case of Lagos
+                      and Ota
+                    </a>
+                  </h3>
+                </div>
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
+                    <p>
+                      <a
+                        href="https://ir.unilag.edu.ng/handle/123456789/10137"
                         target="_blank"
                       >
                         View Publication
@@ -210,10 +272,10 @@ const Deju = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[24px] px-6 lg:px-0 md:w-[544px] mx-auto">
+            <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
                 <a
-                  href="https://orcid.org/0000-0002-1718-3574"
+                  href="https://orcid.org/0000-0002-4375-7295"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -222,7 +284,7 @@ const Deju = () => {
               </p>
               <p className="mb-4">
                 <a
-                  href="https://scholar.google.com/citations?user=Z2meq_cAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?user=GKpHRE8AAAAJ&hl=en&oi=ao"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -231,7 +293,7 @@ const Deju = () => {
               </p>
               <p className="mb-4">
                 <a
-                  href="https://www.researchgate.net/profile/Muyiwa-Agunbiade"
+                  href="https://www.researchgate.net/profile/Oluyemi-Akindeju"
                   target="_blank"
                   className="text-[#024B4B] hover:text-[#037171] underline"
                 >
@@ -242,19 +304,11 @@ const Deju = () => {
           </div>
         </div>
       </section>
-      <section className="mb-[64px] lg:mb-[80px] bg-white lg:py-[104px] lg:h-[700px] px-6 lg:px-0">
-        <div className="max-w-[1110px] mx-auto flex flex-col lg:flex-row justify-between h-[400px]">
+      {/* <section className="my-[80px] bg-white py-[104px] h-[700px] hidden lg:block">
+        <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
-              className="lg:hidden text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
-              role="button"
-              onClick={() => handleClick('ach')}
-              ref={ref1}
-            >
-              Achievements/Accolades/ <br /> Awards/Honours
-            </h3>
-            <h3
-              className="hidden lg:block text-[#ADABAB] font-[600] leading-[150%] text-[24px] lg:text-[2rem] mb-10 whitespace-normal"
+              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
               role="button"
               onClick={() => handleClick('ach')}
               ref={ref1}
@@ -317,21 +371,89 @@ const Deju = () => {
             </article>
             <article className="hidden" ref={refB2}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Spatial Data Infrastructure and Land Administration</p>
-                <p>Housing</p>
-                <p>GIS application</p>
-                <p>Urban Analytics</p>
+                <p>Physical Planning Administration</p>
+                <p>Urban Policy Formulation</p>
+                <p>Development Control</p>
+                <p>Urban Governance</p>
               </div>
             </article>
             <article className="hidden" ref={refB3}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Reading</p>
-                <p>Volleyball</p>
+                <p>Farming</p>
               </div>
             </article>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* <section className="lg:hidden px-6 lg:px-0">
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+              >
+                Achievements/Accolades/Awards/ Honours
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref2}
+              >
+                Research Interests
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref3}
+              >
+                Extracurricular Activities
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </section> */}
       <section className="my-[80px]">
         <div className="bg-[#FAFAFA] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
           <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
@@ -342,14 +464,6 @@ const Deju = () => {
               Have questions or need assistance? Reach out to our lecturer below
             </p>
             <div className="flex gap-x-2 lg:gap-x-6 justify-center">
-              <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
-                  <PhoneOutlinedIcon htmlColor="black" />
-                </span>
-                <span className="text-[12px] lg:text-[14px] whitespace-nowrap">
-                  Dr. F.O. AKINDEJU
-                </span>
-              </div>
               <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
                 <span className="lg:hidden">
                   <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />

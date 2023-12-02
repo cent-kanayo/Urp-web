@@ -36,6 +36,8 @@ import {
   It,
   Gallery,
   Taofik,
+  Lekan,
+  Anthony,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 
@@ -65,6 +67,8 @@ function App() {
           <Route path="staff/a-adeniji" element={<Niji />} />
           <Route path="staff/d-odekunle" element={<Kunle />} />
           <Route path="staff/taofik-salau" element={<Taofik />} />
+          <Route path="staff/dami-olalekan" element={<Lekan />} />
+          <Route path="staff/anthony-onuigboje" element={<Anthony />} />
           <Route path="about" element={<About />} />
           <Route path="research-cluster" element={<ResearchCluster />} />
           <Route path="student-of-the-month" element={<StudentSpotlight />} />

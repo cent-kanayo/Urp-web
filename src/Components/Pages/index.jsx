@@ -33,6 +33,8 @@ import Contact from './Contact';
 import It from './It';
 import Gallery from './Gallery';
 import Taofik from './Taofik';
+import Lekan from './Lekan';
+import Anthony from './Anthony';
 export {
   Home,
   StudentPage,
@@ -54,6 +56,8 @@ export {
   Yemi,
   Laja,
   Taofik,
+  Lekan,
+  Anthony,
   About,
   ResearchCluster,
   StudentSpotlight,
