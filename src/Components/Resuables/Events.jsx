@@ -26,7 +26,7 @@ const Events = () => {
               <p className="text-[#934B00] text-[20px] capitalize mb-3">
                 June, 2023
               </p>
-              <h3 className="typo-3 text-[#010A09] leading-8 mb-3">
+              <h3 className="inter typo-3 text-[#010A09] leading-8 mb-3">
                 “Grand ideas are good, but people need to survive”
               </h3>
               <p className="text-[14px] md:text-[14px] text-[#010A09] mb-6">

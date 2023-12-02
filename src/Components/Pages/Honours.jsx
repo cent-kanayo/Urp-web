@@ -22,11 +22,11 @@ const Honours = () => {
       <section className="flex mb-[80px] honours-bg">
         <div className="flex-1"></div>
       </section>
-      <section className="max-w-[800px] mx-auto">
+      <section className="max-w-[800px] mx-auto px-6 lg:px-0">
         <h3 className="text-center text-[32px] font-[600] mb-6">
           Message to Honor Listers
         </h3>
-        <div className="text-[20px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6">
           <p>
             Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
             trailblazing rockstar of academia, with revolutionary ideas that
@@ -46,7 +46,7 @@ const Honours = () => {
         </div>
       </section>
       <section className="mt-[80px] px-4 lg:px-0">
-        <div className="flex flex-wrap gap-5 max-w-[1119px] mx-auto">
+        <div className="flex justify-center flex-wrap gap-5 max-w-[1119px] mx-auto">
           <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
           <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
           <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
@@ -56,14 +56,14 @@ const Honours = () => {
           <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
           <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
         </div>
-        <div className="flex items-center justify-center mt-10 lg:hidden">
+        {/* <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
             see all
           </span>
           <span>
             <ArrowForwardIosOutlinedIcon htmlColor="#934B00" fontSize="small" />
           </span>
-        </div>
+        </div> */}
       </section>
       <Contact h2="contact us for sponsorship or partnership" />
     </main>

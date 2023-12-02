@@ -34,7 +34,7 @@ const Projects = () => {
         </div>
       </section>
       <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
-        <h2 className="text-center text-[14px] lg:text-[24px] lg:text-[32px] font-[600] mb-6">
+        <h2 className="text-center text-[14px] lg:text-[32px] font-[600] mb-6">
           Urban Planning Showcase
         </h2>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">

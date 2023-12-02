@@ -1,18 +1,6 @@
-import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
-import RQ from '../../assets/quoteR.png';
-import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useEffect } from 'react';
 
-import AG from '../../assets/lecturers/agunbiade.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import Comment from '../Resuables/Comment';
 
 const Contact = () => {
@@ -53,17 +41,6 @@ const Contact = () => {
               yourself in the world of physics with Dr. Odunayo!
             </p>
             <div className="flex gap-x-6 justify-center">
-              <div className="border-[#FDFFFD] border-[1px] rounded-[2px] px-4 lg:px-6 py-2 flex items-center gap-x-2">
-                <span className="lg:hidden">
-                  <PhoneOutlinedIcon htmlColor="#FDFFFD" fontSize="small" />
-                </span>
-                <span className="hidden lg:block">
-                  <PhoneOutlinedIcon htmlColor="#FDFFFD" />
-                </span>
-                <span className="text-[12px] lg:text-[14px] text-[#FDFFFD]">
-                  Call Dr. Agunbiade
-                </span>
-              </div>
               <div className="bg-[#FDFFFD] rounded-[2px] px-4 lg:px-6 py-2 flex items-center gap-x-2">
                 <span className="lg:hidden">
                   <MarkunreadOutlinedIcon

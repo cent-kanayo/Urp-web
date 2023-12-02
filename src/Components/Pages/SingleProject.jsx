@@ -16,7 +16,7 @@ const SingleProject = () => {
   }, []);
   return (
     <main>
-      <section className="flex mb-[80px] h-[600px] bg-[#02211F] justify-center items-center">
+      <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">
         <div className="w-full h-full">
           <img
             src={projectImages[0]}
@@ -25,12 +25,12 @@ const SingleProject = () => {
           />
         </div>
       </section>
-      <section className="mt-[120px] max-w-[1119px] mx-auto">
+      <section className="mt-[64px] lg:mt-[120px] max-w-[1119px] mx-auto px-6 lg:px-0">
         <div>
-          <h2 className="text-[40px] text-[#011717] font-bold mb-6">
+          <h2 className="text-[24px] lg:text-[40px] text-[#011717] font-bold mb-6">
             Revolutionary Transport Infrastructure
           </h2>
-          <p className="text-[20px] mb-[56px] max-w-[877px]">
+          <p className="text-[12px] lg:text-[20px] mb-[56px] max-w-[877px]">
             Witness the groundbreaking research projects that are shaping the
             world of urban and regional planning. Our passionate team is pushing
             the boundaries of innovation, creating cutting-edge solutions for
@@ -38,50 +38,64 @@ const SingleProject = () => {
           </p>
         </div>
       </section>
-      <section className="mt-[80px] max-w-[1119px] mx-auto bg-[#D4CDCD] h-[664px]">
+      <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto h-[240px] lg:h-[664px] px-6 lg:px-0">
         <div className="w-full h-full">
           <img src={projectImages[4]} alt="" className="w-full h-full" />
         </div>
       </section>
-      <section className="mt-[80px] max-w-[1119px] mx-auto bg-white">
+      <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto bg-white px-6 lg:px-0">
         <div>
           <article className="flex items-center mb-10">
-            <span className="w-[130px] text-[16px]">Title:</span>
-            <span className="text-[20px] text-[#090302]">
+            <span className="w-[130px] text-[12px] lg:text-[16px]">Title:</span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302]">
               Revolutionary Transport Infrastructure
             </span>
           </article>
           <article className="flex items-center mb-10">
-            <span className="w-[130px] text-[16px]">Land Area:</span>
-            <span className="text-[20px] text-[#090302]">8000 hectares</span>
+            <span className="w-[130px] text-[12px] lg:text-[16px]">
+              Land Area:
+            </span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302]">
+              8000 hectares
+            </span>
           </article>
           <article className="flex items-center mb-10">
-            <span className="w-[130px] text-[16px]">Land Area:</span>
-            <span className="text-[20px] text-[#090302]">8000 hectares</span>
+            <span className="w-[130px] text-[12px] lg:text-[16px]">
+              Land Area:
+            </span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302]">
+              8000 hectares
+            </span>
           </article>
           <article className="flex items-start mb-10">
-            <span className="w-[130px] text-[16px]">Lecturers-in-charge:</span>
-            <span className="text-[20px] text-[#090302] w-[320px] leading-[150%]">
+            <span className="w-[130px] text-[12px] lg:text-[16px]">
+              Lecturers-in-charge:
+            </span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302] w-[320px] leading-[150%]">
               Muyiwa Ibrahim, Muyiwa Ibrahim, Muyiwa Ibrahim Muyiwa Ibrahim,
             </span>
           </article>
           <article className="flex items-start mb-10">
-            <span className="w-[130px] text-[16px]">Group Members:</span>
-            <span className="text-[20px] text-[#090302] w-[469px] leading-[150%]">
+            <span className="w-[130px] text-[12px] lg:text-[16px]">
+              Group Members:
+            </span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302] w-[469px] leading-[150%]">
               Muyiwa Ibrahim, Muyiwa Ibrahim, Muyiwa Ibrahim Muyiwa Ibrahim,
               Muyiwa Ibrahim, Muyiwa Ibrahim
             </span>
           </article>
           <article className="flex items-center">
-            <span className="w-[130px] text-[16px]">Date:</span>
-            <span className="text-[20px] text-[#090302]">16-08-2020</span>
+            <span className="w-[130px] text-[12px] lg:text-[16px]">Date:</span>
+            <span className="text-[14px] lg:text-[20px] text-[#090302]">
+              16-08-2020
+            </span>
           </article>
         </div>
       </section>
-      <section className="max-w-[1119px] mx-auto bg-white mt-[80px]">
+      <section className="max-w-[1119px] mx-auto bg-white mt-[64px] lg:mt-[80px] px-6 lg:px-0">
         <div>
           <div className="max-w-[1112px] mx-auto bg-white">
-            <div className="bg-[#D4CDCD] h-[600px] mb-6">
+            <div className="bg-[#D4CDCD] h-[240px] lg:h-[600px] mb-6">
               <div className="w-full h-full">
                 <img
                   src={image}
@@ -90,7 +104,9 @@ const SingleProject = () => {
                 />
               </div>
             </div>
-            <p className="text-[#5B5756] text-[14px]">Base Map</p>
+            <p className="text-[#5B5756] text-[12px] lg:text-[14px]">
+              Base Map
+            </p>
             <div className="flex justify-between items-center mt-[40px]">
               <span
                 role="button"
@@ -100,7 +116,11 @@ const SingleProject = () => {
                   )
                 }
               >
-                <img src={LeftIcon} alt="left toggle button" />
+                <img
+                  src={LeftIcon}
+                  alt="left toggle button"
+                  className="w-[32px] lg:w-auto h-[32px] lg:h-auto"
+                />
               </span>
               <span
                 role="button"
@@ -110,14 +130,18 @@ const SingleProject = () => {
                   )
                 }
               >
-                <img src={RightIcon} alt="right toggle button" />
+                <img
+                  src={RightIcon}
+                  alt="right toggle button"
+                  className="w-[32px] lg:w-auto h-[32px] lg:h-auto"
+                />
               </span>
             </div>
           </div>
         </div>
       </section>
-      <section className="mt-[80px] bg-white py-[45px]">
-        <div className="max-w-[877px] mx-auto text-[20px] text-[#1B1B1B] leading-[150%]">
+      <section className="mt-[64px] lg:mt-[80px] bg-white py-[45px] px-6 lg:px-0">
+        <div className="max-w-[877px] mx-auto text-[12px] lg:text-[20px] text-[#1B1B1B] leading-[150%]">
           <p className="mb-6">
             As a lecturer, Ms. Odekunle excels in imparting knowledge with
             enthusiasm and dedication. She employs a student-centered approach,

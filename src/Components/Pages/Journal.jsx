@@ -26,8 +26,8 @@ const Journal = () => {
           </h1>
         </div>
       </section>
-      <div className="flex flex-col lg:flex-row gap-[80px] xl:pl-[7%]">
-        <section className="max-w-[320px] lg:max-w-[358px] mx-auto lg:mx-0">
+      <div className="lg:flex flex-col lg:flex-row lg:gap-[80px] xl:pl-[7%] px-6 lg:px-0">
+        <section className=" lg:max-w-[358px] mx-auto lg:mx-0">
           <div className="bg-[#934B00] py-10 px-6 lg:px-10 mb-10">
             <div className=" flex justify-between items-start mb-[32px]">
               <p className="text-[#FDFFFD]">2023</p>
@@ -121,7 +121,7 @@ const Journal = () => {
           </div>
         </section>
 
-        <section className="max-w-[800px] px-6 lg:px-0">
+        <section className="max-w-[800px] px-6 lg:px-0 mt-[64px] lg:mt-0">
           <h2 className="text-center text-[24px] lg:text-[32px] font-bold mb-6">
             About The Journal
           </h2>
