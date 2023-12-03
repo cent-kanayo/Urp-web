@@ -283,7 +283,7 @@ const ResearchCluster = () => {
           </h3>
           <div className="max-w-[1112px] mx-auto">
             <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end hidden">
                 <img
                   src={BookCover}
                   alt=""
@@ -314,7 +314,7 @@ const ResearchCluster = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] hidden lg:flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
@@ -408,7 +408,7 @@ const ResearchCluster = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center mt-[40px]">
+            <div className="flex justify-between items-center mt-[40px] px-6 md:px-16 lg:px-0">
               <span>
                 <img src={LeftIcon} alt="left toggle button" />
               </span>

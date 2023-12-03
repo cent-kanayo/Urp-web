@@ -40,6 +40,7 @@ import {
   Anthony,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
+import Uploads from './Components/Auth/Uploads';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path="students" element={<StudentPage />} />
           <Route path="staff" element={<StaffPage />} />
           <Route path="alumni" element={<AlumniPage />} />
+          <Route path="uploads" element={<Uploads />} />
           {/* <Route path="welcome-message" element={<HodWelcome />} /> */}
           <Route path="staff/muyiwa-agunbiade" element={<Agunbiade />} />
           <Route path="staff/leke-oduwaye" element={<Leke />} />

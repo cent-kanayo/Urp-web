@@ -615,6 +615,13 @@ RS Page
   justify-content: center;
   align-items: center;
 }
+.programs-hide {
+  display: none;
+}
+.programs-show {
+  display: block;
+  transition: all 0.25s linear;
+}
 .faq-bg {
   background: url('./assets/mainDesktop/faq.png'), lightgray 50%;
   background-repeat: no-repeat;
@@ -643,6 +650,9 @@ RS Page
   .faq-bg,
   .contact-bg {
     height: 320px;
+  }
+  .programs-bg {
+    height: 505px;
   }
 }
 
