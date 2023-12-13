@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from 'react-router-dom';
 const Sidebar = ({ setSidebar }) => {
   return (
-    <aside className="absolute top-0 w-full h-[100vh] overflow-y-scroll bg-[#090302] z-50 lg:hidden px-6 py-5">
+    <aside className="absolute w-full h-[100vh] overflow-y-scroll bg-[#090302] z-50 lg:hidden px-6 py-5">
       <div>
         <div className="flex justify-end mb-[28px]">
           <button aria-label="close icon" onClick={() => setSidebar(false)}>
