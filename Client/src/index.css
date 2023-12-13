@@ -45,7 +45,7 @@ h5 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 40;
 }
 .max {
   max-width: 1440px;
