@@ -8,7 +8,7 @@ const Excocard = ({ image, role, name, link }) => {
         <img
           src={image}
           alt="Executives"
-          className="absolute w-[100%] h-[100%] object-cover"
+          className="absolute w-[100%] h-[100%] object-cover block rounded-[2px]"
         />
         <header className="flex flex-col p-2 lg:p-5">
           <div className="flex justify-between items-center w-[100%]">

@@ -1,6 +1,6 @@
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import { Link } from 'react-router-dom';
-
+import Arrow from '../../assets/icons/arrow-right.png';
 const SpotlightBox = ({ image, h2, p, btn, link }) => {
   return (
     <Link
@@ -15,18 +15,18 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
         />
       </div>
       <div className="py-[24px] lg:w-[310px] mx-auto px-4 lg:px-0">
-        <h2 className="inter mb-4 whitespace-nowrap">{h2}</h2>
+        <h2 className="inter mb-4 whitespace-nowrap capitalize">{h2}</h2>
         <p className="mb-4">{p}</p>
         <div className="px-0">
           <Link
-            to="/student-of-the-month"
-            className="hover:animate-pulse flex items-center gap-x-2"
+            to={link}
+            className="hover:animate-pulse flex items-center gap-x-2 capitalize"
           >
             <span className="text-[12px] lg:text-[14px] underline underline-offset-4">
               {btn}
             </span>
             <span>
-              <EastOutlinedIcon htmlColor="#57A0A0" />
+              <img src={Arrow} alt="Arrow Right Icon" width="24" />
             </span>
           </Link>
         </div>

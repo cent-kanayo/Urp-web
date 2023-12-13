@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NumberBox from '../Resuables/NumberBox';
 import HODDark from '../../assets/mainDesktop/DrAD.webp';
-import HODLight from '../../assets/mainDesktop/DrAL.png';
+import HODLight from '../../assets/mainDesktop/DrAL.webp';
 import Journal from '../../assets/journals.png';
 
 import Spotlight from '../Resuables/Spotlight';
@@ -195,7 +195,7 @@ const Home = () => {
               <div>
                 <Link
                   to="/about"
-                  className="bg-[#57A0A0] text-[14px] px-6 py-2 rounded-[2px] text-[#F5FFF6] hover:bg-[#123f3f]"
+                  className="bg-[#5B5756] text-[14px] px-6 py-2 rounded-[2px] text-[#F5FFF6] hover:bg-[#353939]"
                 >
                   Read more
                 </Link>
@@ -232,7 +232,7 @@ const Home = () => {
             </p>
             <div>
               <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
-                get access
+                Go to page
               </button>
             </div>
           </div>

@@ -1,19 +1,19 @@
 import Journal from '../../assets/journals.png';
 
-import AG from '../../assets/admin/agu.png';
-import Vic from '../../assets/admin/victor.png';
-import Odu from '../../assets/admin/odu.png';
-import Law from '../../assets/admin/lawan.png';
-import Nwa from '../../assets/admin/nwa.png';
-import Loye from '../../assets/admin/loye.png';
-import Farin from '../../assets/admin/farin.png';
-import jimoh from '../../assets/admin/jimoh.png';
-import Kunle from '../../assets/admin/kunle.png';
-import Fade from '../../assets/admin/onifade.png';
-import Laja from '../../assets/admin/orelaja.png';
-import Deju from '../../assets/admin/deju.png';
-import Yemi from '../../assets/admin/adeyemi.png';
-import Niji from '../../assets/admin/adeniji.png';
+import AG from '../../assets/admin/agu.webp';
+import Vic from '../../assets/admin/victor.webp';
+import Odu from '../../assets/admin/odu.webp';
+import Law from '../../assets/admin/lawan.webp';
+import Nwa from '../../assets/admin/nwa.webp';
+import Loye from '../../assets/admin/loye.webp';
+import Farin from '../../assets/admin/farin.webp';
+import jimoh from '../../assets/admin/jimoh.webp';
+import Kunle from '../../assets/admin/kunle.webp';
+import Fade from '../../assets/admin/onifade.webp';
+import Laja from '../../assets/admin/orelaja.webp';
+import Deju from '../../assets/admin/deju.webp';
+import Yemi from '../../assets/admin/adeyemi.webp';
+import Niji from '../../assets/admin/adeniji.webp';
 import Jet from '../../assets/jet.png';
 import Bg from '../../assets/staff1.png';
 import Bg1 from '../../assets/staff2.png';
@@ -133,7 +133,7 @@ const StaffPage = () => {
           />
         </div>
       </section>
-      <section className="mt-[64px] pt-[60px] lg:pt-0 lg:py-[80px] h-[380px] lg:h-[680px] relative lg:mt-[180px] flex flex-col justify-center">
+      {/* <section className="mt-[64px] pt-[60px] lg:pt-0 lg:py-[80px] h-[380px] lg:h-[680px] relative lg:mt-[180px] flex flex-col justify-center">
         <div className="abs h-[320px] lg:h-[520px] bg-[#934B00] w-[240px] lg:w-[497px] mx-auto rounded-br-[50%] rounded-bl-[50%] flex flex-col items-center py-6 lg:py-[46px] lg:px-[56px]">
           <div className="mb-6 lg:mb-[46px]">
             <img src={Jet} alt="Jet icon" className="w-20 lg:w-auto" />
@@ -170,7 +170,7 @@ const StaffPage = () => {
             className="w-[100%] h-[160px] lg:h-[320px] block"
           />
         </div>
-      </section>
+      </section> */}
       <section className="lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"

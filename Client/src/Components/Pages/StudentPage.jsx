@@ -1,14 +1,11 @@
 import Journal from '../../assets/journals.png';
 
-import Fj from '../../assets/Excos/fjs.png';
-import John from '../../assets/Excos/john.png';
-import Sonia from '../../assets/Excos/sonia.png';
-import Pamela from '../../assets/Excos/pamela.png';
-import Timi from '../../assets/Excos/timi.png';
-import Korede from '../../assets/Excos/korede.png';
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
+import Fj from '../../assets/Excos/fjs.webp';
+import John from '../../assets/Excos/john.webp';
+import Sonia from '../../assets/Excos/sonia.webp';
+import Pamela from '../../assets/Excos/pamela.webp';
+import Timi from '../../assets/Excos/timi.webp';
+import Korede from '../../assets/Excos/korede.webp';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
@@ -88,7 +85,7 @@ const StudentPage = () => {
         })}
 
         <div className="py-[100px] lg:py-[204.5px]">
-          <div className="flex justify-center items-center gap-2 2g:gap-[126px] lg:px-0">
+          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] lg:px-0">
             <span
               className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
@@ -96,7 +93,7 @@ const StudentPage = () => {
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span>
-            <div className="flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] bg-[#090302] py-3 lg:py-6 px-3 lg:px-10 items-center">
+            <div className="welcome-box flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] py-3 lg:py-6 px-3 lg:px-10 items-center">
               <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
                 Where Innovation Meets Excellence!
               </p>
@@ -114,6 +111,7 @@ const StudentPage = () => {
           </div>
         </div>
       </section>
+      s
       <section className="mt-[40px] lg:mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
           <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold capitalize ">
@@ -143,10 +141,6 @@ const StudentPage = () => {
             role="Financial Secretary"
             image={Pamela}
           />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
         </div>
         {/* <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
@@ -223,7 +217,6 @@ const StudentPage = () => {
           text5="Suggestions"
         />
       </section>
-
       <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[68px] lg:mt-[160px]">
         <div>
           <h3 className="text-center text-[#FDFFFD] text-[32px] font-[600] capitalize mb-[40px]">

@@ -9,7 +9,12 @@ import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutl
 import { useEffect, useRef, useState } from 'react';
 
 const Programs = () => {
-  const [arrowUp, setArrowUp] = useState(false);
+  const [arrowUp1, setArrowUp1] = useState(false);
+  const [arrowUp2, setArrowUp2] = useState(false);
+  const [arrowUp3, setArrowUp3] = useState(false);
+  const [arrowUp4, setArrowUp4] = useState(false);
+  const [arrowUp5, setArrowUp5] = useState(false);
+  const [arrowUp6, setArrowUp6] = useState(false);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -17,9 +22,95 @@ const Programs = () => {
   const ref5 = useRef(null);
   const ref6 = useRef(null);
   const ref7 = useRef(null);
+  const onDropdownClicked = (tarket) => {
+    if (tarket === '1') {
+      ref1.current.classList.toggle('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      ref6.current.classList.remove('programs-show');
+      setArrowUp1((prev) => !prev);
+      setArrowUp2(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+      setArrowUp6(false);
+    }
+    if (tarket === '2') {
+      ref2.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      ref6.current.classList.remove('programs-show');
+      setArrowUp2((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+      setArrowUp6(false);
+    }
+    if (tarket === '3') {
+      ref3.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      ref6.current.classList.remove('programs-show');
+      setArrowUp3((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp2(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+      setArrowUp6(false);
+    }
+    if (tarket === '4') {
+      ref4.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      ref6.current.classList.remove('programs-show');
+      setArrowUp2((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp3(false);
+      setArrowUp2(false);
+      setArrowUp5(false);
+      setArrowUp6(false);
+    }
+    if (tarket === '5') {
+      ref5.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref6.current.classList.remove('programs-show');
+      setArrowUp2((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp2(false);
+      setArrowUp6(false);
+    }
+    if (tarket === '6') {
+      ref6.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      setArrowUp6((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+      setArrowUp2(false);
+    }
+  };
   useEffect(() => {
     ref1.current.classList.add('programs-show');
-    setArrowUp(true);
+    setArrowUp1(true);
   }, []);
   return (
     <main>
@@ -43,30 +134,24 @@ const Programs = () => {
       <section className="max-w-[1248px] mx-auto mt-[80px] px-6 lg:px-0">
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref1.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref1.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('1')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp1 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -74,14 +159,14 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref1} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
@@ -89,30 +174,24 @@ const Programs = () => {
         </div>
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref2.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref2.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('2')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp2 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -120,14 +199,14 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref2} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
@@ -135,30 +214,24 @@ const Programs = () => {
         </div>
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref3.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref3.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('3')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp1 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -166,14 +239,14 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref3} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
@@ -181,30 +254,24 @@ const Programs = () => {
         </div>
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref4.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref4.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('4')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp1 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -212,14 +279,14 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref4} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
@@ -227,30 +294,24 @@ const Programs = () => {
         </div>
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref5.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref5.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('5')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp1 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -258,14 +319,14 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref5} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
@@ -273,30 +334,24 @@ const Programs = () => {
         </div>
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref6.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref6.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
+          role="button"
+          onClick={() => onDropdownClicked('6')}
         >
           <div className="flex justify-between items-center">
             <span className="flex flex-col">
-              <span className="text-[20px]">
+              <span className="text-[20px] text-[#1B1B1B]">
                 MBA in Community Economic Development
               </span>
-              <span className="text-[16px] lg:hidden">
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
               </span>
             </span>
 
             <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp ? (
+              {arrowUp1 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -304,67 +359,21 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref6} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Develop stronger economic ties. This MBA offers a leading edge
               curriculum that includes all business subjects found in
               traditional MBA programs, with an emphasis on economic
               development, leadership, governance and management of change.
             </p>
             <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          onMouseOver={() => {
-            ref7.current.classList.add('programs-show');
-            setArrowUp(true);
-          }}
-          onMouseOut={() => {
-            ref7.current.classList.remove('programs-show');
-            setArrowUp(false);
-          }}
-        >
-          <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px]">
-                MBA in Community Economic Development
-              </span>
-              <span className="text-[16px] lg:hidden">
-                Degree, Undergraduate
-              </span>
-            </span>
-
-            <span className="flex items-center space-x-6">
-              <span className="text-[16px] hidden lg:block">
-                Degree, Undergraduate
-              </span>
-              {arrowUp ? (
-                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
-              ) : (
-                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-              )}
-            </span>
-          </div>
-          <div ref={ref7} className="programs-hide mt-6">
-            <p className="max-w-[900px] text-[14px]">
-              Develop stronger economic ties. This MBA offers a leading edge
-              curriculum that includes all business subjects found in
-              traditional MBA programs, with an emphasis on economic
-              development, leadership, governance and management of change.
-            </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] px-6 py-2 rounded-[2px] text-[14px]">
+              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
                 View Handbook
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3]">
+      <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3] text-[#1B1B1B]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
             contact us for sponsorship or partnership

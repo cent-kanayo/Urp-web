@@ -63,7 +63,7 @@ const About = () => {
       </section>
       <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
-          HOD’s Address
+          MESSAGE FROM THE HEAD OF DEPARTMENT
         </h2>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
           <p className="mb-6">
@@ -108,14 +108,14 @@ const About = () => {
       </section>
       <section className="max-w-[1119px] mx-auto mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
         <div>
-          <Accordion>
+          <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
                 About URP Department
@@ -129,14 +129,14 @@ const About = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
               <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
                 Intro
@@ -150,14 +150,14 @@ const About = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
               <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
                 Our Vision
@@ -171,17 +171,17 @@ const About = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
               <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
-                Our Vision
+                Our Mission
               </h3>
             </AccordionSummary>
             <AccordionDetails>
@@ -192,38 +192,6 @@ const About = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-        </div>
-        <div className="mb-6 py-3 px-4">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span></span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
-          </div>
-        </div>
-        <div className="mb-6 py-3 px-4">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span>Intro</span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
-          </div>
-        </div>
-        <div className="mb-6 py-3 px-4">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span>Our Vision</span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
-          </div>
-        </div>
-        <div className="mb-6 py-3 px-4">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span>Our Values</span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
-          </div>
         </div>
       </section>
       <section className="my-[64px] lg:my-[80px]">

@@ -50,7 +50,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="students" element={<StudentPage />} />
           <Route path="staff" element={<StaffPage />} />
-          <Route path="alumni" element={<AlumniPage />} />
+          {/* <Route path="alumni" element={<AlumniPage />} /> */}
           <Route path="uploads" element={<Uploads />} />
           {/* <Route path="welcome-message" element={<HodWelcome />} /> */}
           <Route path="staff/muyiwa-agunbiade" element={<Agunbiade />} />

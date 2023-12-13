@@ -188,6 +188,31 @@ const NewsPage = () => {
         </div>
       </section>
 
+      <section>
+        <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
+          <h3 className="text-center text-[32px] font-[600] capitalize mb-6">
+            Pictures from event
+          </h3>
+          <div>
+            <article className="flex justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+            </article>
+            <article className="flex justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+            </article>
+            <article className="flex justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="lg:h-[896px] bg-[#1B1B1B] py-[24px] my-[80px] px-[30px] lg:px-0">
         <div>
           <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">

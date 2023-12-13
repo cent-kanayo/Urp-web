@@ -125,23 +125,21 @@ const ResearchCluster = () => {
           </div>
         </div>
       </section>
-      <section className="h-[684px] bg-[#03312E] mt-[80px] py-6">
+      <section className="md:h-[684px] bg-[#03312E] mt-[80px] py-6 px-6 lg:px-0">
         <h2 className="text-center text-white text-[2.5rem] font-bold mb-[80px]">
           Cluster Team
         </h2>
-        <div className="flex justify-center space-x-6 text-[#FDFFFD]">
-          <div className="max-w-[548px] flex-1">
+        <div className="flex flex-col md:flex-row md:justify-center md:space-x-6 text-[#FDFFFD]">
+          <div className="max-w-[548px] md:flex-1 flex-col md:flex-row">
             <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
               <div>
                 <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -151,11 +149,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -165,11 +161,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -179,11 +173,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -193,27 +185,23 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
           </div>
-          <div className="max-w-[548px] flex-1">
+          <div className="max-w-[548px] md:flex-1 flex-col md:flex-row">
             <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
               <div>
                 <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -223,11 +211,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -237,11 +223,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -251,11 +235,9 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
@@ -265,75 +247,39 @@ const ResearchCluster = () => {
                 <p className="text-[12px] lg:text-[14px]">Head of Department</p>
               </div>
               <div className="flex flex-col gap-2 lg:hidden">
-                <PhoneOutlinedIcon fontSize="small" />
                 <EmailIcon ontSize="small" />
               </div>
               <div className="hidden lg:flex flex-col gap-2">
-                <PhoneOutlinedIcon />
                 <EmailIcon />
               </div>
             </article>
           </div>
         </div>
       </section>
-      <section className="h-[680px] bg-[#1B1B1B] py-[52px] my-[80px]">
+      <section className="h-[508px] bg-[#f5fff6] py-[52px] my-[80px] px-6 lg:px-0">
         <div>
-          <h3 className="text-center text-[#FDFFFD] text-[2.5rem] font-[600] capitalize mb-[40px]">
+          <h3 className="text-center text-[#090302] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
             Other Research Clusters
           </h3>
           <div className="max-w-[1112px] mx-auto">
             <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end hidden">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">May 2015</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
-                    <a
-                      href="https://www.ceeol.com/search/article-detail?id=330196"
-                      target="_blank"
-                    >
-                      Mandarin Research group 3
-                    </a>
-                  </h3>
-                </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2">
-                      <a
-                        href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
-                        target="_blank"
-                      >
-                        View Cluster
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] hidden lg:flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2011</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
+              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] hidden lg:flex">
+                <div className="p-6">
+                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
+                    2011
+                  </p>
+                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
                     <a
                       href="https://ir.unilag.edu.ng/handle/123456789/7764"
                       target="_blank"
                     >
-                      Mandarin Research group 3
+                      Mandarin Research <br /> group 3
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2">
+                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
+                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
+                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
                       <a
                         href="https://doi.org/10.1016/j.jum.2018.03.001"
                         target="_blank"
@@ -345,28 +291,25 @@ const ResearchCluster = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">2009</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px]">
+              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] lg:flex">
+                <div className="p-6">
+                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
+                    2011
+                  </p>
+                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
                     <a
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
+                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
                       target="_blank"
                     >
-                      Mandarin Research group 3
+                      Mandarin Research <br /> group 3
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2">
+                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
+                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
+                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
                       <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        href="https://doi.org/10.1016/j.jum.2018.03.001"
                         target="_blank"
                       >
                         View Cluster
@@ -376,28 +319,25 @@ const ResearchCluster = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[260px] h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute top-[74px] max-w-[174px] pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px]">December 1998</p>
-                  <h3 className="text-[#1B1B1B] font-bold text-[12px] lg:text-[16px] leading-[150%]">
+              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] lg:flex">
+                <div className="p-6">
+                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
+                    2011
+                  </p>
+                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
                     <a
+                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
                       target="_blank"
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
                     >
-                      Mandarin Research group 3
+                      Mandarin Research <br /> group 3
                     </a>
                   </h3>
                 </div>
-                <div className="w-full h-[72px] bg-white py-[18px] px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2">
+                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
+                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
+                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
                       <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        href="https://doi.org/10.1016/j.jum.2018.03.001"
                         target="_blank"
                       >
                         View Cluster

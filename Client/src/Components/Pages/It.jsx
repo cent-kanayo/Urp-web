@@ -5,9 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
+import Timi from '../../assets/Excos/timi.webp';
 
 import Excocard from '../Resuables/Excocard';
 import Comment from '../../Components/Resuables/Comment';
@@ -49,11 +47,11 @@ const It = () => {
         </div>
       </section>
       <section className="mt-[80px] max-w-[1119px] mx-auto flex flex-wrap justify-center gap-6">
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
+        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
       </section>
       <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">

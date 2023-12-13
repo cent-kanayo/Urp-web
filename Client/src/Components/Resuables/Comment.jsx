@@ -6,8 +6,8 @@ const Comment = () => {
           Leave a comment
         </h2>
         <p className="text-[#090302] text-[14px] mb-6">
-          Send feedback on this section directly to the gods. Fill all fields
-          below.
+          Drop your feedback below, and we'll be prompt in responding. Thank you
+          for being a part of our community
         </p>
         <form action="">
           <div className="flex flex-col mb-6">

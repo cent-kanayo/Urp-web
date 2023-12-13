@@ -1,12 +1,5 @@
 import Journal from '../../assets/journals.png';
 
-import Exco1 from '../../assets/Excos/exco1.png';
-import Exco2 from '../../assets/Excos/exco2.png';
-import Exco3 from '../../assets/Excos/exco3.png';
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
-
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
 

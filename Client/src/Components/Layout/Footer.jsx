@@ -73,14 +73,14 @@ const Footer = () => {
                   open monday - friday from 8:00am to 4:00pm
                 </p>
               </div>
-              <p className="text-[#EAA966] text-[12px] lg:text-[14px]">
+              <p className="text-[#F0C808] text-[12px] lg:text-[14px]">
                 visit university website
               </p>
             </div>
           </div>
         </header>
       </section>
-      <section className="h-[75px] flex justify-center items-center bg-white shadow-md py-4 lg:py-0">
+      <section className="h-[75px] flex justify-center items-center bg-[#F5FFF6] shadow-md py-4 lg:py-0">
         <p className="text-center text-[10px] lg:text-[14px]">
           Copyright &copy; {new Date().getFullYear()} department of urban and
           regional planning

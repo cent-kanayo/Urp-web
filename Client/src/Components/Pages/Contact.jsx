@@ -16,16 +16,16 @@ const Contact = () => {
           </h1>
         </div>
       </section>
-      <section className="max-w-[1112px] mx-auto mb-[64px] lg:mb-20 px-6 lg:px-0">
+      <section className="max-w-[1112px] mx-auto mb-[64px] lg:mb-20 px-6 lg:px-0 text-[#1B1B1B]">
         <h2 className="text-center text-[24px] lg:text-[40px] font-[600] mb-6 lg:mb-10">
-          Random Acquire to Maguire
+          Get in Touch with us
         </h2>
         <div className="leading-[150%] flex flex-col max-w-[800px] mx-auto">
           <p className="lg:mb-6 text-[12px] lg:text-[16px] text-center">
-            If you’re an adventurer who loves being out in nature, a hiking and
-            trekking tour should be next on your <br /> list. You can expect
-            great wildlife photography opportunities and the chance to travel
-            with a group of like-minded individuals who love the great outdoors.
+            Have questions, need assistance, or want to learn more about Urban
+            and Regional planning? Reach out to us! Our team is here to help and
+            eager to assist you on your academic journey. Fill out the form
+            below, and we'll get back to you promptly.
           </p>
         </div>
       </section>

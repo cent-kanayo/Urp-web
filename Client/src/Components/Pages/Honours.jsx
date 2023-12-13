@@ -1,20 +1,7 @@
-import Journal from '../../assets/journals.png';
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
-
-import LeftIcon from '../../assets/left.png';
-import RightIcon from '../../assets/right.png';
+import Timi from '../../assets/Excos/timi.webp';
 
 import Excocard from '../Resuables/Excocard';
-import Cta from '../Resuables/Cta';
 import Contact from '../Resuables/Contact';
-
-import GetHelp from '../Resuables/GetHelp';
-
-import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import { useEffect, useState } from 'react';
 
 const Honours = () => {
   return (
@@ -47,14 +34,11 @@ const Honours = () => {
       </section>
       <section className="mt-[80px] px-4 lg:px-0">
         <div className="flex justify-center flex-wrap gap-5 max-w-[1119px] mx-auto">
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco4} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco5} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
-          <Excocard name="Oreoluwa Jeffery" role="president" image={Exco6} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+          <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
         </div>
         {/* <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">

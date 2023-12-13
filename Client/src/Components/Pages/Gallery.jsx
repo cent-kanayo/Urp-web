@@ -1,16 +1,5 @@
 import Journal from '../../assets/journals.png';
 
-import Fj from '../../assets/Excos/fjs.png';
-import John from '../../assets/Excos/john.png';
-import Sonia from '../../assets/Excos/sonia.png';
-import Pamela from '../../assets/Excos/pamela.png';
-import Timi from '../../assets/Excos/timi.png';
-import Korede from '../../assets/Excos/korede.png';
-import Exco4 from '../../assets/Excos/exco4.png';
-import Exco5 from '../../assets/Excos/exco5.png';
-import Exco6 from '../../assets/Excos/exco6.png';
-
-import Excocard from '../Resuables/Excocard';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -66,9 +55,12 @@ const Gallery = () => {
       clearInterval(slider);
     };
   }, [index]);
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <main>
-      <section className="hero-bg text-center mb-20">
+      <section className="hero-bg text-center">
         {BGS.map((pic, picIndex) => {
           let position = 'nextSlide';
           if (picIndex === index) {
@@ -86,31 +78,31 @@ const Gallery = () => {
               <img
                 src={pic}
                 alt="Background carousel 1"
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
           );
         })}
 
-        <div className="py-[204.5px]">
-          <div className="flex justify-center items-center gap-x-[126px]">
+        <div className="py-[100px] lg:py-[204.5px]">
+          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] lg:px-0">
             <span
-              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('prev')}
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span>
-            <div className="w-[709px] h-143px] bg-[#090302] py-6 px-10 flex flex-col justify-between gap-10 items-center">
-              <p className="text-[24px] text-[#F0C808] font-medium leading-[150%]">
+            <div className="welcome-box flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] py-3 lg:py-6 px-3 lg:px-10 items-center">
+              <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
                 Where Innovation Meets Excellence!
               </p>
-              <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[40px] font-bold text-[#F5FFF6]">
+              <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#F5FFF6]">
                 Urban & Regional Planning
               </h1>
             </div>
             <span
-              className="border-[2px] border-[#F0C808] p-2 hover:bg-[#F0C808]"
+              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('next')}
             >
@@ -122,11 +114,14 @@ const Gallery = () => {
       <section className="max-w-[1122px] mx-auto mb-20">
         <div>
           <h3 className="text-[#011717] text-[40px] font-bold capitalize mb-[40px]">
-            Folders
+            News
           </h3>
           <div className="">
             <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[358px] h-[530px] bg-[#1B1B1B] rounded-[2px] p-4">
+              <Link
+                to="/news"
+                className="relative w-[358px] h-[530px] bg-[#1B1B1B] rounded-[2px] p-4"
+              >
                 <div>
                   <p className="text-[#F0C808] text-[14px] mb-2">June, 2020</p>
                   <h2 className="text-[#FDFFFD] text-[24px] font-medium mb-2">
@@ -156,7 +151,7 @@ const Gallery = () => {
                     />
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="relative w-[358px] h-[530px] bg-[#1B1B1B] rounded-[2px] p-4">
                 <div>
                   <p className="text-[#F0C808] text-[14px] mb-2">June, 2020</p>
@@ -234,7 +229,7 @@ const Gallery = () => {
       <section className="max-w-[1122px] mx-auto">
         <div>
           <h3 className="text-[#011717] text-[40px] font-bold capitalize mb-[40px]">
-            Event Gallery
+            Events
           </h3>
           <div className="flex space-x-6">
             <div className="w-[358px] h-[642px] bg-[#1B1B1B] rounded-[2px] p-4">
