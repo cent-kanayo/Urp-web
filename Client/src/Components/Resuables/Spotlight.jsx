@@ -1,8 +1,8 @@
 import SpotlightBox from './SpotlightBox';
 
-import Pen from '../../assets/pen.png';
+import Pen from '../../assets/mainDesktop/planners.png';
 import Student from '../../assets/student.png';
-import City from '../../assets/city.png';
+import City from '../../assets/mainDesktop/pro.png';
 
 const Spotlight = () => {
   return (

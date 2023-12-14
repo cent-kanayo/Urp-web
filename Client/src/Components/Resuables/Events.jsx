@@ -1,6 +1,10 @@
 import EventCard from './EventCard';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import Prof from '../../assets/mainDesktop/law.png';
+import Fj from '../../assets/mainDesktop/fj.png';
+import Paint from '../../assets/mainDesktop/paint.png';
+import Orientation from '../../assets/mainDesktop/orientation.png';
+
 import { Link } from 'react-router-dom';
 
 const Events = () => {
@@ -44,9 +48,21 @@ const Events = () => {
             </div>
           </Link>
           <div className="flex flex-col gap-6 lg:gap-[20px]">
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard
+              image={Fj}
+              text="UNILAG Urban and Regional Student Shines at 1st NITP National Essay and Quiz Competition"
+              date="November, 2022"
+            />
+            <EventCard
+              image={Orientation}
+              date="December,2023"
+              text="Freshers Orientation Program 2023 Navigating Horizons: Blueprinting Success in Urban Futures"
+            />
+            <EventCard
+              image={Paint}
+              date="December,2023"
+              text="Paint and Chill Event"
+            />
           </div>
         </div>
       </div>

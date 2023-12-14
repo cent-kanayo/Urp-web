@@ -183,18 +183,19 @@ const Home = () => {
                 <p className="translate-y-2">HOD</p>
               </div>
               <p className="text-[14px] leading-[150%] hidden lg:block">
-                I would like to express my pride of belonging to the Department
-                of Urban and Regional Planning, Faculty of Environmental
-                Science, University of Lagos. It is taught in a few and highly
-                elitist universities in Nigeria, hence the need to meet
-                universal standards to master the requisite skills of
-                architectural design. Since its foundation....
+                Welcome to the Department of Urban and Regional Planning at the
+                University of Lagos! As the Head of Department, it is my utmost
+                pleasure to extend a warm welcome to both our new and existing
+                students. You have chosen a field that is at the forefront of
+                shaping sustainable and vibrant communities. This student
+                website has been specially crafted to serve as your compass,
+                providing you with the essential information...
               </p>
               <p className="text-[12px] leading-[150%] lg:hidden">
-                I would like to express my pride of belonging to the Department
-                of Urban and Regional Planning, Faculty of Environmental
-                Science, University of Lagos. It is taught in a few and highly
-                elitist universities in Nigeria...
+                Welcome to the Department of Urban and Regional Planning at the
+                University of Lagos! As the Head of Department, it is my utmost
+                pleasure to extend a warm welcome to both our new and existing
+                students. You have chosen...
               </p>
               <div>
                 <Link
@@ -220,19 +221,16 @@ const Home = () => {
               Introducing The Journal
             </h2>
             <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills of
-              architectural design. Since its foundation...
+              Urban and Regional Planning Review (URPR) is a multidisciplinary
+              journal devoted to articles that address contemporary urban and
+              regional issues and is directed towards an audience that includes
+              practitioners, policymakers, scholars and students.....
             </p>
             <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills ...
+              Urban and Regional Planning Review (URPR) is a multidisciplinary
+              journal devoted to articles that address contemporary urban and
+              regional issues and is directed towards an audience that includes
+              practitioners, policymakers, scholars and students.....
             </p>
             <div>
               <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
@@ -255,19 +253,19 @@ const Home = () => {
               Innovative research hubs
             </h2>
             <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills of
-              architectural design. Since its foundation...
+              At the Department of Urban and Regional Planning, we are driven by
+              the profound belief in the transformative power of collaborative
+              research. We recognize that the collective intelligence of diverse
+              minds working together has the capacity to transcend conventional
+              limits, opening new frontiers of knowledge and making
+              substantial.....
             </p>
             <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills...
+              At the Department of Urban and Regional Planning, we are driven by
+              the profound belief in the transformative power of collaborative
+              research. We recognize that the collective intelligence of diverse
+              minds working together has the capacity to transcend conventional
+              limits...
             </p>
             <div>
               <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
