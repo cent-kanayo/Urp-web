@@ -118,14 +118,28 @@ const About = () => {
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
-                About URP Department
+                About Urban and Regional Planning Department
               </h3>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                The Urban and Regional Planning department is dedicated to the
+                pursuit of academic excellence through learning, teaching, and
+                research in the field. The primary goal is to contribute to the
+                advancement of urban and regional planning practices, ultimately
+                improving the quality of human settlements. The department aims
+                to provide design solutions for current settlement challenges
+                and anticipate future requirements by imparting design skills
+                that articulate plans and guide their implementation. It
+                emphasizes the importance of ensuring the effective execution of
+                planning solutions, producing plans that are feasible and
+                actionable. Furthermore, the department seeks to address
+                critical issues in planning and development, working towards
+                minimizing the urban and rural divide. An additional objective
+                is to foster the advancement of learning, offering equal
+                educational opportunities to qualified individuals irrespective
+                of race, creed, gender, or political affiliation in the domain
+                of Urban and Regional Planning.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -139,14 +153,18 @@ const About = () => {
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
                 role="button"
               >
-                Intro
+                Rationale/Justification
               </h3>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                The Department prepares graduate planners to influence positive
+                economic, social, political, and technological outcomes through
+                physical interventions. Graduates are trained to create optimal
+                environments for decision-making and actions, aiming for maximum
+                societal benefits at minimal costs. Success is gauged by
+                achieving harmony in a physically beautiful, economical, secure,
+                and efficient environment.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -165,9 +183,11 @@ const About = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                To train and produce world class professional town planners,
+                equipped with requisite knowledge and skills to solve
+                contemporary planning and development problems; and who are
+                ethically upright and excellent in character and service to
+                humanity.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -186,9 +206,34 @@ const About = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                To further the practice and theoretical development of Urban and
+                Regional Planning by providing a conducive teaching, learning
+                and development environment where staff and students can
+                interact and compete effectively with their counterparts both
+                nationally and internationally in terms of intellectual and
+                professional competence.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="mb-4">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
+                role="button"
+              >
+                Our Philosophy
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                The programme is designed to graduate professionals who are able
+                to comprehend the complex nature of the problems and prospects
+                of human settlements through competent teaching of a wide range
+                of courses.
               </Typography>
             </AccordionDetails>
           </Accordion>
