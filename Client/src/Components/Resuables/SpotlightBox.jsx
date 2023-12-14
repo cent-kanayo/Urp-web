@@ -18,17 +18,14 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
         <h2 className="inter mb-4 whitespace-nowrap capitalize">{h2}</h2>
         <p className="mb-4">{p}</p>
         <div className="px-0">
-          <Link
-            to={link}
-            className="hover:animate-pulse flex items-center gap-x-2 capitalize"
-          >
+          <p className="hover:animate-pulse flex items-center gap-x-2 capitalize">
             <span className="text-[12px] lg:text-[14px] underline underline-offset-4">
               {btn}
             </span>
             <span>
               <img src={Arrow} alt="Arrow Right Icon" width="24" />
             </span>
-          </Link>
+          </p>
         </div>
       </div>
     </Link>

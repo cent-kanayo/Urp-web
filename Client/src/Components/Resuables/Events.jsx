@@ -36,12 +36,9 @@ const Events = () => {
             </div>
             <div className="w-[144px] flex justify-center items-center gap-x-2 border-[0.5px] border-[#010A09] rounded-[2px]  py-2">
               <span>
-                <Link
-                  to="/news"
-                  className="text-[1rem] text-[#010A09] capitalize"
-                >
+                <p className="text-[1rem] text-[#010A09] capitalize">
                   read more
-                </Link>
+                </p>
               </span>
               <EastOutlinedIcon />
             </div>

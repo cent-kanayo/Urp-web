@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Pen from '../../assets/mainDesktop/pen.png';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const PlannersPen = () => {
   useEffect(() => {
@@ -77,7 +78,11 @@ const PlannersPen = () => {
       </section>
       <section className="mt-[80px] bg-white py-[80px]">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4 lg:px-0">
-          <div className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0">
+          <Link
+            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503194/URP/THE_PLANNER_S_PEN_VOLUME_1_APRIL_2020_t6ayy3.pdf"
+            target="_blank"
+            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+          >
             <div>
               <img src={Pen} alt="" className="w-full" />
             </div>
@@ -107,8 +112,12 @@ const PlannersPen = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0">
+          </Link>
+          <Link
+            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503187/URP/The_Planners__Pen_Second_Edition_r6w9ym.pdf"
+            target="_blank"
+            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+          >
             <div>
               <img src={Pen} alt="" className="w-full" />
             </div>
@@ -138,8 +147,12 @@ const PlannersPen = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0">
+          </Link>
+          <Link
+            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503183/URP/THE-PLANNERS-PEN-VOLUME-3_ea0ap5.pdf"
+            target="_blank"
+            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+          >
             <div>
               <img src={Pen} alt="" className="w-full" />
             </div>
@@ -169,7 +182,7 @@ const PlannersPen = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
       <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">

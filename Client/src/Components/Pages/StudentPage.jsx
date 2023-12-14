@@ -111,7 +111,7 @@ const StudentPage = () => {
           </div>
         </div>
       </section>
-      s
+
       <section className="mt-[40px] lg:mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
           <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold capitalize ">

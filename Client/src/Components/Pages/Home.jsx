@@ -21,6 +21,7 @@ import Bg5 from '../../assets/mainDesktop/homebg5.webp';
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { Link } from 'react-router-dom';
+import { getPosts } from '../../../sanity';
 
 const BGS = [Bg1, Bg2, Bg3, Bg4, Bg5];
 
@@ -55,6 +56,9 @@ const Home = () => {
       clearInterval(slider);
     };
   }, [index]);
+  useEffect(() => {
+    getPosts();
+  }, []);
   return (
     <main>
       <section className="hero-bg text-center">
@@ -116,27 +120,27 @@ const Home = () => {
           </h3>
           <div className="flex flex-col gap-[64px] lg:gap-0 justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
             <NumberBox
-              text="urban"
-              heading="#1"
-              sub="Different spaces designed annually"
+              text="Courses"
+              heading="7"
+              sub="Number of courses offered in the department"
               color="green"
             />
             <NumberBox
-              text="creative"
-              heading="11th"
-              sub="Different spaces designed annually "
+              text="Excellence"
+              heading="5"
+              sub="Number of First Class students currently in the Department"
               color="yellow"
             />
             <NumberBox
-              text="innovate"
-              heading="16"
-              sub="We lead the way with innovation"
+              text="Capacity"
+              heading="200"
+              sub="Number of students currently enrolled in the Department"
               color="orange"
             />
             <NumberBox
               text="diverse"
-              heading="320"
-              sub="Our students and staff come from diverse communities"
+              heading="1142"
+              sub="Number of total students enrolled since inception of the Department"
               color="red"
             />
           </div>
