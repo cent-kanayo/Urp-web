@@ -563,6 +563,13 @@ RS Page
     height: 320px;
   }
 }
+.planners-bg {
+  background: url('./assets/mainDesktop/penbg.png'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
 .journal-bg {
   background: url('./assets/mainDesktop/journalbg.png'), lightgray 50%;
   background-repeat: no-repeat;

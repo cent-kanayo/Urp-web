@@ -35,6 +35,8 @@ import Gallery from './Gallery';
 import Taofik from './Taofik';
 import Lekan from './Lekan';
 import Anthony from './Anthony';
+import TheJournal from './TheJournal';
+import Journal1 from './Journal1';
 export {
   Home,
   StudentPage,
@@ -73,4 +75,6 @@ export {
   Contact,
   It,
   Gallery,
+  TheJournal,
+  Journal1,
 };

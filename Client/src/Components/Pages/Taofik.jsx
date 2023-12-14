@@ -9,7 +9,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import Lawanson from '../../assets/lecturers/lawanson.webp';
+import Lawanson from '../../assets/admin/Salau.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
@@ -59,11 +59,11 @@ const Taofik = () => {
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1 bg-[#9B9FAB]">
-          {/* <img
+          <img
             src={Lawanson}
             alt="Our HOD"
-           className="h-[320px] lg:h-[600px] w-[100%] object-cover"
-          /> */}
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
+          />
         </div>
         <div className="flex-1 bg-[#1C2954] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">

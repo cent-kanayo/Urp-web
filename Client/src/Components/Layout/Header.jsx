@@ -214,7 +214,7 @@ const Header = ({ setSidebar }) => {
                 to="/urp-journal"
                 className="px-6 py-3 flex justify-center items-center bg-[#037171] hover:bg-[#03312E] rounded-[4px] text-white"
               >
-                <span className="whitespace-nowrap">Download Journal</span>
+                <span className="whitespace-nowrap">The URP Journal</span>
               </Link>
             </div>
           </div>

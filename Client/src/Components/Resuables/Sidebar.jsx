@@ -188,7 +188,7 @@ const Sidebar = ({ setSidebar }) => {
           </div>
         </div>
         <div className="bg-[#CDE3E3] rounded-[4px] flex justify-center items-center py-3 mt-[48px]">
-          <button className="w-full text-[16px">Download Journal</button>
+          <button className="w-full text-[16px">The URP Journal</button>
         </div>
       </div>
     </aside>

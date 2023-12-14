@@ -15,7 +15,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import Lawanson from '../../assets/lecturers/lawanson.webp';
+import Lawanson from '../../assets/lecturers/Alade.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
@@ -65,13 +65,13 @@ const Alade = () => {
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1 bg-[#9B9FAB]">
-          {/* <img
+          <img
             src={Lawanson}
             alt="Prof. Taibat LAWANSON"
             className="h-[320px] lg:h-[600px] w-[100%] object-cover"
-          /> */}
+          />
         </div>
-        <div className="flex-1 bg-[#1C2954]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-[#6E8457]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />

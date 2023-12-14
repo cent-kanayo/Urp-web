@@ -4,7 +4,7 @@ import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 import Contact from '../Resuables/Contact';
 import Alarm from '../../assets/alarm.png';
 
-const Journal = () => {
+const Journal1 = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -13,7 +13,7 @@ const Journal = () => {
       <section className="flex mb-[80px] journal-bg">
         <div className="journal-welcome flex-1">
           <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
-            The URP Journal V9
+            The URP Journal V8
           </h1>
         </div>
       </section>
@@ -28,7 +28,7 @@ const Journal = () => {
               <h2 className="text-[#FDFFFD] text-[32px] lg:text-[2.5rem] font-bold mb-[106px] lg:mb-[32px]">
                 The <br /> Journal
               </h2>
-              <p className="text-[#FDFFFD] mb-[109px]">VOLUME 9, NO 1</p>
+              <p className="text-[#FDFFFD] mb-[109px]">VOLUME 8, NO 1</p>
               <p className="text-[#FDFFFD] text-[14px] lg:text-[16px]">
                 The Department of Urban and Regional Planning
               </p>
@@ -46,86 +46,91 @@ const Journal = () => {
             <p className="mb-6 text-[#1B1B1B] text-[20px]">Contributors</p>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
-                <h3 className="text-[14px] text-[#090302]">Muyiwa Agunbiade</h3>
+                <h3 className="text-[14px] text-[#090302]">
+                  Wali Itopa Ibrahim, Peret Patience Danlami
+                </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Spatial Planning and Land Administration Issues in the Lagos
-                  Megacity
+                  Assessment of Sanitary Facilities in Primary Schools, Mando
+                  Afaka, Igabi LGA, Kaduna, Nigeria
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Adeyemi, Sesan Adeniyi, Onifade, Victor Abimbola Jimoh, Haruna
-                  Olayiwola, Akindeju Foluyele
+                  Balogun, Joseph Olabode
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Development Control as a Tool for Urban Sustainability in
-                  South-Western Nigeria
+                  Assessing the Knowledge of Household Practice and Solid Waste
+                  Characterization in Lokoja Metropolis
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Suleiman, A. R., Abdulraheem, M.O, Adelabu, J.K.
+                  Michael Oloyede Alabi, Ayoyimika Esther Agi
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Impact of Urbanisation on Residents’ Quality of Life in
-                  Lokoja, Kogi State, Nigeria
+                  Analyses of Spatio-Temporal Land use Conversion and
+                  implication in Akure, Nigeri
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Abdullateef Iyanda BAKO, Femi Adekunle BALOGUN
+                  Famutimi, John Taiwo, Olugbamila, Omotayo Ben
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  A Review of Emerging Issues on Urban Land Management Policy in
-                  Nigeria
+                  Implications of Living in Harmony with Nature for Urban
+                  Sustainability in Post Covid-19 Era
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Emmanuel, A.A, Adigun, T. O.
+                  Farinmade Ademola, Akinyemi Toluwaniyin Inioluwa
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Livelihood Correlate of Urban Agriculture in Ogbomoso, Nigeria
-                </p>
-              </div>
-            </div>
-            <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
-              <div>
-                <h3 className="text-[14px] text-[#090302]">Babalola, A. J.</h3>
-                <p className="text-[14px] text-[#5B5756]">
-                  Influence of Macroeconomic Variables on Construction Material
-                  Prices in Lagos State: An Auto-Regressive Distributed Lagos
-                  Approach Contributors: Gbemiga Bolade Faniran
+                  The Effects of an Inadequate Data Bank System on Real Estate
+                  Agency Practice in Lagos Mainland, Nigeria
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Sunday Kazahshii Habila
+                  Gbemiga Bolade Faniran, Ayobami Phillip Adebayo
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Assessing Households’ Sanitation and Sewage Management
-                  Practices in Kaduna Metropolis, Kaduna State Nigeria
+                  Urban Landuse and Traffic Calming Devices in Ibadan, Nigeria:
+                  Implications for Improved Road Safety Contributors: Gbemiga
+                  Bolade Faniran
                 </p>
               </div>
             </div>
             <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
               <div>
                 <h3 className="text-[14px] text-[#090302]">
-                  Abiodun, Oludayo Emmanuel, Salami Tosin
+                  Alade A. A, Agunloye O. O., Ajakaiye O.O.
                 </h3>
                 <p className="text-[14px] text-[#5B5756]">
-                  Land Use Dynamics of Urban Change in the Lagos-Ogun Urban
-                  Fringe, Southwest Nigeria
+                  Pupil Pedestrians’ Challenges in High-Density Areas of Lagos
+                  Metropolis
+                </p>
+              </div>
+            </div>
+            <div className="border-t-[1px] border-[#CECDCC] py-2 px-4 flex items-center space-x-[17px]">
+              <div>
+                <h3 className="text-[14px] text-[#090302]">
+                  Dr. Victor U. Onyebueke, Dr. Akinyinka Akinyoade
+                </h3>
+                <p className="text-[14px] text-[#5B5756]">
+                  Functions and Effects of New Connectivities on Rural-Urban
+                  Symbiosis and Integrated Planning in Enugu Metropolis,
+                  South-East Nigeria
                 </p>
               </div>
             </div>
@@ -190,61 +195,49 @@ const Journal = () => {
           <div className="lg:max-w-none flex items-center gap-3 lg:gap-6 flex-wrap mt-[80px] justify-center lg:justify-start py-10">
             <div className="flex flex-wrap gap-x-4 gap-y-6 text-[#1B1B1B] py-4 px-3">
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Spatial Planning
+                Sanitary Facilities
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Land Administration
+                Solid Waste
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Sustainable Development
+                Waste Segregation
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Population
+                Nature
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Urban Planning
-              </p>
-              <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Development Control
-              </p>
-              <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Settlement
+                Land Use
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
                 Urban Growth
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Urbanism
+                Land Use Conversion
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Infrastructure
+                Covid-19 Pandemic
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Land Policy
+                Humanity
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Urban Land Management
+                Pedestrian
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Urban expansion
+                Community development
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Sustainable Development Goals
+                Harmony
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Livelihood
+                Circular Migration
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Open Defecation
+                New Connectivities
               </p>
               <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Containment
-              </p>
-              <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Domestic Sewage
-              </p>
-              <p className="bg-[#CDE3E3] rounded-[4px] px-4 py-2 text-center text-[10px]">
-                Land use
+                Rural-Urban Symbiosis
               </p>
             </div>
           </div>
@@ -255,4 +248,4 @@ const Journal = () => {
   );
 };
 
-export default Journal;
+export default Journal1;

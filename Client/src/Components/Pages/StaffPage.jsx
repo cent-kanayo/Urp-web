@@ -14,6 +14,9 @@ import Laja from '../../assets/admin/orelaja.webp';
 import Deju from '../../assets/admin/deju.webp';
 import Yemi from '../../assets/admin/adeyemi.webp';
 import Niji from '../../assets/admin/adeniji.webp';
+import Alade from '../../assets/lecturers/Alade.png';
+import Salau from '../../assets/lecturers/Salau.png';
+import Icon from '../../assets/lecturers/Icon.png';
 import Jet from '../../assets/jet.png';
 import Bg from '../../assets/staff1.png';
 import Bg1 from '../../assets/staff2.png';
@@ -66,12 +69,25 @@ const StaffPage = () => {
             image={Law}
             link={'taibat-lawanson'}
           />
+          <Excocard
+            name="Dr. A.A. ALADE"
+            role="Associate Professor"
+            image={Alade}
+            link={'adewale-alade'}
+          />
 
           <Excocard
             name="Dr. V.U. ILECHUKWU"
             role="Senior Lecturer"
             image={Vic}
             link={'victor-ilechukwu'}
+          />
+
+          <Excocard
+            name="Dr. T.I. SALAU"
+            role="Senior Lecturer"
+            image={Salau}
+            link={'taofik-salau'}
           />
 
           <Excocard
@@ -129,6 +145,20 @@ const StaffPage = () => {
             name="Ms. M.D. ODEKUNLE"
             role="Lecturer II"
             image={Kunle}
+            link={'d-odekunle'}
+          />
+
+          <Excocard
+            name="Ms. M.D. ODEKUNLE"
+            role="Lecturer II"
+            image={Icon}
+            link={'d-odekunle'}
+          />
+
+          <Excocard
+            name="Ms. M.D. ODEKUNLE"
+            role="Lecturer II"
+            image={Icon}
             link={'d-odekunle'}
           />
         </div>

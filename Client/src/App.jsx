@@ -38,6 +38,8 @@ import {
   Taofik,
   Lekan,
   Anthony,
+  TheJournal,
+  Journal1,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 import Uploads from './Components/Auth/Uploads';
@@ -76,7 +78,9 @@ function App() {
           <Route path="student-of-the-month" element={<StudentSpotlight />} />
           <Route path="news" element={<NewsPage />} />
           <Route path="planners-pen" element={<PlannersPen />} />
-          <Route path="urp-journal" element={<Journal />} />
+          <Route path="urp-journal" element={<TheJournal />} />
+          <Route path="journal-v8" element={<Journal />} />
+          <Route path="journal-v9" element={<Journal1 />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/single-project" element={<SingleProject />} />
           <Route path="urp-handbook" element={<Handbook />} />

@@ -4,7 +4,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import Pen from '../../assets/mainDesktop/pen.png';
+import Pen1 from '../../assets/mainDesktop/pen1.png';
+import Pen2 from '../../assets/mainDesktop/pen2.png';
+import Pen3 from '../../assets/mainDesktop/pen3.png';
+
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,13 +17,13 @@ const PlannersPen = () => {
   }, []);
   return (
     <main className="overflow-x-hidden">
-      <section className="mb-[64px] lg:mb-[72px] h-[505px] lg:h-[720px] bg-[#9D9E9D] py-[106px] lg:py-[172px] flex items-end justify-start ">
+      <section className="mb-[64px] lg:mb-[72px] h-[505px] lg:h-[720px] bg-[#9D9E9D] py-[106px] lg:py-[172px] flex items-end justify-start planners-bg">
         <div className="max-w-[1212px] mx-auto flex-1 px-[52px] lg:px-0">
           <div className="flex flex-col text-white">
-            <p className="text-[24px] lg:text-[32px]">The</p>
+            {/* <p className="text-[24px] lg:text-[32px]">The</p>
             <h1 className="-mt-4 lg:-mt-6 font-semibold text-[48px] lg:text-[96px] whitespace-nowrap">
               Planner’s Pen
-            </h1>
+            </h1> */}
           </div>
         </div>
       </section>
@@ -79,12 +82,16 @@ const PlannersPen = () => {
       <section className="mt-[80px] bg-white py-[80px]">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4 lg:px-0">
           <Link
-            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503194/URP/THE_PLANNER_S_PEN_VOLUME_1_APRIL_2020_t6ayy3.pdf"
+            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503183/URP/THE-PLANNERS-PEN-VOLUME-3_ea0ap5.pdf"
             target="_blank"
-            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+            className="lg:max-w-[345px] w-full pen-box pb-2"
           >
             <div>
-              <img src={Pen} alt="" className="w-full" />
+              <img
+                src={Pen3}
+                alt=""
+                className="w-full h-[236px] object-cover"
+              />
             </div>
             <div className="px-3 pt-4">
               <div>
@@ -116,10 +123,14 @@ const PlannersPen = () => {
           <Link
             to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503187/URP/The_Planners__Pen_Second_Edition_r6w9ym.pdf"
             target="_blank"
-            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+            className="lg:max-w-[345px] w-full pen-box pb-2"
           >
             <div>
-              <img src={Pen} alt="" className="w-full" />
+              <img
+                src={Pen2}
+                alt=""
+                className="w-full h-[236px] object-cover"
+              />
             </div>
             <div className="px-3 pt-4">
               <div>
@@ -149,12 +160,16 @@ const PlannersPen = () => {
             </div>
           </Link>
           <Link
-            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503183/URP/THE-PLANNERS-PEN-VOLUME-3_ea0ap5.pdf"
+            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503194/URP/THE_PLANNER_S_PEN_VOLUME_1_APRIL_2020_t6ayy3.pdf"
             target="_blank"
-            className="lg:max-w-[345px] w-full lg:h-[350px] pen-box pb-2 lg:pb-0"
+            className="lg:max-w-[345px] w-full pen-box pb-2 lg:pb-0"
           >
             <div>
-              <img src={Pen} alt="" className="w-full" />
+              <img
+                src={Pen1}
+                alt=""
+                className="w-full h-[236px] object-cover"
+              />
             </div>
             <div className="px-3 pt-4">
               <div>
