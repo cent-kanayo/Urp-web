@@ -3,9 +3,21 @@ import Journal from '../../assets/journals.png';
 import Fj from '../../assets/Excos/fjs.webp';
 import John from '../../assets/Excos/john.webp';
 import Sonia from '../../assets/Excos/sonia.webp';
-import Pamela from '../../assets/Excos/pamela.webp';
+import Pamela from '../../assets/Excos/araf.webp';
 import Timi from '../../assets/Excos/timi.webp';
 import Korede from '../../assets/Excos/korede.webp';
+import Folake from '../../assets/Excos/folake.webp';
+import Fred from '../../assets/Excos/fred.webp';
+import Jon from '../../assets/Excos/Eins.webp';
+import Mo from '../../assets/Excos/mo.webp';
+
+import P1 from '../../assets/Students/p1.png';
+import P2 from '../../assets/Students/p2.png';
+import P3 from '../../assets/Students/p3.png';
+import P4 from '../../assets/Students/p4.png';
+import P5 from '../../assets/Students/p5.png';
+import P6 from '../../assets/Students/p6.png';
+import P7 from '../../assets/Students/p7.png';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
@@ -120,7 +132,7 @@ const StudentPage = () => {
         </div>
         <div className="flex justify-center flex-wrap gap-[22px] lg:gap-6 max-w-[1249px] mx-auto">
           <Excocard name="John Favour" role="president" image={Fj} />
-          <Excocard name="Aminu Gbenga" role="Vice President" image={John} />
+          <Excocard name="Aminu Gbenga" role="Vice President" image={Jon} />
           <Excocard
             name="Sonia Ugwunna"
             role="General Secretary"
@@ -136,11 +148,23 @@ const StudentPage = () => {
             role="Social Secretary"
             image={Korede}
           />
+          <Excocard name="Sorunke Arafat" role="P.R.O" image={Pamela} />
           <Excocard
-            name="Okpini Pamela"
-            role="Financial Secretary"
-            image={Pamela}
+            name="Akinleye John"
+            role="Welfare Secretary"
+            image={John}
           />
+          <Excocard
+            name="Muibi Muhammed"
+            role="Asst. General Secretary"
+            image={Mo}
+          />
+          <Excocard
+            name="Folayan Folake"
+            role="Financial Secretary"
+            image={Folake}
+          />
+          <Excocard name="Laikpo Fredrick" role="Treasurer" image={Fred} />
         </div>
         {/* <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">
@@ -158,17 +182,31 @@ const StudentPage = () => {
           </h3>
           <div>
             <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]">
+                <img src={P6} alt="" className="w-full h-full object-cover" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
+                <img src={P5} alt="" className="w-full h-full object-cover" />
+              </span>
             </article>
             <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block">
+                <img src={P1} alt="" className="w-full h-full object-cover" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
+                <img src={P2} alt="" className="w-full h-full object-cover" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
+                <img src={P3} alt="" className="w-full h-full object-cover" />
+              </span>
             </article>
             <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]"></span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
+                <img src={P4} alt="" className="w-full h-full object-cover" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]">
+                <img src={P7} alt="" className="w-full h-full object-cover" />
+              </span>
             </article>
           </div>
         </div>
