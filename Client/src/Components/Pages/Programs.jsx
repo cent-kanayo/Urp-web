@@ -307,7 +307,7 @@ const Programs = () => {
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Postgraduate, Full-time
               </span>
-              {arrowUp1 ? (
+              {arrowUp3 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -355,7 +355,7 @@ const Programs = () => {
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Postgraduate, Part-time
               </span>
-              {arrowUp1 ? (
+              {arrowUp4 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -414,7 +414,7 @@ const Programs = () => {
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Postgraduate, Part-time
               </span>
-              {arrowUp1 ? (
+              {arrowUp5 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -465,7 +465,7 @@ const Programs = () => {
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Postgraduate, Part-time
               </span>
-              {arrowUp1 ? (
+              {arrowUp6 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
@@ -510,14 +510,14 @@ const Programs = () => {
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Undergraduate
               </span>
-              {arrowUp1 ? (
+              {arrowUp7 ? (
                 <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
               ) : (
                 <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
               )}
             </span>
           </div>
-          <div ref={ref6} className="programs-hide mt-6">
+          <div ref={ref7} className="programs-hide mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Urban and Regional Planning faces complex challenges, requiring a
               deep understanding of theoretical aspects. The BSc program aims to
