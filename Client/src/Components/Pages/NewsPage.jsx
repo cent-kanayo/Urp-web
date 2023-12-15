@@ -46,7 +46,7 @@ const NewsPage = () => {
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
           <img
-            // src={urlFor(post?.mainImage).width(300).url()}
+            src={urlFor(post?.mainImage).width(300).url()}
             alt={post?.subtitle}
             className="w-full h-full absolute -z-10 object-cover"
           />

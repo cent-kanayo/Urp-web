@@ -23,7 +23,7 @@ const Events = ({ posts }) => {
           >
             <div className="h-[200px] lg:h-[440px] lg:w-[548px] relative mb-4">
               <img
-                // src={urlFor(posts[0]?.mainImage).width(300).url()}
+                src={urlFor(posts[0]?.mainImage).width(300).url()}
                 alt={posts[0]?.subtitle}
                 className="block w-[100%] h-[100%] object-cover"
               />
