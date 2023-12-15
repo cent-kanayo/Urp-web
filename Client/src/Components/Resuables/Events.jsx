@@ -22,11 +22,13 @@ const Events = ({ posts }) => {
             className="hover:scale-105 transition-all ease-linear"
           >
             <div className="h-[200px] lg:h-[440px] lg:w-[548px] relative mb-4">
-              <img
-                src={urlFor(posts[0]?.mainImage).width(300).url()}
-                alt={posts[0]?.subtitle}
-                className="block w-[100%] h-[100%] object-cover"
-              />
+              {posts[0]?.mainImage && (
+                <img
+                  src={urlFor(posts[0]?.mainImage).width(300).url()}
+                  alt={posts[0]?.subtitle}
+                  className="block w-[100%] h-[100%] object-cover"
+                />
+              )}
             </div>
             <div className="max-w-[548px]">
               <p className="text-[#934B00] text-[20px] capitalize mb-3">

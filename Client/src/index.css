@@ -106,7 +106,7 @@ h5 {
 }
 .popup:hover {
   transition: all 0.25s linear;
-  background: #f5fff6;
+  background: #cde3e3;
 }
 .footer {
   height: 534px;

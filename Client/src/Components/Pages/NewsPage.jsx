@@ -45,11 +45,13 @@ const NewsPage = () => {
     <main>
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
-          <img
-            src={urlFor(post?.mainImage).width(300).url()}
-            alt={post?.subtitle}
-            className="w-full h-full absolute -z-10 object-cover"
-          />
+          {post?.mainImage && (
+            <img
+              src={urlFor(post?.mainImage).width(300).url()}
+              alt={post?.subtitle}
+              className="w-full h-full absolute -z-10 object-cover"
+            />
+          )}
           <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[67px] lg:py-[147px] px-6 lg:px-0">
             <div className="flex items-center space-x-2 mb-4 lg:mb-6">
               <article className="w-[24px] h-[2px] bg-white"></article>

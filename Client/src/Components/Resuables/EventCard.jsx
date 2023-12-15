@@ -6,11 +6,13 @@ const EventCard = ({ image, text, date, id }) => {
   return (
     <Link to={`/news/${id}`} className="lg:flex gap-[20px] max-w-[528px]">
       <div className="relative mb-4 flex-1 h-[200px] lg:w-[262px] ">
-        <img
-          src={image}
-          alt={text}
-          className="block w-[100%] h-[100%] object-cover"
-        />
+        {image && (
+          <img
+            src={image}
+            alt={text}
+            className="block w-[100%] h-[100%] object-cover"
+          />
+        )}
       </div>
       <div className="max-w-[614px] flex-1">
         <p className="text-[#934B00] text-[14px] capitalize mb-3">
