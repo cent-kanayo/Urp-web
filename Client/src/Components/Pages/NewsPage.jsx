@@ -133,7 +133,7 @@ const NewsPage = () => {
               <article className="flex justify-center mb-[24px] flex-wrap gap-[22px]">
                 {post?.gallery?.map((item) => {
                   return (
-                    <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block">
+                    <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
                       <img
                         src={urlFor(item).width(300).url()}
                         alt={post?.subtitle}
@@ -142,9 +142,6 @@ const NewsPage = () => {
                     </span>
                   );
                 })}
-
-                <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-                <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
               </article>
             </div>
           </div>
