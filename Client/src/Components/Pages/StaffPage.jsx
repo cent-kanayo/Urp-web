@@ -18,10 +18,6 @@ import Alade from '../../assets/lecturers/Alade.png';
 import Salau from '../../assets/lecturers/Salau.png';
 import Icon from '../../assets/lecturers/Icon.png';
 import Jet from '../../assets/jet.png';
-import Bg from '../../assets/staff1.png';
-import Bg1 from '../../assets/staff2.png';
-import Bg2 from '../../assets/staff3.png';
-import Bg3 from '../../assets/staff4.png';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';

@@ -64,3 +64,17 @@ export const projectImages = [
   H6,
   H7,
 ];
+export const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
 
@@ -6,30 +6,22 @@ import Contact from '../Resuables/Contact';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import rsbg from '../../assets/mainDesktop/news.png';
 
-import NewsCover from '../../assets/mainDesktop/newsflash.png';
-import Women from '../../assets/mainDesktop/women.png';
 import More from '../../assets/mainDesktop/more.png';
-import { getPosts, urlFor } from '../../../sanity';
+import { urlFor } from '../../../sanity';
 import { PortableText } from '@portabletext/react';
+import { useGlobalContext } from '../../Context/AppContext';
+import { useParams } from 'react-router-dom';
+import { months } from '../data';
+import { CircularProgress } from '@mui/material';
 
 const NewsPage = () => {
-  const [post, setPost] = useState([]);
-  const posts = async () => {
-    try {
-      const posts = await getPosts();
-      setPost(posts);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
+  const { id } = useParams();
+  console.log(id);
+  const { post, isLoading, fetchSinglePost } = useGlobalContext();
   const myPortableTextComponents = {
     types: {
-      image: ({ value }) => (
-        <img src={urlFor(value).width(300).height(150).url()} />
-      ),
+      image: ({ value }) => <img src={urlFor(value).width(300).url()} />,
       callToAction: ({ value, isInline }) =>
         isInline ? (
           <a href={value.url}>{value.text}</a>
@@ -40,35 +32,39 @@ const NewsPage = () => {
   };
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    posts();
+    fetchSinglePost(id);
   }, []);
-  if (!post.length) return <h1>Loading</h1>;
-  console.log(post[0]?.body);
+  if (isLoading)
+    return (
+      <div className="pt-10 pb-96 flex justify-center">
+        {<CircularProgress color="success" />}
+      </div>
+    );
+  console.log(post);
   return (
     <main>
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
           <img
-            src={urlFor(post[0]?.mainImage).width(300).url()}
-            alt=""
+            // src={urlFor(post?.mainImage).width(300).url()}
+            alt={post?.subtitle}
             className="w-full h-full absolute -z-10 object-cover"
           />
           <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[67px] lg:py-[147px] px-6 lg:px-0">
             <div className="flex items-center space-x-2 mb-4 lg:mb-6">
               <article className="w-[24px] h-[2px] bg-white"></article>
               <p className="text-[14px]">
-                {new Date(post[0]?._createdAt).getMonth()}{' '}
-                {new Date(post[0]?._createdAt).getFullYear()}
+                {months[new Date(post?._createdAt).getMonth()]}{' '}
+                {new Date(post?._createdAt).getFullYear()}
               </p>
             </div>
             <div className="max-w-[598px]">
               <div>
                 <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
-                  <q>{post[0]?.title}</q>
+                  <q>{post?.title?.substr(0, 50)}...</q>
                 </h1>
                 <p className="text-[12px] lg:text-[20px] max-w-[491px]">
-                  Professor Lawanson Calls for Human-Centred Urban Development
-                  Approach
+                  {post?.subtitle}
                 </p>
               </div>
             </div>
@@ -116,46 +112,42 @@ const NewsPage = () => {
       </section>
       <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-6">
-          {post[0]?.title}
+          {post?.subtitle}
         </h3>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
-            dignissimos expedita facilis consequuntur non nemo explicabo sunt
-            quidem deleniti tempore eaque ad ea soluta, minima iure alias id a
-            quia.
-          </p>
           <PortableText
-            value={post[0]?.body}
+            value={post?.body}
             components={myPortableTextComponents}
           />
         </div>
       </section>
+      {post?.gallery?.length && (
+        <section>
+          <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
+            <h3 className="text-center text-[32px] font-[600] capitalize mb-6">
+              Pictures from event
+            </h3>
+            <div>
+              <article className="flex justify-center mb-[24px] flex-wrap gap-[22px]">
+                {post?.gallery?.map((item) => {
+                  return (
+                    <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block">
+                      <img
+                        src={urlFor(item).width(300).url()}
+                        alt={post?.subtitle}
+                        className="w-full h-full object-cover"
+                      />
+                    </span>
+                  );
+                })}
 
-      <section>
-        <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
-          <h3 className="text-center text-[32px] font-[600] capitalize mb-6">
-            Pictures from event
-          </h3>
-          <div>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-            </article>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-            </article>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
-            </article>
+                <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+                <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]"></span>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="lg:h-[896px] bg-[#1B1B1B] py-[24px] my-[80px] px-[30px] lg:px-0">
         <div>

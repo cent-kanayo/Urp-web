@@ -22,6 +22,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { Link } from 'react-router-dom';
 import { getPosts } from '../../../sanity';
+import { useGlobalContext } from '../../Context/AppContext';
 
 const BGS = [Bg1, Bg2, Bg3, Bg4, Bg5];
 
@@ -29,7 +30,7 @@ const Home = () => {
   document.title = 'URP UNILAG';
   const [bgs, setBgs] = useState(BGS);
   const [index, setIndex] = useState(0);
-
+  const { posts, isLoading } = useGlobalContext();
   const handleClick = (type) => {
     if (type === 'next') {
       setIndex((prev) => (prev > BGS?.length - 2 ? 0 : prev + 1));
@@ -241,7 +242,13 @@ const Home = () => {
         </div>
       </section>
 
-      <Events />
+      {isLoading ? (
+        <div className="h-[600px]">
+          <h1>Loading...</h1>
+        </div>
+      ) : (
+        <Events posts={posts} />
+      )}
       <section className="mt-[80px] h-[404px] lg:bg-[#5B5756] flex items-end lg:items-center relative">
         <div className="absolute w-full -z-10 lg:static lg:z-10 flex-1 h-[100%]">
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />

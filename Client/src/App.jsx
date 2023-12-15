@@ -76,7 +76,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="research-cluster" element={<ResearchCluster />} />
           <Route path="student-of-the-month" element={<StudentSpotlight />} />
-          <Route path="news" element={<NewsPage />} />
+          <Route path="news/:id" element={<NewsPage />} />
           <Route path="planners-pen" element={<PlannersPen />} />
           <Route path="urp-journal" element={<TheJournal />} />
           <Route path="journal-v8" element={<Journal />} />
