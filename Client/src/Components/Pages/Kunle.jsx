@@ -420,11 +420,41 @@ const Kunle = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Global Health Research Cohort Academic Development Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    NIHR GHR CADA
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Covidence Student Ambassador
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Covidence Ambassador Program
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2016
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Needs Assessment Funds
+                  </h4>
+                  {/* <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Ile-Ife
+                </p> */}
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -442,11 +472,16 @@ const Kunle = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Urban Competitiveness and Resilience</p>
+                  <p>Urban Governance</p>
+                  <p>Pro-poor Management and Governance</p>
+                  <p>Community Development</p>
+                  <p>Social and Environmental Justice</p>
+                  <p>Urban Health</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -464,11 +499,13 @@ const Kunle = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Cooking (private cooking services)</p>
+                  <p>Food blogging</p>
+                  <p>Research Consultancy</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

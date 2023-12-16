@@ -555,11 +555,168 @@ const Taibat = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="hidden" ref={refB1}>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Global Fellow
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Peace Research Institute, Oslo
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2019
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Edinburgh Catalytic Fellowship
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Centre for African Studies, University of Edinburgh
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2019
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Cadbury Academic Fellowship
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Department of African Studies and Anthropology, University
+                    of Birmingham
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2017
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Research Scholarship Award for Academics and Researchers,
+                    German Academic Exchange Programme (DAAD)
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Birmingham
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2016
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Fellow: The Rockefeller Foundation
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Bellagio Academic Residency
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2013
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    World Social Science Fellow
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    International Social Science Council
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2012
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Best Researcher – 1st Position
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences, University of Lagos, Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2011
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Best Researcher - 1st Position
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences (LURNet), University of Lagos,
+                    Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2010
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Best Researcher – 3rd Position
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences, University of Lagos, Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2009
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Best Researcher – 2nd Position
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences, University of Lagos, Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2008
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Best Researcher – Distinguished Researcher
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences, University of Lagos, Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2006
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Researcher of the Year - Best Researcher
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Environmental Sciences, University of Lagos, Nigeria
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2002
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Chief Peter Nwogu Certificate of Excellence for Best Female
+                    Candidate in Professional Planning Practice Registration
+                    Examination
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Town Planners Registration Council of Nigeria.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1993
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    University Scholarship Award for Academic Excellence
+                    (200levels) – Federal
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Technology, Akure, Nigeria
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -577,11 +734,14 @@ const Taibat = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Urban Management and Governance</p>
+                  <p>Urban Informality and Sustainable Livelihoods</p>
+                  <p>Environment and Spatial justice</p>
+                  <p>Pro-poor Development</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -599,11 +759,12 @@ const Taibat = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Photography</p>
+                  <p>Running</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

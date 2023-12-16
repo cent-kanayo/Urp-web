@@ -145,17 +145,17 @@ const StaffPage = () => {
           />
 
           <Excocard
-            name="Ms. M.D. ODEKUNLE"
-            role="Lecturer II"
+            name="Mrs. M.D. OLALEKAN"
+            role="Graduate Assistant"
             image={Icon}
-            link={'d-odekunle'}
+            link={'dami-olalekan'}
           />
 
           <Excocard
-            name="Ms. M.D. ODEKUNLE"
-            role="Lecturer II"
+            name="Mr. R.E. ONUIGBOJE"
+            role="Graduate Assistant"
             image={Icon}
-            link={'d-odekunle'}
+            link={'anthony-onuigboje'}
           />
         </div>
       </section>
@@ -200,7 +200,7 @@ const StaffPage = () => {
       <section className="lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"
-          p="Experience seamless interaction wpresident effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
+          p="Experience seamless interaction with the department effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
           text1="share your story"
           text2="student Hub"
           text3="requests"

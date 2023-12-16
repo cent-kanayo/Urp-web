@@ -8,6 +8,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import Nwa from '../../assets/lecturers/Lfade.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
@@ -325,7 +331,7 @@ const Fade = () => {
           </div>
         </div>
       </section>
-      <section className="my-[80px] bg-white py-[104px] h-[700px]">
+      <section className="my-[80px] bg-white py-[104px] h-[700px] hidden lg:block">
         <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
@@ -394,6 +400,98 @@ const Fade = () => {
               </div>
             </article>
           </div>
+        </div>
+      </section>
+      <section className="lg:hidden px-6 lg:px-0">
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+              >
+                Achievements/Accolades/Awards/ Honours
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2015
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Course Adviser -Urban and Regional Planning Student
+                    Association
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Lagos
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2005
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Certificate of Commendation Imo State (Second – Tier)
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    National Youth Service Corp, Nigeria
+                  </p>
+                </div>
+              </article>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref2}
+              >
+                Research Interests
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Housing</p>
+                  <p>Urban and Environmental Management</p>
+                </div>
+              </article>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <h3
+                className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
+                role="button"
+                ref={ref3}
+              >
+                Extracurricular Activities
+              </h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[12px] leading-[150%]">
+                  <p>Community service</p>
+                  <p>Visiting</p>
+                  <p>Religious activities</p>
+                </div>
+              </article>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </section>
       <section className="my-[80px]">

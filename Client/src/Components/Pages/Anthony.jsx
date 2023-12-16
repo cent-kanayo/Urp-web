@@ -393,11 +393,30 @@ const Anthony = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2022
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Young Leaders in Sustainable Transport Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    SLOCAT/VREF
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2022
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    University International Postgraduate Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    UNSW
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -415,11 +434,22 @@ const Anthony = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Cycling behaviour of individuals
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Cycling planning and infrastructure design
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Transport and gender
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban resilience
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -437,11 +467,13 @@ const Anthony = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    First Aiding (Certified First Aider; Certified in HSE)
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

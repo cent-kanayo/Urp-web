@@ -399,11 +399,41 @@ const Yemi = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2020
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student, Msc Sociology
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Ile-Ife
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2020
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student, Msc Sociology
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Ile-Ife
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2020
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student, Msc Sociology
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Ile-Ife
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -421,11 +451,14 @@ const Yemi = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Physical Planning Administration</p>
+                  <p>Urban Policy Formulation</p>
+                  <p>Development Control</p>
+                  <p>Urban Governance</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -443,11 +476,11 @@ const Yemi = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Farming</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

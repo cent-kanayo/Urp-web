@@ -632,11 +632,237 @@ const Alade = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Chairman, Research and Development Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Nigerian Institute of Town Planners Lagos State Chapter
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] pb-2 text-[12px]  mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Capacity Building Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Nigerian Institute of Town Planners Lagos State Chapter
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2021 to date
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Co-Director and Team Lead, Review of Badagry Master Plan for
+                    Lagos State Government
+                  </h4>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2016-2018
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Co-Director and Team Lead, Preparation of Oshodi-Isolo Model
+                    City Plan Lagos State Government (2016), with Vistaplan
+                    Consulting
+                  </h4>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2014-2018
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Co-Director and Team Lead, Preparation of Redemption City of
+                    God Master Plan for the Redeemed Christian Church of God
+                  </h4>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2009
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    University of Lagos Central Research Committee’s Grant for
+                    the Analysis of Households’ Travel Behaviour in Lagos
+                  </h4>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2018
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Most Supporting Lecturer of All Time Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Faculty of Environmental Sciences Students Association
+                    (FESSA), University of Lagos
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2009
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Distinguished Researcher Award (Faculty of Environmental
+                    Sciences), Central Research Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Lagos 4th Research Fair and Conference
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1995
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Faculty Prize (Best Graduating Student), Faculty of
+                    Environmental Design and Management
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University, Ile-Ife, 1993/1994 Session
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1995
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student, Department of Urban and Regional
+                    Planning
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University, Ile-Ife, 1993/1994 Session
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1995
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Life Gold Statesman Award, Man O’ War Club
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University, Ile-Ife.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1990
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Overall Best Student in Town and Regional Planning
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Ogun State Polytechnic, Abeokuta, 1989/1990 Session
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1990
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Student in Academics
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Ogun State Polytechnic, Abeokuta, 1989/1990 Session
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2020
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Mentorship Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    The Redeemed Christian Church of God, Jesus Assembly, Lagos
+                    Province 29, Alakuko
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Built Environment Policy Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Lagos
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2022 till date
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Church Archive Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    The Redeemed Christian Church of God
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2019 till date
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Chairman, Main Entrance Redevelopment Committee
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University Campus, Ile-Ife
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2019
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Chairman, Faculty Hooding Ceremony Committee (50th
+                    Convocation)
+                  </h4>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Chairman, Research and Development Committee, Nigerian
+                    Institute of Town Planners
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Lagos State Chapter
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Capacity Building Committee, Nigerian Institute of
+                    Town Planners
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Lagos State Chapter
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px]  pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2015 to 2018
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Examination Board
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Nigerian Institute of Town Planners (NITP)
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -648,17 +874,22 @@ const Alade = () => {
               <h3
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
                 role="button"
-                ref={ref2}
               >
                 Research Interests
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban Mobility
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Transport Planning
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">Logistics</h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -676,11 +907,16 @@ const Alade = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban planning and project management consultant
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Clergy Duties
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

@@ -445,11 +445,20 @@ const Victor = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1988
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student, Dept. of Urban and Regional
+                    Planning, Faculty of Environmental Studies
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Nigeria, Nsukka, Nigeria
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -467,11 +476,22 @@ const Victor = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Housing provision
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Sustainable Development
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urbanization Dynamics
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban Economics.
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -489,11 +509,15 @@ const Victor = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">Football</h4>
+                  <h4 className="text-[#090302] leading-[150%]">Swimming</h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Hanging outs
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>

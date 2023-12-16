@@ -425,11 +425,41 @@ const Lekan = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Best Graduating Student in Urban and Regional Planning
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Lagos
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Member, Nigerian Institute of Town Planners
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Registered Town Planner
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2023
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Scholars Award for maintaining CGPA of 4.50 and above
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    University of Lagos
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -447,11 +477,22 @@ const Lekan = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban Studies and Sustainable Management
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Gender and Social Justice
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Urban Heritage Studies
+                  </h4>
+                  <h4 className="text-[#090302] leading-[150%]">
+                    Pro-poor governance and development
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -469,11 +510,13 @@ const Lekan = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <h4 className="text-[#090302] leading-[150%]">
+                    First Aiding (Certified First Aider; Certified in HSE)
+                  </h4>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>
