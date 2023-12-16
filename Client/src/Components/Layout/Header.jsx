@@ -84,11 +84,11 @@ const Header = ({ setSidebar }) => {
                           Student Executives
                         </Popover.Button>
                       </Link>
-                      <Link to="/alumni">
+                      {/* <Link to="/alumni">
                         <Popover.Button className="popup">
                           Alumni
                         </Popover.Button>
-                      </Link>
+                      </Link> */}
                     </div>
                   </Popover.Panel>
                 </Popover>

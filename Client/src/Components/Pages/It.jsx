@@ -5,10 +5,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import Timi from '../../assets/Excos/timi.webp';
+import Pamela from '../../assets/honours/pamela.webp';
+import Ay from '../../assets/honours/Ay.webp';
+import Cent from '../../assets/honours/cent.webp';
 
 import Excocard from '../Resuables/Excocard';
 import Comment from '../../Components/Resuables/Comment';
+import { Link } from 'react-router-dom';
 
 const It = () => {
   useEffect(() => {
@@ -16,42 +19,57 @@ const It = () => {
   }, []);
   return (
     <main>
-      <section className="flex items-center mb-[80px] h-[600px] bg-[#02211F]">
-        <div className="flex-1">
-          <h1 className="text-[2.5rem] font-bold text-center text-white">
+      <section className="flex mb-[64px] lg:mb-[80px] it-bg px-[60px] lg:px-0">
+        <div className="about-welcome flex-1 h-[64px] lg:h-[108px] px-[60px] lg:px-0">
+          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
             IT Team
           </h1>
         </div>
       </section>
       <section className="max-w-[800px] mx-auto px-6 lg:px-0">
         <h2 className="text-center text-[32px] lg:text-[40px] font-[600] mb-6">
-          Dedication Message
+          The ‘A’ Team
         </h2>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
           <p className="mb-6">
-            Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
-            trailblazing rockstar of academia, with revolutionary ideas that
-            shake up the very foundations of traditional teaching methods. Her
-            contagious enthusiasm and exceptional ability to engage students
-            have made her a true legend among her peers.
+            Meet our IT team, a trio of committed experts united by a common
+            vision of academic achievement effortlessly fused with the latest
+            technology.
+          </p>
+          <p className="mb-6">
+            We are driven to be at the forefront of technology, and as such, we
+            want to improve learning environments and research capacities by
+            smoothly integrating cutting-edge tools and platforms into the
+            academic scene.
           </p>
           <p>
-            Ms. Odekunle holds a Ph.D. in Urban and Regional Planning from a
-            renowned international university, where her groundbreaking research
-            focused on innovative approaches to urban renewal and
-            community-based development. During her graduate studies, she
-            received several accolades for her exceptional academic performance
-            and was recognized as a promising researcher in the field of urban
-            planning.
+            We are open to collaboration and believe that combining our skills
+            with those of others will result in innovative ideas that redefine
+            the intersection of academics and technology. Join us in shaping the
+            future of academic excellence through the fusion of knowledge and
+            innovative IT solutions.
           </p>
         </div>
       </section>
       <section className="mt-[80px] max-w-[1119px] mx-auto flex flex-wrap justify-center gap-6">
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
-        <Excocard name="Oreoluwa Jeffery" role="president" image={Timi} />
+        <Excocard
+          name="Ayomide Akinseye"
+          role="Team Lead/ Designer"
+          image={Ay}
+          link={'/it-department/#'}
+        />
+        <Excocard
+          name="Okpini Pamela"
+          role="UI Designer"
+          image={Pamela}
+          link={'/it-department/#'}
+        />
+        <Excocard
+          name="Chukwu Innocent"
+          role="Software Engineer"
+          image={Cent}
+          link={'/it-department/#'}
+        />
       </section>
       <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
@@ -62,9 +80,12 @@ const It = () => {
             Send us a mail filler text is a great way to show the size you want
             to have
           </p>
-          <button className="px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md">
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
+          >
             contact us
-          </button>
+          </Link>
           <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
             <span className="lg:hidden">
               <EmailIcon htmlColor="#934B00" fontSize="medium" />
@@ -99,7 +120,6 @@ const It = () => {
           </div>
         </div>
       </section>
-      <Comment />
     </main>
   );
 };

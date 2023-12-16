@@ -102,23 +102,6 @@ const Projects = () => {
               </p>
             </div>
           </Link>
-          <Link
-            to="/projects/single-project"
-            className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
-          >
-            <img src={P1} alt="" className="w-full" />
-            <div>
-              <h2 className="text-[14px] lg:text-[24px] text-[#011717] font-medium mb-2">
-                Revolutionary Transport Infrastructure
-              </h2>
-              <p className="text-[#1B1B1B] text-[12px] lg:text-[16px]">
-                By Muyiwa Ibrahim
-              </p>
-              <p className="text-[#ADABAB] text-[12px] lg:text-[16px]">
-                29-09-2023
-              </p>
-            </div>
-          </Link>
         </div>
       </section>
       <Contact h2="contact us for sponsorship or partnership" />

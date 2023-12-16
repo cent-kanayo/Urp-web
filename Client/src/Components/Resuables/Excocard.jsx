@@ -38,7 +38,7 @@ const Excocard = ({ image, role, name, link }) => {
       <img
         src={image}
         alt="Executives"
-        className="absolute w-[100%] h-[100%]"
+        className="absolute w-[100%] h-[100%] object-fill"
       />
       <header className="flex flex-col p-2 lg:p-5">
         <div className="flex flex-col justify-center items-start lg:items-center w-[100%]">

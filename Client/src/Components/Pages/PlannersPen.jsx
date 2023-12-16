@@ -102,9 +102,7 @@ const PlannersPen = () => {
                   Best way to sustainable planning
                 </p>
                 <div className="flex items-center space-x-2 mb-4 text-[10px] text-[#5B5756]">
-                  <span>5 min Read</span>
-                  <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
-                  <span>1st Edition</span>
+                  <span>3rd Edition</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 text-[#1B1B1B]">
@@ -135,15 +133,13 @@ const PlannersPen = () => {
             <div className="px-3 pt-4">
               <div>
                 <h2 className="text-[#1B1B1B] font-bold mb-2 text-[16px]">
-                  Inclusivity
+                  Sustainable cities
                 </h2>
                 <p className="text-[#ADABAB] text-[14px] mb-2">
-                  Best way to sustainable planning
+                  COVID-19 AND CITIES
                 </p>
                 <div className="flex items-center space-x-2 mb-4 text-[10px] text-[#5B5756]">
-                  <span>5 min Read</span>
-                  <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
-                  <span>1st Edition</span>
+                  <span>2nd Edition</span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 text-[#1B1B1B]">
@@ -162,7 +158,7 @@ const PlannersPen = () => {
           <Link
             to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503194/URP/THE_PLANNER_S_PEN_VOLUME_1_APRIL_2020_t6ayy3.pdf"
             target="_blank"
-            className="lg:max-w-[345px] w-full pen-box pb-2 lg:pb-0"
+            className="lg:max-w-[345px] w-full pen-box pb-4 lg:pb-0"
           >
             <div>
               <img
@@ -180,12 +176,10 @@ const PlannersPen = () => {
                   Best way to sustainable planning
                 </p>
                 <div className="flex items-center space-x-2 mb-4 text-[10px] text-[#5B5756]">
-                  <span>5 min Read</span>
-                  <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
                   <span>1st Edition</span>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-2 text-[#1B1B1B]">
+              <div className="flex flex-wrap gap-2 text-[#1B1B1B] pb-2">
                 <p className="bg-[#F7F7F7] rounded-[4px] px-4 py-2 text-center text-[10px]">
                   Careers in urban planning
                 </p>

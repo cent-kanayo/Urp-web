@@ -488,6 +488,38 @@ About Page
   justify-content: center;
   align-items: center;
 }
+.research-bg {
+  background: linear-gradient(
+      0deg,
+      rgba(3, 49, 46, 0.19) 0%,
+      rgba(3, 49, 46, 0.19) 100%
+    ),
+    url('./assets/mainDesktop/cluster.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.it-bg {
+  background: linear-gradient(
+      0deg,
+      rgba(3, 49, 46, 0.19) 0%,
+      rgba(3, 49, 46, 0.19) 100%
+    ),
+    url('./assets/mainDesktop/it-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .about-bg {
     background: linear-gradient(
@@ -663,7 +695,12 @@ RS Page
   .contact-bg {
     height: 320px;
   }
-  .programs-bg {
+  .programs-bg,
+  .it-bg {
+    height: 505px;
+  }
+  .honours-bg {
+    background-image: url('./assets/mainDesktop/honours.png');
     height: 505px;
   }
 }

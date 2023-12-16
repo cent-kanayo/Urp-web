@@ -1,5 +1,3 @@
-import Journal from '../../assets/journals.png';
-
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
 
@@ -7,359 +5,114 @@ import Excocard from '../Resuables/Excocard';
 import Cta from '../Resuables/Cta';
 import Contact from '../Resuables/Contact';
 
-import GetHelp from '../Resuables/GetHelp';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import rsbg from '../../assets/mainDesktop/rsbg.png';
-import BookCover from '../../assets/mainDesktop/bookCover.png';
-import MobileBg from '../../assets/mainMobile/research.png';
+
+import CluterCard from '../Resuables/CluterCard';
+import { useEffect } from 'react';
 
 const ResearchCluster = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <main>
-      <section className="flex mb-[80px] rs-bg">
-        <div className="flex-1">
-          <img
-            src={MobileBg}
-            alt=""
-            className="w-full h-[320px] lg:hidden absolute -z-10"
-          />
-          <img
-            src={rsbg}
-            alt=""
-            className="hidden w-full lg:block h-[600px] absolute -z-10"
-          />
-          <div className="max-w-[1122px] mx-auto text-[#FDFFFD] py-[67px] lg:py-[147px] px-6 lg:px-0">
-            <div className="flex items-center space-x-2 mb-4 lg:mb-6">
-              <article className="w-[24px] h-[2px] bg-white"></article>
-              <p className="text-[14px]">August 8, 2023</p>
-            </div>
-            <div className="max-w-[598px]">
-              <div>
-                <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
-                  A Treatise on the Importance of Urban Planning In Modern Day
-                </h1>
-                <p className="text-[12px] lg:text-[20px] max-w-[491px]">
-                  Launch of new bureau advances U.S. global health mission.
-                </p>
-              </div>
-            </div>
-          </div>
+      <section className="flex mb-[64px] lg:mb-[80px] research-bg px-[60px] lg:px-0">
+        <div className="about-welcome flex-1 h-[64px] lg:h-[108px] px-[60px] lg:px-0">
+          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
+            Research clusters
+          </h1>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
-        <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] lg:text-[20px]">
-            Crest Bankole-Radcliffe
-          </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
-        </div>
-        <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="medium"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-        </div>
-      </section>
+
       <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
-        <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
-          A Treatise on the Importance of Urban Planning In Modern Day
-        </h3>
+        <h2 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          Spatial Data Infrastructure Cluster (SDI){' '}
+        </h2>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
           <p>
-            Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
-            trailblazing rockstar of academia, with revolutionary ideas that
-            shake up the very foundations of traditional teaching methods. Her
-            contagious enthusiasm and exceptional ability to engage students
-            have made her a true legend among her peers.
+            The Spatial Data Infrastructure Cluster (SDI) is a vital research
+            and innovation hub for the development, optimization, and
+            utilization of Spatial Data Infrastructures, crucial for modern
+            geospatial data management.
           </p>
           <p>
-            Ms. Odekunle holds a Ph.D. in Urban and Regional Planning from a
-            renowned international university, where her groundbreaking research
-            focused on innovative approaches to urban renewal and
-            community-based development. During her graduate studies, she
-            received several accolades for her exceptional academic performance
-            and was recognized as a promising researcher in the field of urban
-            planning.
+            SDI, an interdisciplinary cluster combines professionals from
+            geography, remote sensing, computer science, and urban planning to
+            address spatial data challenges, aiming to create standardized data
+            formats, interoperable technologies, and best practices.
+          </p>
+          <p>
+            Join the Spatial Data Infrastructure Cluster to explore geospatial
+            data, driving advancements that impact our understanding of the
+            world and shaping its future.
           </p>
         </div>
-        <div className="max-w-[228px] mx-auto lg:max-w-none flex items-center gap-3 lg:gap-6 flex-wrap mt-[80px] justify-center lg:justify-start">
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-          <div className="w-[60px] lg:w-[123px] h-[26px] lg:h-[64px] bg-[#CDE3E3] rounded-[2px] flex justify-center items-center">
-            <p className="text-[#57A0A0] text-[12px] lg:text-[20px]">Tags</p>
-          </div>
-        </div>
       </section>
-      <section className="md:h-[684px] bg-[#03312E] mt-[80px] py-6 px-6 lg:px-0">
+      <section className="lg:h-[484px] bg-[#037171] mt-[80px] py-6 px-6 lg:px-0">
         <h2 className="text-center text-white text-[2.5rem] font-bold mb-[80px]">
           Cluster Team
         </h2>
-        <div className="flex flex-col md:flex-row md:justify-center md:space-x-6 text-[#FDFFFD]">
-          <div className="max-w-[548px] md:flex-1 flex-col md:flex-row">
-            <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-          </div>
-          <div className="max-w-[548px] md:flex-1 flex-col md:flex-row">
-            <article className="flex justify-between items-center py-4 px-6 border-y-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-            <article className="flex justify-between items-center py-4 px-6 border-b-[0.5px] border-[#FDFFFD]">
-              <div>
-                <p className="text-[14px] lg:text-[16px]">Dr. O Olubode</p>
-                <p className="text-[12px] lg:text-[14px]">Head of Department</p>
-              </div>
-              <div className="flex flex-col gap-2 lg:hidden">
-                <EmailIcon ontSize="small" />
-              </div>
-              <div className="hidden lg:flex flex-col gap-2">
-                <EmailIcon />
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section className="h-[508px] bg-[#f5fff6] py-[52px] my-[80px] px-6 lg:px-0">
-        <div>
-          <h3 className="text-center text-[#090302] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
-            Other Research Clusters
-          </h3>
-          <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] hidden lg:flex">
-                <div className="p-6">
-                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
-                    2011
-                  </p>
-                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
-                    <a
-                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
-                      target="_blank"
-                    >
-                      Mandarin Research <br /> group 3
-                    </a>
-                  </h3>
-                </div>
-                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
-                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
-                      <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
-                        target="_blank"
-                      >
-                        View Cluster
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] lg:flex">
-                <div className="p-6">
-                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
-                    2011
-                  </p>
-                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
-                    <a
-                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
-                      target="_blank"
-                    >
-                      Mandarin Research <br /> group 3
-                    </a>
-                  </h3>
-                </div>
-                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
-                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
-                      <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
-                        target="_blank"
-                      >
-                        View Cluster
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[358px] h-[248px] bg-[#011717] rounded-[2px] lg:flex">
-                <div className="p-6">
-                  <p className="text-[#FDFFFD] text-[12px] lg:text-[16px] mb-2">
-                    2011
-                  </p>
-                  <h3 className="text-[#FDFFFD] font-bold text-[12px] lg:text-[24px]">
-                    <a
-                      href="https://ir.unilag.edu.ng/handle/123456789/7764"
-                      target="_blank"
-                    >
-                      Mandarin Research <br /> group 3
-                    </a>
-                  </h3>
-                </div>
-                <div className="absolute bottom-0 w-full h-[72px] bg-[#577674] py-[18px] px-5 z-10 opacity-[0.92] flex justify-center items-center">
-                  <article className="border-[#FDFFFD] border-[2px] py-2 px-6">
-                    <p className="flex justify-center items-center space-x-2 text-[#FDFFFD] text-[14px]">
-                      <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
-                        target="_blank"
-                      >
-                        View Cluster
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-between items-center mt-[40px] px-6 md:px-16 lg:px-0">
-              <span>
-                <img src={LeftIcon} alt="left toggle button" />
-              </span>
-              <span>
-                <img src={RightIcon} alt="right toggle button" />
-              </span>
-            </div>
-          </div>
+        <div className="max-w-[1112px] mx-auto flex flex-wrap md:justify-center lg:justify-normal flex-col md:flex-row gap-4 text-[#FDFFFD] text-[16px]">
+          <CluterCard name="Muyiwa Agunbiade" />
+          <CluterCard name="Emeka Nwosu" />
+          <CluterCard name="David Adio Moses" />
+          <CluterCard name="Harunah Jimoh" />
+          <CluterCard name="Oladimeji Obidairo" />
+          <CluterCard name="Sesan Adeyemi" />
+          <CluterCard name="Sonia Ugwunna" />
+          <CluterCard name="Osagie Uyi" />
+          <CluterCard name="Oluyemi Akindeju" />
+          <CluterCard name="Peter Elias" />
+          <CluterCard name="Samuel Dekolo " />
         </div>
       </section>
 
+      <section className="max-w-[800px] mx-auto px-[30px] lg:px-0 mt-[64px] lg:mt-20">
+        <h2 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
+          UNILAG-LISA
+        </h2>
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
+          <p>
+            UNILAG-LISA, a research cluster at the University of Lagos, is a
+            dynamic community of scholars, researchers, and innovators dedicated
+            to advancing knowledge in language, information, and systems
+            analysis.
+          </p>
+          <p>
+            UNILAG-LISA is a cluster dedicated to tackling contemporary
+            challenges in language processing, information retrieval, and
+            systems analysis, integrating diverse expertise for practical
+            applications.
+          </p>
+          <p>
+            As we navigate the ever-changing landscape of technology and
+            communication, UNILAG-LISA stands out as a beacon of innovation,
+            trying to make significant contributions to both academic
+            scholarship and real-world solutions. Join us as we investigate the
+            intersections of language, information, and systems analysis to
+            design a future where understanding and technology converge.
+          </p>
+        </div>
+      </section>
+      <section className="lg:h-[484px] bg-[#037171] mt-[80px] py-6 px-6 lg:px-0">
+        <h2 className="text-center text-white text-[2.5rem] font-bold mb-[80px]">
+          Cluster Team
+        </h2>
+        <div className="max-w-[1112px] mx-auto flex flex-wrap md:justify-center lg:justify-normal flex-col md:flex-row gap-4 text-[#FDFFFD] text-[16px]">
+          <CluterCard name="Emeka Nwosu" />
+          <CluterCard name="David Adio Moses" />
+          <CluterCard name="Harunah Jimoh" />
+          <CluterCard name="Oladimeji Obidairo" />
+          <CluterCard name="Sesan Adeyemi" />
+          <CluterCard name="Sonia Ugwunna" />
+          <CluterCard name="Osagie Uyi" />
+          <CluterCard name="Oluyemi Akindeju" />
+          <CluterCard name="Muyiwa Agunbiade" />
+          <CluterCard name="Aliu Soyingbe" />
+          <CluterCard name="Wasiu Bello" />
+          <CluterCard name="Abdurahman Mohameed" />
+        </div>
+      </section>
       <Contact h2="contact us for sponsorship or partnership" />
     </main>
   );

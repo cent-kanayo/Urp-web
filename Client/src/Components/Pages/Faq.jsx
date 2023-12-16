@@ -1,21 +1,90 @@
-import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
-import RQ from '../../assets/quoteR.png';
-import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
+import { useEffect, useRef, useState } from 'react';
+
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import AG from '../../assets/lecturers/agunbiade.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import Comment from '../Resuables/Comment';
 
 const Faq = () => {
+  const [arrowUp1, setArrowUp1] = useState(false);
+  const [arrowUp2, setArrowUp2] = useState(false);
+  const [arrowUp3, setArrowUp3] = useState(false);
+  const [arrowUp4, setArrowUp4] = useState(false);
+  const [arrowUp5, setArrowUp5] = useState(false);
+
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+
+  const onDropdownClicked = (tarket) => {
+    if (tarket === '1') {
+      ref1.current.classList.toggle('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      setArrowUp1((prev) => !prev);
+      setArrowUp2(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+    }
+    if (tarket === '2') {
+      ref2.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      setArrowUp2((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+    }
+    if (tarket === '3') {
+      ref3.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      setArrowUp3((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp2(false);
+      setArrowUp4(false);
+      setArrowUp5(false);
+    }
+    if (tarket === '4') {
+      ref4.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      ref5.current.classList.remove('programs-show');
+      setArrowUp4((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp2(false);
+      setArrowUp3(false);
+      setArrowUp5(false);
+    }
+    if (tarket === '5') {
+      ref5.current.classList.toggle('programs-show');
+      ref1.current.classList.remove('programs-show');
+      ref3.current.classList.remove('programs-show');
+      ref4.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
+      setArrowUp5((prev) => !prev);
+      setArrowUp1(false);
+      setArrowUp2(false);
+      setArrowUp3(false);
+      setArrowUp4(false);
+    }
+  };
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -30,67 +99,142 @@ const Faq = () => {
       </section>
       <section className="max-w-[1112px] mx-auto mb-[64px] lg:mb-20 px-6 lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[40px] font-bold mb-6 lg:mb-10">
-          Random Long Question the chance to travel with a group of like-minded
-          individuals who love the great outdoors?
+          Explore Your Answers: Urban & regional planning FAQ's Corner
         </h2>
         <div className="leading-[150%] flex flex-col max-w-[800px] mx-auto">
           <p className="lg:mb-6 text-[12px] lg:text-[16px] text-center">
-            If you’re an adventurer who loves being out in nature, a hiking and
-            trekking tour should be next on your list. You can expect great
-            wildlife photography opportunities and the chance to travel with a
-            group of like-minded individuals who love the great outdoors.
+            Have questions about Urban & regional planning programs, policies,
+            or procedures? Dive into our Frequently Asked Questions (FAQs) for
+            quick and comprehensive answers. Can't find what you're looking for?
+            Feel free to reach out to our department for personalized
+            assistance!
           </p>
         </div>
       </section>
       <section className="max-w-[738px] mx-auto mb-[80px] px-6 lg:px-0">
-        <div className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]">
+        <div
+          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          role="button"
+          onClick={() => onDropdownClicked('1')}
+        >
           <div className="flex justify-between items-center max-w-[1000px]">
             <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
               Would i have to pay to use this website?
             </span>
             <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              {arrowUp1 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
             </span>
           </div>
-        </div>
-        <div className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
-              Would i have to pay to use this website?
-            </span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
+          <div ref={ref1} className="programs-hide mt-6">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              debitis eius aliquid vero sapiente corrupti rerum perspiciatis
+              maxime excepturi natus!
+            </h3>
           </div>
         </div>
-        <div className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]">
+        <div
+          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          role="button"
+          onClick={() => onDropdownClicked('2')}
+        >
           <div className="flex justify-between items-center max-w-[1000px]">
             <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
               Would i have to pay to use this website?
             </span>
             <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              {arrowUp2 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
             </span>
           </div>
-        </div>
-        <div className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]">
-          <div className="flex justify-between items-center max-w-[1000px]">
-            <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
-              Would i have to pay to use this website?
-            </span>
-            <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-            </span>
+          <div ref={ref2} className="programs-hide mt-6">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              debitis eius aliquid vero sapiente corrupti rerum perspiciatis
+              maxime excepturi natus!
+            </h3>
           </div>
         </div>
-        <div className="py-2 px-4 border-b-[1px] border-[#1B1B1B]">
+        <div
+          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          role="button"
+          onClick={() => onDropdownClicked('3')}
+        >
           <div className="flex justify-between items-center max-w-[1000px]">
             <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
               Would i have to pay to use this website?
             </span>
             <span>
-              <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              {arrowUp3 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
             </span>
+          </div>
+          <div ref={ref3} className="programs-hide mt-6">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              debitis eius aliquid vero sapiente corrupti rerum perspiciatis
+              maxime excepturi natus!
+            </h3>
+          </div>
+        </div>
+        <div
+          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          role="button"
+          onClick={() => onDropdownClicked('4')}
+        >
+          <div className="flex justify-between items-center max-w-[1000px]">
+            <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
+              Would i have to pay to use this website?
+            </span>
+            <span>
+              {arrowUp4 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div ref={ref4} className="programs-hide mt-6">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              debitis eius aliquid vero sapiente corrupti rerum perspiciatis
+              maxime excepturi natus!
+            </h3>
+          </div>
+        </div>
+        <div
+          className="py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          role="button"
+          onClick={() => onDropdownClicked('5')}
+        >
+          <div className="flex justify-between items-center max-w-[1000px]">
+            <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
+              Would i have to pay to use this website?
+            </span>
+            <span>
+              {arrowUp5 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div ref={ref5} className="programs-hide mt-6">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              debitis eius aliquid vero sapiente corrupti rerum perspiciatis
+              maxime excepturi natus!
+            </h3>
           </div>
         </div>
       </section>

@@ -148,7 +148,7 @@ const Programs = () => {
         <h3 className="text-center text-[32px] lg:text-[40px] font-[600] mb-6">
           Programmes
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
+        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6">
           <p>
             Urban and Regional Planning is concerned with variety of activities
             aimed at shaping the pattern of human settlements. The art of

@@ -429,11 +429,43 @@ const Agunbiade = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    2010 - 2012
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Australian Postgraduate Awards
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Industry
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1991-1992
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Overall Best graduating Student, Urban and Regional Planning
+                    Department,
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University, Ile-Ife.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                    1991-1992
+                  </p>
+                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
+                    Most consistent student from Part IV to V, Faculty of
+                    Environmental Design and Management
+                  </h4>
+                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                    Obafemi Awolowo University, Ile-Ife.
+                  </p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -451,11 +483,14 @@ const Agunbiade = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Spatial Data Infrastructure and Land Administration</p>
+                  <p>Housing</p>
+                  <p>GIS application</p>
+                  <p>Urban Analytics</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -473,11 +508,12 @@ const Agunbiade = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
+              <article className="">
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
+                  <p>Reading</p>
+                  <p>Volleyball</p>
+                </div>
+              </article>
             </AccordionDetails>
           </Accordion>
         </div>
