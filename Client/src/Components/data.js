@@ -29,6 +29,37 @@ import H4 from '../assets/projects/h4.png';
 import H5 from '../assets/projects/h5.png';
 import H6 from '../assets/projects/h6.png';
 import H7 from '../assets/projects/h7.png';
+import p2a from '../assets/projects2/1.png';
+import p2b from '../assets/projects2/2.png';
+import p2c from '../assets/projects2/3.png';
+import p2d from '../assets/projects2/4.png';
+import p2e from '../assets/projects2/5.png';
+import p2f from '../assets/projects2/6.png';
+import p2g from '../assets/projects2/8.png';
+import p2h from '../assets/projects2/9.png';
+import p2i from '../assets/projects2/10.png';
+import p2j from '../assets/projects2/11.png';
+import p2k from '../assets/projects2/12.png';
+import p2l from '../assets/projects2/13.png';
+import p2m from '../assets/projects2/14.png';
+import p2n from '../assets/projects2/15.png';
+
+import p3a from '../assets/project3/1.png';
+import p3b from '../assets/project3/2.png';
+import p3c from '../assets/project3/3.png';
+import p3d from '../assets/project3/4.png';
+import p3e from '../assets/project3/5.png';
+import p3f from '../assets/project3/6.png';
+import p3g from '../assets/project3/8.png';
+import p3h from '../assets/project3/9.png';
+import p3i from '../assets/project3/10.png';
+import p3j from '../assets/project3/11.png';
+import p3k from '../assets/project3/12.png';
+import p3l from '../assets/project3/13.png';
+import p3m from '../assets/project3/14.png';
+import p3n from '../assets/project3/15.png';
+import p3o from '../assets/project3/16.png';
+import p3p from '../assets/project3/17.png';
 
 export const projectImages = [
   P1m,
@@ -63,6 +94,41 @@ export const projectImages = [
   H5,
   H6,
   H7,
+];
+
+export const project2 = [
+  p2a,
+  p2b,
+  p2c,
+  p2d,
+  p2e,
+  p2f,
+  p2g,
+  p2h,
+  p2i,
+  p2j,
+  p2k,
+  p2l,
+  p2m,
+  p2n,
+];
+export const project3 = [
+  p3a,
+  p3b,
+  p3c,
+  p3d,
+  p3e,
+  p3f,
+  p3g,
+  p3h,
+  p3i,
+  p3j,
+  p3k,
+  p3l,
+  p3m,
+  p3n,
+  p3o,
+  p3p,
 ];
 export const months = [
   'January',

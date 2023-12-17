@@ -41,6 +41,8 @@ import {
   TheJournal,
   Journal1,
   NewsLanding,
+  SingleProject2,
+  SingleProject3,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 import Uploads from './Components/Auth/Uploads';
@@ -85,6 +87,14 @@ function App() {
           <Route path="journal-v9" element={<Journal1 />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/single-project" element={<SingleProject />} />
+          <Route
+            path="projects/single-project-2"
+            element={<SingleProject2 />}
+          />
+          <Route
+            path="projects/single-project-3"
+            element={<SingleProject3 />}
+          />
           <Route path="urp-handbook" element={<Handbook />} />
           <Route path="honours-list" element={<Honours />} />
           <Route path="urp-programs" element={<Programs />} />

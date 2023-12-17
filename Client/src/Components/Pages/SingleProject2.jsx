@@ -3,13 +3,15 @@ import { useEffect, useRef, useState } from 'react';
 import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
 import RightIcon from '../../assets/AR.png';
-import { projectImages } from '../data';
+import Main from '../../assets/projects2/main.png';
+import Sub from '../../assets/projects2/sub.png';
+import { project2 } from '../data';
 
-const SingleProject = () => {
+const SingleProject2 = () => {
   const [index, setIndex] = useState(0);
-  const [image, setImage] = useState(projectImages[index]);
+  const [image, setImage] = useState(project2[index]);
   useEffect(() => {
-    setImage(projectImages[index]);
+    setImage(project2[index]);
   }, [index]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -18,17 +20,13 @@ const SingleProject = () => {
     <main>
       <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">
         <div className="w-full h-full">
-          <img
-            src={projectImages[0]}
-            alt=""
-            className="w-full object-cover h-full"
-          />
+          <img src={Main} alt="Layout" className="w-full object-cover h-full" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[120px] max-w-[1119px] mx-auto px-6 lg:px-0">
         <div>
           <h2 className="text-[24px] max-w-[737px] lg:text-[40px] text-[#011717] font-bold mb-6">
-            Urban Renewal Project/ Development of University Land
+            Streetscpaing of Shipeolu Street, Onipanu
           </h2>
           <p className="text-[12px] lg:text-[20px] mb-[56px] max-w-[877px]">
             Witness the groundbreaking research projects that are shaping the
@@ -40,7 +38,7 @@ const SingleProject = () => {
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto h-[240px] lg:h-[664px] px-6 lg:px-0">
         <div className="w-full h-full">
-          <img src={projectImages[4]} alt="" className="w-full h-full" />
+          <img src={Sub} alt="Layout" className="w-full h-full" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto bg-white px-6 lg:px-0">
@@ -48,7 +46,7 @@ const SingleProject = () => {
           <article className="flex items-center mb-10">
             <span className="w-[130px] text-[12px] lg:text-[16px]">Title:</span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]">
-              URBAN RENEWAL OF ABULE-OJA COMMUNITY
+              Streetscpaing of Shipeolu Street, Onipanu
             </span>
           </article>
           <article className="flex items-center mb-10">
@@ -56,7 +54,7 @@ const SingleProject = () => {
               Land Area:
             </span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]">
-              29.72 Hectares
+              1.45 Kilometres
             </span>
           </article>
 
@@ -65,8 +63,7 @@ const SingleProject = () => {
               Lecturers-in-charge:
             </span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]  leading-[150%]">
-              MProf. T.I. Lawanson, Dr. V.U Ilechukwu, Dr. S.A Adeyemi, Dr. T.I
-              Salau
+              Dr. Nnezi-Ogulu
             </span>
           </article>
           <article className="flex items-start mb-10">
@@ -74,14 +71,13 @@ const SingleProject = () => {
               Group Members:
             </span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]  leading-[150%]">
-              Prof. T.I. Lawanson, Dr. V.U Ilechukwu, Dr. S.A Adeyemi, Dr. T.I
-              Salau
+              Ayomide Akinseye
             </span>
           </article>
           <article className="flex items-center">
             <span className="w-[130px] text-[12px] lg:text-[16px]">Date:</span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]">
-              16-08-2020
+              23-12-2022
             </span>
           </article>
         </div>
@@ -106,7 +102,7 @@ const SingleProject = () => {
                 role="button"
                 onClick={() =>
                   setIndex((prev) =>
-                    prev <= 0 ? projectImages.length - 1 : prev - 1
+                    prev <= 0 ? project2.length - 1 : prev - 1
                   )
                 }
               >
@@ -120,7 +116,7 @@ const SingleProject = () => {
                 role="button"
                 onClick={() =>
                   setIndex((prev) =>
-                    prev >= projectImages.length - 1 ? 0 : prev + 1
+                    prev >= project2.length - 1 ? 0 : prev + 1
                   )
                 }
               >
@@ -158,4 +154,4 @@ const SingleProject = () => {
   );
 };
 
-export default SingleProject;
+export default SingleProject2;

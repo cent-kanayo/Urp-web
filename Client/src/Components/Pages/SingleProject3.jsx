@@ -3,13 +3,15 @@ import { useEffect, useRef, useState } from 'react';
 import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
 import RightIcon from '../../assets/AR.png';
-import { projectImages } from '../data';
+import Main from '../../assets/project3/main.png';
+import Sub from '../../assets/project3/sub.png';
+import { project3 } from '../data';
 
-const SingleProject = () => {
+const SingleProject3 = () => {
   const [index, setIndex] = useState(0);
-  const [image, setImage] = useState(projectImages[index]);
+  const [image, setImage] = useState(project3[index]);
   useEffect(() => {
-    setImage(projectImages[index]);
+    setImage(project3[index]);
   }, [index]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -18,11 +20,7 @@ const SingleProject = () => {
     <main>
       <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">
         <div className="w-full h-full">
-          <img
-            src={projectImages[0]}
-            alt=""
-            className="w-full object-cover h-full"
-          />
+          <img src={Main} alt="Layout" className="w-full object-cover h-full" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[120px] max-w-[1119px] mx-auto px-6 lg:px-0">
@@ -40,7 +38,7 @@ const SingleProject = () => {
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto h-[240px] lg:h-[664px] px-6 lg:px-0">
         <div className="w-full h-full">
-          <img src={projectImages[4]} alt="" className="w-full h-full" />
+          <img src={Sub} alt="Layout" className="w-full h-full" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto bg-white px-6 lg:px-0">
@@ -65,7 +63,7 @@ const SingleProject = () => {
               Lecturers-in-charge:
             </span>
             <span className="text-[14px] lg:text-[20px] text-[#090302]  leading-[150%]">
-              MProf. T.I. Lawanson, Dr. V.U Ilechukwu, Dr. S.A Adeyemi, Dr. T.I
+              Prof. T.I. Lawanson, Dr. V.U Ilechukwu, Dr. S.A Adeyemi, Dr. T.I
               Salau
             </span>
           </article>
@@ -106,7 +104,7 @@ const SingleProject = () => {
                 role="button"
                 onClick={() =>
                   setIndex((prev) =>
-                    prev <= 0 ? projectImages.length - 1 : prev - 1
+                    prev <= 0 ? project3.length - 1 : prev - 1
                   )
                 }
               >
@@ -120,7 +118,7 @@ const SingleProject = () => {
                 role="button"
                 onClick={() =>
                   setIndex((prev) =>
-                    prev >= projectImages.length - 1 ? 0 : prev + 1
+                    prev >= project3.length - 1 ? 0 : prev + 1
                   )
                 }
               >
@@ -158,4 +156,4 @@ const SingleProject = () => {
   );
 };
 
-export default SingleProject;
+export default SingleProject3;

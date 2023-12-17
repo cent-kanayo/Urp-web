@@ -46,8 +46,8 @@ const Projects = () => {
           </p>
         </div>
       </section>
-      <section className="mt-[64px] lg:mt-[80px]">
-        <div className="flex justify-center gap-y-6 gap-x-[22px] lg:gap-x-6 mb-6">
+      <section className="mt-[64px] lg:mt-[80px] max-w-[1120px] mx-auto">
+        <div className="flex flex-col md:flex-row flex-wrap gap-y-6 gap-x-[22px] lg:gap-x-6 mb-6">
           <Link
             to="/projects/single-project"
             className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
@@ -67,7 +67,7 @@ const Projects = () => {
             </div>
           </Link>
           <Link
-            to="/projects/single-project"
+            to="/projects/single-project-3"
             className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
           >
             <img src={P2} alt="" className="w-full" />
@@ -83,10 +83,8 @@ const Projects = () => {
               </p>
             </div>
           </Link>
-        </div>
-        <div className="flex justify-center gap-6">
           <Link
-            to="/projects/single-project"
+            to="/projects/single-project-2"
             className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
           >
             <img src={P3} alt="" className="w-full" />

@@ -38,6 +38,8 @@ import Anthony from './Anthony';
 import TheJournal from './TheJournal';
 import Journal1 from './Journal1';
 import NewsLanding from './NewsLanding';
+import SingleProject2 from './SingleProject2';
+import SingleProject3 from './SingleProject3';
 export {
   Home,
   StudentPage,
@@ -79,4 +81,6 @@ export {
   TheJournal,
   Journal1,
   NewsLanding,
+  SingleProject2,
+  SingleProject3,
 };
