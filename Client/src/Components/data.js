@@ -78,3 +78,17 @@ export const months = [
   'November',
   'December',
 ];
+
+const paginate = (array, number) => {
+  const itemsPerPage = number;
+  const numberOfPages = Math.ceil(array.length / itemsPerPage);
+
+  const newArray = Array.from({ length: numberOfPages }, (_, index) => {
+    const start = index * itemsPerPage;
+    return array.slice(start, start + itemsPerPage);
+  });
+
+  return newArray;
+};
+
+export default paginate;

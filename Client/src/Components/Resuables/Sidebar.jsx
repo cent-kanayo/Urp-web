@@ -3,7 +3,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Popover } from '@headlessui/react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from 'react-router-dom';
+import { useGlobalContext } from '../../Context/AppContext';
 const Sidebar = ({ setSidebar }) => {
+  const { students } = useGlobalContext();
+
+  const id = students[0]?._id || 1234244;
   return (
     <aside className="fixed top-0 w-full h-[100vh] overflow-y-scroll bg-[#090302] z-50 lg:hidden px-6 py-5">
       <div>
@@ -73,7 +77,7 @@ const Sidebar = ({ setSidebar }) => {
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
                   <Link
-                    to="/student-of-the-month"
+                    to={`/student-spotlight/${id}`}
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
@@ -162,19 +166,19 @@ const Sidebar = ({ setSidebar }) => {
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
                   <Link
-                    to="#"
+                    to="/news "
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
                     <Popover.Button>News & Events</Popover.Button>
                   </Link>
-                  <Link
-                    to="/galleries"
-                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
-                    onClick={() => setSidebar(false)}
-                  >
-                    <Popover.Button>Gallery</Popover.Button>
-                  </Link>
+                  {/* <Link
+                        to="/galleries"
+                        className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
+                        onClick={() => setSidebar(false)}
+                      >
+                        <Popover.Button>Gallery</Popover.Button>
+                      </Link> */}
                   <Link
                     to="/it-department"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"

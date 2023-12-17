@@ -19,15 +19,13 @@ import Salau from '../../assets/lecturers/Salau.png';
 import Icon from '../../assets/lecturers/Icon.png';
 import Jet from '../../assets/jet.png';
 
-import LeftIcon from '../../assets/left.png';
-import RightIcon from '../../assets/right.png';
-
-import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import EmailIcon from '@mui/icons-material/Email';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Excocard from '../Resuables/Excocard';
-import Cta from '../Resuables/Cta';
-import Contact from '../Resuables/Contact';
 
 import GetHelp from '../Resuables/GetHelp';
 const StaffPage = () => {
@@ -208,39 +206,52 @@ const StaffPage = () => {
           text5="Suggestions"
         />
       </section>
-
-      <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[68px] lg:mt-[160px]">
-        <div>
-          <h3 className="text-center text-[#FDFFFD] text-[32px] font-[600] capitalize mb-[40px]">
-            upcoming events
-          </h3>
-          <div className="max-w-[1112px] mx-auto">
-            <div className="flex justify-center items-center gap-x-[24px]">
-              <div className="hidden lg:block w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#FFFFFF] rounded-[2px]"></div>
-              <div className="hidden lg:block w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#FFFFFF] rounded-[2px]"></div>
-              <div className="w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#FFFFFF] rounded-[2px]"></div>
-              <div className="w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#FFFFFF] rounded-[2px]"></div>
-            </div>
-            <div className="max-w-[340px] lg:max-w-none mx-auto flex justify-between items-center mt-6 lg:mt-[40px]">
-              <span>
-                <img
-                  src={LeftIcon}
-                  alt="left toggle button"
-                  className="w-[32px] lg:w-auto"
-                />
-              </span>
-              <span>
-                <img
-                  src={RightIcon}
-                  alt="right toggle button"
-                  className="w-[32px] lg:w-auto"
-                />
-              </span>
-            </div>
+      <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
+        <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
+            contact us for sponsorship or partnership
+          </h2>
+          <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
+            Send us a mail filler text is a great way to show the size you want
+            to have
+          </p>
+          <button className="px-6 py-2 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md">
+            contact us
+          </button>
+          <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
+            <span className="lg:hidden">
+              <EmailIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <EmailIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <FacebookIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <InstagramIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <InstagramIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <TwitterIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <TwitterIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
+            </span>
           </div>
         </div>
       </section>
-      <Contact h2="contact us for sponsorship or partnership" />
     </main>
   );
 };

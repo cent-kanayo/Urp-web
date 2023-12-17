@@ -37,6 +37,7 @@ import Lekan from './Lekan';
 import Anthony from './Anthony';
 import TheJournal from './TheJournal';
 import Journal1 from './Journal1';
+import NewsLanding from './NewsLanding';
 export {
   Home,
   StudentPage,
@@ -77,4 +78,5 @@ export {
   Gallery,
   TheJournal,
   Journal1,
+  NewsLanding,
 };

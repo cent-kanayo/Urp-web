@@ -1,36 +1,19 @@
 import { useEffect, useState } from 'react';
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 
 import Contact from '../Resuables/Contact';
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-
-import More from '../../assets/mainDesktop/more.png';
 import { urlFor } from '../../../sanity';
-import { PortableText } from '@portabletext/react';
 import { useGlobalContext } from '../../Context/AppContext';
-import { useParams } from 'react-router-dom';
 import paginate, { months } from '../data';
 import { CircularProgress } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-const NewsPage = () => {
+const NewsLanding = () => {
   const [page, setPage] = useState(0);
-  const { id } = useParams();
-  const { posts, post, isLoading, fetchSinglePost } = useGlobalContext();
-  const myPortableTextComponents = {
-    types: {
-      image: ({ value }) => <img src={urlFor(value).width(300).url()} />,
-      callToAction: ({ value, isInline }) =>
-        isInline ? (
-          <a href={value.url}>{value.text}</a>
-        ) : (
-          <div className="callToAction">{value.text}</div>
-        ),
-    },
-  };
-
+  const { posts, isLoading } = useGlobalContext();
   const nextPage = () => {
     setPage((oldPage) => {
       let nextPage = oldPage + 1;
@@ -52,7 +35,6 @@ const NewsPage = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    fetchSinglePost(id);
   }, []);
   if (isLoading)
     return (
@@ -64,10 +46,10 @@ const NewsPage = () => {
     <main>
       <section className="flex mb-[80px] rs-bg">
         <div className="flex-1">
-          {post?.mainImage && (
+          {posts[0]?.mainImage && (
             <img
-              src={urlFor(post?.mainImage).width(300).url()}
-              alt={post?.subtitle}
+              src={urlFor(posts[0]?.mainImage).width(300).url()}
+              alt={posts[0]?.subtitle}
               className="w-full h-full absolute -z-10 object-cover"
             />
           )}
@@ -75,98 +57,68 @@ const NewsPage = () => {
             <div className="flex items-center space-x-2 mb-4 lg:mb-6">
               <article className="w-[24px] h-[2px] bg-white"></article>
               <p className="text-[14px]">
-                {months[new Date(post?._createdAt).getMonth()]}{' '}
-                {new Date(post?._createdAt).getFullYear()}
+                {months[new Date(posts[0]?._createdAt).getMonth()]}{' '}
+                {new Date(posts[0]?._createdAt).getFullYear()}
               </p>
             </div>
             <div className="max-w-[598px]">
               <div>
                 <h1 className="text-[24px] lg:text-[2.5rem] font-bold mb-4 leading-[150%]">
-                  <q>{post?.title?.substr(0, 50)}...</q>
+                  <q>{posts[0]?.title?.substr(0, 50)}...</q>
                 </h1>
                 <p className="text-[12px] lg:text-[20px] max-w-[491px]">
-                  {post?.subtitle}
+                  {posts[0]?.subtitle}
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[30px] lg:px-0">
-        <div className="flex items-center space-x-2 text-[14px] lg:text-[20px] text-[#5B5756]">
-          <span>5 min Read</span>
-          <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
-          <span>1st Edition</span>
-        </div>
-        <div className="flex justify-center gap-x-6 lg:px-0">
-          <span className="lg:hidden">
-            <FacebookIcon htmlColor="#090302" fontSize="small" />
-          </span>
-          <span className="lg:hidden">
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="small"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-          <span className="hidden lg:block">
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span className="hidden lg:block">
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="medium"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-        </div>
-      </section>
-      <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
-        <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-6">
-          {post?.subtitle}
-        </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
-          <PortableText
-            value={post?.body}
-            components={myPortableTextComponents}
-          />
-        </div>
-      </section>
-      {post?.gallery?.length && (
-        <section>
-          <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
-            <h3 className="text-center text-[32px] font-[600] capitalize mb-6">
-              Pictures from event
-            </h3>
-            <div>
-              <article className="flex flex-col md:flex-row md:justify-center mb-[24px] flex-wrap gap-[22px]">
-                {post?.gallery?.map((item) => {
-                  return (
-                    <span className="bg-[#D9D9D9] h-[200px] md:w-[358px]">
-                      <img
-                        src={urlFor(item).width(300).url()}
-                        alt={post?.subtitle}
-                        className="w-full h-full object-cover"
-                      />
-                    </span>
-                  );
-                })}
-              </article>
-            </div>
-          </div>
-        </section>
-      )}
 
+      <section className="max-w-[1154px] mx-auto px-[30px] lg:px-0">
+        <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-10">
+          Top Stories
+        </h3>
+        <div className="flex flex-col md:flex-row gap-6">
+          {posts?.slice(0, 3)?.map((item) => {
+            return (
+              <Link
+                key={item?._id}
+                to={`/news/${item?._id}`}
+                className="lg:w-[357px]"
+              >
+                <div className="lg:w-[357px] h-[240px] lg:h-[440px]">
+                  <img
+                    src={urlFor(item?.mainImage).width(300).url()}
+                    alt={item?.subtitle}
+                    className="w-full h-full object-cover block hover:scale-105 transition-all duration-300 ease-linear"
+                  />
+                </div>
+                <div className="max-w-[548px]">
+                  <p className="text-[#934B00] text-[20px] capitalize mb-3">
+                    {months[new Date().getMonth(item?._createdAt)]},{' '}
+                    {new Date().getFullYear(item?._createdAt)}
+                  </p>
+                  <h2 className="inter typo-3 text-[#010A09] leading-8 mb-3">
+                    <q>{item?.title?.substr(0, 50)}...</q>
+                  </h2>
+                  <p className="text-[14px] md:text-[14px] text-[#010A09] mb-6">
+                    {item?.subtitle}
+                  </p>
+                </div>
+                <div className="w-[144px] flex justify-center items-center gap-x-2 border-[0.5px] border-[#010A09] rounded-[2px]  py-2 hover:bg-[#cde3e3]">
+                  <span>
+                    <p className="text-[1rem] text-[#010A09] capitalize">
+                      read more
+                    </p>
+                  </span>
+                  <EastOutlinedIcon />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
       <section className="max-w-[1122px] mx-auto my-[64px] lg:my-20 lg:hidden">
         {posts?.length > 3 && (
           <div>
@@ -176,10 +128,7 @@ const NewsPage = () => {
             <div className="">
               <div className="flex flex-wrap items-center gap-[24px]">
                 {posts?.length > 3 &&
-                  paginate(
-                    posts?.filter((item) => item?._id !== id),
-                    1
-                  )[page]?.map((item) => (
+                  paginate(posts?.slice(3), 1)[page]?.map((item) => (
                     <Link
                       key={item?._id}
                       to={`/news/${item?._id}`}
@@ -242,10 +191,7 @@ const NewsPage = () => {
             <div className="">
               <div className="flex flex-wrap items-center gap-[24px]">
                 {posts?.length > 3 &&
-                  paginate(
-                    posts?.filter((item) => item?._id !== id),
-                    3
-                  )[page]?.map((item) => (
+                  paginate(posts?.slice(3), 3)[page]?.map((item) => (
                     <Link
                       key={item?._id}
                       to={`/news/${item?._id}`}
@@ -313,4 +259,4 @@ const NewsPage = () => {
   );
 };
 
-export default NewsPage;
+export default NewsLanding;

@@ -7,11 +7,15 @@ import UrpLogo from '../Resuables/UrpLogo';
 import { useEffect, useRef, useState } from 'react';
 
 import { Popover } from '@headlessui/react';
+import { useGlobalContext } from '../../Context/AppContext';
 
 const Header = ({ setSidebar }) => {
   const [circle, setCircle] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const { students } = useGlobalContext();
   const ref = useRef(null);
+
+  const id = students[0]?._id || 1234244;
 
   const location = useLocation();
   useEffect(() => {
@@ -120,7 +124,7 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
-                      <Link to="/student-of-the-month">
+                      <Link to={`/student-spotlight/${id}`}>
                         <Popover.Button className="popup">
                           Student Spotlight
                         </Popover.Button>
@@ -189,16 +193,16 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
-                      <Link to="/galleries">
+                      <Link to="/news">
                         <Popover.Button className="popup">
                           News & Events
                         </Popover.Button>
                       </Link>
-                      <Link to="/galleries">
+                      {/* <Link to="/galleries">
                         <Popover.Button className="popup">
                           Gallery
                         </Popover.Button>
-                      </Link>
+                      </Link> */}
                       <Link to="/it-department">
                         <Popover.Button className="popup">
                           IT Team

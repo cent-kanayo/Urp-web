@@ -1,9 +1,5 @@
 import EventCard from './EventCard';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
-import Prof from '../../assets/mainDesktop/law.png';
-import Fj from '../../assets/mainDesktop/fj.png';
-import Paint from '../../assets/mainDesktop/paint.png';
-import Orientation from '../../assets/mainDesktop/orientation.png';
 
 import { Link } from 'react-router-dom';
 import { urlFor } from '../../../sanity';
@@ -58,6 +54,7 @@ const Events = ({ posts }) => {
                 text={post?.subtitle}
                 date={post?._createdAt}
                 id={post?._id}
+                key={post?._id}
               />
             ))}
           </div>

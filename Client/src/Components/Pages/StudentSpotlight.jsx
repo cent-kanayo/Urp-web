@@ -1,19 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
 
 import Contact from '../Resuables/Contact';
 
-import GetHelp from '../Resuables/GetHelp';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import rsbg from '../../assets/mainDesktop/rsbg.png';
-import BookCover from '../../assets/mainDesktop/bookCover.png';
 
 import Nwa from '../../assets/lecturers/Lfarin.png';
 import RQ from '../../assets/quoteR.png';
@@ -22,8 +17,32 @@ import LQ from '../../assets/quoteL.png';
 import Bike from '../../assets/bike.png';
 import Activity from '../../assets/activity.png';
 import OpenB from '../../assets/book-opened.png';
+import { useGlobalContext } from '../../Context/AppContext';
+import paginate from '../data';
+import { Link } from 'react-router-dom';
+import { urlFor } from '../../../sanity';
 
 const StudentSpotlight = () => {
+  const [page, setPage] = useState(0);
+  const { students, isLoading } = useGlobalContext();
+  const nextPage = () => {
+    setPage((oldPage) => {
+      let nextPage = oldPage + 1;
+      if (nextPage > students?.slice(1)?.length - 1) {
+        nextPage = 0;
+      }
+      return nextPage;
+    });
+  };
+  const prevPage = () => {
+    setPage((oldPage) => {
+      let prevPage = oldPage - 1;
+      if (prevPage < 0) {
+        prevPage = students?.slice(1)?.length - 1;
+      }
+      return prevPage;
+    });
+  };
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -164,93 +183,108 @@ const StudentSpotlight = () => {
           </div>
         </div>
       </section>
-      <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[52px] my-[80px] px-6 lg:px-0">
-        <div>
-          <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
-            Previous Urp Heroes
-          </h3>
-          <div className="max-w-[1112px] mx-auto">
-            <div className="flex lg:justify-center justify-between items-center gap-x-[24px]">
-              <div className="hidden relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end">
-                <div className="w-full h-[72px] bg-white py-[18px] px-[54px] z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2 lg:space-x-2">
-                      <a
-                        href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
-                        target="_blank"
-                      >
-                        View Profile
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
+      {students?.length > 1 && (
+        <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[52px] my-[80px] px-6 lg:px-0 lg:hidden">
+          <div>
+            <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
+              Previous Urp Heroes
+            </h3>
+            <div className="max-w-[1112px] mx-auto">
+              <div className="flex lg:justify-center justify-between items-center gap-x-[24px]">
+                {students?.length > 1 &&
+                  paginate(students?.slice(1), 1)[page]?.map((item) => {
+                    <Link
+                      key={item?._id}
+                      to={`/student-spotlight/${item?._id}`}
+                      className="relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end"
+                    >
+                      <img
+                        src={urlFor(item?.mainImage).width(300).url()}
+                        alt={item?.title}
+                        className="absolute w-full h-full -z-10"
+                      />
+                      <div className="w-full h-[72px] bg-white py-[18px] px-[54px] z-10 opacity-[0.92]">
+                        <article className="border-[#010A09] border-[2px] py-2">
+                          <p className="flex justify-center items-center space-x-2 lg:space-x-2">
+                            <p>View Profile</p>
+                            <EastOutlinedIcon />
+                          </p>
+                        </article>
+                      </div>
+                    </Link>;
+                  })}
               </div>
-              <div className="hidden relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end">
-                <div className="w-full h-[72px] bg-white py-[18px] px-[54px]  z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2 lg:space-x-2">
-                      <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
-                        target="_blank"
-                      >
-                        View Profile
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
+              <div className="flex justify-between items-center mt-6 lg:mt-[40px]">
+                <span role="button" onClick={prevPage}>
+                  <img
+                    src={LeftIcon}
+                    alt="left toggle button"
+                    className="w-[32px] lg:w-auto"
+                  />
+                </span>
+                <span role="button" onClick={nextPage}>
+                  <img
+                    src={RightIcon}
+                    alt="right toggle button"
+                    className="w-[32px] lg:w-auto"
+                  />
+                </span>
               </div>
-              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <div className="w-full lg:h-[72px] bg-white py-2 lg:py-[18px] px-4 lg:px-[54px]   z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2 lg:space-x-2 text-[12px]">
-                      <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
-                        target="_blank"
-                      >
-                        View Profile
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <div className="w-full lg:h-[72px] bg-white py-2 lg:py-[18px] px-4 lg:px-[54px]  z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2">
-                    <p className="flex justify-center items-center space-x-2 lg:space-x-2 text-[12px]">
-                      <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
-                        target="_blank"
-                      >
-                        View Profile
-                      </a>
-                      <EastOutlinedIcon />
-                    </p>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-between items-center mt-6 lg:mt-[40px]">
-              <span>
-                <img
-                  src={LeftIcon}
-                  alt="left toggle button"
-                  className="w-[32px] lg:w-auto"
-                />
-              </span>
-              <span>
-                <img
-                  src={RightIcon}
-                  alt="right toggle button"
-                  className="w-[32px] lg:w-auto"
-                />
-              </span>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+      {students?.length > 1 && (
+        <section className="lg:h-[680px] bg-[#010A09] py-6 lg:py-[52px] my-[80px] px-6 lg:px-0 hidden lg:block">
+          <div>
+            <h3 className="text-center text-[#FDFFFD] text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[40px]">
+              Previous Urp Heroes
+            </h3>
+            <div className="max-w-[1112px] mx-auto">
+              <div className="flex lg:justify-center justify-between items-center gap-x-[24px]">
+                {students?.length > 1 &&
+                  paginate(students?.slice(1), 4)[page]?.map((item) => {
+                    <Link
+                      key={item?._id}
+                      to={`/student-spotlight/${item?._id}`}
+                      className="relative w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] lg:flex justify-center items-end"
+                    >
+                      <img
+                        src={urlFor(item?.mainImage).width(300).url()}
+                        alt={item?.title}
+                        className="absolute w-full h-full -z-10"
+                      />
+                      <div className="w-full h-[72px] bg-white py-[18px] px-[54px] z-10 opacity-[0.92]">
+                        <article className="border-[#010A09] border-[2px] py-2">
+                          <p className="flex justify-center items-center space-x-2 lg:space-x-2">
+                            <p>View Profile</p>
+                            <EastOutlinedIcon />
+                          </p>
+                        </article>
+                      </div>
+                    </Link>;
+                  })}
+              </div>
+              <div className="flex justify-between items-center mt-6 lg:mt-[40px]">
+                <span role="button" onClick={prevPage}>
+                  <img
+                    src={LeftIcon}
+                    alt="left toggle button"
+                    className="w-[32px] lg:w-auto"
+                  />
+                </span>
+                <span role="button" onClick={nextPage}>
+                  <img
+                    src={RightIcon}
+                    alt="right toggle button"
+                    className="w-[32px] lg:w-auto"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <Contact h2="contact us for sponsorship or partnership" />
     </main>

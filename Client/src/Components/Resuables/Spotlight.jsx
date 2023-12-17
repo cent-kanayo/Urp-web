@@ -3,8 +3,12 @@ import SpotlightBox from './SpotlightBox';
 import Pen from '../../assets/mainDesktop/planners.png';
 import Student from '../../assets/student.png';
 import City from '../../assets/mainDesktop/pro.png';
+import { useGlobalContext } from '../../Context/AppContext';
 
 const Spotlight = () => {
+  const { students } = useGlobalContext();
+
+  const id = students[0]?._id || 1234244;
   return (
     <section className="px-4 lg:px-0">
       <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[64px] lg:mb-[80px]">
@@ -30,7 +34,7 @@ const Spotlight = () => {
           h2="Student of the month"
           p="Request access to past projects."
           btn="Open profile"
-          link="/student-of-the-month"
+          link={`/student-spotlight/${id}`}
         />
       </div>
     </section>

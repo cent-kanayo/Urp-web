@@ -696,8 +696,10 @@ RS Page
     height: 320px;
   }
   .programs-bg,
-  .it-bg {
+  .it-bg,
+  .research-bg {
     height: 505px;
+    background-position: center;
   }
   .honours-bg {
     background-image: url('./assets/mainDesktop/honours.png');

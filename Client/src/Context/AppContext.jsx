@@ -5,7 +5,8 @@ const AppContent = createContext(null);
 
 const AppContext = ({ children }) => {
   const [posts, setPosts] = useState([]);
-  const [post, setPost] = useState([]);
+  const [students, setStudents] = useState([]);
+  const [post, setPost] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const fetchPosts = async () => {
     try {
@@ -35,7 +36,9 @@ const AppContext = ({ children }) => {
     fetchPosts();
   }, []);
   return (
-    <AppContent.Provider value={{ posts, post, isLoading, fetchSinglePost }}>
+    <AppContent.Provider
+      value={{ posts, post, isLoading, students, fetchSinglePost }}
+    >
       {children}
     </AppContent.Provider>
   );

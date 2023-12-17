@@ -40,6 +40,7 @@ import {
   Anthony,
   TheJournal,
   Journal1,
+  NewsLanding,
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 import Uploads from './Components/Auth/Uploads';
@@ -75,8 +76,9 @@ function App() {
           <Route path="staff/anthony-onuigboje" element={<Anthony />} />
           <Route path="about" element={<About />} />
           <Route path="research-cluster" element={<ResearchCluster />} />
-          <Route path="student-of-the-month" element={<StudentSpotlight />} />
+          <Route path="student-spotlight/:id" element={<StudentSpotlight />} />
           <Route path="news/:id" element={<NewsPage />} />
+          <Route path="news" element={<NewsLanding />} />
           <Route path="planners-pen" element={<PlannersPen />} />
           <Route path="urp-journal" element={<TheJournal />} />
           <Route path="journal-v8" element={<Journal />} />
@@ -89,7 +91,7 @@ function App() {
           <Route path="faqs" element={<Faq />} />
           <Route path="contact" element={<Contact />} />
           <Route path="it-department" element={<It />} />
-          <Route path="galleries" element={<Gallery />} />
+          {/* <Route path="galleries" element={<Gallery />} /> */}
         </Route>
         <Route path="student-login" element={<StudentLogin />} />
         <Route path="staff-login" element={<StaffLogin />} />
