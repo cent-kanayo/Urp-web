@@ -42,7 +42,7 @@ const StaffPage = () => {
             administrators
           </h2>
         </div>
-        <div className="flex justify-center flex-wrap gap-[22px]  lg:gap-6 max-w-[1249px] mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-[22px]  lg:gap-6 max-w-[1249px] mx-auto">
           <Excocard
             name="Dr. M. E. AGUNBIADE"
             role="Associate Professor and HOD"
@@ -199,7 +199,7 @@ const StaffPage = () => {
           />
         </div>
       </section> */}
-      <section className="lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
+      {/* <section className="lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"
           p="Experience seamless interaction with the department effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
@@ -209,7 +209,7 @@ const StaffPage = () => {
           text4="make a donation"
           text5="Suggestions"
         />
-      </section>
+      </section> */}
       <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">

@@ -176,37 +176,37 @@ const StudentPage = () => {
           </span>
         </div> */}
       </section>
-      <section>
+      <section className="px-6 lg:px-0">
         <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
           <h3 className="text-center lg:text-left text-[32px] font-[600] capitalize mb-6">
             popular shots
           </h3>
           <div>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]">
-                <img src={P6} alt="" className="w-full h-full object-cover" />
+            <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[739px]">
+                <img src={P6} alt="" className="w-full h-full" />
               </span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
-                <img src={P5} alt="" className="w-full h-full object-cover" />
-              </span>
-            </article>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px] hidden lg:block">
-                <img src={P1} alt="" className="w-full h-full object-cover" />
-              </span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
-                <img src={P2} alt="" className="w-full h-full object-cover" />
-              </span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
-                <img src={P3} alt="" className="w-full h-full object-cover" />
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
+                <img src={P5} alt="" className="w-full h-full" />
               </span>
             </article>
-            <article className="flex justify-center mb-[24px] gap-[22px]">
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[358px]">
-                <img src={P4} alt="" className="w-full h-full object-cover" />
+            <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px] hidden lg:block">
+                <img src={P1} alt="" className="w-full h-full" />
               </span>
-              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] w-[160px] lg:w-[739px]">
-                <img src={P7} alt="" className="w-full h-full object-cover" />
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
+                <img src={P2} alt="" className="w-full h-full" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
+                <img src={P3} alt="" className="w-full h-full" />
+              </span>
+            </article>
+            <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
+                <img src={P4} alt="" className="w-full h-full" />
+              </span>
+              <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[739px]">
+                <img src={P7} alt="" className="w-full h-full" />
               </span>
             </article>
           </div>
@@ -245,7 +245,7 @@ const StudentPage = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[64px] lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
+      {/* <section className="mt-[64px] lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
         <GetHelp
           h2="Get help, reach out to us and contribute to our growth"
           p="Experience seamless interaction wpresident effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
@@ -255,7 +255,7 @@ const StudentPage = () => {
           text4="make a donation"
           text5="Suggestions"
         />
-      </section>
+      </section> */}
       <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">

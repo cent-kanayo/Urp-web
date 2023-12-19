@@ -143,7 +143,7 @@ const NewsPage = () => {
         </div>
       </section>
       {post?.gallery?.length && (
-        <section>
+        <section className="px-6 lg:px-0">
           <div className="max-w-[1122px] mx-auto mt-[64px] lg:mt-[160px] py-6 lg:py-0">
             <h3 className="text-center text-[32px] font-[600] capitalize mb-6">
               Pictures from event
@@ -233,7 +233,7 @@ const NewsPage = () => {
           </div>
         )}
       </section>
-      <section className="max-w-[1122px] mx-auto my-[64px] lg:my-20 hidden lg:block">
+      <section className="max-w-[1122px] mx-auto my-[64px] lg:my-20 hidden lg:block px-6 px-0">
         {posts?.length > 3 && (
           <div>
             <h3 className="text-[#011717] text-[40px] font-bold text-center capitalize mb-[40px]">
