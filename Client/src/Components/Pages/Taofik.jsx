@@ -910,14 +910,6 @@ const Taofik = () => {
               Have questions or need assistance? Reach out to our lecturer below
             </p>
             <div className="flex gap-x-2 lg:gap-x-6 justify-center">
-              <div className="border-[#1B1B1B] border-[1px] rounded-[2px] px-6 py-2 flex items-center gap-x-2">
-                <span>
-                  <PhoneOutlinedIcon htmlColor="black" />
-                </span>
-                <span className="text-[12px] lg:text-[14px] whitespace-nowrap">
-                  Call Dr. Adewale
-                </span>
-              </div>
               <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
                 <span className="lg:hidden">
                   <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />

@@ -2,7 +2,7 @@ import { Search } from '@mui/icons-material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import UrpLogo from '../Resuables/UrpLogo';
 import { useEffect, useRef, useState } from 'react';
 
@@ -10,25 +10,12 @@ import { Popover } from '@headlessui/react';
 import { useGlobalContext } from '../../Context/AppContext';
 
 const Header = ({ setSidebar }) => {
-  const [circle, setCircle] = useState(false);
   const [sticky, setSticky] = useState(false);
   const { students } = useGlobalContext();
   const ref = useRef(null);
 
   const id = students[0]?._id || 1234244;
 
-  const location = useLocation();
-  useEffect(() => {
-    if (
-      location.pathname === '/students' ||
-      location.pathname === '/staff' ||
-      location.pathname === '/alumni'
-    ) {
-      setCircle(true);
-    } else {
-      setCircle(false);
-    }
-  }, [location.pathname]);
   useEffect(() => {
     const getHeight = window.addEventListener('scroll', () => {
       const windowHeight = window.scrollY;

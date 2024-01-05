@@ -20,10 +20,10 @@ const PlannersPen = () => {
       <section className="mb-[64px] lg:mb-[72px] h-[505px] lg:h-[720px] bg-[#9D9E9D] py-[106px] lg:py-[172px] flex items-end justify-start planners-bg">
         <div className="max-w-[1212px] mx-auto flex-1 px-[52px] lg:px-0">
           <div className="flex flex-col text-white">
-            {/* <p className="text-[24px] lg:text-[32px]">The</p>
+            <p className="text-[24px] lg:text-[32px]">The</p>
             <h1 className="-mt-4 lg:-mt-6 font-semibold text-[48px] lg:text-[96px] whitespace-nowrap">
               Planner’s Pen
-            </h1> */}
+            </h1>
           </div>
         </div>
       </section>

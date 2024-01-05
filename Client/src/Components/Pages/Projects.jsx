@@ -46,11 +46,11 @@ const Projects = () => {
           </p>
         </div>
       </section>
-      <section className="mt-[64px] lg:mt-[80px] max-w-[1120px] mx-auto">
+      <section className="mt-[64px] lg:mt-[80px] max-w-[1120px] mx-auto px-6 lg:px-0">
         <div className="flex flex-col md:flex-row flex-wrap gap-y-6 gap-x-[22px] lg:gap-x-6 mb-6">
           <Link
             to="/projects/single-project"
-            className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
+            className="md:max-w-[260px] lg:max-w-[548px]"
           >
             <img src={P1} alt="" className="w-full" />
             <div>
@@ -68,7 +68,7 @@ const Projects = () => {
           </Link>
           <Link
             to="/projects/single-project-3"
-            className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
+            className="md:max-w-[260px] lg:max-w-[548px]"
           >
             <img src={P2} alt="" className="w-full" />
             <div>
@@ -85,7 +85,7 @@ const Projects = () => {
           </Link>
           <Link
             to="/projects/single-project-2"
-            className="max-w-[160px] md:max-w-[260px] lg:max-w-[548px]"
+            className="md:max-w-[260px] lg:max-w-[548px]"
           >
             <img src={P3} alt="" className="w-full" />
             <div>
