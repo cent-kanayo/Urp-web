@@ -74,7 +74,7 @@ const Footer = () => {
                 </p>
               </div>
               <p className="text-[#F0C808] text-[12px] lg:text-[14px]">
-                visit university website
+                <Link to="https://unilag.edu.ng">visit university website</Link>
               </p>
             </div>
           </div>

@@ -27,19 +27,20 @@ const Sidebar = ({ setSidebar }) => {
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
                   <Link
+                    to="/urp-programs"
+                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
+                    onClick={() => setSidebar(false)}
+                  >
+                    <Popover.Button>Academic Programmes</Popover.Button>
+                  </Link>
+                  <Link
                     to="/staff"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
-                    <Popover.Button>Administrative Staff</Popover.Button>
+                    <Popover.Button>Academic Staff</Popover.Button>
                   </Link>
-                  <Link
-                    to="/students"
-                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
-                    onClick={() => setSidebar(false)}
-                  >
-                    <Popover.Button>Student Executives</Popover.Button>
-                  </Link>
+
                   {/* <Link to="/alumni">
                     <Popover.Button >Alumni</Popover.Button>
                   </Link> */}
@@ -70,18 +71,18 @@ const Sidebar = ({ setSidebar }) => {
           <div className="flex justify-between items-center px-2">
             <Popover className="relative w-full">
               <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
-                <p> students</p>
+                <p>students</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
 
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
                   <Link
-                    to={`/student-spotlight/${id}`}
+                    to="/students"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
-                    <Popover.Button>Student Spotlight</Popover.Button>
+                    <Popover.Button>Students' Association</Popover.Button>
                   </Link>
                   <Link
                     to="/honours-list"
@@ -90,13 +91,7 @@ const Sidebar = ({ setSidebar }) => {
                   >
                     <Popover.Button>Honors list</Popover.Button>
                   </Link>
-                  <Link
-                    to="/urp-programs"
-                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
-                    onClick={() => setSidebar(false)}
-                  >
-                    <Popover.Button>Programmes</Popover.Button>
-                  </Link>
+
                   <Link
                     to="/projects"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
@@ -117,6 +112,13 @@ const Sidebar = ({ setSidebar }) => {
 
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
+                  <Link
+                    to="/faqs"
+                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
+                    onClick={() => setSidebar(false)}
+                  >
+                    <Popover.Button>FAQ’s</Popover.Button>
+                  </Link>
                   <Link
                     to="urp-journal"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
@@ -145,13 +147,6 @@ const Sidebar = ({ setSidebar }) => {
                   >
                     <Popover.Button>Contact Us</Popover.Button>
                   </Link>
-                  <Link
-                    to="/faqs"
-                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
-                    onClick={() => setSidebar(false)}
-                  >
-                    <Popover.Button>FAQ’s</Popover.Button>
-                  </Link>
                 </div>
               </Popover.Panel>
             </Popover>
@@ -171,6 +166,13 @@ const Sidebar = ({ setSidebar }) => {
                     onClick={() => setSidebar(false)}
                   >
                     <Popover.Button>News & Events</Popover.Button>
+                  </Link>
+                  <Link
+                    to="/about "
+                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
+                    onClick={() => setSidebar(false)}
+                  >
+                    <Popover.Button>About Us</Popover.Button>
                   </Link>
                   {/* <Link
                         to="/galleries"

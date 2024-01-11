@@ -122,29 +122,29 @@ const Home = () => {
           </h3>
           <div className="flex flex-col gap-[64px] lg:gap-0 justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
             <NumberBox
-              text="Courses"
+              text="Programmes"
               heading="7"
-              sub="Number of courses offered in the department"
+              sub="Number of degree programmes offered in the department"
               color="green"
             />
             <NumberBox
               text="Excellence"
               heading="5"
-              sub="Number of First Class students currently in the Department"
+              sub="First Class students currently in the Department"
               color="yellow"
             />
             <NumberBox
-              text="Capacity"
+              text="Enrollment"
               heading="200"
               sub="Number of students currently enrolled in the Department"
               color="orange"
             />
-            <NumberBox
+            {/* <NumberBox
               text="diverse"
               heading="1142"
               sub="Number of total students enrolled since inception of the Department"
               color="red"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -235,9 +235,12 @@ const Home = () => {
               practitioners, policymakers, scholars and students.....
             </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
+              <Link
+                to="http://urpr.unilag.edu.ng/issue/view/277"
+                className="bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse"
+              >
                 Go to page
-              </button>
+              </Link>
             </div>
           </div>
         </div>

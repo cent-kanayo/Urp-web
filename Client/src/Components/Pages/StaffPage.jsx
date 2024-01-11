@@ -39,7 +39,7 @@ const StaffPage = () => {
       <section className="lg:mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
           <h2 className="text-center text-[24px] md:text-[2.5rem] text[#011717] font-bold capitalize ">
-            administrators
+            academic staff
           </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-[22px]  lg:gap-6 max-w-[1249px] mx-auto">

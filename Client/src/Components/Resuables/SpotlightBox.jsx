@@ -15,8 +15,8 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
         />
       </div>
       <div className="py-[24px] lg:w-[310px] mx-auto px-4 lg:px-0">
-        <h2 className="inter mb-4 whitespace-nowrap capitalize">{h2}</h2>
-        <p className="mb-4">{p}</p>
+        <h2 className="inter mb-2 whitespace-nowrap capitalize">{h2}</h2>
+        <p className="mb-2">{p}</p>
         <div className="px-0">
           <p className="hover:animate-pulse flex items-center gap-x-2 capitalize">
             <span className="text-[12px] lg:text-[14px] underline underline-offset-4">

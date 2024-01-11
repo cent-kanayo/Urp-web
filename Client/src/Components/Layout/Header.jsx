@@ -65,14 +65,14 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
-                      <Link to="/staff">
+                      <Link to="/urp-programs">
                         <Popover.Button className="popup">
-                          Administrative Staff
+                          Academic Programmes
                         </Popover.Button>
                       </Link>
-                      <Link to="/students">
+                      <Link to="/staff">
                         <Popover.Button className="popup">
-                          Student Executives
+                          Academic Staff
                         </Popover.Button>
                       </Link>
                       {/* <Link to="/alumni">
@@ -111,21 +111,17 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
-                      <Link to={`/student-spotlight/${id}`}>
-                        <Popover.Button className="popup">
-                          Student Spotlight
-                        </Popover.Button>
-                      </Link>
                       <Link to="/honours-list">
                         <Popover.Button className="popup">
-                          Honors list
+                          Honours list
                         </Popover.Button>
                       </Link>
-                      <Link to="/urp-programs">
+                      <Link to="/students">
                         <Popover.Button className="popup">
-                          Programmes
+                          Students' Association
                         </Popover.Button>
                       </Link>
+
                       <Link to="/projects">
                         <Popover.Button className="popup">
                           Student Projects
@@ -144,6 +140,9 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
+                      <Link to="/faqs">
+                        <Popover.Button className="popup">FAQ’s</Popover.Button>
+                      </Link>
                       <Link to="urp-journal">
                         <Popover.Button className="popup">
                           The URP Journal
@@ -159,14 +158,6 @@ const Header = ({ setSidebar }) => {
                           Planner’s Pen
                         </Popover.Button>
                       </Link>
-                      <Link to="/contact">
-                        <Popover.Button className="popup">
-                          Contact Us
-                        </Popover.Button>
-                      </Link>
-                      <Link to="/faqs">
-                        <Popover.Button className="popup">FAQ’s</Popover.Button>
-                      </Link>
                     </div>
                   </Popover.Panel>
                 </Popover>
@@ -180,11 +171,17 @@ const Header = ({ setSidebar }) => {
 
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
+                      <Link to="/about">
+                        <Popover.Button className="popup">
+                          About Us
+                        </Popover.Button>
+                      </Link>
                       <Link to="/news">
                         <Popover.Button className="popup">
                           News & Events
                         </Popover.Button>
                       </Link>
+
                       {/* <Link to="/galleries">
                         <Popover.Button className="popup">
                           Gallery
@@ -202,10 +199,10 @@ const Header = ({ setSidebar }) => {
             </ul>
             <div className="flex items-center gap-4">
               <Link
-                to="/urp-journal"
+                to="/contact"
                 className="px-6 py-3 flex justify-center items-center bg-[#037171] hover:bg-[#03312E] rounded-[4px] text-white"
               >
-                <span className="whitespace-nowrap">The URP Journal</span>
+                <span className="whitespace-nowrap">Contact</span>
               </Link>
             </div>
           </div>

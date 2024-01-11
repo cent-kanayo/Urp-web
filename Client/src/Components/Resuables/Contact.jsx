@@ -3,6 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { PhoneCallback } from '@mui/icons-material';
 const Contact = ({ h2 }) => {
   return (
     <section className="grid place-items-center my-[64px] lg:my-[80px] bg-white">
@@ -25,10 +26,10 @@ const Contact = ({ h2 }) => {
             <EmailIcon htmlColor="#934B00" fontSize="large" />
           </span>
           <span className="lg:hidden">
-            <FacebookIcon htmlColor="#934B00" fontSize="medium" />
+            <PhoneCallback htmlColor="#934B00" fontSize="medium" />
           </span>
           <span className="hidden lg:block">
-            <FacebookIcon htmlColor="#934B00" fontSize="large" />
+            <PhoneCallback htmlColor="#934B00" fontSize="large" />
           </span>
           <span className="lg:hidden">
             <InstagramIcon htmlColor="#934B00" fontSize="medium" />
@@ -41,12 +42,6 @@ const Contact = ({ h2 }) => {
           </span>
           <span className="hidden lg:block">
             <TwitterIcon htmlColor="#934B00" fontSize="large" />
-          </span>
-          <span className="lg:hidden">
-            <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-          </span>
-          <span className="hidden lg:block">
-            <LinkedInIcon htmlColor="#934B00" fontSize="large" />
           </span>
         </div>
       </div>
