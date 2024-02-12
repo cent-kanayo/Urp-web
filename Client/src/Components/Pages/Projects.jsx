@@ -52,7 +52,7 @@ const Projects = () => {
             to="/projects/single-project"
             className="md:max-w-[260px] lg:max-w-[548px]"
           >
-            <img src={P1} alt="" className="w-full" />
+            <img src={P1} alt="" className="w-full mb-4" />
             <div>
               <h2 className="text-[14px] lg:text-[24px] text-[#011717] font-medium mb-2">
                 Urban Renewal Project of Abule Oja/ Development of University
@@ -70,7 +70,7 @@ const Projects = () => {
             to="/projects/single-project-3"
             className="md:max-w-[260px] lg:max-w-[548px]"
           >
-            <img src={P2} alt="" className="w-full" />
+            <img src={P2} alt="" className="w-full mb-4" />
             <div>
               <h2 className="text-[14px] lg:text-[24px] text-[#011717] font-medium mb-2">
                 Urban Renewal Project of Bariga
@@ -87,7 +87,7 @@ const Projects = () => {
             to="/projects/single-project-2"
             className="md:max-w-[260px] lg:max-w-[548px]"
           >
-            <img src={P3} alt="" className="w-full" />
+            <img src={P3} alt="" className="w-full mb-4" />
             <div>
               <h2 className="text-[14px] lg:text-[24px] text-[#011717] font-medium mb-2">
                 Streetscpaing of Shipeolu Street, Onipanu
