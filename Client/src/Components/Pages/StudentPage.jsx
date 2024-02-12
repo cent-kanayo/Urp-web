@@ -184,29 +184,57 @@ const StudentPage = () => {
           <div>
             <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[739px]">
-                <img src={P6} alt="" className="w-full h-full" />
+                <img
+                  src={P6}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
-                <img src={P5} alt="" className="w-full h-full" />
+                <img
+                  src={P5}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
             </article>
             <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px] hidden lg:block">
-                <img src={P1} alt="" className="w-full h-full" />
+                <img
+                  src={P1}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
-                <img src={P2} alt="" className="w-full h-full" />
+                <img
+                  src={P2}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
-                <img src={P3} alt="" className="w-full h-full" />
+                <img
+                  src={P3}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
             </article>
             <article className="flex flex-col md:flex-row md:justify-center mb-[24px] gap-[22px]">
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[358px]">
-                <img src={P4} alt="" className="w-full h-full" />
+                <img
+                  src={P4}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
               <span className="bg-[#D9D9D9] h-[170px] lg:h-[200px] lg:w-[739px]">
-                <img src={P7} alt="" className="w-full h-full" />
+                <img
+                  src={P7}
+                  alt=""
+                  className="w-full h-full object-cover lg:object-contain"
+                />
               </span>
             </article>
           </div>
