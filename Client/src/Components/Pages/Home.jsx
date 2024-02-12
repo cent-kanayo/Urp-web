@@ -149,7 +149,7 @@ const Home = () => {
         </div>
       </section>
       <section className="my-[64px] py-6 lg:py-[80px]">
-        <div className="relative h-[400px] md:h-[600px] lg:h-[800px] flex items-end justify-center">
+        <div className="relative h-[400px] pb-4 md:h-[600px] lg:h-[800px] flex items-end justify-center">
           <div className="hidden lg:block absolute h-[100%] left-0 lg:w-[50%] -z-10">
             <img
               src={HODLight}
@@ -176,7 +176,7 @@ const Home = () => {
               className="block w-[100%] h-[100%] object-cover md:object-fill absolute lg:hidden"
             />
           </div>
-          <div className="h-[201px] lg:h-auto w-full  lg:mx-0  lg:max-w-none">
+          <div className="h-[220px] lg:h-auto w-full  lg:mx-0  lg:max-w-none">
             <div className="bg-[#FDFFFD] relative z-30 px-4 lg:px-10 py-3 lg:py-6 lg:absolute lg:left-[48%] mx-4 lg:top-[251px] md:w-[540px] md:mx-auto gap-4 lg:gap-6  flex flex-col border-l-[4px] border-[#5B5756] rounded-[4px]">
               <div className="flex items-end gap-x-4">
                 <h2 className="text-[#011717] text-[24px] lg:text-[36px] font-bold capitalize underline underline-offset-[10px]">

@@ -11,7 +11,7 @@ const Contact = ({ h2 }) => {
         <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#011717] mb-4">
           {h2}
         </h2>
-        <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
+        <p className="text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
           Ready to make a difference? Explore sponsorships and volunteer
           opportunities to create a meaningful impact
         </p>

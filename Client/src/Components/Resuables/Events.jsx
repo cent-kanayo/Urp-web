@@ -31,7 +31,7 @@ const Events = ({ posts }) => {
                 {months[new Date().getMonth(posts[0]?._createdAt)]},{' '}
                 {new Date().getFullYear(posts[0]?._createdAt)}
               </p>
-              <h3 className="inter typo-3 text-[#010A09] leading-8 mb-3">
+              <h3 className="inter text-[14px] lg:text-[16px] font-bold text-[#010A09] leading-8 mb-3">
                 <q>{posts[0]?.title?.substr(0, 50)}...</q>
               </h3>
               <p className="text-[14px] md:text-[14px] text-[#010A09] mb-6">

@@ -1,24 +1,24 @@
 const NumberBox = ({ text, heading, sub, color }) => {
   return (
     <article className="box capitalize">
-      <p className="p1 text-[14px] md:text-[20px]">{text}</p>
+      <p className="p1 text-[18px] md:text-[20px]">{text}</p>
       {color === 'green' && (
-        <h2 className="text-[#024B4B] text-[40xp] md:text-[56px] font-bold leading-[150%]">
+        <h2 className="text-[#024B4B] text-[56px] font-bold leading-[150%]">
           {heading}
         </h2>
       )}
       {color === 'yellow' && (
-        <h2 className="text-[#f0c808] text-[40xp] md:text-[56px] font-bold leading-[150%]">
+        <h2 className="text-[#f0c808] text-[56px] font-bold leading-[150%]">
           {heading}
         </h2>
       )}
       {color === 'orange' && (
-        <h2 className="text-[#934B00] text-[40xp] md:text-[56px] font-bold leading-[150%]">
+        <h2 className="text-[#934B00] text-[56px] font-bold leading-[150%]">
           {heading}
         </h2>
       )}
       {color === 'red' && (
-        <h2 className="text-[#DD1C1A] text-[40xp] md:text-[56px] font-bold leading-[150%]">
+        <h2 className="text-[#DD1C1A] text-[56px] font-bold leading-[150%]">
           {heading}
         </h2>
       )}

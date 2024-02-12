@@ -148,7 +148,7 @@ const Programs = () => {
         <h3 className="text-center text-[32px] lg:text-[40px] font-[600] mb-6">
           Programmes
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
           <p>
             Urban and Regional Planning is concerned with variety of activities
             aimed at shaping the pattern of human settlements. The art of
@@ -214,7 +214,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref1} className="programs-hide mt-6">
+          <div ref={ref1} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
               The discipline of Urban and Regional Planning faces increasingly
               complex challenges. Addressing these issues requires a profound
@@ -232,11 +232,6 @@ const Programs = () => {
               leadership for the advancement of knowledge and research in the
               field.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -265,7 +260,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref2} className="programs-hide mt-6">
+          <div ref={ref2} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               The field of Urban and Regional Planning faces increasingly
               complex challenges. To address these issues, a comprehensive
@@ -281,11 +276,6 @@ const Programs = () => {
               continuous learning, ethical conduct, and leadership in advancing
               knowledge and research within Urban and Regional Planning.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -314,7 +304,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref3} className="programs-hide mt-6">
+          <div ref={ref3} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Rapid rural and urban development demands increased infrastructure
               and facilities to address urbanization challenges. However, the
@@ -329,11 +319,6 @@ const Programs = () => {
               learning, character, ethics, and a strong commitment to serving
               humanity.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -362,7 +347,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref4} className="programs-hide mt-6">
+          <div ref={ref4} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
               Urban and Regional Planning involves shaping human settlements by
               making informed choices about future options and ensuring the
@@ -388,11 +373,6 @@ const Programs = () => {
               expected to excel in learning, character, and ethics, with a
               strong sense of service to humanity.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -421,7 +401,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref5} className="programs-hide mt-6">
+          <div ref={ref5} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
               The discipline of Urban and Regional Planning faces increasingly
               complex challenges. Addressing these issues requires a profound
@@ -439,11 +419,6 @@ const Programs = () => {
               leadership for the advancement of knowledge and research in the
               field.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -472,7 +447,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref6} className="programs-hide mt-6">
+          <div ref={ref6} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               The challenges faced by Urban and Regional Planning are becoming
               more intricate, demanding a heightened understanding of
@@ -484,11 +459,6 @@ const Programs = () => {
               solutions for the increasingly complex planning issues in Nigeria
               and globally.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
         <div
@@ -517,7 +487,7 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref7} className="programs-hide mt-6">
+          <div ref={ref7} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
               Urban and Regional Planning faces complex challenges, requiring a
               deep understanding of theoretical aspects. The BSc program aims to
@@ -527,11 +497,6 @@ const Programs = () => {
               learning, ethics, and leadership in Urban and Regional Planning
               research.
             </p>
-            <div className="flex justify-end mt-6">
-              <button className="bg-[#CDE3E3] text-[#1B1B1B] px-6 py-2 rounded-[2px] text-[14px]">
-                View Handbook
-              </button>
-            </div>
           </div>
         </div>
       </section>

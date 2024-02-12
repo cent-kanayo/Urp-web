@@ -17,9 +17,9 @@ const Sidebar = ({ setSidebar }) => {
           </button>
         </div>
         <div className="text-[#FDFFFD] py-6 flex flex-col gap-4">
-          <div className="flex justify-between items-center px-2 text-[18px]">
+          <div className="flex justify-between items-center px-2 ">
             <Popover className="relative w-full">
-              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
+              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full text-[18px]">
                 <p>academics</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
@@ -50,7 +50,7 @@ const Sidebar = ({ setSidebar }) => {
           </div>
           <div className="flex justify-between items-center px-2">
             <Popover className="relative w-full">
-              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
+              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full text-[18px]">
                 <p> Research</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
@@ -70,7 +70,7 @@ const Sidebar = ({ setSidebar }) => {
           </div>
           <div className="flex justify-between items-center px-2">
             <Popover className="relative w-full">
-              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
+              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full text-[18px]">
                 <p>students</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
@@ -105,7 +105,7 @@ const Sidebar = ({ setSidebar }) => {
           </div>
           <div className="flex justify-between items-center px-2">
             <Popover className="relative w-full">
-              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
+              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full text-[18px]">
                 <p>resources</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
@@ -153,7 +153,7 @@ const Sidebar = ({ setSidebar }) => {
           </div>
           <div className="flex justify-between items-center px-2">
             <Popover className="relative w-full">
-              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full">
+              <Popover.Button className="text-[#FDFFFD] capitalize focus:outline-none flex justify-between items-center w-full text-[18px]">
                 <p>information</p>
                 <ExpandMoreIcon fontSize="small" />
               </Popover.Button>
@@ -161,19 +161,20 @@ const Sidebar = ({ setSidebar }) => {
               <Popover.Panel className="p-4">
                 <div className="flex flex-col gap-4">
                   <Link
-                    to="/news "
-                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
-                    onClick={() => setSidebar(false)}
-                  >
-                    <Popover.Button>News & Events</Popover.Button>
-                  </Link>
-                  <Link
                     to="/about "
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
                     <Popover.Button>About Us</Popover.Button>
                   </Link>
+                  <Link
+                    to="/news "
+                    className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
+                    onClick={() => setSidebar(false)}
+                  >
+                    <Popover.Button>News & Events</Popover.Button>
+                  </Link>
+
                   {/* <Link
                         to="/galleries"
                         className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
