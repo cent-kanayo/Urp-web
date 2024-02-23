@@ -19,7 +19,10 @@ export async function getPosts() {
   const posts = await client.fetch('*[_type == "news"]');
   return posts;
 }
-
+export async function getPosts() {
+  const posts = await client.fetch('*[_type == "news"]');
+  return posts;
+}
 export async function createPost(post) {
   const result = client.create(post);
   return result;

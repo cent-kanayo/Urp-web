@@ -661,6 +661,7 @@ RS Page
 }
 .programs-hide {
   display: none;
+  transition: all 0.3 linear;
 }
 .programs-show {
   display: block;

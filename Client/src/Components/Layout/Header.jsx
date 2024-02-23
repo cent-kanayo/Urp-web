@@ -38,7 +38,7 @@ const Header = ({ setSidebar }) => {
       }  py-3 bg-[#F5FFF6] w-full relative`}
     >
       <section className="px-6  xl:px-0 h-[100%]">
-        <header className="lg:flex lg:justify-center items-center gap-x-[130.79px]">
+        <header className="lg:flex lg:justify-center items-center gap-x-[280.79px]">
           <div className="w-full lg:w-auto flex justify-between items-center">
             <div className="w-[169.213px]">
               <Link to="/">
