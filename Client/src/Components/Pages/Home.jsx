@@ -97,11 +97,11 @@ const Home = () => {
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span>
             <div className="welcome-box flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] py-3 lg:py-6 px-3 lg:px-10 items-center">
-              <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
-                Where Innovation Meets Excellence!
+              <p className="text-[12px] md:text-[20px] text-[#F0C808] font-medium leading-[150%] mb-4">
+                Reshaping the future of human settlements, one city at a time. {' '}
               </p>
               <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#F5FFF6]">
-                Urban & Regional Planning
+                Welcome to the DURP - {' '}
               </h1>
             </div>
             <span
@@ -117,8 +117,9 @@ const Home = () => {
       <section className="lg:flex flex-col justify-center bg-white">
         <div>
           <h3 className="text-[14px] md:text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
-            Giving definition to an undefined world, Welcome to URP, <br />
-            where standards are created.
+            home of designers, planners, researchers committed to the growth and
+            <br />
+            development of liveable and habitable cities.
           </h3>
           <div className="flex flex-col gap-[64px] lg:gap-0 justify-center items-center lg:flex-row lg:justify-between max-w-[1120px] mx-auto">
             <NumberBox
@@ -185,19 +186,20 @@ const Home = () => {
                 <p className="translate-y-2">HOD</p>
               </div>
               <p className="text-[14px] leading-[150%] hidden lg:block">
-                Welcome to the Department of Urban and Regional Planning at the
-                University of Lagos! As the Head of Department, it is my utmost
-                pleasure to extend a warm welcome to both our new and existing
-                students. You have chosen a field that is at the forefront of
-                shaping sustainable and vibrant communities. This student
-                website has been specially crafted to serve as your compass,
-                providing you with the essential information...
+                Founded in 1980, the Department of Urban and Regional Planning
+                at the University of Lagos is a leading academic department at
+                the forefront of advancing urban and regional planning research
+                and practice in Nigeria. We aim to promote urban and regional
+                planning practices by providing a conducive environment for
+                teaching, training, and developing town planners who can apply
+                theoretical, analytical, and design thinking skills to solve
+                contemporary complex urban and development challenges. 
               </p>
               <p className="text-[12px] leading-[150%] lg:hidden">
-                Welcome to the Department of Urban and Regional Planning at the
-                University of Lagos! As the Head of Department, it is my utmost
-                pleasure to extend a warm welcome to both our new and existing
-                students. You have chosen...
+                Founded in 1980, the Department of Urban and Regional Planning
+                at the University of Lagos is a leading academic department at
+                the forefront of advancing urban and regional planning research
+                and practice in Nigeria.
               </p>
               <div>
                 <Link

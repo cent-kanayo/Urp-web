@@ -63,47 +63,54 @@ const About = () => {
       </section>
       <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
-          MESSAGE FROM THE HEAD OF DEPARTMENT
+          WELCOME TO THE DEPARTMENT OF URBAN AND REGIONAL PLANNING
         </h2>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
+        <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col">
           <p className="mb-6">
-            I would like to express my pride of belonging to the Department of
-            Urban and Regional Planning, Faculty of Environmental Science,
-            University of Lagos. It is taught in a few and highly elitist
-            universities in Nigeria, hence the need to meet universal standards
-            to master the requisite skills of architectural design.
-          </p>
-          <p className="mb-6">
-            Since its foundation a trailblazing rockstar of academia, with
-            revolutionary ideas that shake up the very foundations of
-            traditional teaching methods. Her contagious enthusiasm and
-            exceptional ability to engage students have made her a true legend
-            among her peers.
+            Founded in 1980, the Department of Urban and Regional Planning at
+            the University of Lagos is a leading academic department at the
+            forefront of advancing urban and regional planning research and
+            practice in Nigeria. We aim to promote urban and regional planning
+            practices by providing a conducive environment for teaching,
+            training, and developing town planners who can apply theoretical,
+            analytical, and design thinking skills to solve contemporary complex
+            urban and development challenges. 
           </p>
           <p className="mb-6">
-            Dr. Anthony Odunayo holds a Ph.D. in Urban and Regional Planning
-            from a renowned international university, where her groundbreaking
-            research focused on innovative approaches to urban renewal and
-            community-based development. During her graduate studies, she
-            received several accolades for her exceptional academic performance
-            and was recognized as a promising researcher in the field of urban
-            planning.
+            Our commitment to academic excellence is rooted in our belief in the
+            power of experiential learning, evidenced in our collaborative
+            teaching style, which combines theory with field experience and
+            real-life case studies. Our academic staff consists of seasoned
+            planning experts, renowned for their contributions to urban planning
+            at home and abroad, are actively engaged in research and projects
+            that provide opportunities for student-academia collaborations and
+            hands-on learning.
           </p>
-          <p className="mb-6">
-            Despite her young age, Dr. Odunayo has already published numerous
-            research papers in reputable international journals, contributing
-            valuable insights to the field of urban and regional planning. Her
-            work has received widespread recognition and has been presented at
-            various prestigious conferences, earning her invitations to speak at
-            global symposiums.
-          </p>
-          <p>
-            In addition to her academic achievements, Dr. Odunayo is an advocate
-            for gender equality and diversity in academia. She actively mentors
-            and supports aspiring young female planners, encouraging them to
-            pursue careers in the field and break barriers in traditionally
-            male-dominated domains.
-          </p>
+          <div>
+            <p className="mb-6 font-semibold">Key facts</p>
+            <ul className="list-disc pl-8 pt-4 flex flex-col gap-2 font-medium">
+              <li>
+                The Department of Urban and Regional Planning is domiciled
+                within the Faculty of Environmental Sciences at the University
+                of Lagos. 
+              </li>
+              <li>The Department was founded in the 1980/1981 session. </li>
+              <li>
+                Degrees Offered: Bachelor of Science in Urban and Regional
+                Planning (BSc); Master of Science in Urban and Regional
+                Planning; Master of Urban Logistics and Transport Policy (MULT);
+                Master in Urban Management (MUM); Master of Philosophy in Urban
+                and Regional Planning (MPHIL); Doctor of Philosophy in Urban and
+                Regional Planning (PhD). 
+              </li>
+              <li>Number of Academic Staff: 20.</li>
+              <li>Number of Students (2023/2024): 200</li>
+              <li>
+                The Town Planners Registration Council of Nigeria ranked DURP as
+                The Best Accredited Programme in 2010. 
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className="max-w-[1119px] mx-auto mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
