@@ -67,7 +67,7 @@ const StudentSpotlight = () => {
             className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto flex justify-center items-center px-[16px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
