@@ -7,7 +7,6 @@ import Contact from '../Resuables/Contact';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-import More from '../../assets/mainDesktop/more.png';
 import { urlFor } from '../../../sanity';
 import { PortableText } from '@portabletext/react';
 import { useGlobalContext } from '../../Context/AppContext';

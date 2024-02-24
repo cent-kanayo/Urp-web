@@ -1,4 +1,3 @@
-import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import { Link } from 'react-router-dom';
 import Arrow from '../../assets/icons/arrow-right.png';
 const SpotlightBox = ({ image, h2, p, btn, link }) => {
@@ -11,7 +10,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
         <img
           src={image}
           alt="Spotlight avatar"
-          className="block h-[100%] w-[100%]"
+          className="block h-[100%] w-[100%] object-cover"
         />
       </div>
       <div className="py-[24px] lg:w-[310px] mx-auto px-4 lg:px-0">

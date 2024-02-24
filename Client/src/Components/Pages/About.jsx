@@ -13,10 +13,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import AG from '../../assets/lecturers/agunbiade.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import { Link } from 'react-router-dom';
 
 const About = () => {

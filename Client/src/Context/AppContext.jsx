@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import { client, getPosts } from '../../sanity';
+import { client, getPosts, getStudentOfTheMonth } from '../../sanity';
 
 const AppContent = createContext(null);
 
@@ -12,6 +12,8 @@ const AppContext = ({ children }) => {
     try {
       setIsLoading(true);
       const posts = await getPosts();
+      const studentOfTheMonth = await getStudentOfTheMonth();
+      setStudents(studentOfTheMonth);
       setPosts(posts);
       setIsLoading(false);
     } catch (error) {
@@ -32,12 +34,31 @@ const AppContext = ({ children }) => {
       setIsLoading(false);
     }
   };
+  const fetchStudent = async (id) => {
+    try {
+      setIsLoading(true);
+      const post = await client.getDocument(id);
+      setIsLoading(false);
+      setPost(post);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   useEffect(() => {
     fetchPosts();
   }, []);
   return (
     <AppContent.Provider
-      value={{ posts, post, isLoading, students, fetchSinglePost }}
+      value={{
+        posts,
+        post,
+        isLoading,
+        students,
+        fetchSinglePost,
+        fetchStudent,
+      }}
     >
       {children}
     </AppContent.Provider>

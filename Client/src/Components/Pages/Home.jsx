@@ -30,7 +30,7 @@ const Home = () => {
   document.title = 'URP UNILAG';
   const [bgs, setBgs] = useState(BGS);
   const [index, setIndex] = useState(0);
-  const { posts, isLoading } = useGlobalContext();
+  const { posts, students, isLoading } = useGlobalContext();
   const handleClick = (type) => {
     if (type === 'next') {
       setIndex((prev) => (prev > BGS?.length - 2 ? 0 : prev + 1));
@@ -213,7 +213,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Spotlight />
+      <Spotlight student={students} />
       <section className="mt-[64px] lg:mt-[160px] h-[404px] lg:bg-[#011717] flex items-end lg:items-center  relative">
         <div className="absolute -z-10 lg:static lg:z-10 flex-1 h-[100%] w-full">
           <img src={Journal} alt="" className="hidden lg:block h-[100%]" />

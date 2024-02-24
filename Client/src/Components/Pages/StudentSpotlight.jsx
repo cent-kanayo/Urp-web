@@ -10,7 +10,6 @@ import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutl
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-import Nwa from '../../assets/lecturers/Lfarin.png';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 
@@ -21,6 +20,7 @@ import { useGlobalContext } from '../../Context/AppContext';
 import paginate from '../data';
 import { Link } from 'react-router-dom';
 import { urlFor } from '../../../sanity';
+import { PortableText } from '@portabletext/react';
 
 const StudentSpotlight = () => {
   const [page, setPage] = useState(0);
@@ -43,6 +43,17 @@ const StudentSpotlight = () => {
       return prevPage;
     });
   };
+  const myPortableTextComponents = {
+    types: {
+      image: ({ value }) => <img src={urlFor(value).width(300).url()} />,
+      callToAction: ({ value, isInline }) =>
+        isInline ? (
+          <a href={value.url}>{value.text}</a>
+        ) : (
+          <div className="callToAction">{value.text}</div>
+        ),
+    },
+  };
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -51,7 +62,7 @@ const StudentSpotlight = () => {
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
-            src={Nwa}
+            src={urlFor(students[0]?.mainImage).width(300).url()}
             alt="Our HOD"
             className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
@@ -62,10 +73,7 @@ const StudentSpotlight = () => {
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-[20px] lg:my-[59px]">
-              The problem is constantly evolving, with adversaries adapting to
-              whatever defense researchers might develop to keep carrying out
-              their malicious activities. You can never say that your job is
-              done.
+              {students[0]?.quote}
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -76,7 +84,7 @@ const StudentSpotlight = () => {
       <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
           <h5 className="mb-4 text-[14px] lg:text-[20px]">
-            Crest Bankole-Radcliffe
+            {students[0]?.title}
           </h5>
           <div className="flex items-center gap-x-2 lg:gap-x-6">
             <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
@@ -106,37 +114,10 @@ const StudentSpotlight = () => {
           Student Of the Month
         </h3>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
-          <p>
-            Our lecturer extraordinaire, Ms. Damilola Odekunle, is a
-            trailblazing rockstar of academia, with revolutionary ideas that
-            shake up the very foundations of traditional teaching methods. Her
-            contagious enthusiasm and exceptional ability to engage students
-            have made her a true legend among her peers.
-          </p>
-          <p>
-            Ms. Odekunle holds a Ph.D. in Urban and Regional Planning from a
-            renowned international university, where her groundbreaking research
-            focused on innovative approaches to urban renewal and
-            community-based development. During her graduate studies, she
-            received several accolades for her exceptional academic performance
-            and was recognized as a promising researcher in the field of urban
-            planning.
-          </p>
-          <p>
-            Despite her young age, Ms. Odekunle has already published numerous
-            research papers in reputable international journals, contributing
-            valuable insights to the field of urban and regional planning. Her
-            work has received widespread recognition and has been presented at
-            various prestigious conferences, earning her invitations to speak at
-            global symposiums.
-          </p>
-          <p>
-            In addition to her academic achievements, Ms. Odekunle is an
-            advocate for gender equality and diversity in academia. She actively
-            mentors and supports aspiring young female planners, encouraging
-            them to pursue careers in the field and break barriers in
-            traditionally male-dominated domains.
-          </p>
+          <PortableText
+            value={students[0]?.about}
+            components={myPortableTextComponents}
+          />
         </div>
         <div className="mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
           <div className="bg-[#CECDCC] px-10 py-4 flex items-center space-x-2 lg:space-x-4 mb-6">

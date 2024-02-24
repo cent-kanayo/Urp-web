@@ -1,14 +1,11 @@
 import SpotlightBox from './SpotlightBox';
 
 import Pen from '../../assets/mainDesktop/planners.png';
-import Student from '../../assets/student.png';
 import City from '../../assets/mainDesktop/pro.png';
-import { useGlobalContext } from '../../Context/AppContext';
+import { urlFor } from '../../../sanity';
 
-const Spotlight = () => {
-  const { students } = useGlobalContext();
-
-  const id = students[0]?._id || 1234244;
+const Spotlight = ({ student }) => {
+  const id = student[0]?._id || 1234244;
   return (
     <section className="px-4 lg:px-0">
       <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[64px] lg:mb-[80px]">
@@ -30,11 +27,11 @@ const Spotlight = () => {
           link="/planners-pen"
         />
         <SpotlightBox
-          image={Student}
+          image={urlFor(student[0]?.mainImage).width(300).url()}
           h2="Student of the month"
-          p="Request access to past projects."
+          p={student[0]?.title}
           btn="Open profile"
-          link={`/student-spotlight/${id}`}
+          link={`/student-spotlight/${student[0]?._id}`}
         />
       </div>
     </section>

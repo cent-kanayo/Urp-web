@@ -20,7 +20,7 @@ export async function getPosts() {
   return posts;
 }
 export async function getStudentOfTheMonth() {
-  const posts = await client.fetch('*[_type == "news"]');
+  const posts = await client.fetch('*[_type == "studentOfTheMonth"]');
   return posts;
 }
 export async function createPost(post) {
