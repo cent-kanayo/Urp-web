@@ -25,6 +25,9 @@ import { PortableText } from '@portabletext/react';
 const StudentSpotlight = () => {
   const [page, setPage] = useState(0);
   const { students, isLoading } = useGlobalContext();
+  const imageUrl = students[0]?.mainImage
+    ? urlFor(students[0]?.mainImage).width(300).url()
+    : '';
   const nextPage = () => {
     setPage((oldPage) => {
       let nextPage = oldPage + 1;
@@ -62,21 +65,21 @@ const StudentSpotlight = () => {
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1">
           <img
-            src={urlFor(students[0]?.mainImage).width(300).url()}
+            src={imageUrl}
             alt="Our HOD"
             className="h-[320px] lg:h-[600px] w-[100%] object-cover"
           />
         </div>
-        <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto flex justify-center items-center px-[16px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto md:flex lg:justify-center items-center px-[16px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
-            <div className="flex">
-              <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
+            <div className="flex items-center">
+              <img src={LQ} alt="" className="w-[29px] lg:w-auto mb-10 mt-6" />
             </div>
-            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-[20px] lg:my-[59px]">
+            <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-[20px] lg:my-[59px] text-center lg:text-left">
               {students[0]?.quote}
             </p>
             <div className="flex justify-end">
-              <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
+              <img src={RQ} alt="" className="w-[29px] lg:w-auto mt-10" />
             </div>
           </div>
         </div>
