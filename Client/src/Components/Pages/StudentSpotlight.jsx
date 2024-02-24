@@ -86,10 +86,10 @@ const StudentSpotlight = () => {
           <h5 className="mb-4 text-[14px] lg:text-[20px]">
             {students[0]?.title}
           </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
+          {/* <div className="flex items-center gap-x-2 lg:gap-x-6">
             <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
             <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
           <span>
