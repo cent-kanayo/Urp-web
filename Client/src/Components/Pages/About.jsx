@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
-import RQ from '../../assets/quoteR.png';
-import LQ from '../../assets/quoteL.png';
+
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -19,6 +17,7 @@ import AG from '../../assets/lecturers/agunbiade.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   useEffect(() => {
@@ -33,7 +32,7 @@ const About = () => {
           </h1>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
+      {/* <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
         <div className="text-[#090302]">
           <h5 className="mb-4 text-[14px] font-semibold lg:text-[20px]">
             Dr. Muyiwa E. AGUNBIADE
@@ -60,7 +59,7 @@ const About = () => {
             </a>
           </span>
         </div>
-      </section>
+      </section> */}
       <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
           WELCOME TO THE DEPARTMENT OF URBAN AND REGIONAL PLANNING
@@ -246,32 +245,52 @@ const About = () => {
           </Accordion>
         </div>
       </section>
-      <section className="my-[64px] lg:my-[80px]">
-        <div className="bg-[#303648] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
-          <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
-            <h3 className="text-[#FDFFFD] font-bold text-[24px] lg:text-[40px]">
-              Connect Now
-            </h3>
-            <p className="text-[12px] lg:text-[14px] text-[#FDFFFD] mb-10 lg:mb-[60px]">
-              Don’t miss out on the opportunity to learn from the best! Immerse
-              yourself in the world of physics with Dr. Odunayo!
-            </p>
-            <div className="flex gap-x-6 justify-center">
-              <div className="bg-[#FDFFFD] rounded-[2px] px-4 lg:px-6 py-2 flex items-center gap-x-2">
-                <span className="lg:hidden">
-                  <MarkunreadOutlinedIcon
-                    htmlColor="#1B1B1B"
-                    fontSize="small"
-                  />
-                </span>
-                <span className="hidden lg:block">
-                  <MarkunreadOutlinedIcon htmlColor="#1B1B1B" />
-                </span>
-                <span className="text-[#1B1B1B] text-[12px] lg:text-[14px] hover:animate-pulse">
-                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
-                </span>
-              </div>
-            </div>
+      <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
+        <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
+            contact us for sponsorship or partnership
+          </h2>
+          <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
+            Send us a mail filler text is a great way to show the size you want
+            to have
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
+          >
+            contact us
+          </Link>
+          <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
+            <span className="lg:hidden">
+              <EmailIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <EmailIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <FacebookIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <InstagramIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <InstagramIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <TwitterIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <TwitterIcon htmlColor="#934B00" fontSize="large" />
+            </span>
+            <span className="lg:hidden">
+              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
+            </span>
+            <span className="hidden lg:block">
+              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
+            </span>
           </div>
         </div>
       </section>

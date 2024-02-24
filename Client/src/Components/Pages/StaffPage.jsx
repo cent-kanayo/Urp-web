@@ -29,6 +29,7 @@ import Excocard from '../Resuables/Excocard';
 
 import GetHelp from '../Resuables/GetHelp';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 const StaffPage = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -219,9 +220,12 @@ const StaffPage = () => {
             Send us a mail filler text is a great way to show the size you want
             to have
           </p>
-          <button className="px-6 py-2 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md">
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
+          >
             contact us
-          </button>
+          </Link>
           <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
             <span className="lg:hidden">
               <EmailIcon htmlColor="#934B00" fontSize="medium" />
