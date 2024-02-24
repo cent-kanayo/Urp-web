@@ -6,6 +6,9 @@ import { urlFor } from '../../../sanity';
 
 const Spotlight = ({ student }) => {
   const id = student[0]?._id || 1234244;
+  const imageUrl = student[0]?.mainImage
+    ? urlFor(student[0]?.mainImage).width(300).url()
+    : '';
   return (
     <section className="px-4 lg:px-0">
       <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mb-[64px] lg:mb-[80px]">
@@ -27,7 +30,7 @@ const Spotlight = ({ student }) => {
           link="/planners-pen"
         />
         <SpotlightBox
-          image={urlFor(student[0]?.mainImage).width(300).url()}
+          image={imageUrl}
           h2="Student of the month"
           p={student[0]?.title}
           btn="Open profile"
