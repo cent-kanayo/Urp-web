@@ -19,7 +19,7 @@ export async function getPosts() {
   const posts = await client.fetch('*[_type == "news"]');
   return posts;
 }
-export async function getPosts() {
+export async function getStudentOfTheMonth() {
   const posts = await client.fetch('*[_type == "news"]');
   return posts;
 }
