@@ -158,7 +158,7 @@ const StaffPage = () => {
             name="Mr. R.E. ONUIGBOJE"
             role="Graduate Assistant"
             image={Icon}
-            link={'anthony-onuigboje'}
+            link={'richard-onuigboje'}
           />
         </div>
       </section>

@@ -85,16 +85,9 @@ const Niji = () => {
           <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
             Mr. Olufemi ADENIJI
           </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
+          <span className="bg-gray-200 p-2 rounded-md hover:animate-pulse">
             <a
               href="https://www.linkedin.com/in/olufemi-adeniji-912a4b2b/"
               target="_blank"
@@ -407,7 +400,7 @@ const Niji = () => {
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
                 <span className="text-[#FDFFFD] text-[14px] underline hover:animate-pulse">
-                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
+                  <a href="mailto:oaadeniji@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>

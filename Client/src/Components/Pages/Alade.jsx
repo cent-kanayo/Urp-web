@@ -89,17 +89,14 @@ const Alade = () => {
       </section>
       <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+          <h5 className="text-[14px] lg:text-[20px] font-semibold">
             Dr. Adewale ALADE
           </h5>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
+          <span className="bg-gray-200 p-2 rounded-md hover:animate-pulse">
             <a
-              href="https://www.linkedin.com/in/taibat-lawanson-0a06b423/"
+              href="https://ng.linkedin.com/in/wale-alade-56609595"
               target="_blank"
               aria-label="Link to LinkedIn"
             >
@@ -935,7 +932,7 @@ const Alade = () => {
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
                 <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
-                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
+                  <a href="mailto:aalade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>

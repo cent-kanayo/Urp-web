@@ -450,6 +450,9 @@ Staff Page
 .opacity {
   color: #090302;
 }
+.hide {
+  display: none;
+}
 .tabs {
   display: block;
 }

@@ -96,10 +96,7 @@ const Agunbiade = () => {
           </h5>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
+          <span className="bg-gray-200 p-2 rounded-md hover:animate-pulse">
             <a
               href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
               target="_blank"

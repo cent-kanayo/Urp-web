@@ -87,15 +87,11 @@ const Loye = () => {
       </section>
       <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+          <h5 className="text-[14px] lg:text-[20px] font-semibold">
             Dr. Olayinka AGUNLOYE
           </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
         </div>
-        <div className="flex justify-center gap-x-6 lg:px-0">
+        {/* <div className="flex justify-center gap-x-6 lg:px-0">
           <span>
             <FacebookIcon htmlColor="#090302" fontSize="medium" />
           </span>
@@ -111,7 +107,7 @@ const Loye = () => {
               />
             </a>
           </span>
-        </div>
+        </div> */}
       </section>
       <section className="max-w-[800px] mx-auto mb-[64px] lg:mb-0">
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
@@ -328,7 +324,7 @@ const Loye = () => {
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
                 <span className="text-[#FDFFFD] text-[14px] underline hover:animate-pulse">
-                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
+                  <a href="mailto:oagunloye@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>

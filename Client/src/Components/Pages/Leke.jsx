@@ -54,7 +54,12 @@ const Leke = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     ref1.current.classList.add('opacity');
+    ref2.current.classList.remove('opacity');
+    ref3.current.classList.remove('opacity');
+
     refB1.current.classList.add('tabs');
+    refB2.current.classList.remove('tabs');
+    refB3.current.classList.remove('tabs');
   }, []);
   return (
     <main>
@@ -84,19 +89,12 @@ const Leke = () => {
       </section>
       <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+          <h5 className="text-[14px] lg:text-[20px] font-semibold">
             Professor Leke ODUWAYE
           </h5>
-          <div className="flex items-center gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
+          <span className="bg-gray-200 p-2 rounded-md hover:animate-pulse">
             <a
               href="https://www.linkedin.com/in/leke-oduwaye-a737a11aa/"
               target="_blank"
@@ -349,53 +347,150 @@ const Leke = () => {
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
             <article className="hidden" ref={refB1}>
               <div className="mb-10">
-                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2010 - 2012
-                </p>
+                </p> */}
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Australian Postgraduate Awards
+                  Distinguished Alumnus Award, Faculty of Environmental Design
+                  and Management,
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Industry
+                  Obafemi Awolowo University, Ile Ife.
                 </p>
               </div>
               <div className="mb-10">
-                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   1991-1992
-                </p>
+                </p> */}
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Overall Best graduating Student, Urban and Regional Planning
-                  Department,
+                  Deserving Alumnus Award, Faculty of Environmental Design and
+                  Management,
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
               <div className="mb-10">
-                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   1991-1992
-                </p>
+                </p> */}
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Most consistent student from Part IV to V, Faculty of
-                  Environmental Design and Management
+                  Exemplary Leadership Award, Department of Urban and Regional
+                  Planning,
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Lagos.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Environmental Planning Association Award of Excellence
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Excellence Award, Nigerian Institute of Town Planners
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  Lagos Chapter.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Award for Development of Town Planning
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  Nigerian Institute of Town Planners, Lagos Chapter.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Distinguished Member Award
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  Nigerian Institute of Town Planners, Lagos Chapter.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Best Researcher Award, Faculty of Environmental Sciences
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Lagos.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  University of Lagos Central Research Grants.
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Lagos.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Association of African Planning Schools Grant.
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Lagos.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  African Urban Research Initiative/Cities Alliance Grant.
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  University of Lagos.
+                </p>
+              </div>
+              <div className="mb-10">
+                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Habitat Grant.
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  United Nations
                 </p>
               </div>
             </article>
             <article className="hidden" ref={refB2}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Spatial Data Infrastructure and Land Administration</p>
-                <p>Housing</p>
-                <p>GIS application</p>
-                <p>Urban Analytics</p>
+                <p>Urban Land Use Planning </p>
+                <p>Sustainable Development</p>
               </div>
             </article>
             <article className="hidden" ref={refB3}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Reading</p>
-                <p>Volleyball</p>
+                <p>Comfortable when with my people and colleagues</p>
               </div>
             </article>
           </div>
@@ -419,38 +514,138 @@ const Leke = () => {
             <AccordionDetails>
               <article className="hidden" ref={refB1}>
                 <div className="mb-10">
-                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                    2010 - 2012
-                  </p>
-                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
-                    Australian Postgraduate Awards
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  2010 - 2012
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Distinguished Alumnus Award, Faculty of Environmental Design
+                    and Management,
                   </h4>
-                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
-                    Industry
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    Obafemi Awolowo University, Ile Ife.
                   </p>
                 </div>
                 <div className="mb-10">
-                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                    1991-1992
-                  </p>
-                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
-                    Overall Best graduating Student, Urban and Regional Planning
-                    Department,
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Deserving Alumnus Award, Faculty of Environmental Design and
+                    Management,
                   </h4>
-                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
                     Obafemi Awolowo University, Ile-Ife.
                   </p>
                 </div>
                 <div className="mb-10">
-                  <p className="text-[#ADABAB] text-[12px] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                    1991-1992
-                  </p>
-                  <h4 className="text-[#090302] text-[14px] leading-[150%]">
-                    Most consistent student from Part IV to V, Faculty of
-                    Environmental Design and Management
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Exemplary Leadership Award, Department of Urban and Regional
+                    Planning,
                   </h4>
-                  <p className="text-[#5B5756] text-[12px] leading-[150%]">
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    University of Lagos.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Environmental Planning Association Award of Excellence
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
                     Obafemi Awolowo University, Ile-Ife.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Excellence Award, Nigerian Institute of Town Planners
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    Lagos Chapter.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Award for Development of Town Planning
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    Nigerian Institute of Town Planners, Lagos Chapter.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Distinguished Member Award
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    Nigerian Institute of Town Planners, Lagos Chapter.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Best Researcher Award, Faculty of Environmental Sciences
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    University of Lagos.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    University of Lagos Central Research Grants.
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    University of Lagos.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Association of African Planning Schools Grant.
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    University of Lagos.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    African Urban Research Initiative/Cities Alliance Grant.
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    University of Lagos.
+                  </p>
+                </div>
+                <div className="mb-10">
+                  {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p> */}
+                  <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                    Habitat Grant.
+                  </h4>
+                  <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                    United Nations
                   </p>
                 </div>
               </article>
@@ -524,7 +719,7 @@ const Leke = () => {
                   <MarkunreadOutlinedIcon htmlColor="white" />
                 </span>
                 <span className="text-[#FDFFFD] text-[12px] lg:text-[14px] underline hover:animate-pulse whitespace-nowrap">
-                  <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
+                  <a href="mailto:aoduwaye@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
             </div>

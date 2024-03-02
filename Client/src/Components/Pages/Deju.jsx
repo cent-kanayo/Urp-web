@@ -44,16 +44,16 @@ const Deju = () => {
   //     refB3.current.classList.remove('tabs');
   //   }
   // };
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0 });
-  //   ref1.current.classList.add('opacity');
-  //   ref2.current.classList.remove('opacity');
-  //   ref3.current.classList.remove('opacity');
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    // ref1.current.classList.add('opacity');
+    // ref2.current.classList.remove('opacity');
+    // ref3.current.classList.remove('opacity');
 
-  //   refB1.current.classList.add('tabs');
-  //   refB2.current.classList.remove('tabs');
-  //   refB3.current.classList.remove('tabs');
-  // }, []);
+    // refB1.current.classList.add('tabs');
+    // refB2.current.classList.remove('tabs');
+    // refB3.current.classList.remove('tabs');
+  }, []);
   return (
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
@@ -81,21 +81,14 @@ const Deju = () => {
       </section>
       <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-6 lg:px-0">
         <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] lg:text-[20px] font-semibold">
+          <h5 className="text-[14px] lg:text-[20px] font-semibold">
             Dr. Folayele .O. AKINDEJU
           </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
         </div>
         <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
+          <span className="bg-gray-200 p-2 rounded-md hover:animate-pulse">
             <a
-              href="https://www.linkedin.com/in/olabode-orelaja-86201a207/"
+              href="https://www.linkedin.com/in/oluyemi-akindeju-phd-0323067/"
               target="_blank"
               aria-label="Link to LinkedIn"
             >
@@ -208,7 +201,7 @@ const Deju = () => {
                   </article>
                 </div>
               </div>
-              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              {/* <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
@@ -239,8 +232,8 @@ const Deju = () => {
                     </p>
                   </article>
                 </div>
-              </div>
-              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+              </div> */}
+              {/* <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
                 <img
                   src={BookCover}
                   alt=""
@@ -270,7 +263,7 @@ const Deju = () => {
                     </p>
                   </article>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
@@ -463,7 +456,7 @@ const Deju = () => {
             <p className="text-[12px] lg:text-[14px] text-[#1B1B1B] mb-10 lg:mb-[60px]">
               Have questions or need assistance? Reach out to our lecturer below
             </p>
-            <div className="flex gap-x-2 lg:gap-x-6 justify-center">
+            {/* <div className="flex gap-x-2 lg:gap-x-6 justify-center">
               <div className="bg-[#1B1B1B] rounded-[2px]  px-4 lg:px-6 py-2 flex items-center gap-x-2">
                 <span className="lg:hidden">
                   <MarkunreadOutlinedIcon fontSize="small" htmlColor="white" />
@@ -475,7 +468,7 @@ const Deju = () => {
                   <a href="mailto:magunbiade@unilag.edu.ng">Send an E-mail</a>
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
