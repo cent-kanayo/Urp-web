@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
@@ -13,46 +13,31 @@ import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 const Deju = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
+  const [tab1, setTab1] = useState(false);
+  const [tab2, setTab2] = useState(false);
+  const [tab3, setTab3] = useState(false);
 
-  const refB1 = useRef(null);
-  const refB2 = useRef(null);
-  const refB3 = useRef(null);
+  const handleClick = (current) => {
+    if (current === 'ach') {
+      setTab1(true);
+      setTab2(false);
+      setTab3(false);
+    }
 
-  // const handleClick = (current) => {
-  //   if (current === 'ach') {
-  //     ref1.current.classList.add('opacity');
-  //     refB1.current.classList.add('tabs');
-  //   } else {
-  //     ref1.current.classList.remove('opacity');
-  //     refB1.current.classList.remove('tabs');
-  //   }
-  //   if (current === 'res') {
-  //     ref2.current.classList.add('opacity');
-  //     refB2.current.classList.add('tabs');
-  //   } else {
-  //     ref2.current.classList.remove('opacity');
-  //     refB2.current.classList.remove('tabs');
-  //   }
-  //   if (current === 'ex') {
-  //     ref3.current.classList.add('opacity');
-  //     refB3.current.classList.add('tabs');
-  //   } else {
-  //     ref3.current.classList.remove('opacity');
-  //     refB3.current.classList.remove('tabs');
-  //   }
-  // };
+    if (current === 'res') {
+      setTab1(false);
+      setTab2(true);
+      setTab3(false);
+    }
+    if (current === 'ex') {
+      setTab1(false);
+      setTab2(false);
+      setTab3(true);
+    }
+  };
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    // ref1.current.classList.add('opacity');
-    // ref2.current.classList.remove('opacity');
-    // ref3.current.classList.remove('opacity');
-
-    // refB1.current.classList.add('tabs');
-    // refB2.current.classList.remove('tabs');
-    // refB3.current.classList.remove('tabs');
+    setTab1(true);
   }, []);
   return (
     <main>

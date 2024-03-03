@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
@@ -19,46 +19,31 @@ import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 const Jimoh = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-
-  const refB1 = useRef(null);
-  const refB2 = useRef(null);
-  const refB3 = useRef(null);
+  const [tab1, setTab1] = useState(false);
+  const [tab2, setTab2] = useState(false);
+  const [tab3, setTab3] = useState(false);
 
   const handleClick = (current) => {
     if (current === 'ach') {
-      ref1.current.classList.add('opacity');
-      refB1.current.classList.add('tabs');
-    } else {
-      ref1.current.classList.remove('opacity');
-      refB1.current.classList.remove('tabs');
+      setTab1(true);
+      setTab2(false);
+      setTab3(false);
     }
+
     if (current === 'res') {
-      ref2.current.classList.add('opacity');
-      refB2.current.classList.add('tabs');
-    } else {
-      ref2.current.classList.remove('opacity');
-      refB2.current.classList.remove('tabs');
+      setTab1(false);
+      setTab2(true);
+      setTab3(false);
     }
     if (current === 'ex') {
-      ref3.current.classList.add('opacity');
-      refB3.current.classList.add('tabs');
-    } else {
-      ref3.current.classList.remove('opacity');
-      refB3.current.classList.remove('tabs');
+      setTab1(false);
+      setTab2(false);
+      setTab3(true);
     }
   };
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    ref1.current.classList.add('opacity');
-    ref2.current.classList.remove('opacity');
-    ref3.current.classList.remove('opacity');
-
-    refB1.current.classList.add('tabs');
-    refB2.current.classList.remove('tabs');
-    refB3.current.classList.remove('tabs');
+    setTab1(true);
   }, []);
   return (
     <main>
@@ -317,33 +302,42 @@ const Jimoh = () => {
         <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
+              className={
+                tab1
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('ach')}
-              ref={ref1}
             >
               Achievements/Accolades/Awards/ Honours
             </h3>
 
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity-75"
+              className={
+                tab2
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('res')}
-              ref={ref2}
             >
               Research Interests
             </h3>
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem]"
+              className={
+                tab3
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('ex')}
-              ref={ref3}
             >
               Extracurricular Activities
             </h3>
           </div>
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
-            <article className="hidden" ref={refB1}>
+            <article className={tab1 ? 'tabs' : 'hidden'}>
               <div className="mb-10">
                 <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2020
@@ -378,7 +372,7 @@ const Jimoh = () => {
                 </p>
               </div>
             </article>
-            <article className="hidden" ref={refB2}>
+            <article className={tab2 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
                 <p>Land Use and Urbanisation</p>
                 <p>Tourism Planning and Development</p>
@@ -386,7 +380,7 @@ const Jimoh = () => {
                 <p>Climate Adaptation and Urban Resilience</p>
               </div>
             </article>
-            <article className="hidden" ref={refB3}>
+            <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
                 <p>Consultation</p>
               </div>
@@ -456,7 +450,6 @@ const Jimoh = () => {
               <h3
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
                 role="button"
-                ref={ref2}
               >
                 Research Interests
               </h3>
@@ -481,7 +474,6 @@ const Jimoh = () => {
               <h3
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
                 role="button"
-                ref={ref3}
               >
                 Extracurricular Activities
               </h3>

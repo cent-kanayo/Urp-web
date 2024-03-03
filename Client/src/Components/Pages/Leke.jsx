@@ -1,65 +1,43 @@
-import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
+import { useEffect, useRef, useState } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Oduwaye from '../../assets/lecturers/oduwaye.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 const Leke = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-
-  const refB1 = useRef(null);
-  const refB2 = useRef(null);
-  const refB3 = useRef(null);
+  const [tab1, setTab1] = useState(false);
+  const [tab2, setTab2] = useState(false);
+  const [tab3, setTab3] = useState(false);
 
   const handleClick = (current) => {
     if (current === 'ach') {
-      ref1.current.classList.add('opacity');
-      refB1.current.classList.add('tabs');
-    } else {
-      ref1.current.classList.remove('opacity');
-      refB1.current.classList.remove('tabs');
+      setTab1(true);
+      setTab2(false);
+      setTab3(false);
     }
+
     if (current === 'res') {
-      ref2.current.classList.add('opacity');
-      refB2.current.classList.add('tabs');
-    } else {
-      ref2.current.classList.remove('opacity');
-      refB2.current.classList.remove('tabs');
+      setTab1(false);
+      setTab2(true);
+      setTab3(false);
     }
     if (current === 'ex') {
-      ref3.current.classList.add('opacity');
-      refB3.current.classList.add('tabs');
-    } else {
-      ref3.current.classList.remove('opacity');
-      refB3.current.classList.remove('tabs');
+      setTab1(false);
+      setTab2(false);
+      setTab3(true);
     }
   };
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    ref1.current.classList.add('opacity');
-    ref2.current.classList.remove('opacity');
-    ref3.current.classList.remove('opacity');
-
-    refB1.current.classList.add('tabs');
-    refB2.current.classList.remove('tabs');
-    refB3.current.classList.remove('tabs');
+    setTab1(true);
   }, []);
   return (
     <main>
@@ -319,178 +297,90 @@ const Leke = () => {
         <div className="max-w-[1110px] mx-auto flex justify-between h-[400px]">
           <div className="max-w-[540px] info-box">
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10"
+              className={
+                tab1
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('ach')}
-              ref={ref1}
             >
               Achievements/Accolades/Awards/ Honours
             </h3>
 
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity-75"
+              className={
+                tab2
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('res')}
-              ref={ref2}
             >
               Research Interests
             </h3>
             <h3
-              className="text-[#ADABAB] font-[600] leading-[150%] text-[2rem]"
+              className={
+                tab3
+                  ? 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10 opacity'
+                  : 'text-[#ADABAB] font-[600] leading-[150%] text-[2rem] mb-10'
+              }
               role="button"
               onClick={() => handleClick('ex')}
-              ref={ref3}
             >
               Extracurricular Activities
             </h3>
           </div>
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
-            <article className="hidden" ref={refB1}>
+            <article className={tab1 ? 'tabs' : 'hidden'}>
               <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2010 - 2012
-                </p> */}
+                </p>
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Distinguished Alumnus Award, Faculty of Environmental Design
-                  and Management,
+                  Australian Postgraduate Awards
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Obafemi Awolowo University, Ile Ife.
+                  Industry
                 </p>
               </div>
               <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   1991-1992
-                </p> */}
+                </p>
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Deserving Alumnus Award, Faculty of Environmental Design and
-                  Management,
+                  Overall Best graduating Student, Urban and Regional Planning
+                  Department,
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
               <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Exemplary Leadership Award, Department of Urban and Regional
-                  Planning,
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
                 </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Environmental Planning Association Award of Excellence
+                  Most consistent student from Part IV to V, Faculty of
+                  Environmental Design and Management
                 </h4>
                 <p className="text-[#5B5756] text-[16px] leading-[150%]">
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Excellence Award, Nigerian Institute of Town Planners
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Award for Development of Town Planning
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Nigerian Institute of Town Planners, Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Distinguished Member Award
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  Nigerian Institute of Town Planners, Lagos Chapter.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Best Researcher Award, Faculty of Environmental Sciences
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  University of Lagos Central Research Grants.
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Association of African Planning Schools Grant.
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  African Urban Research Initiative/Cities Alliance Grant.
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Lagos.
-                </p>
-              </div>
-              <div className="mb-10">
-                {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  1991-1992
-                </p> */}
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Habitat Grant.
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  United Nations
-                </p>
+            </article>
+            <article className={tab2 ? 'tabs' : 'hidden'}>
+              <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
+                <p>Spatial Data Infrastructure and Land Administration</p>
+                <p>Housing</p>
+                <p>GIS application</p>
+                <p>Urban Analytics</p>
               </div>
             </article>
-            <article className="hidden" ref={refB2}>
+            <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Urban Land Use Planning </p>
-                <p>Sustainable Development</p>
-              </div>
-            </article>
-            <article className="hidden" ref={refB3}>
-              <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Comfortable when with my people and colleagues</p>
+                <p>Reading</p>
+                <p>Volleyball</p>
               </div>
             </article>
           </div>
@@ -512,7 +402,7 @@ const Leke = () => {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <article className="hidden" ref={refB1}>
+              <article className="hidden">
                 <div className="mb-10">
                   {/* <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2010 - 2012
@@ -660,7 +550,6 @@ const Leke = () => {
               <h3
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
                 role="button"
-                ref={ref2}
               >
                 Research Interests
               </h3>
@@ -685,7 +574,6 @@ const Leke = () => {
               <h3
                 className="text-[#090302] font-[600] leading-[150%] text-[1rem]"
                 role="button"
-                ref={ref3}
               >
                 Extracurricular Activities
               </h3>
