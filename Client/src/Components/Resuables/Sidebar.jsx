@@ -182,13 +182,13 @@ const Sidebar = ({ setSidebar }) => {
                       >
                         <Popover.Button>Gallery</Popover.Button>
                       </Link> */}
-                  <Link
+                  {/* <Link
                     to="/it-department"
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
                     <Popover.Button>IT Team</Popover.Button>
-                  </Link>
+                  </Link> */}
                 </div>
               </Popover.Panel>
             </Popover>

@@ -10,7 +10,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
         <img
           src={image}
           alt="Spotlight avatar"
-          className="block h-[100%] w-[100%] object-cover"
+          className="block h-[100%] w-[100%] object-left-top object-cover"
         />
       </div>
       <div className="py-[24px] lg:w-[310px] mx-auto px-4 lg:px-0">

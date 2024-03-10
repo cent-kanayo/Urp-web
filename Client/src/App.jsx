@@ -100,7 +100,7 @@ function App() {
           <Route path="urp-programs" element={<Programs />} />
           <Route path="faqs" element={<Faq />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="it-department" element={<It />} />
+          {/* <Route path="it-department" element={<It />} /> */}
           {/* <Route path="galleries" element={<Gallery />} /> */}
         </Route>
         <Route path="student-login" element={<StudentLogin />} />

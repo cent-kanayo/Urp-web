@@ -66,8 +66,8 @@ const StudentSpotlight = () => {
         <div className="flex-1">
           <img
             src={imageUrl}
-            alt="Our HOD"
-            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
+            alt={students[0]?.title || ''}
+            className="h-[320px] lg:h-[600px] w-[100%] object-left-top object-cover"
           />
         </div>
         <div className="flex-1 bg-[#2C410A] h-[232px] lg:h-auto md:flex lg:justify-center items-center px-[16px] lg:px-0 py-[17px] lg:py-0">
