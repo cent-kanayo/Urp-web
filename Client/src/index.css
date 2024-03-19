@@ -628,25 +628,6 @@ RS Page
   border-radius: 4px;
 }
 
-@media (max-width: 768px) {
-  .journal-bg {
-    background: url('./assets/mainMobile/journal.png'), lightgray 50%;
-    height: 320px;
-  }
-  .journal-welcome {
-    max-width: 270px;
-    height: 60px;
-    padding: 12px 16px;
-  }
-  .planners-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-  }
-}
-
 .honours-bg {
   background: url('./assets/mainDesktop/honoursbg.png'), lightgray 50%;
   background-repeat: no-repeat;
@@ -705,6 +686,7 @@ RS Page
   .faq-bg,
   .contact-bg {
     height: 320px;
+    background-position: center;
   }
   .programs-bg,
   .it-bg,
@@ -715,6 +697,22 @@ RS Page
   .honours-bg {
     background-image: url('./assets/mainDesktop/honours.png');
     height: 505px;
+  }
+  .journal-bg {
+    background: url('./assets/mainMobile/journal.png'), lightgray 50%;
+    height: 320px;
+  }
+  .journal-welcome {
+    max-width: 270px;
+    height: 60px;
+    padding: 12px 16px;
+  }
+  .planners-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
   }
 }
 
