@@ -599,7 +599,7 @@ RS Page
   }
 }
 .planners-bg {
-  background: url('./assets/mainDesktop/penbg.png'), lightgray 50%;
+  background: url('./assets/Planners.png'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -637,6 +637,13 @@ RS Page
     max-width: 270px;
     height: 60px;
     padding: 12px 16px;
+  }
+  .planners-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
   }
 }
 
