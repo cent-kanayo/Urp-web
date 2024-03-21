@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
       </section>
       <Comment />
-      <section className="my-[64px] lg:my-[80px]">
+      {/* <section className="my-[64px] lg:my-[80px]">
         <div className="bg-[#303648] py-10 lg:py-20 lg:h-[346px] flex justify-center h-[252px]">
           <div className="text-center max-w-[546px] mx-auto px-[35px] lg:px-0">
             <h3 className="text-[#FDFFFD] font-bold text-[24px] lg:text-[40px]">
@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

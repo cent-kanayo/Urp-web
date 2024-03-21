@@ -200,8 +200,8 @@ const PlannersPen = () => {
             contact us for sponsorship or partnership
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-            Send us a mail filler text is a great way to show the size you want
-            to have
+            Ready to make a difference? Explore sponsorships and volunteer
+            opportunities to create a meaningful impact
           </p>
           <Link
             to="/contact  "
