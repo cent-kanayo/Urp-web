@@ -38,6 +38,8 @@ const Leke = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -371,16 +373,13 @@ const Leke = () => {
             </article>
             <article className={tab2 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Spatial Data Infrastructure and Land Administration</p>
-                <p>Housing</p>
-                <p>GIS application</p>
-                <p>Urban Analytics</p>
+                <p>Urban Land Use Planning </p>
+                <p>Sustainable Development</p>
               </div>
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Reading</p>
-                <p>Volleyball</p>
+                <p>Comfortable when with my people and colleagues</p>
               </div>
             </article>
           </div>

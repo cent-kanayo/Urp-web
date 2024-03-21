@@ -71,6 +71,9 @@ const StudentPage = () => {
       clearInterval(slider);
     };
   }, [index]);
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <main>
       <section className="hero-bg text-center">
@@ -127,8 +130,8 @@ const StudentPage = () => {
 
       <section className="mt-[40px] lg:mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
-          <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold capitalize ">
-            the executives
+          <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold">
+            The executive members
           </h2>
         </div>
         <div className="flex justify-center flex-wrap gap-[22px] lg:gap-6 max-w-[1249px] mx-auto">

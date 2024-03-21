@@ -14,7 +14,9 @@ const Programs = () => {
   const [arrowUp2, setArrowUp2] = useState(false);
   const [arrowUp3, setArrowUp3] = useState(false);
   const [arrowUp4, setArrowUp4] = useState(false);
-  const [arrowUp5, setArrowUp5] = useState(false);
+  const [arrowUp5, setArrowUp5] = useState(true);
+  const [arrowUp6, setArrowUp6] = useState(false);
+  const [arrowUp7, setArrowUp7] = useState(false);
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -79,6 +81,7 @@ const Programs = () => {
       ref2.current.classList.remove('programs-show');
       ref5.current.classList.remove('programs-show');
       ref6.current.classList.remove('programs-show');
+      ref7.current.classList.remove('programs-show');
       setArrowUp2((prev) => !prev);
       setArrowUp1(false);
       setArrowUp3(false);
@@ -94,7 +97,7 @@ const Programs = () => {
       ref2.current.classList.remove('programs-show');
       ref6.current.classList.remove('programs-show');
       ref7.current.classList.remove('programs-show');
-      setArrowUp2((prev) => !prev);
+      setArrowUp5((prev) => !prev);
       setArrowUp1(false);
       setArrowUp3(false);
       setArrowUp4(false);
@@ -106,16 +109,16 @@ const Programs = () => {
       ref6.current.classList.toggle('programs-show');
       ref1.current.classList.remove('programs-show');
       ref3.current.classList.remove('programs-show');
+      ref2.current.classList.remove('programs-show');
       ref4.current.classList.remove('programs-show');
       ref5.current.classList.remove('programs-show');
       ref7.current.classList.remove('programs-show');
-      ref2.current.classList.remove('programs-show');
       setArrowUp6((prev) => !prev);
       setArrowUp1(false);
       setArrowUp3(false);
       setArrowUp4(false);
       setArrowUp5(false);
-      setArrowU7(false);
+      setArrowUp7(false);
       setArrowUp2(false);
     }
     if (tarket === '7') {
@@ -126,7 +129,7 @@ const Programs = () => {
       ref5.current.classList.remove('programs-show');
       ref6.current.classList.remove('programs-show');
       ref2.current.classList.remove('programs-show');
-      setArrowUp6((prev) => !prev);
+      setArrowUp7((prev) => !prev);
       setArrowUp1(false);
       setArrowUp3(false);
       setArrowUp4(false);
@@ -285,7 +288,6 @@ const Programs = () => {
                 Degree, Postgraduate, Full-time
               </span>
             </span>
-
             <span className="flex items-center space-x-6">
               <span className="text-[14px] text-[#5B5756] hidden lg:block">
                 Degree, Postgraduate, Full-time
@@ -419,6 +421,104 @@ const Programs = () => {
             </span>
           </div>
           <div ref={ref5} className="programs-hide max-w-[750px] mt-6">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+              The discipline of Urban and Regional Planning faces increasingly
+              complex challenges that require a profound understanding of
+              theoretical and conceptual frameworks underlying urban
+              development. As metropolitan areas grow and develop over time,
+              urban challenges evolve and have become progressively intricate,
+              necessitating the need for current and advanced research that
+              undertakes a head-on approach to tackling pressing urban
+              problems. 
+            </p>
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
+              The Doctor of Philosophy in Urban and Regional Planning aims to
+              increase knowledge and information in Urban and Regional Planning
+              research to tackle intricate planning problems globally, including
+              Nigeria. It is intended for individuals who have completed a
+              postgraduate programme in urban and regional planning and related
+              fields and possess strong interests in advancing the practice of
+              urban planning through rigorous and contextual academic research.
+              The programme aims to cultivate high-calibre professionals
+              committed to pursuing knowledge through critical thinking,
+              holistic studies, and inferential observations. PhD candidates
+              conduct research in several disciplines in Urban and Regional
+              Planning, including Planning Infrastructure, Transport Planning,
+              GIS, Spatial Data Infrastructure, Urban and Pro-Poor Development,
+              etc. 
+            </p>
+          </div>
+        </div>
+        <div
+          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
+          role="button"
+          onClick={() => onDropdownClicked('6')}
+        >
+          <div className="flex justify-between items-center">
+            <span className="flex flex-col">
+              <span className="text-[20px] text-[#1B1B1B]">
+                Master of Urban Logistics and Transport (MULT)
+              </span>
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
+                Degree, Postgraduate, Full-time
+              </span>
+            </span>
+
+            <span className="flex items-center space-x-6">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
+                Degree, Postgraduate, Full-time
+              </span>
+              {arrowUp6 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div ref={ref6} className="programs-hide max-w-[750px] mt-6">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+              The Master of Urban Logistics and Transport Policy programme is
+              designed to develop capacity in the teaching, practice and
+              administration of urban logistics and transport policy in
+              Nigeria.  Recognising the crucial role of logistics and transport
+              in the economic growth and development of nations, this programme
+              is conceptualised to provide knowledge and deepen expertise in the
+              field of logistics and transport policy. The program will draw
+              from academia, industry practitioners and global practices, home
+              and abroad, to provide a platform for research and development in
+              the logistics and transport sector aimed at the growth of the
+              freight industry in Nigeria and attendant positive impacts on the
+              economy.
+            </p>
+          </div>
+        </div>
+        <div
+          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
+          role="button"
+          onClick={() => onDropdownClicked('7')}
+        >
+          <div className="flex justify-between items-center">
+            <span className="flex flex-col">
+              <span className="text-[20px] text-[#1B1B1B]">
+                Doctor of Philosophy in Urban and Regional Planning (PhD)
+              </span>
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
+                Degree, Postgraduate, Full-time
+              </span>
+            </span>
+
+            <span className="flex items-center space-x-6">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
+                Degree, Postgraduate, Full-time
+              </span>
+              {arrowUp7 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div ref={ref7} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
               The discipline of Urban and Regional Planning faces increasingly
               complex challenges that require a profound understanding of

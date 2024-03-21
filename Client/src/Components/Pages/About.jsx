@@ -98,8 +98,6 @@ const About = () => {
                 and Regional Planning (MPHIL); Doctor of Philosophy in Urban and
                 Regional Planning (PhD). 
               </li>
-              <li>Number of Academic Staff: 20.</li>
-              <li>Number of Students (2023/2024): 200</li>
               <li>
                 The Town Planners Registration Council of Nigeria ranked DURP as
                 The Best Accredited Programme in 2010. 
@@ -110,41 +108,6 @@ const About = () => {
       </section>
       <section className="max-w-[1119px] mx-auto mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
         <div>
-          <Accordion className="mb-4">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
-                role="button"
-              >
-                About Urban and Regional Planning Department
-              </h3>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                The Urban and Regional Planning department is dedicated to the
-                pursuit of academic excellence through learning, teaching, and
-                research in the field. The primary goal is to contribute to the
-                advancement of urban and regional planning practices, ultimately
-                improving the quality of human settlements. The department aims
-                to provide design solutions for current settlement challenges
-                and anticipate future requirements by imparting design skills
-                that articulate plans and guide their implementation. It
-                emphasizes the importance of ensuring the effective execution of
-                planning solutions, producing plans that are feasible and
-                actionable. Furthermore, the department seeks to address
-                critical issues in planning and development, working towards
-                minimizing the urban and rural divide. An additional objective
-                is to foster the advancement of learning, offering equal
-                educational opportunities to qualified individuals irrespective
-                of race, creed, gender, or political affiliation in the domain
-                of Urban and Regional Planning.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
           <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -242,9 +205,9 @@ const About = () => {
         </div>
       </section>
       <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
-        <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+        <div className="text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
+            Contact us for sponsorship or partnership
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
             Send us a mail filler text is a great way to show the size you want

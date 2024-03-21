@@ -228,7 +228,7 @@ const Faq = () => {
       </section>
       <section className="max-w-[1112px] mx-auto mb-[64px] lg:mb-20 px-6 lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[40px] font-bold mb-6 lg:mb-10">
-          Explore Your Answers: Urban & regional planning FAQ's Corner
+          Explore your answers: Urban & Regional Planning FAQ's corner
         </h2>
         <div className="leading-[150%] flex flex-col max-w-[800px] mx-auto">
           <p className="lg:mb-6 text-[12px] lg:text-[16px] text-center">

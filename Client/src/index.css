@@ -173,10 +173,13 @@ Home page
 
 ==================== */
 .hero-bg {
-  height: 600px;
+  height: 85dvh;
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome-box {
   border-radius: 4px;
@@ -293,7 +296,6 @@ Home page
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  text-transform: capitalize;
   color: #011717;
 }
 

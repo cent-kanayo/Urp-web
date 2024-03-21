@@ -375,6 +375,18 @@ const Agunbiade = () => {
                   Obafemi Awolowo University, Ile-Ife.
                 </p>
               </div>
+              <div className="mb-10">
+                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
+                  1991-1992
+                </p>
+                <h4 className="text-[#090302] text-[20px] leading-[150%]">
+                  Overall best graduating student, Faculty of Environmental
+                  Design and Management
+                </h4>
+                <p className="text-[#5B5756] text-[16px] leading-[150%]">
+                  Obafemi Awolowo University, Ile-Ife.
+                </p>
+              </div>
             </article>
             <article className={tab2 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">

@@ -85,11 +85,11 @@ const Sidebar = ({ setSidebar }) => {
                     <Popover.Button>Students' Association</Popover.Button>
                   </Link>
                   <Link
-                    to="/honours-list"
+                    to={`/student-spotlight/${students[0]?._id}`}
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
-                    <Popover.Button>Honors list</Popover.Button>
+                    <Popover.Button>Student of the month</Popover.Button>
                   </Link>
 
                   <Link

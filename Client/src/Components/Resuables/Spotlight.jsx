@@ -26,7 +26,7 @@ const Spotlight = ({ student }) => {
           image={Pen}
           h2="The Planner’s pen"
           p="Request access to past projects."
-          btn="open planner’s pen"
+          btn="Open planner’s pen"
           link="/planners-pen"
         />
         <SpotlightBox

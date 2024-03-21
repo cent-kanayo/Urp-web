@@ -64,6 +64,7 @@ const Home = () => {
   return (
     <main>
       <section className="hero-bg text-center">
+        <div className="h-full w-full bg-black opacity-70 absolute"></div>
         {BGS.map((pic, picIndex) => {
           let position = 'nextSlide';
           if (picIndex === index) {
@@ -87,37 +88,39 @@ const Home = () => {
           );
         })}
 
-        <div className="py-[100px] lg:py-[204.5px]">
+        <div>
           <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] lg:px-0">
-            <span
+            {/* <span
               className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('prev')}
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
-            </span>
-            <div className="welcome-box flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] py-3 lg:py-6 px-3 lg:px-10 items-center">
-              <p className="text-[12px] md:text-[20px] text-[#F0C808] font-medium leading-[150%] mb-4">
-                Reshaping the future of human settlements, one city at a time. {' '}
-              </p>
-              <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#F5FFF6]">
-                Welcome to the DURP - {' '}
+            </span> */}
+            <div className="flex-1 lg:flex-none   px-3 lg:px-10 items-center relative z-50">
+              <h1 className="text-[24px] md:text-[32px] lg:text-[96px] font-semibold text-[#F5FFF6]">
+                Welcome to URP
               </h1>
+              <p className="text-[12px] md:text-[16px] text-[#D9D9D9] font-medium leading-[150%] mb-4 max-w-[470px] mx-auto">
+                Reshaping the future of human settlements, one city at a
+                time. definition to an undefined world. Welcome to URP, where
+                standards are created.
+              </p>
             </div>
-            <span
+            {/* <span
               className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
               role="button"
               onClick={() => handleClick('next')}
             >
               <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
-            </span>
+            </span> */}
           </div>
         </div>
       </section>
       <section className="lg:flex flex-col justify-center bg-white">
         <div>
           <h3 className="text-[14px] md:text-[20px] text-center text-[#03312E] my-[80px] leading-[150%] max-w-[713px] mx-auto">
-            home of designers, planners, researchers committed to the growth and
+            Home of designers, planners, researchers committed to the growth and
             <br />
             development of liveable and habitable cities.
           </h3>
@@ -248,9 +251,11 @@ const Home = () => {
         </div>
       </section>
 
-      {isLoading ? (
-        <div className="h-[600px]">
-          <h1>Loading...</h1>
+      {!posts?.length ? (
+        <div className="h-[200px]">
+          <h2 className="text-center text-[24px] lg:text-[2.5rem] font-[600] capitalize mt-40 lg:mb-[60px]">
+            News & events
+          </h2>
         </div>
       ) : (
         <Events posts={posts} />

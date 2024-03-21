@@ -39,8 +39,8 @@ const StaffPage = () => {
       <section className="staff-hero text-center mb-10 lg:mb-[80px]"></section>
       <section className="lg:mt-[160px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
-          <h2 className="text-center text-[24px] md:text-[2.5rem] text[#011717] font-bold capitalize ">
-            academic staff
+          <h2 className="text-center text-[24px] md:text-[2.5rem] text[#011717] font-bold">
+            Academic staff
           </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-[22px]  lg:gap-6 max-w-[1249px] mx-auto">
@@ -64,7 +64,7 @@ const StaffPage = () => {
           />
           <Excocard
             name="Dr. T. LAWANSON"
-            role="Associate Professor"
+            role="Professor"
             image={Law}
             link={'taibat-lawanson'}
           />
@@ -77,7 +77,7 @@ const StaffPage = () => {
 
           <Excocard
             name="Dr. V.U. ILECHUKWU"
-            role="Senior Lecturer"
+            role="Associate Professor"
             image={Vic}
             link={'victor-ilechukwu'}
           />
