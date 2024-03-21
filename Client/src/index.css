@@ -188,7 +188,7 @@ Home page
 }
 @media (max-width: 768px) {
   .hero-bg {
-    height: 308px;
+    height: 80dvh;
   }
 }
 .bgSlide {
