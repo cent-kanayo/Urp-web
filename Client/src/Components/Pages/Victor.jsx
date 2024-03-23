@@ -493,11 +493,9 @@ const Victor = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <h4 className="text-[#090302] leading-[150%]">Football</h4>
-                  <h4 className="text-[#090302] leading-[150%]">Swimming</h4>
-                  <h4 className="text-[#090302] leading-[150%]">
-                    Hanging outs
-                  </h4>
+                  <Activities text="Football" icon="football" />
+                  <Activities text="Swimming" icon="swim" />
+                  <Activities text="Hanging out" icon="hangout" />
                 </div>
               </article>
             </AccordionDetails>

@@ -461,7 +461,7 @@ const Yemi = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Farming</p>
+                  <Activities text="Farming" icon="farm" />
                 </div>
               </article>
             </AccordionDetails>

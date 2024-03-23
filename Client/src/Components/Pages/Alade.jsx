@@ -595,8 +595,6 @@ const Alade = () => {
                   icon="project"
                 />
                 <Activities text="Clergy Duties" icon="church" />
-
-                <h4 className="text-[#090302] text-[20px] leading-[150%]"></h4>
               </div>
             </article>
           </div>
@@ -894,12 +892,11 @@ const Alade = () => {
             <AccordionDetails>
               <article className="">
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <h4 className="text-[#090302] leading-[150%]">
-                    Urban planning and project management consultant
-                  </h4>
-                  <h4 className="text-[#090302] leading-[150%]">
-                    Clergy Duties
-                  </h4>
+                  <Activities
+                    text="Urban planning and project management consultant"
+                    icon="project"
+                  />
+                  <Activities text="Clergy Duties" icon="church" />
                 </div>
               </article>
             </AccordionDetails>

@@ -346,7 +346,7 @@ const Nwaokoro = () => {
             </h3>
           </div>
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
-            <article className={tab1 ? 'tabs' : 'hidden'}>
+            {/* <article className={tab1 ? 'tabs' : 'hidden'}>
               <div className="mb-10">
                 <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2020
@@ -394,7 +394,7 @@ const Nwaokoro = () => {
                 <p>Reading</p>
                 <p>Volleyball</p>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
       </section>
@@ -466,12 +466,7 @@ const Nwaokoro = () => {
             </AccordionSummary>
             <AccordionDetails>
               <article>
-                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Spatial Data Infrastructure and Land Administration</p>
-                  <p>Housing</p>
-                  <p>GIS application</p>
-                  <p>Urban Analytics</p>
-                </div>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]"></div>
               </article>
             </AccordionDetails>
           </Accordion>

@@ -474,8 +474,7 @@ const Made = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>God's servant</p>
-                  <p>Pastor</p>
+                  <Activities text="Pastor" icon="church" />
                 </div>
               </article>
             </AccordionDetails>

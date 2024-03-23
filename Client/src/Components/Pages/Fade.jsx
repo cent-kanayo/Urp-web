@@ -473,9 +473,9 @@ const Fade = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[12px] leading-[150%]">
-                  <p>Community service</p>
-                  <p>Visiting</p>
-                  <p>Religious activities</p>
+                  <Activities text="Community service" icon="community" />
+                  <Activities text="Visiting" icon="travel" />
+                  <Activities text="Religious activities" icon="church" />
                 </div>
               </article>
             </AccordionDetails>

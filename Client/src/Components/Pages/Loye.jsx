@@ -262,10 +262,7 @@ const Loye = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Spatial Data Infrastructure and Land Administration</p>
-                  <p>Housing</p>
-                  <p>GIS application</p>
-                  <p>Urban Analytics</p>
+                  <p>Transportation Planning</p>
                 </div>
               </article>
             </AccordionDetails>
@@ -286,8 +283,7 @@ const Loye = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Reading</p>
-                  <p>Volleyball</p>
+                  <Activities text="Urban consultation" icon="project" />
                 </div>
               </article>
             </AccordionDetails>

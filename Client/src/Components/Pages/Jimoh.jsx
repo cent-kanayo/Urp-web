@@ -477,7 +477,7 @@ const Jimoh = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Consultation</p>
+                  <Activities text="Consultation" icon="project" />
                 </div>
               </article>
             </AccordionDetails>

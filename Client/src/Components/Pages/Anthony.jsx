@@ -353,11 +353,7 @@ const Anthony = () => {
               </div>
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
-              <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  First Aiding (Certified First Aider; Certified in HSE)
-                </h4>
-              </div>
+              <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]"></div>
             </article>
           </div>
         </div>
@@ -451,11 +447,7 @@ const Anthony = () => {
             </AccordionSummary>
             <AccordionDetails>
               <article>
-                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <h4 className="text-[#090302] leading-[150%]">
-                    First Aiding (Certified First Aider; Certified in HSE)
-                  </h4>
-                </div>
+                <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]"></div>
               </article>
             </AccordionDetails>
           </Accordion>

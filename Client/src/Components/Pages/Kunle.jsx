@@ -18,6 +18,7 @@ import Nwa from '../../assets/lecturers/Lkunle.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Kunle = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -44,6 +45,8 @@ const Kunle = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -383,9 +386,12 @@ const Kunle = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Cooking (private cooking services)</p>
-                <p>Food blogging</p>
-                <p>Research Consultancy</p>
+                <Activities
+                  text="Cooking (private cooking services)"
+                  icon="cook"
+                />
+                <Activities text="Food blogging" icon="food" />
+                <Activities text="Research Consultancy" icon="research" />
               </div>
             </article>
           </div>
@@ -486,9 +492,12 @@ const Kunle = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Cooking (private cooking services)</p>
-                  <p>Food blogging</p>
-                  <p>Research Consultancy</p>
+                  <Activities
+                    text="Cooking (private cooking services)"
+                    icon="cook"
+                  />
+                  <Activities text="Food blogging" icon="food" />
+                  <Activities text="Research Consultancy" icon="research" />
                 </div>
               </article>
             </AccordionDetails>

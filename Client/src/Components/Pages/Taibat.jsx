@@ -749,8 +749,8 @@ const Taibat = () => {
             <AccordionDetails>
               <article>
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Photography</p>
-                  <p>Running</p>
+                  <Activities text="Photography" icon="photo" />
+                  <Activities text="Running" icon="running" />
                 </div>
               </article>
             </AccordionDetails>
