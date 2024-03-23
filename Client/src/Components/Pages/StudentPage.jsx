@@ -135,40 +135,74 @@ const StudentPage = () => {
           </h2>
         </div>
         <div className="flex justify-center flex-wrap gap-[22px] lg:gap-6 max-w-[1249px] mx-auto">
-          <Excocard name="John Favour" role="president" image={Fj} />
-          <Excocard name="Aminu Gbenga" role="Vice President" image={Jon} />
+          <Excocard
+            name="John Favour"
+            role="president"
+            image={Fj}
+            phone="07017255923"
+            email="johnolusola36@gmail.com"
+          />
+          <Excocard
+            name="Aminu Gbenga"
+            role="Vice President"
+            image={Jon}
+            phone="+2349082566084"
+            email="aminugbengaloaded@gmail.com"
+          />
           <Excocard
             name="Sonia Ugwunna"
             role="General Secretary"
             image={Sonia}
+            phone="08108489408"
+            email="soniaryde2000@gmail.com"
           />
           <Excocard
             name="Elemide Oluwatimilehin"
             role="Sport Secretary"
             image={Timi}
+            phone="09080843511"
+            email="kingelemide@gmail.com "
           />
           <Excocard
             name="Elerewe Olukorede S."
             role="Social Secretary"
             image={Korede}
+            phone="09040101459"
+            email="koredeelerewe@gmail.com"
           />
-          <Excocard name="Sorunke Arafat" role="P.R.O" image={Pamela} />
+          <Excocard
+            name="Sorunke Arafat"
+            role="P.R.O"
+            image={Pamela}
+            email="sorunkearafat@gmail.com"
+            phone="+234 708 946 4585"
+          />
           <Excocard
             name="Akinleye John"
             role="Welfare Secretary"
             image={John}
+            phone="+234 906 040 2824"
+            email="akinleyejohn99@gmail.com"
           />
           <Excocard
             name="Muibi Muhammed"
             role="Asst. General Secretary"
             image={Mo}
+            phone="+234 816 570 8058"
+            email="muibimuhammed02@gmail.com"
           />
           <Excocard
             name="Folayan Folake"
             role="Financial Secretary"
             image={Folake}
           />
-          <Excocard name="Laikpo Fredrick" role="Treasurer" image={Fred} />
+          <Excocard
+            name="Laikpo Fredrick"
+            role="Treasurer"
+            image={Fred}
+            email="fredricklaikpo98@gmail.com"
+            phone="08129632737"
+          />
         </div>
         {/* <div className="flex items-center justify-center mt-10 lg:hidden">
           <span className="text-[1rem]text-[#010A09] font-medium capitalize ">

@@ -1,7 +1,7 @@
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Link } from 'react-router-dom';
-const Excocard = ({ image, role, name, link }) => {
+const Excocard = ({ image, role, name, link, phone, email }) => {
   if (!link) {
     return (
       <article className="exco">
@@ -16,7 +16,7 @@ const Excocard = ({ image, role, name, link }) => {
               {name}
             </h3>
             <span>
-              <a href="#" className="block">
+              <a href={`tel:${phone}`} className="block">
                 <CallOutlinedIcon fontSize="small" />
               </a>
             </span>
@@ -24,7 +24,7 @@ const Excocard = ({ image, role, name, link }) => {
           <div className="flex justify-between items-center">
             <h3 className="capitalize text-[12px]">{role}</h3>
             <span>
-              <a href={link}>
+              <a href={`mailto:${email}`}>
                 <EmailOutlinedIcon fontSize="small" s />
               </a>
             </span>
