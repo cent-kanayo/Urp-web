@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AG from '../../assets/lecturers/agunbiade.webp';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Agunbiade = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -38,6 +39,8 @@ const Agunbiade = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -398,8 +401,8 @@ const Agunbiade = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Reading</p>
-                <p>Volleyball</p>
+                <Activities text="Reading" icon="book" />
+                <Activities text="Volleyball" icon="volley" />
               </div>
             </article>
           </div>

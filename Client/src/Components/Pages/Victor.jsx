@@ -19,6 +19,7 @@ import Ilechukwu from '../../assets/lecturers/ilechukwu.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Victor = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -45,6 +46,8 @@ const Victor = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -402,15 +405,9 @@ const Victor = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Football
-                </h4>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Swimming
-                </h4>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Hanging outs
-                </h4>
+                <Activities text="Football" icon="football" />
+                <Activities text="Swimming" icon="swim" />
+                <Activities text="Hanging out" icon="hangout" />
               </div>
             </article>
           </div>

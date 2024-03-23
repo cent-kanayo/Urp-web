@@ -12,6 +12,7 @@ import Nwa from '../../assets/lecturers/Lniji.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Niji = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -372,8 +373,8 @@ const Niji = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Sport</p>
-                <p>Discovering new things</p>
+                <Activities text="Sports" icon="sport" />
+                <Activities text="Discovering new things" icon="disc" />
               </div>
             </article>
           </div>

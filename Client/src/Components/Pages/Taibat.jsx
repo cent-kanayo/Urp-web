@@ -19,6 +19,7 @@ import Lawanson from '../../assets/lecturers/lawanson.webp';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Taibat = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -45,6 +46,8 @@ const Taibat = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -519,8 +522,8 @@ const Taibat = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Photography</p>
-                <p>Running</p>
+                <Activities text="Photography" icon="photo" />
+                <Activities text="Running" icon="running" />
               </div>
             </article>
           </div>

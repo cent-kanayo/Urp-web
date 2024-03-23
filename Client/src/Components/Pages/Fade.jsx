@@ -18,6 +18,7 @@ import Nwa from '../../assets/lecturers/Lfade.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Fade = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -44,6 +45,8 @@ const Fade = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -381,9 +384,9 @@ const Fade = () => {
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <p>Community service</p>
-                <p>Visiting</p>
-                <p>Religious activities</p>
+                <Activities text="Community service" icon="community" />
+                <Activities text="Visiting" icon="travel" />
+                <Activities text="Religious activities" icon="church" />
               </div>
             </article>
           </div>

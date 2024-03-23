@@ -15,6 +15,7 @@ import Lawanson from '../../assets/admin/Salau.png';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
+import Activities from '../Resuables/Activities';
 const Taofik = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -41,6 +42,8 @@ const Taofik = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>
@@ -556,27 +559,20 @@ const Taofik = () => {
                 </p>
               </div>
             </article>
-            <article cclassName={tab2 ? 'tabs' : 'hidden'}>
+            <article className={tab2 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Urban Mobility
+                  Urban Transportation
                 </h4>
                 <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Transport Planning
-                </h4>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Logistics
+                  Master Planning
                 </h4>
               </div>
             </article>
             <article className={tab3 ? 'tabs' : 'hidden'}>
               <div className="flex flex-col gap-2 text-[#090302] text-[20px] leading-[150%]">
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Urban planning and project management consultant
-                </h4>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Clergy Duties
-                </h4>
+                <Activities text="Ranching" icon="cow" />
+                <Activities text="Cultivation" icon="plant" />
               </div>
             </article>
           </div>
