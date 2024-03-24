@@ -4,8 +4,8 @@ import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
 import RightIcon from '../../assets/AR.png';
 import Main from '../../assets/projects2/main.png';
-import Sub from '../../assets/projects2/sub.png';
 import { project2 } from '../data';
+import P2 from '../../assets/mainDesktop/p2.png';
 
 const SingleProject2 = () => {
   const [index, setIndex] = useState(0);
@@ -38,7 +38,7 @@ const SingleProject2 = () => {
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto h-[240px] lg:h-[664px] px-6 lg:px-0">
         <div className="w-full h-full">
-          <img src={Sub} alt="Layout" className="w-full h-full" />
+          <img src={project2[0]} alt="Layout" className="w-full h-full" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[80px] max-w-[1119px] mx-auto bg-white px-6 lg:px-0">
@@ -87,11 +87,7 @@ const SingleProject2 = () => {
           <div className="max-w-[1112px] mx-auto bg-white">
             <div className="bg-[#D4CDCD] h-[240px] lg:h-[600px] mb-6">
               <div className="w-full h-full">
-                <img
-                  src={image}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
+                <img src={image} alt="" className="w-full h-full" />
               </div>
             </div>
             <p className="text-[#5B5756] text-[12px] lg:text-[14px]">

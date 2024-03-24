@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-
+import P1 from '../../assets/mainDesktop/p1.png';
 import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
 import RightIcon from '../../assets/AR.png';
@@ -18,11 +18,7 @@ const SingleProject = () => {
     <main>
       <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">
         <div className="w-full h-full">
-          <img
-            src={projectImages[0]}
-            alt=""
-            className="w-full object-cover h-full"
-          />
+          <img src={P1} alt="" className="w-full h-full object-cover" />
         </div>
       </section>
       <section className="mt-[64px] lg:mt-[120px] max-w-[1119px] mx-auto px-6 lg:px-0">
@@ -91,11 +87,7 @@ const SingleProject = () => {
           <div className="max-w-[1112px] mx-auto bg-white">
             <div className="bg-[#D4CDCD] h-[240px] lg:h-[600px] mb-6">
               <div className="w-full h-full">
-                <img
-                  src={image}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
+                <img src={image} alt="" className="w-full h-full" />
               </div>
             </div>
             <p className="text-[#5B5756] text-[12px] lg:text-[14px]">
@@ -109,6 +101,7 @@ const SingleProject = () => {
                     prev <= 0 ? projectImages.length - 1 : prev - 1
                   )
                 }
+                className="hover:animate-pulse"
               >
                 <img
                   src={LeftIcon}
@@ -123,6 +116,7 @@ const SingleProject = () => {
                     prev >= projectImages.length - 1 ? 0 : prev + 1
                   )
                 }
+                className="hover:animate-pulse"
               >
                 <img
                   src={RightIcon}

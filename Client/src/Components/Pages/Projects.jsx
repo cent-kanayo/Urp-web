@@ -1,18 +1,4 @@
-import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
-import RQ from '../../assets/quoteR.png';
-import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-import AG from '../../assets/lecturers/agunbiade.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import { useEffect } from 'react';
 
 import P1 from '../../assets/mainDesktop/p1.png';
 import P2 from '../../assets/mainDesktop/p2.png';

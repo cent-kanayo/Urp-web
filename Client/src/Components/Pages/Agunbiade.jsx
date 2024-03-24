@@ -503,8 +503,8 @@ const Agunbiade = () => {
             <AccordionDetails>
               <article className="">
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                  <p>Reading</p>
-                  <p>Volleyball</p>
+                 <Activities text="Reading" icon="book" />
+                <Activities text="Volleyball" icon="volley" />
                 </div>
               </article>
             </AccordionDetails>
