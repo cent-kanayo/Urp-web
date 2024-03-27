@@ -48,7 +48,7 @@ const Header = ({ setSidebar }) => {
               role="button"
               onClick={() => setSidebar(true)}
             >
-              <MenuIcon htmlColor="#010A09" fontSize="small" />
+              <MenuIcon htmlColor="#010A09" fontSize="medium" />
             </div>
           </div>
           <div className="hidden lg:flex items-center gap-4">
