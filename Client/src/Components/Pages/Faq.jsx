@@ -216,6 +216,7 @@ const Faq = () => {
   };
   useEffect(() => {
     window.scrollTo({ top: 0 });
+    ref1.current.classList.add('programs-show');
   }, []);
   return (
     <main>
@@ -264,7 +265,7 @@ const Faq = () => {
               backgrounds. The ideal applicant is passionate about the built
               environment, fascinated with human, spatial and natural
               interactions within urban environments; and interested in
-              reshaping the world, one square metre at a time.
+              reshaping the world, one square metre at a time. 
             </h3>
           </div>
         </div>
@@ -502,12 +503,6 @@ const Faq = () => {
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
             <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
             <span className="hidden lg:block">
@@ -518,12 +513,6 @@ const Faq = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

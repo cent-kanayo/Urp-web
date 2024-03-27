@@ -64,7 +64,7 @@ const Home = () => {
   return (
     <main>
       <section className="hero-bg text-center">
-        <div className="h-full w-full bg-black opacity-70 absolute"></div>
+        <div className="h-full w-full bg-black opacity-70 absolute -z-10"></div>
         {BGS.map((pic, picIndex) => {
           let position = 'nextSlide';
           if (picIndex === index) {
@@ -97,7 +97,7 @@ const Home = () => {
             >
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span> */}
-            <div className="flex-1 lg:flex-none   px-3 lg:px-10 items-center relative z-50">
+            <div className="flex-1 lg:flex-none   px-3 lg:px-10 items-center relative z-10">
               <h1 className="text-[24px] md:text-[32px] lg:text-[96px] font-semibold text-[#F5FFF6]">
                 Welcome to URP
               </h1>

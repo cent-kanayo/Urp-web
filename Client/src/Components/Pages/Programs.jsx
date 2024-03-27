@@ -225,8 +225,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('1')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Bachelor of science in Urban and Regional Planning
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -247,9 +247,9 @@ const Programs = () => {
           </div>
           <div
             ref={ref1}
-            className="programs-hide max-w-[750px] mt-6 flex flex-col gap-y-4"
+            className="programs-hide max-w-[750px] mt-6 flex flex-col gap-y-4 text-[12px] lg:text-[14px]"
           >
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-2">
+            <p className="max-w-[900px] text-[#1B1B1B] mb-2">
               The Bachelor’s programme in Urban and Regional Planning is
               intended for applicants from a diverse background who are
               passionate about the growth and development of urban areas. This
@@ -280,8 +280,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('2')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Master of Science in Urban and Regional Planning (MSc)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -299,8 +299,11 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref2} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
+          <div
+            ref={ref2}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B]">
               The Master of Science in Urban and Regional Planning is designed
               to provide full training in planning theory, research, and
               practice. Recognising the need for town planners with strong urban
@@ -318,8 +321,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('3')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Master in Urban and Regional Planning (MURP)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -338,8 +341,11 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref3} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+          <div
+            ref={ref3}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B] mb-6">
               The Master in Urban and Regional Planning emphasises the need for
               graduate-level training to deepen the understanding of urban
               planning and environmental problems within the local context. The
@@ -359,8 +365,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('4')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Master of Philosophy in Urban and Regional Planning (MPHIL)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -379,8 +385,11 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref4} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
+          <div
+            ref={ref4}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B]">
               The Master of Philosophy (M.Phil.) programme is designed to offer
               advanced research opportunities, aiming to deepen insights into
               Urban and Regional Planning. The programme's philosophy is centred
@@ -400,8 +409,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('5')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Doctor of Philosophy in Urban and Regional Planning (PhD)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -420,8 +429,11 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref5} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+          <div
+            ref={ref5}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B] mb-6">
               The discipline of Urban and Regional Planning faces increasingly
               complex challenges that require a profound understanding of
               theoretical and conceptual frameworks underlying urban
@@ -431,7 +443,7 @@ const Programs = () => {
               undertakes a head-on approach to tackling pressing urban
               problems. 
             </p>
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
+            <p className="max-w-[900px] text-[#1B1B1B]">
               The Doctor of Philosophy in Urban and Regional Planning aims to
               increase knowledge and information in Urban and Regional Planning
               research to tackle intricate planning problems globally, including
@@ -455,8 +467,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('6')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Master of Urban Logistics and Transport (MULT)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
@@ -475,8 +487,11 @@ const Programs = () => {
               )}
             </span>
           </div>
-          <div ref={ref6} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+          <div
+            ref={ref6}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B] mb-6">
               The Master of Urban Logistics and Transport Policy programme is
               designed to develop capacity in the teaching, practice and
               administration of urban logistics and transport policy in
@@ -498,8 +513,8 @@ const Programs = () => {
           onClick={() => onDropdownClicked('7')}
         >
           <div className="flex justify-between items-center">
-            <span className="flex flex-col">
-              <span className="text-[20px] text-[#1B1B1B]">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
                 Doctor of Philosophy in Urban and Regional Planning (PhD)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">

@@ -30,109 +30,57 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Excocard from '../Resuables/Excocard';
 import GetHelp from '../Resuables/GetHelp';
 
-import Bg1 from '../../assets/mainDesktop/homebg1.webp';
-import Bg2 from '../../assets/mainDesktop/homebg2.webp';
-import Bg3 from '../../assets/mainDesktop/homebg3.webp';
-import Bg4 from '../../assets/mainDesktop/homebg4.webp';
-import Bg5 from '../../assets/mainDesktop/homebg5.webp';
 import Book from '../../assets/mainMobile/bookbg.png';
 
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
-const BGS = [Bg1, Bg2, Bg3, Bg4, Bg5];
 const StudentPage = () => {
-  const [bgs, setBgs] = useState(BGS);
-  const [index, setIndex] = useState(0);
-
-  const handleClick = (type) => {
-    if (type === 'next') {
-      setIndex((prev) => (prev > BGS?.length - 2 ? 0 : prev + 1));
-    } else {
-      setIndex((prev) => (prev < 0 ? BGS?.length - 2 : prev - 1));
-    }
-  };
-
-  useEffect(() => {
-    const lastIndex = BGS.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, BGS]);
-
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 5000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
     <main>
-      <section className="hero-bg text-center">
-        {BGS.map((pic, picIndex) => {
-          let position = 'nextSlide';
-          if (picIndex === index) {
-            position = 'activeSlide';
-          }
-          if (
-            picIndex === index - 1 ||
-            (index === 0 && picIndex === BGS.length - 1)
-          ) {
-            position = 'lastSlide';
-          }
+      <section className="flex mb-10 lg:mb-[80px] student-bg"></section>
 
-          return (
-            <div className={`bgSlide ${position}`} key={picIndex}>
-              <img
-                src={pic}
-                alt="Background carousel 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          );
-        })}
-
-        <div className="py-[100px] lg:py-[204.5px]">
-          <div className="flex justify-center items-center gap-x-2 lg:gap-x-[126px] lg:px-0">
-            <span
-              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
-              role="button"
-              onClick={() => handleClick('prev')}
-            >
-              <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
-            </span>
-            <div className="welcome-box flex-1 lg:flex-none lg:w-[789px] lg:h-[160px] py-3 lg:py-6 px-3 lg:px-10 items-center">
-              <p className="text-[14px] md:text-[24px] text-[#F0C808] font-medium leading-[150%] mb-4">
-                Where Innovation Meets Excellence!
-              </p>
-              <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#F5FFF6]">
-                Urban & Regional Planning
-              </h1>
-            </div>
-            <span
-              className="border-[2px] border-[#F0C808] p-[2px] lg:p-2 hover:bg-[#F0C808]"
-              role="button"
-              onClick={() => handleClick('next')}
-            >
-              <ArrowForwardIosOutlinedIcon htmlColor="white" fontSize="small" />
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="mt-[40px] lg:mt-[160px] px-4 lg:px-0">
+      <section className="mt-[40px] lg:mt-[80px] px-4 lg:px-0">
         <div className="flex justify-center mb-6 lg:mb-[60px] items-center relative">
-          <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold">
-            The executive members
-          </h2>
+          <section className="max-w-[800px] mx-auto px-6 lg:px-0">
+            <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold mb-6">
+              The Students’ association 2023/2024
+            </h2>
+            <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
+              <p>
+                The Urban and Regional Planning Students' Association of Nigeria
+                (URPSAN), University of Lagos Chapter is at the heart of student
+                engagement at the department. As a dynamic  and student-driven
+                association, URPSAN UNILAG is more than a society; we are a
+                community of aspiring planners dedicated to shaping the future
+                of our cities and regions. Our mission is to create a platform
+                where ideas flourish, connections thrive, and each member is
+                empowered to  contribute meaningfully to the discipline.
+              </p>
+              <p>
+                From community outreach projects to interactive panel
+                discussions with industry experts, URPSAN UNILAG presents a
+                holistic experience for planning students that goes beyond the
+                classroom, enriching the student journey and preparing members
+                for the dynamic landscape of urban planning. Through a myriad of
+                events, workshops, seminars, conferences, and events, we aim to
+                bridge the gap between theory and practice, preparing our
+                members for the challenges and opportunities that lie ahead in
+                the world of urban planning.
+              </p>
+              <p>
+                Whether you're a seasoned planner or a fresh enthusiast, URPSAN,
+                University of  Lagos Chapter, welcomes you to join us on a
+                transformative journey where ideas turn  into action, and the
+                future of urban planning is shaped by the leaders of tomorrow. 
+                Together, let's build the cities we envision, one innovative
+                idea at a time.
+              </p>
+            </div>
+          </section>
         </div>
         <div className="flex justify-center flex-wrap gap-[22px] lg:gap-6 max-w-[1249px] mx-auto">
           <Excocard
@@ -285,27 +233,31 @@ const StudentPage = () => {
         <div className="lg:flex-1 flex flex-col bg-[#5B5756] mx-4  md:mx-auto md:w-[564px] py-6 lg:py-0 px-4 lg:px-0 mb-[25px] lg:mb-0">
           <div className="lg:w-[564px] flex flex-col gap-6">
             <h2 className="text-[#F5FFF6] text-[24px] lg:text-[40px] font-bold">
-              Innovative research hubs
+              Access previous projects
             </h2>
             <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills of
-              architectural design. Since its foundation...
+              Delve into this repository, where a wealth of projects awaits
+              exploration, each serving as a testament to the intellectual
+              vibrancy, boundless creativity, and unwavering dedication that
+              define our community. The diverse spectrum of projects within
+              reflects the multifaceted nature of our pursuits, ranging from
+              groundbreaking.....
             </p>
             <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-              A compilation of literary works born from years of research and
-              placeholder text till our design gets a writer .Faculty of
-              Environmental Science, University of Lagos. It is taught in a few
-              and highly elitist universities in Nigeria, hence the need to meet
-              universal standards to master the requisite skills...
+              Delve into this repository, where a wealth of projects awaits
+              exploration, each serving as a testament to the intellectual
+              vibrancy, boundless creativity, and unwavering dedication that
+              define our community. The diverse spectrum of projects within
+              reflects the multifaceted nature of our pursuits, ranging from
+              groundbreaking.....
             </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
-                Learn More
-              </button>
+              <Link
+                to="/projects"
+                className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse"
+              >
+                Get Access
+              </Link>
             </div>
           </div>
         </div>

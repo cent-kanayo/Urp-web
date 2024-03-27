@@ -14,8 +14,6 @@ const Header = ({ setSidebar }) => {
   const { students } = useGlobalContext();
   const ref = useRef(null);
 
-  const id = students[0]?._id || 1234244;
-
   useEffect(() => {
     const getHeight = window.addEventListener('scroll', () => {
       const windowHeight = window.scrollY;
