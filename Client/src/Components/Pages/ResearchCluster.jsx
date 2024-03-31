@@ -6,6 +6,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 import P1 from '../../assets/mainDesktop/stadia.png';
 import Email from '../../assets/icons/email.png';
+import LargeBuilding from '../../assets/mainDesktop/large-buildings.webp';
+import Globe from '../../assets/mainDesktop/global.png';
+import Traffic from '../../assets/mainDesktop/traffic.png';
+import City from '../../assets/mainDesktop/beautiful-city.png';
 
 const ResearchCluster = () => {
   useEffect(() => {
@@ -14,15 +18,15 @@ const ResearchCluster = () => {
   return (
     <main>
       <section className="flex mb-[64px] lg:mb-[80px] research-bg px-[60px] lg:px-0">
-        <div className="about-welcome flex-1 h-[64px] lg:h-[108px] px-[60px] lg:px-0">
-          <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
+        <div className="about-welcome flex-1 h-[64px] lg:h-[108px] lg:px-0">
+          <h1 className="text-[24px] lg:text-[4.5rem] font-bold text-center text-white">
             Research clusters
           </h1>
         </div>
       </section>
 
       <section className="max-w-[800px] mx-auto px-6 lg:px-0">
-        <h2 className="text-center text-[24px] lg:text-[2.5rem] text-[#011717] font-bold mb-6">
+        <h2 className="text-center text-[24px] lg:text-[4.5rem] text-[#011717] font-bold mb-6">
           General Introduction
         </h2>
         <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
@@ -42,26 +46,30 @@ const ResearchCluster = () => {
       <section className="mt-[64px] lg:mt-[80px] max-w-[1120px] mx-auto px-6 lg:px-0">
         <div className="flex flex-col flex-wrap gap-y-6 gap-x-[22px] lg:gap-x-6 mb-6">
           <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
-            <img src={P1} alt="" className="w-full mb-4 lg:mb-0" />
-            <div>
-              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-2">
+            <img
+              src={LargeBuilding}
+              alt="Large building with light dome"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 Spatial Data Infrastructure Cluster (SDI)
               </h2>
 
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 The Spatial Data Infrastructure Cluster (SDI) is a vital
                 research and innovation hub for the development, optimization,
                 and utilization of Spatial Data Infrastructures, crucial for
                 modern geospatial data management.
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 SDI, an interdisciplinary cluster combines professionals from
                 geography, remote sensing, computer science, and urban planning
                 to address spatial data challenges, aiming to create
                 standardized data formats, interoperable technologies, and best
                 practices.
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 Join the Spatial Data Infrastructure Cluster to explore
                 geospatial data, driving advancements that impact our
                 understanding of the world and shaping its future.
@@ -82,12 +90,16 @@ const ResearchCluster = () => {
             </div>
           </div>
           <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
-            <img src={P1} alt="" className="w-full mb-4" />
-            <div>
-              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-2">
+            <img
+              src={Globe}
+              alt="Large building with light dome"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 UNILAG-LISA{' '}
               </h2>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 University of Lagos Laboratory for Interdisciplinary Statistical
                 Analysis (UNILAG-LISA), is a newly accredited statistical
                 laboratory of the LISA 2020 network domiciled at the Department
@@ -97,13 +109,13 @@ const ResearchCluster = () => {
                 Analytics by increasing statistics and data science capacity at
                 the University and in the local region.
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 This research cluster is dedicated to tackling contemporary
                 challenges in language processing, information retrieval, and
                 systems analysis, integrating diverse expertise for practical
                 applications.
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 As we navigate the ever-changing landscape of technology and
                 communication, UNILAG-LISA stands out as a beacon of innovation,
                 providing significant contributions to both academic scholarship
@@ -127,18 +139,22 @@ const ResearchCluster = () => {
             </div>
           </div>
           <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
-            <img src={P1} alt="" className="w-full mb-4" />
-            <div>
-              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-2">
+            <img
+              src={Traffic}
+              alt="Large building with light dome"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 Urbanisation and Population Dynamics
               </h2>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 The Sustainable Cities and African Urbanisation Dynamics cluster
                 works around issues relating to resilient cities, city
                 development policy, environmental changes in cities as outlined
                 in Sustainable Development Goal 11, amongst others.  
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 This cluster leverages on population and rapid urbanisation
                 which require immediate attention of policymakers to ensure
                 sustainable city development. Understanding the urban growth
@@ -160,12 +176,16 @@ const ResearchCluster = () => {
             </div>
           </div>
           <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
-            <img src={P1} alt="" className="w-full mb-4" />
-            <div>
-              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-2">
+            <img
+              src={City}
+              alt="Water front house"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 Urban Health and Livability
               </h2>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 Through “multidisciplinary research engagements with focus on
                 the unique factors affecting health and well-being of Urban
                 dwellers within the immediate research environment (Lagos)
@@ -173,11 +193,11 @@ const ResearchCluster = () => {
                 impact of the original findings and broaden the scope of the
                 visibility of its research works and expertise.
               </p>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 The cluster specifically hopes to address the following local
                 and global issues (as indicated in the SDGs):
               </p>
-              <div className="text-[#090302] text-[12px] lg:text-[16px] mb-2 pl-8">
+              <div className="text-[#090302] text-[12px] lg:text-[16px] mb-4 pl-8">
                 <ul className="list-disc">
                   <li>Good Health and Wellbeing (SDG3)</li>
                   <li>Clean Water and Sanitation (SDG6)</li>
@@ -200,12 +220,16 @@ const ResearchCluster = () => {
             </div>
           </div>
           <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
-            <img src={P1} alt="" className="w-full mb-4" />
-            <div>
-              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-2">
+            <img
+              src={P1}
+              alt=""
+              className="w-full lg:w-[50%] mb-4 h-[488px] rounded-md"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 CENTRE FOR HOUSING AND SUSTAINABLE DEVELOPMENT{' '}
               </h2>
-              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-2">
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
                 UNILAG-LISA, a research cluster at the University of Lagos, is a
                 dynamic community of scholars, researchers, and innovators
                 dedicated to advancing knowledge in language, information, and
@@ -213,15 +237,19 @@ const ResearchCluster = () => {
               </p>
               <div className="flex space-x-4 items-center mt-4">
                 <p>For more information</p>
-                <button className="px-6 py-2 bg-[#03312E] text-white  text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear shadow-md">
+                <a
+                  href="https://chsd.unilag.edu.ng/"
+                  target="_blank"
+                  className="px-6 py-4 bg-[#03312E] text-white  text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear shadow-md"
+                >
                   Visit the CHSD
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
+      <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
             contact us for sponsorship or partnership
@@ -232,7 +260,7 @@ const ResearchCluster = () => {
           </p>
           <Link
             to="/contact  "
-            className="inline-block px-6 py-2 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
+            className="inline-block px-6 py-4 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
           >
             contact us
           </Link>

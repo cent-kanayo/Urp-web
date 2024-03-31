@@ -31,13 +31,6 @@ const Home = () => {
   const [bgs, setBgs] = useState(BGS);
   const [index, setIndex] = useState(0);
   const { posts, students, isLoading } = useGlobalContext();
-  const handleClick = (type) => {
-    if (type === 'next') {
-      setIndex((prev) => (prev > BGS?.length - 2 ? 0 : prev + 1));
-    } else {
-      setIndex((prev) => (prev < 0 ? BGS?.length - 2 : prev - 1));
-    }
-  };
 
   useEffect(() => {
     const lastIndex = BGS.length - 1;
@@ -286,9 +279,12 @@ const Home = () => {
               limits...
             </p>
             <div>
-              <button className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
+              <Link
+                to="/research-cluster"
+                className="capitalize bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>

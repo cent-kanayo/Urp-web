@@ -1,9 +1,6 @@
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { PhoneCallback } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 const Contact = ({ h2 }) => {
   return (
@@ -28,12 +25,6 @@ const Contact = ({ h2 }) => {
           </span>
           <span className="hidden lg:block">
             <EmailIcon htmlColor="#934B00" fontSize="large" />
-          </span>
-          <span className="lg:hidden">
-            <PhoneCallback htmlColor="#934B00" fontSize="medium" />
-          </span>
-          <span className="hidden lg:block">
-            <PhoneCallback htmlColor="#934B00" fontSize="large" />
           </span>
           <span className="lg:hidden">
             <InstagramIcon htmlColor="#934B00" fontSize="medium" />
