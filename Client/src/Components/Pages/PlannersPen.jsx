@@ -31,6 +31,30 @@ const PlannersPen = () => {
         <h2 className="text-center text-[32px] lg:text-[40px] font-bold mb-4 lg:mb-[36px]">
           The Planner’s Pen
         </h2>
+        <section className="max-w-[1117px] mx-auto flex flex-col gap-4 lg:gap-0 md:flex-row justify-between lg:items-center mb-[40px]">
+          <div className="text-[#5B5756] text-[14px] flex items-center space-x-2">
+            <p className="text-[20px]">5 min Read</p>
+            <span className="w-[4px] h-[4px] rounded-full block bg-[#CECDCC]"></span>
+            <p className="text-[20px]">1st Edition</p>
+          </div>
+          <div className="flex lg:justify-center gap-x-6 lg:px-0">
+            <span>
+              <FacebookIcon htmlColor="#090302" fontSize="medium" />
+            </span>
+            <span>
+              <a
+                href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
+                target="_blank"
+                aria-label="Link to LinkedIn"
+              >
+                <LinkedInIcon
+                  fontSize="medium"
+                  className="text-[#090302] hover:text-[#192C69]"
+                />
+              </a>
+            </span>
+          </div>
+        </section>
       </section>
       <section className="max-w-[800px] mx-auto">
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col px-[35px] lg:px-0">
@@ -176,15 +200,12 @@ const PlannersPen = () => {
             contact us for sponsorship or partnership
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-            Ready to make a difference? Explore sponsorships and volunteer
-            opportunities to create a meaningful impact
+            Send us a mail filler text is a great way to show the size you want
+            to have
           </p>
-          <Link
-            to="/contact  "
-            className="inline-block px-6 py-2 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"
-          >
+          <button className="px-6 py-2 bg-[#03312E] text-white text-[14px] lg:text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md">
             contact us
-          </Link>
+          </button>
           <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
             <span className="lg:hidden">
               <EmailIcon htmlColor="#934B00" fontSize="medium" />

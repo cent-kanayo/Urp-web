@@ -91,45 +91,6 @@ const NewsPage = () => {
           </div>
         </div>
       </section>
-      <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[30px] lg:px-0">
-        <div className="flex items-center space-x-2 text-[14px] lg:text-[20px] text-[#5B5756]">
-          <span>5 min Read</span>
-          <span className="w-[4px] h-[4px] rounded-full bg-[#5B5756]"></span>
-          <span>1st Edition</span>
-        </div>
-        <div className="flex justify-center gap-x-6 lg:px-0">
-          <span className="lg:hidden">
-            <FacebookIcon htmlColor="#090302" fontSize="small" />
-          </span>
-          <span className="lg:hidden">
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="small"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-          <span className="hidden lg:block">
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span className="hidden lg:block">
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="medium"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-        </div>
-      </section>
       <section className="max-w-[800px] mx-auto px-[30px] lg:px-0">
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-6">
           {post?.subtitle}

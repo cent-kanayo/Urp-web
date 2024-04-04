@@ -712,6 +712,7 @@ RS Page
     background: url('./assets/mainMobile/student-bg.png');
     height: 320px;
     background-position: right;
+    background-repeat: no-repeat;
   }
   .honours-bg {
     background-image: url('./assets/mainDesktop/honours.png');
