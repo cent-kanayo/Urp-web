@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -12,9 +11,6 @@ import Traffic from '../../assets/mainDesktop/traffic.png';
 import City from '../../assets/mainDesktop/beautiful-city.png';
 
 const ResearchCluster = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-[64px] lg:mb-[80px] research-bg px-[60px] lg:px-0">

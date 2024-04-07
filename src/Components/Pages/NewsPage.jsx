@@ -50,7 +50,6 @@ const NewsPage = () => {
   };
 
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     fetchSinglePost(id);
   }, []);
   if (isLoading)

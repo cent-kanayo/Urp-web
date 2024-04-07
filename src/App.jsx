@@ -46,10 +46,12 @@ import {
 } from './Components/Pages';
 import { AlumniLogin, StaffLogin, StudentLogin } from './Components/Auth';
 import Uploads from './Components/Auth/Uploads';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />

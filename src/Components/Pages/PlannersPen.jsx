@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,13 +9,7 @@ import Pen1 from '../../assets/mainDesktop/pen1.png';
 import Pen2 from '../../assets/mainDesktop/pen2.png';
 import Pen3 from '../../assets/mainDesktop/pen3.png';
 
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
 const PlannersPen = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main className="overflow-x-hidden">
       <section className="mb-[64px] lg:mb-[72px] h-[505px] lg:h-[720px] bg-[#9D9E9D] py-[106px] lg:py-[172px] flex items-end justify-start planners-bg">
@@ -192,12 +187,7 @@ const PlannersPen = () => {
             <span className="hidden lg:block">
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
-            <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
+
             <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
@@ -209,12 +199,6 @@ const PlannersPen = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

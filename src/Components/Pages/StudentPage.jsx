@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Journal from '../../assets/journals.png';
 
@@ -36,9 +36,6 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 const StudentPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-10 lg:mb-[80px] student-bg"></section>

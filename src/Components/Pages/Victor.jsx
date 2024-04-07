@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import HODLight from '../../assets/Fram.png';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
@@ -44,7 +44,6 @@ const Victor = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setTab1(true);
     setTab2(false);
     setTab3(false);

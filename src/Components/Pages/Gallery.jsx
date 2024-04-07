@@ -55,9 +55,6 @@ const Gallery = () => {
       clearInterval(slider);
     };
   }, [index]);
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="hero-bg text-center">

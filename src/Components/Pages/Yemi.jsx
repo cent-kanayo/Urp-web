@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -38,7 +38,6 @@ const Yemi = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setTab1(true);
     setTab2(false);
     setTab3(false);

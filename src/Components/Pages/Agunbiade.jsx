@@ -37,7 +37,6 @@ const Agunbiade = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setTab1(true);
     setTab2(false);
     setTab3(false);
@@ -503,8 +502,8 @@ const Agunbiade = () => {
             <AccordionDetails>
               <article className="">
                 <div className="flex flex-col gap-2 text-[#090302] text-[14px] leading-[150%]">
-                 <Activities text="Reading" icon="book" />
-                <Activities text="Volleyball" icon="volley" />
+                  <Activities text="Reading" icon="book" />
+                  <Activities text="Volleyball" icon="volley" />
                 </div>
               </article>
             </AccordionDetails>

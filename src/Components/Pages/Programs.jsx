@@ -141,7 +141,6 @@ const Programs = () => {
   useEffect(() => {
     ref1.current.classList.add('programs-show');
     setArrowUp1(true);
-    window.scrollTo({ top: 0 });
   }, []);
   return (
     <main>

@@ -713,6 +713,7 @@ RS Page
     height: 320px;
     background-position: right;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .honours-bg {
     background-image: url('./assets/mainDesktop/honours.png');

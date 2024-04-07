@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
@@ -33,9 +33,6 @@ const NewsLanding = () => {
     });
   };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   if (isLoading)
     return (
       <div className="pt-10 pb-96 flex justify-center">

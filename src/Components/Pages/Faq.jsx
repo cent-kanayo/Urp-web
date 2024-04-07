@@ -215,7 +215,6 @@ const Faq = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     ref1.current.classList.add('programs-show');
   }, []);
   return (

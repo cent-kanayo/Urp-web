@@ -13,9 +13,7 @@ const SingleProject3 = () => {
   useEffect(() => {
     setImage(project3[index]);
   }, [index]);
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+
   return (
     <main>
       <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">

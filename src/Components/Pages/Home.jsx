@@ -51,7 +51,6 @@ const Home = () => {
     };
   }, [index]);
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     getPosts();
   }, []);
   return (

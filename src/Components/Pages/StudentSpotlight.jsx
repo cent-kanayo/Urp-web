@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import LeftIcon from '../../assets/left.png';
 import RightIcon from '../../assets/right.png';
@@ -6,7 +6,6 @@ import RightIcon from '../../assets/right.png';
 import Contact from '../Resuables/Contact';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -57,9 +56,7 @@ const StudentSpotlight = () => {
         ),
     },
   };
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+
   return (
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">

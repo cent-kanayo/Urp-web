@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -15,9 +15,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from 'react-router-dom';
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-[64px] lg:mb-[80px] about-bg px-[60px] lg:px-0">

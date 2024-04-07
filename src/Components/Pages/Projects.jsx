@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import P1 from '../../assets/mainDesktop/p1.png';
 import P2 from '../../assets/mainDesktop/p2.png';
 import P3 from '../../assets/mainDesktop/p3.png';
@@ -7,9 +5,6 @@ import Contact from '../Resuables/Contact';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-10 lg:mb-[80px] projects-bg">

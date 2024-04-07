@@ -37,8 +37,9 @@ const Niji = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setTab1(true);
+    setTab2(false);
+    setTab3(false);
   }, []);
   return (
     <main>

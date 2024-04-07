@@ -3,9 +3,6 @@ import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Accordion from '@mui/material/Accordion';
@@ -43,7 +40,6 @@ const Fade = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     setTab1(true);
     setTab2(false);
     setTab3(false);

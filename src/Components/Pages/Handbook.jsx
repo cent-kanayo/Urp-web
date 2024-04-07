@@ -1,22 +1,9 @@
-import { useEffect, useRef } from 'react';
-import HODLight from '../../assets/Fram.png';
-import RQ from '../../assets/quoteR.png';
-import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 
 import Contact from '../Resuables/Contact';
 import Alarm from '../../assets/alarm.png';
 
 const Handbook = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-[80px] journal-bg">

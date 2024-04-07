@@ -1,12 +1,6 @@
-import { useEffect } from 'react';
-
-import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import Comment from '../Resuables/Comment';
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex lg:mb-[80px] contact-bg mb-[64px]">

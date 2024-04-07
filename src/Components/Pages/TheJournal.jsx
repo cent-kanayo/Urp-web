@@ -1,12 +1,7 @@
-import { useEffect, useRef } from 'react';
-
 import Contact from '../Resuables/Contact';
 import { Link } from 'react-router-dom';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 const TheJournal = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-[80px] journal-bg">

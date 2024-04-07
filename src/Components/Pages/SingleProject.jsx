@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import P1 from '../../assets/mainDesktop/p1.png';
 import Contact from '../Resuables/Contact';
 import LeftIcon from '../../assets/AL.png';
@@ -11,9 +11,7 @@ const SingleProject = () => {
   useEffect(() => {
     setImage(projectImages[index]);
   }, [index]);
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
+
   return (
     <main>
       <section className="flex mb-[80px] h-[320px] md:h-[600px] bg-[#02211F] justify-center items-center">

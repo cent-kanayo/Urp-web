@@ -1,13 +1,9 @@
-import { useEffect, useRef } from 'react';
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 
 import Contact from '../Resuables/Contact';
 import Alarm from '../../assets/alarm.png';
 
 const Journal = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="flex mb-[80px] journal-bg">

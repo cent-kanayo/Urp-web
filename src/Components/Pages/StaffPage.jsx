@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Journal from '../../assets/journals.png';
 
 import AG from '../../assets/admin/agu.webp';
@@ -28,12 +29,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Excocard from '../Resuables/Excocard';
 
 import GetHelp from '../Resuables/GetHelp';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 const StaffPage = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  }, []);
   return (
     <main>
       <section className="staff-hero text-center mb-10 lg:mb-[80px]"></section>
