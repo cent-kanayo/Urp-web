@@ -2,13 +2,10 @@ import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Link } from 'react-router-dom';
-const Contact = ({ h2 }) => {
+const Contact = () => {
   return (
     <section className="grid place-items-center my-[64px] lg:my-[80px] bg-white">
       <div className="capitalize text-center max-w-[844px] mx-auto py-[40px] px-6 lg:px-0  lg:py-[80px] lg:bg-inherit">
-        <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#011717] mb-4">
-          {h2}
-        </h2>
         <p className="text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
           Ready to make a difference? Explore sponsorships and volunteer
           opportunities to create a meaningful impact

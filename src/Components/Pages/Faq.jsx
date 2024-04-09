@@ -222,14 +222,11 @@ const Faq = () => {
       <section className="flex mb-[31px] lg:mb-[80px] faq-bg">
         <div className="journal-welcome flex-1">
           <h1 className="text-[24px] lg:text-[2.5rem] font-bold text-center text-white">
-            FAQ’s
+            FAQs
           </h1>
         </div>
       </section>
       <section className="max-w-[1112px] mx-auto mb-[64px] lg:mb-20 px-6 lg:px-0">
-        <h2 className="text-center text-[24px] lg:text-[40px] font-bold mb-6 lg:mb-10">
-          Explore your answers: Urban & Regional Planning FAQ's corner
-        </h2>
         <div className="leading-[150%] flex flex-col max-w-[800px] mx-auto">
           <p className="lg:mb-6 text-[12px] lg:text-[16px] text-center">
             Have questions about Urban & regional planning programs, policies,
@@ -259,13 +256,13 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref1} className="programs-hide mt-6">
-            <h3>
+            <p>
               The department welcomes applications from students of diverse
               backgrounds. The ideal applicant is passionate about the built
               environment, fascinated with human, spatial and natural
               interactions within urban environments; and interested in
               reshaping the world, one square metre at a time. 
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -286,10 +283,10 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref2} className="programs-hide mt-6">
-            <h3>
+            <p>
               The Bachelor's Program runs for five years while the post graduate
               degree programs vary between two years and six years.
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -310,11 +307,17 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref3} className="programs-hide mt-6">
-            <h3>
+            <p>
               Applications are made directly to the University of Lagos. Kindly
-              visit (Insert link to undergraduate and postgraduate admissions)
+              visit{' '}
+              <a
+                href="https://admissions.unilag.edu.ng/"
+                className="text-blue-500 hover:underline"
+              >
+                admissions websites
+              </a>{' '}
               for more information.
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -335,14 +338,14 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref4} className="programs-hide mt-6">
-            <h3>
+            <p>
               The multidisciplinary nature of URP means that all experience and
               background is relevant. Moreso, our department is committed to
               fostering an academic environment which enhances skills
               development and knowledge sharing. Hence, our faculty and students
               are on ground to provide you with all training you will need in
               your course duration.
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -363,11 +366,11 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref5} className="programs-hide mt-6">
-            <h3>
+            <p>
               Currently, the department does not offer financial aid. However,
               we provide support to our students who seek external funding
               opportunities.
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -388,13 +391,19 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref6} className="programs-hide mt-6">
-            <h3>
+            <p>
               Our faculty are very open to interacting and partnering with
               prospective students, researchers, partners, and interested
-              members of the public. You can connect directly with our faculty
-              (Link the staff page) or fill out an enquiry form (Link the
-              contact us page) and we will get back to you.
-            </h3>
+              members of the public. You can connect directly with our{' '}
+              <Link to="/staff" className="text-blue-500 hover:underline">
+                staff{' '}
+              </Link>{' '}
+              or fill out an enquiry form in the{' '}
+              <Link to="/contact" className="text-blue-500 hover:underline">
+                contact us page{' '}
+              </Link>{' '}
+              and we will get back to you.
+            </p>
           </div>
         </div>
         <div
@@ -416,12 +425,12 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref7} className="programs-hide mt-6">
-            <h3>
+            <p>
               Our graduates are well sought after in the urban planning sector
               home and abroad, with notable alumni working in Town Planning
               Offices, Government MDAs, Policy Making, International
               Organizations, etc.
-            </h3>
+            </p>
           </div>
         </div>
         <div
@@ -442,11 +451,16 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref8} className="programs-hide mt-6">
-            <h3>
-              The Academic Calendar is published by the University. Please click
-              here to download (or view?, whichever is preferable) the 2023/2024
-              Academic Calendar.
-            </h3>
+            <p>
+              The Academic Calendar is published by the University. Please{' '}
+              <Link
+                to="https://unilag.edu.ng/?page_id=1742"
+                className="text-blue-500 hover:underline"
+              >
+                click here
+              </Link>{' '}
+              to view the 2023/2024 Academic Calendar.
+            </p>
           </div>
         </div>
         <div
@@ -468,22 +482,19 @@ const Faq = () => {
             </span>
           </div>
           <div ref={ref9} className="programs-hide mt-6">
-            <h3>
+            <p>
               The department regularly offers field trips under several courses,
               offering the students the opportunity to explore and travel while
               gaining course credit. Also, the Urban and Regional Planning
               Students Association plans extracurricular events every semester
               for students to connect.
-            </h3>
+            </p>
           </div>
         </div>
       </section>
       <Comment />
-      <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
+      <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
             Ready to make a difference? Explore sponsorships and volunteer
             opportunities to create a meaningful impact

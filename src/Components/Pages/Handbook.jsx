@@ -40,9 +40,6 @@ const Handbook = () => {
         </section>
 
         <section className="max-w-[800px] px-6 lg:px-0">
-          <h2 className="text-center text-[24px] lg:text-[40px] font-[600] mb-6">
-            Short Introduction
-          </h2>
           <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
             <p className="mb-12">
               Our lecturer extraordinaire, Ms. Damilola Odekunle, is a

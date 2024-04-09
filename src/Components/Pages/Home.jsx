@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <main>
       <section className="hero-bg text-center">
-        <div className="h-full w-full bg-black opacity-70 absolute -z-10"></div>
+        <div className="h-full w-full bg-black opacity-50 absolute -z-10"></div>
         {BGS.map((pic, picIndex) => {
           let position = 'nextSlide';
           if (picIndex === index) {

@@ -226,7 +226,7 @@ const Programs = () => {
           <div className="flex justify-between items-center">
             <span className="flex flex-col gap-2">
               <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
-                Bachelor of science in Urban and Regional Planning
+                Bachelor of Science in Urban and Regional Planning
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Undergraduate
@@ -514,7 +514,7 @@ const Programs = () => {
           <div className="flex justify-between items-center">
             <span className="flex flex-col gap-2">
               <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
-                Doctor of Philosophy in Urban and Regional Planning (PhD)
+                Master in Urban Management (MUM)
               </span>
               <span className="text-[12px] text-[#5B5756] lg:hidden">
                 Degree, Postgraduate, Full-time
@@ -534,39 +534,21 @@ const Programs = () => {
           </div>
           <div ref={ref7} className="programs-hide max-w-[750px] mt-6">
             <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
-              The discipline of Urban and Regional Planning faces increasingly
-              complex challenges that require a profound understanding of
-              theoretical and conceptual frameworks underlying urban
-              development. As metropolitan areas grow and develop over time,
-              urban challenges evolve and have become progressively intricate,
-              necessitating the need for current and advanced research that
-              undertakes a head-on approach to tackling pressing urban
-              problems. 
-            </p>
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B]">
-              The Doctor of Philosophy in Urban and Regional Planning aims to
-              increase knowledge and information in Urban and Regional Planning
-              research to tackle intricate planning problems globally, including
-              Nigeria. It is intended for individuals who have completed a
-              postgraduate programme in urban and regional planning and related
-              fields and possess strong interests in advancing the practice of
-              urban planning through rigorous and contextual academic research.
-              The programme aims to cultivate high-calibre professionals
-              committed to pursuing knowledge through critical thinking,
-              holistic studies, and inferential observations. PhD candidates
-              conduct research in several disciplines in Urban and Regional
-              Planning, including Planning Infrastructure, Transport Planning,
-              GIS, Spatial Data Infrastructure, Urban and Pro-Poor Development,
-              etc. 
+              The growing recognition of local authorities as an essential
+              component of actualising sustainable development has necessitated
+              the need for capacity development for stakeholders in public and
+              private practice at the municipal scale of development. The Master
+              in Urban Management will imbibe graduates with the relevant
+              theoretical knowledge, analytical skills and technical experience
+              required to understand, address and manage global, national and
+              local issues affecting urban communities on behalf of diverse
+              urban populations at municipal, regional and global levels.
             </p>
           </div>
         </div>
       </section>
-      <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3] text-[#1B1B1B]">
+      <section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3] text-[#1B1B1B]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
             Ready to make a difference? Explore sponsorships and volunteer
             opportunities to create a meaningful impact
@@ -585,12 +567,6 @@ const Programs = () => {
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
             <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
             <span className="hidden lg:block">
@@ -601,12 +577,6 @@ const Programs = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

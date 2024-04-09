@@ -158,63 +158,11 @@ const StaffPage = () => {
           />
         </div>
       </section>
-      {/* <section className="mt-[64px] pt-[60px] lg:pt-0 lg:py-[80px] h-[380px] lg:h-[680px] relative lg:mt-[180px] flex flex-col justify-center">
-        <div className="abs h-[320px] lg:h-[520px] bg-[#934B00] w-[240px] lg:w-[497px] mx-auto rounded-br-[50%] rounded-bl-[50%] flex flex-col items-center py-6 lg:py-[46px] lg:px-[56px]">
-          <div className="mb-6 lg:mb-[46px]">
-            <img src={Jet} alt="Jet icon" className="w-20 lg:w-auto" />
-          </div>
-          <h3 className="text-[#F0FFF1] text-[20px] lg:text-[32px] font-[600] leading-[150%] mb-[14px] lg:mb-6 text-center capitalize">
-            The forefront of urban and regional planning
-          </h3>
-          <p className="text-[#F0FFF1] text-[14px] lg:text-[20px]  mb-[14px] lg:mb-6">
-            URP research clusters
-          </p>
-          <p className="text-[#F0FFF1] text-[12px] lg:text-[14px]">
-            Ongoing and completed
-          </p>
-        </div>
-        <div className="h-[320px] grid grid-cols-3 lg:grid-cols-4">
-          <img
-            src={Bg}
-            alt=""
-            className="w-[100%] h-[160px] lg:h-[320px] block"
-          />
-          <img
-            src={Bg1}
-            alt=""
-            className="w-[100%] h-[160px] lg:h-[320px] block"
-          />
-          <img
-            src={Bg2}
-            alt=""
-            className="hidden w-[100%] h-[160px] lg:h-[320px] lg:block"
-          />
-          <img
-            src={Bg3}
-            alt=""
-            className="w-[100%] h-[160px] lg:h-[320px] block"
-          />
-        </div>
-      </section> */}
-      {/* <section className="lg:mt-[180px] mb-[64px] lg:mb-[80px] px-4 lg:px-0">
-        <GetHelp
-          h2="Get help, reach out to us and contribute to our growth"
-          p="Experience seamless interaction with the department effortlessly through quick links. With just a tap of a button, accessing everything has never been easier."
-          text1="share your story"
-          text2="student Hub"
-          text3="requests"
-          text4="make a donation"
-          text5="Suggestions"
-        />
-      </section> */}
-      <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
+      <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-            Send us a mail filler text is a great way to show the size you want
-            to have
+            Ready to make a difference? Explore sponsorships and volunteer
+            opportunities to create a meaningful impact
           </p>
           <Link
             to="/contact"
@@ -230,12 +178,6 @@ const StaffPage = () => {
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
             <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
             <span className="hidden lg:block">
@@ -246,12 +188,6 @@ const StaffPage = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

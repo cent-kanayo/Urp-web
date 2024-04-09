@@ -70,7 +70,7 @@ const Header = ({ setSidebar }) => {
                       </Link>
                       <Link to="/staff">
                         <Popover.Button className="popup">
-                          Academic Staff
+                          Department Staff
                         </Popover.Button>
                       </Link>
                       {/* <Link to="/alumni">

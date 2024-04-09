@@ -270,11 +270,8 @@ const StudentPage = () => {
           text5="Suggestions"
         />
       </section> */}
-      <section className="grid place-items-center px-2 lg:px-0 my-[80px] bg-[#CDE3E3]">
+      <section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
             Ready to make a difference? Explore sponsorships and volunteer
             opportunities to create a meaningful impact
@@ -293,12 +290,6 @@ const StudentPage = () => {
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
             <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
             <span className="hidden lg:block">
@@ -309,12 +300,6 @@ const StudentPage = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

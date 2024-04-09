@@ -24,34 +24,7 @@ const About = () => {
           </h1>
         </div>
       </section>
-      {/* <section className="max-w-[1117px] mx-auto flex justify-between items-center mb-[40px] px-[35px] lg:px-0">
-        <div className="text-[#090302]">
-          <h5 className="mb-4 text-[14px] font-semibold lg:text-[20px]">
-            Dr. Muyiwa E. AGUNBIADE
-          </h5>
-          <div className="flex items-center gap-x-2 lg:gap-x-6">
-            <p className="text-[12px] lg:text-[14px]">1st July,2023</p>
-            <CreateNewFolderOutlinedIcon fontSize="small" />
-          </div>
-        </div>
-        <div className="flex justify-center gap-x-6 lg:px-0">
-          <span>
-            <FacebookIcon htmlColor="#090302" fontSize="medium" />
-          </span>
-          <span>
-            <a
-              href="https://www.linkedin.com/in/muyiwa-a-52a67734/"
-              target="_blank"
-              aria-label="Link to LinkedIn"
-            >
-              <LinkedInIcon
-                fontSize="medium"
-                className="text-[#090302] hover:text-[#192C69]"
-              />
-            </a>
-          </span>
-        </div>
-      </section> */}
+
       <section className="max-w-[800px] mx-auto px-[35px] lg:px-0">
         <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
           WELCOME TO THE DEPARTMENT OF URBAN AND REGIONAL PLANNING
@@ -104,31 +77,6 @@ const About = () => {
       </section>
       <section className="max-w-[1119px] mx-auto mt-[64px] lg:mt-[80px] px-[35px] lg:px-0">
         <div>
-          <Accordion className="mb-4">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <h3
-                className="text-[#090302] font-[600] leading-[150%] text-[1rem] py-2"
-                role="button"
-              >
-                Rationale/Justification
-              </h3>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                The Department prepares graduate planners to influence positive
-                economic, social, political, and technological outcomes through
-                physical interventions. Graduates are trained to create optimal
-                environments for decision-making and actions, aiming for maximum
-                societal benefits at minimal costs. Success is gauged by
-                achieving harmony in a physically beautiful, economical, secure,
-                and efficient environment.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
           <Accordion className="mb-4">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -202,9 +150,6 @@ const About = () => {
       </section>
       <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            Contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
             Ready to make a difference? Explore sponsorships and volunteer
             opportunities to create a meaningful impact
@@ -222,12 +167,7 @@ const About = () => {
             <span className="hidden lg:block">
               <EmailIcon htmlColor="#934B00" fontSize="large" />
             </span>
-            <span className="lg:hidden">
-              <FacebookIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <FacebookIcon htmlColor="#934B00" fontSize="large" />
-            </span>
+
             <span className="lg:hidden">
               <InstagramIcon htmlColor="#934B00" fontSize="medium" />
             </span>
@@ -239,12 +179,6 @@ const About = () => {
             </span>
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
-            </span>
-            <span className="lg:hidden">
-              <LinkedInIcon htmlColor="#934B00" fontSize="medium" />
-            </span>
-            <span className="hidden lg:block">
-              <LinkedInIcon htmlColor="#934B00" fontSize="large" />
             </span>
           </div>
         </div>

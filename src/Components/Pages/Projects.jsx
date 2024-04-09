@@ -83,7 +83,7 @@ const Projects = () => {
           </Link>
         </div>
       </section>
-      <Contact h2="contact us for sponsorship or partnership" />
+      <Contact />
     </main>
   );
 };

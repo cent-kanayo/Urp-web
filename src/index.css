@@ -698,7 +698,8 @@ RS Page
 @media (max-width: 768px) {
   .rs-bg,
   .faq-bg,
-  .contact-bg {
+  .contact-bg,
+  .research-bg {
     height: 320px;
     background-position: center;
   }

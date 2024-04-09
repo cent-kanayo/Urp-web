@@ -22,9 +22,6 @@ const ResearchCluster = () => {
       </section>
 
       <section className="max-w-[800px] mx-auto px-6 lg:px-0">
-        <h2 className="text-center text-[24px] lg:text-[4.5rem] text-[#011717] font-bold mb-6">
-          General Introduction
-        </h2>
         <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
           <p>
             The rapid growth of cities, combined with the increasing
@@ -45,7 +42,7 @@ const ResearchCluster = () => {
             <img
               src={LargeBuilding}
               alt="Large building with light dome"
-              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md lg:h-[488px]"
             />
             <div className="lg:w-[50%]">
               <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
@@ -71,10 +68,11 @@ const ResearchCluster = () => {
                 understanding of the world and shaping its future.
               </p>
               <div className="flex space-x-4 items-center mt-4">
-                <p>For more information</p>
+                <p>Message cluster lead</p>
                 <a
                   href="mailto:magunbiade@unilag.edu.ng"
                   aria-label="send email"
+                  className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >
                   <img
                     src={Email}
@@ -89,7 +87,7 @@ const ResearchCluster = () => {
             <img
               src={Globe}
               alt="Large building with light dome"
-              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md lg:h-[488px]"
             />
             <div className="lg:w-[50%]">
               <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
@@ -120,10 +118,11 @@ const ResearchCluster = () => {
                 design a future where understanding and technology converge.
               </p>
               <div className="flex space-x-4 items-center mt-4">
-                <p>For more information</p>
+                <p>Message cluster lead</p>
                 <a
                   href="mailto:magunbiade@unilag.edu.ng"
                   aria-label="send email"
+                  className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >
                   <img
                     src={Email}
@@ -138,7 +137,7 @@ const ResearchCluster = () => {
             <img
               src={Traffic}
               alt="Large building with light dome"
-              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md lg:h-[488px]"
             />
             <div className="lg:w-[50%]">
               <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
@@ -160,8 +159,12 @@ const ResearchCluster = () => {
                 urbanisation and population dynamics.
               </p>
               <div className="flex space-x-4 items-center mt-4">
-                <p>For more information</p>
-                <a href="mailto:loduwaye@unilag.edu.ng" aria-label="send email">
+                <p>Message cluster lead</p>
+                <a
+                  href="mailto:loduwaye@unilag.edu.ng"
+                  aria-label="send email"
+                  className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
+                >
                   <img
                     src={Email}
                     alt="email icon"
@@ -175,7 +178,7 @@ const ResearchCluster = () => {
             <img
               src={City}
               alt="Water front house"
-              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md h-[488px]"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md lg:h-[488px]"
             />
             <div className="lg:w-[50%]">
               <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
@@ -204,8 +207,12 @@ const ResearchCluster = () => {
                 </ul>
               </div>
               <div className="flex space-x-4 items-center mt-4">
-                <p>For more information</p>
-                <a href="mailto:inwokoro@unilag.edu.ng" aria-label="send email">
+                <p>Message cluster lead</p>
+                <a
+                  href="mailto:inwokoro@unilag.edu.ng"
+                  aria-label="send email"
+                  className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
+                >
                   <img
                     src={Email}
                     alt="email icon"
@@ -219,20 +226,19 @@ const ResearchCluster = () => {
             <img
               src={P1}
               alt=""
-              className="w-full lg:w-[50%] mb-4 h-[488px] rounded-md"
+              className="w-full lg:w-[50%] mb-4 lg:h-[488px] rounded-md"
             />
             <div className="lg:w-[50%]">
               <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
                 CENTRE FOR HOUSING AND SUSTAINABLE DEVELOPMENT{' '}
               </h2>
               <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
-                UNILAG-LISA, a research cluster at the University of Lagos, is a
-                dynamic community of scholars, researchers, and innovators
-                dedicated to advancing knowledge in language, information, and
-                systems analysis.
+                The Centre for Housing and Sustainable Development (CHSD) at the
+                University of Lagos is home to evidence-based research and
+                learning for capacity building, policy development and
+                sustainable practices for the housing sector in Africa.
               </p>
               <div className="flex space-x-4 items-center mt-4">
-                <p>For more information</p>
                 <a
                   href="https://chsd.unilag.edu.ng/"
                   target="_blank"
@@ -247,9 +253,6 @@ const ResearchCluster = () => {
       </section>
       <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
-          <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
-          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
             Ready to make a difference? Explore sponsorships and volunteer
             opportunities to create a meaningful impact
