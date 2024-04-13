@@ -93,10 +93,8 @@ const Home = () => {
               <h1 className="text-[24px] md:text-[32px] lg:text-[96px] font-semibold text-[#F5FFF6]">
                 Welcome to URP
               </h1>
-              <p className="text-[12px] md:text-[16px] text-[#D9D9D9] font-medium leading-[150%] mb-4 max-w-[470px] mx-auto">
-                Reshaping the future of human settlements, one city at a
-                time. definition to an undefined world. Welcome to URP, where
-                standards are created.
+              <p className="text-[12px] md:text-[16px] text-[#F0C808] font-medium leading-[150%] mb-4 max-w-[470px] mx-auto">
+                Reshaping the future of human settlements.
               </p>
             </div>
             {/* <span

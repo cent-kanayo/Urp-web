@@ -361,6 +361,92 @@ const Programs = () => {
         <div
           className="mb-6 py-3 px-6 bg-[#FAFAFA]"
           role="button"
+          onClick={() => onDropdownClicked('6')}
+        >
+          <div className="flex justify-between items-center">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
+                Master of Urban Logistics and Transport (MULT)
+              </span>
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
+                Degree, Postgraduate, Full-time
+              </span>
+            </span>
+
+            <span className="flex items-center space-x-6">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
+                Degree, Postgraduate, Full-time
+              </span>
+              {arrowUp6 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div
+            ref={ref6}
+            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
+          >
+            <p className="max-w-[900px] text-[#1B1B1B] mb-6">
+              The Master of Urban Logistics and Transport Policy programme is
+              designed to develop capacity in the teaching, practice and
+              administration of urban logistics and transport policy in
+              Nigeria.  Recognising the crucial role of logistics and transport
+              in the economic growth and development of nations, this programme
+              is conceptualised to provide knowledge and deepen expertise in the
+              field of logistics and transport policy. The program will draw
+              from academia, industry practitioners and global practices, home
+              and abroad, to provide a platform for research and development in
+              the logistics and transport sector aimed at the growth of the
+              freight industry in Nigeria and attendant positive impacts on the
+              economy.
+            </p>
+          </div>
+        </div>
+        <div
+          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
+          role="button"
+          onClick={() => onDropdownClicked('7')}
+        >
+          <div className="flex justify-between items-center">
+            <span className="flex flex-col gap-2">
+              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
+                Master in Urban Management (MUM)
+              </span>
+              <span className="text-[12px] text-[#5B5756] lg:hidden">
+                Degree, Postgraduate, Full-time
+              </span>
+            </span>
+
+            <span className="flex items-center space-x-6">
+              <span className="text-[14px] text-[#5B5756] hidden lg:block">
+                Degree, Postgraduate, Full-time
+              </span>
+              {arrowUp7 ? (
+                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
+              ) : (
+                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
+              )}
+            </span>
+          </div>
+          <div ref={ref7} className="programs-hide max-w-[750px] mt-6">
+            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
+              The growing recognition of local authorities as an essential
+              component of actualising sustainable development has necessitated
+              the need for capacity development for stakeholders in public and
+              private practice at the municipal scale of development. The Master
+              in Urban Management will imbibe graduates with the relevant
+              theoretical knowledge, analytical skills and technical experience
+              required to understand, address and manage global, national and
+              local issues affecting urban communities on behalf of diverse
+              urban populations at municipal, regional and global levels.
+            </p>
+          </div>
+        </div>
+        <div
+          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
+          role="button"
           onClick={() => onDropdownClicked('4')}
         >
           <div className="flex justify-between items-center">
@@ -457,92 +543,6 @@ const Programs = () => {
               Planning, including Planning Infrastructure, Transport Planning,
               GIS, Spatial Data Infrastructure, Urban and Pro-Poor Development,
               etc. 
-            </p>
-          </div>
-        </div>
-        <div
-          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          role="button"
-          onClick={() => onDropdownClicked('6')}
-        >
-          <div className="flex justify-between items-center">
-            <span className="flex flex-col gap-2">
-              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
-                Master of Urban Logistics and Transport (MULT)
-              </span>
-              <span className="text-[12px] text-[#5B5756] lg:hidden">
-                Degree, Postgraduate, Full-time
-              </span>
-            </span>
-
-            <span className="flex items-center space-x-6">
-              <span className="text-[14px] text-[#5B5756] hidden lg:block">
-                Degree, Postgraduate, Full-time
-              </span>
-              {arrowUp6 ? (
-                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
-              ) : (
-                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-              )}
-            </span>
-          </div>
-          <div
-            ref={ref6}
-            className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]"
-          >
-            <p className="max-w-[900px] text-[#1B1B1B] mb-6">
-              The Master of Urban Logistics and Transport Policy programme is
-              designed to develop capacity in the teaching, practice and
-              administration of urban logistics and transport policy in
-              Nigeria.  Recognising the crucial role of logistics and transport
-              in the economic growth and development of nations, this programme
-              is conceptualised to provide knowledge and deepen expertise in the
-              field of logistics and transport policy. The program will draw
-              from academia, industry practitioners and global practices, home
-              and abroad, to provide a platform for research and development in
-              the logistics and transport sector aimed at the growth of the
-              freight industry in Nigeria and attendant positive impacts on the
-              economy.
-            </p>
-          </div>
-        </div>
-        <div
-          className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-          role="button"
-          onClick={() => onDropdownClicked('7')}
-        >
-          <div className="flex justify-between items-center">
-            <span className="flex flex-col gap-2">
-              <span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
-                Master in Urban Management (MUM)
-              </span>
-              <span className="text-[12px] text-[#5B5756] lg:hidden">
-                Degree, Postgraduate, Full-time
-              </span>
-            </span>
-
-            <span className="flex items-center space-x-6">
-              <span className="text-[14px] text-[#5B5756] hidden lg:block">
-                Degree, Postgraduate, Full-time
-              </span>
-              {arrowUp7 ? (
-                <KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
-              ) : (
-                <KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-              )}
-            </span>
-          </div>
-          <div ref={ref7} className="programs-hide max-w-[750px] mt-6">
-            <p className="max-w-[900px] text-[14px] text-[#1B1B1B] mb-6">
-              The growing recognition of local authorities as an essential
-              component of actualising sustainable development has necessitated
-              the need for capacity development for stakeholders in public and
-              private practice at the municipal scale of development. The Master
-              in Urban Management will imbibe graduates with the relevant
-              theoretical knowledge, analytical skills and technical experience
-              required to understand, address and manage global, national and
-              local issues affecting urban communities on behalf of diverse
-              urban populations at municipal, regional and global levels.
             </p>
           </div>
         </div>

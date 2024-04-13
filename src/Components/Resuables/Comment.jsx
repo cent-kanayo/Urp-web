@@ -5,10 +5,10 @@ const Comment = () => {
         <h2 className="text-[24px] lg:text-[2rem] text-[#011717] font-bold mb-4">
           Leave a comment
         </h2>
-        <p className="text-[#090302] text-[14px] mb-6">
+        {/* <p className="text-[#090302] text-[14px] mb-6">
           Drop your feedback below, and we'll be prompt in responding. Thank you
           for being a part of our community
-        </p>
+        </p> */}
         <form action="">
           <div className="flex flex-col mb-6">
             <label htmlFor="email" className="text-[14px] text-[#5B5756] mb-2">

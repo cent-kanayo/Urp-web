@@ -138,7 +138,7 @@ const Header = ({ setSidebar }) => {
                   <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
                     <div className="flex flex-col text-[#333231]">
                       <Link to="/faqs">
-                        <Popover.Button className="popup">FAQ’s</Popover.Button>
+                        <Popover.Button className="popup">FAQs</Popover.Button>
                       </Link>
                       <Link to="urp-journal">
                         <Popover.Button className="popup">

@@ -63,11 +63,10 @@ const Nwaokoro = () => {
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
-              Muyiwa Agunbiade is a visionary with a creative and innovative
-              approach. He's all about using technology to make our communities
-              smarter and more eco-friendly. It's his passion to create
-              sustainable human settlements that are both innovative and good
-              for the environment.
+              Professor Nwokoro was the best student in both M.Sc. programmes;
+              best student at the Department, Faculty and best female student
+              University-wide, RSUST,1988, 1st Ph.D DURP, UI. She is a Member of
+              MNITP, RTP, AAP, SA, ISUH, etc.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -102,40 +101,51 @@ const Nwaokoro = () => {
         </h3>
         <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
-            Dr. Agunbiade is a Town Planner and a Geo Spatial Data Specialist.
-            He is currently an Associate Professor and the Head of Department
-            Urban and Regional Planning at the University of Lagos and Cluster
-            Lead, Spatial Data Infrastructure, Centre for Housing and
-            Sustainable Development, University of Lagos.
+            Professor Nwokoro was the best student in both M.Sc. programmes;
+            best student at the Department, Faculty and best female student
+            University-wide, RSUST,1988, 1st Ph.D DURP, UI. She is a Member of
+            MNITP, RTP, AAP, SA, ISUH, etc. Her research work has consistently
+            focused on Environmental Health and its associated impact on
+            residents’ health status and public health outcomes especially in
+            low- income communities culminating in several publications in
+            journals and books.
           </p>
           <p>
-            He had his first degree in Urban and Regional Planning from OAU Ife,
-            and post-graduate degrees in Geographic Information Systems and
-            Urban and Regional Planning from Ibadan. He completed his Ph.D. in
-            2013 at the University of Melbourne, Australia in Infrastructure
-            Engineering specializing in Spatial Data Infrastructure and Land
-            Administration. He is a member of NITP and a registered Planner with
-            Town Planners Registration Council (TOPREC). He is one of the
-            founding members of Global Spatial Data Infrastructure (GSDI).
+            She serves as the Lead in several esteemed capacities including{' '}
+            <strong>Urban Health and Livability Cluster, </strong> Centre of
+            Excellence in Urbanization and Habitable Cities, University of
+            Lagos, African Research Universities Alliance (ARUA), and AFRETEC,
+            Urban Health, University of Lagos, as well as other health related
+            research teams.
           </p>
           <p>
-            Dr. Agunbiade has worked in various capacities, for three decades,
-            with private consulting firms; government establishments in Nigeria,
-            United Kingdom, and Australia; as well as corporate organizations
-            and development agencies like Partnership for African Social and
-            Governance Research (PASGR), DFID, United Nations, the World Bank,
-            and Foreign Commonwealth Office - FCO.
+            She also serves as an External examiner/ Assessor to several
+            institutions, and a Reviewer of several national and international
+            journals. Professor Nwokoro is renowned for her remarkable positions
+            in the University administration including the{' '}
+            <strong>Deputy Director</strong>, Quality Assurance and SERVICOM
+            Unit, 2015 and <strong>Director</strong>, Centre for General Studies
+            where she made giant strides in upgrading the unit to an online
+            learning platform, (2017 - 2021). She is also currently serving as
+            the Chairman, Auditoria Management Board.
           </p>
           <p>
-            He has contributed to the body of knowledge in Urban Planning and
-            Land Administration through several local and international
-            publications in Journals, Newsletters, and Books chapters and has
-            visited all the continents of the world attending seminars,
-            conferences, and workshops.
+            Some of her National assignments include;{' '}
+            <strong>
+              Team Lead, Kano state on the TET Fund Impact Assessment
+            </strong>{' '}
+            (1999 to 2018) by (TACIA);{' '}
+            <strong>
+              Chairman, Presidential Visitation Panel to Federal University,
+              Otuoke, Bayelsa State, 2021
+            </strong>
+            . She is a very dynamic and proactive, visionary who works under
+            extreme pressure with very strong interpersonal skills and
+            initiative and is married with children.
           </p>
         </div>
       </section>
-      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
+      {/* <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
           <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs
@@ -395,7 +405,7 @@ const Nwaokoro = () => {
                 <p>Reading</p>
                 <p>Volleyball</p>
               </div>
-            </article> */}
+            </article> *
           </div>
         </div>
       </section>
@@ -494,7 +504,7 @@ const Nwaokoro = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-      </section>
+      </section> */}
       <section className="my-[80px]">
         <div className="bg-[#FAFAFA] py-20 h-[346px] flex justify-center">
           <div className="text-center">

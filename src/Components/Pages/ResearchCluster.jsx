@@ -9,6 +9,7 @@ import LargeBuilding from '../../assets/mainDesktop/large-buildings.webp';
 import Globe from '../../assets/mainDesktop/global.png';
 import Traffic from '../../assets/mainDesktop/traffic.png';
 import City from '../../assets/mainDesktop/beautiful-city.png';
+import People from '../../assets/mainDesktop/business-people.webp';
 
 const ResearchCluster = () => {
   return (
@@ -210,6 +211,46 @@ const ResearchCluster = () => {
                 <p>Message cluster lead</p>
                 <a
                   href="mailto:inwokoro@unilag.edu.ng"
+                  aria-label="send email"
+                  className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
+                >
+                  <img
+                    src={Email}
+                    alt="email icon"
+                    className="w-[24px] block mt-2"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-[1199px] flex flex-col lg:flex-row gap-[27px] mb-10">
+            <img
+              src={People}
+              alt="Water front house"
+              className="w-full lg:w-[50%] mb-4 lg:mb-0 rounded-md lg:h-[488px]"
+            />
+            <div className="lg:w-[50%]">
+              <h2 className="text-[14px] lg:text-[40px] text-[#011717] font-bold mb-4">
+                Pro-Poor Development and Urban Governance Research Cluster
+              </h2>
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
+                The Pro-Poor Development and Urban Management Research Cluster
+                seeks to achieve the overarching aim of sustainable cities, as
+                outlined in the Sustainable Development Goals, especially SDG11,
+                but with a particular focus on the urban poor.
+              </p>
+              <p className="text-[#090302] text-[12px] lg:text-[16px] mb-4">
+                The cluster draws on both deductive and inductive philosophical
+                approaches, complemented with citizen science, social listening,
+                and critical and radical urban theory, to produce evidence-based
+                research and professional insights on urban development issues.
+                The cluster also works in a dual context: community based and
+                policy impact studies.
+              </p>
+              <div className="flex space-x-4 items-center mt-4">
+                <p>Message cluster lead</p>
+                <a
+                  href="mailto:tlawanson@unilag.edu.ng"
                   aria-label="send email"
                   className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >

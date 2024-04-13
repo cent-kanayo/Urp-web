@@ -117,7 +117,7 @@ const Sidebar = ({ setSidebar }) => {
                     className="bg-[#1B1B1B] flex items-center px-4 rounded-[4px] py-2 text-[#FDFFFD]"
                     onClick={() => setSidebar(false)}
                   >
-                    <Popover.Button>FAQ’s</Popover.Button>
+                    <Popover.Button>FAQs</Popover.Button>
                   </Link>
                   <Link
                     to="urp-journal"
