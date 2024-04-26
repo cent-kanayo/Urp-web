@@ -149,7 +149,7 @@ const Programs = () => {
       </section>
       <section className="max-w-[800px] mx-auto px-6 lg:px-0">
         <h3 className="text-center text-[32px] lg:text-[40px] font-[600] mb-6">
-          Programmes
+         Academic Programmes
         </h3>
         <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
           <p>
@@ -550,8 +550,7 @@ const Programs = () => {
       <section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3] text-[#1B1B1B]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
-            Ready to make a difference? Explore sponsorships and volunteer
-            opportunities to create a meaningful impact
+          Ready to make a difference and make a meaningful inpact?
           </p>
           <Link
             to="/contact"

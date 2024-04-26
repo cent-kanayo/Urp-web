@@ -666,11 +666,10 @@ RS Page
 }
 .programs-hide {
   display: none;
-  transition: all 0.3 linear;
 }
 .programs-show {
   display: block;
-  transition: all 0.25s linear;
+  transition: all 0.5s linear;
 }
 .faq-bg {
   background: url('./assets/mainDesktop/faq.png'), lightgray 50%;

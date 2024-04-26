@@ -68,10 +68,11 @@ const ResearchCluster = () => {
                 geospatial data, driving advancements that impact our
                 understanding of the world and shaping its future.
               </p>
+              <h3 className='text-[14px] font-semibold'>Contact us</h3>
               <div className="flex space-x-4 items-center mt-4">
-                <p>Message cluster lead</p>
+                <p>Dr. Agunbiade - Cluster Lead</p>
                 <a
-                  href="mailto:magunbiade@unilag.edu.ng"
+                  href="mailto:inwokoro@unilag.edu.ng"
                   aria-label="send email"
                   className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >
@@ -118,10 +119,11 @@ const ResearchCluster = () => {
                 intersections of language, information, and systems analysis to
                 design a future where understanding and technology converge.
               </p>
+              <h3 className='text-[14px] font-semibold'>Contact us</h3>
               <div className="flex space-x-4 items-center mt-4">
-                <p>Message cluster lead</p>
+                <p>Dr. Agunbiade - Laboratory Director</p>
                 <a
-                  href="mailto:magunbiade@unilag.edu.ng"
+                  href="mailto:inwokoro@unilag.edu.ng"
                   aria-label="send email"
                   className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >
@@ -159,10 +161,11 @@ const ResearchCluster = () => {
                 research and knowledge production on sustainable cities, African
                 urbanisation and population dynamics.
               </p>
+              <h3 className='text-[14px] font-semibold'>Contact us</h3>
               <div className="flex space-x-4 items-center mt-4">
-                <p>Message cluster lead</p>
+                <p>Prof. Oduwaye - Cluster Lead</p>
                 <a
-                  href="mailto:loduwaye@unilag.edu.ng"
+                  href="mailto:inwokoro@unilag.edu.ng"
                   aria-label="send email"
                   className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in"
                 >
@@ -207,8 +210,9 @@ const ResearchCluster = () => {
                   <li>(Health) Data Analytics</li>
                 </ul>
               </div>
+              <h3 className='text-[14px] font-semibold'>Contact us</h3>
               <div className="flex space-x-4 items-center mt-4">
-                <p>Message cluster lead</p>
+                <p>Prof. Nwokoro - Cluster Lead</p>
                 <a
                   href="mailto:inwokoro@unilag.edu.ng"
                   aria-label="send email"
@@ -247,8 +251,9 @@ const ResearchCluster = () => {
                 The cluster also works in a dual context: community based and
                 policy impact studies.
               </p>
+              <h3 className='text-[14px] font-semibold'>Contact us</h3>
               <div className="flex space-x-4 items-center mt-4">
-                <p>Message cluster lead</p>
+                <p>Prof. Lawanson - Cluster Lead</p>
                 <a
                   href="mailto:tlawanson@unilag.edu.ng"
                   aria-label="send email"
@@ -295,8 +300,7 @@ const ResearchCluster = () => {
       <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-            Ready to make a difference? Explore sponsorships and volunteer
-            opportunities to create a meaningful impact
+          Ready to make a difference and make a meaningful inpact?
           </p>
           <Link
             to="/contact  "

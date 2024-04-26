@@ -29,7 +29,6 @@ const Footer = () => {
                       about
                     </Link>
                   </li>
-                  <li className="hover:underline">Academics</li>
                   <li className="hover:underline">
                     <Link
                       to="/research-cluster"

@@ -7,8 +7,7 @@ const Contact = () => {
     <section className="grid place-items-center my-[64px] lg:my-[80px] bg-white">
       <div className="capitalize text-center max-w-[844px] mx-auto py-[40px] px-6 lg:px-0  lg:py-[80px] lg:bg-inherit">
         <p className="text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
-          Ready to make a difference? Explore sponsorships and volunteer
-          opportunities to create a meaningful impact
+          Ready to make a difference and make a meaningful inpact?
         </p>
         <Link
           to="/contact"

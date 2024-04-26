@@ -34,6 +34,8 @@ const Activities = ({ text, icon }) => {
     if (type === 'travel')
       return <Icon icon="healthicons:travel-alt-outline" width={48} />;
     if (type === 'aid') return <Icon icon="bx:first-aid" width={48} />;
+    if (type === "nature") return <Icon icon="mdi:flower-lotus-outline" width={48} />
+    if (type === "sight") return <Icon icon="carbon:ibm-watson-discovery" width={48} />
   };
 
   return (
