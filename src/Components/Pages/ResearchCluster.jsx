@@ -282,7 +282,7 @@ const ResearchCluster = () => {
                 The Centre for Housing and Sustainable Development (CHSD) at the
                 University of Lagos is home to evidence-based research and
                 learning for capacity building, policy development and
-                sustainable practices for the housing sector in Africa.
+                sustainable practices for the housing sector in Africa
               </p>
               <div className="flex space-x-4 items-center mt-4">
                 <a
