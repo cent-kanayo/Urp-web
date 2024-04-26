@@ -171,7 +171,7 @@ const PlannersPen = () => {
             contact us for sponsorship or partnership
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-          Ready to make a difference and make a meaningful inpact?
+          Ready to make a difference and make a meaningful impact?
           </p>
           <Link
             to="/contact  "

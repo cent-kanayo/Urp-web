@@ -161,7 +161,7 @@ const StaffPage = () => {
       <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-          Ready to make a difference and make a meaningful inpact?
+          Ready to make a difference and make a meaningful impact?
           </p>
           <Link
             to="/contact"
