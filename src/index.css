@@ -499,7 +499,7 @@ About Page
       rgba(3, 49, 46, 0.19) 0%,
       rgba(3, 49, 46, 0.19) 100%
     ),
-    url('./assets/mainDesktop/cluster.png');
+    url('./assets/mainDesktop/cluster.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -613,14 +613,14 @@ RS Page
   }
 }
 .planners-bg {
-  background: url('./assets/Planners.png'), lightgray 50%;
+  background: url('./assets/Planners.webp'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
 }
 .journal-bg {
-  background: url('./assets/mainDesktop/journalbg.png'), lightgray 50%;
+  background: url('./assets/mainDesktop/journalbg.webp'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -654,7 +654,7 @@ RS Page
   align-items: center;
 }
 .programs-bg {
-  background: url('./assets/mainDesktop/programsbg.png'), lightgray 50%;
+  background: url('./assets/mainDesktop/programsbg.webp'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -672,7 +672,7 @@ RS Page
   transition: all 0.5s linear;
 }
 .faq-bg {
-  background: url('./assets/mainDesktop/faq.png'), lightgray 50%;
+  background: url('./assets/mainDesktop/faq.webp'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -684,7 +684,7 @@ RS Page
 }
 
 .contact-bg {
-  background: url('./assets/mainDesktop/contactbg.png'), lightgray 50%;
+  background: url('./assets/mainDesktop/contactbg.webp'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;

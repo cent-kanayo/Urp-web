@@ -6,9 +6,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import P1 from '../../assets/mainDesktop/stadia.png';
 import Email from '../../assets/icons/email.png';
 import LargeBuilding from '../../assets/mainDesktop/large-buildings.webp';
-import Globe from '../../assets/mainDesktop/global.png';
-import Traffic from '../../assets/mainDesktop/traffic.png';
-import City from '../../assets/mainDesktop/beautiful-city.png';
+import Globe from '../../assets/mainDesktop/global.webp';
+import Traffic from '../../assets/mainDesktop/traffic.webp';
+import City from '../../assets/mainDesktop/beautiful-city.webp';
 import People from '../../assets/mainDesktop/business-people.webp';
 
 const ResearchCluster = () => {
