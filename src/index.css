@@ -478,12 +478,7 @@ About Page
 ================ */
 
 .about-bg {
-  background: linear-gradient(
-      0deg,
-      rgba(3, 49, 46, 0.19) 0%,
-      rgba(3, 49, 46, 0.19) 100%
-    ),
-    url('./assets/mainDesktop/about.png');
+  background-image :url('./assets/mainDesktop/about.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -494,12 +489,7 @@ About Page
   align-items: center;
 }
 .research-bg {
-  background: linear-gradient(
-      0deg,
-      rgba(3, 49, 46, 0.19) 0%,
-      rgba(3, 49, 46, 0.19) 100%
-    ),
-    url('./assets/mainDesktop/cluster.webp');
+  background-image: url('./assets/mainDesktop/cluster.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -510,12 +500,7 @@ About Page
   align-items: center;
 }
 .it-bg {
-  background: linear-gradient(
-      0deg,
-      rgba(3, 49, 46, 0.19) 0%,
-      rgba(3, 49, 46, 0.19) 100%
-    ),
-    url('./assets/mainDesktop/it-bg.png');
+  background-image: url('./assets/mainDesktop/it-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -527,12 +512,7 @@ About Page
 }
 @media (max-width: 768px) {
   .about-bg {
-    background: linear-gradient(
-        0deg,
-        rgba(3, 49, 46, 0.19) 0%,
-        rgba(3, 49, 46, 0.19) 100%
-      ),
-      url('./assets/mainMobile/aboutbg.png');
+    background-image: url('./assets/mainMobile/aboutbg.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -571,12 +551,7 @@ RS Page
 }
 
 .projects-bg {
-  background: linear-gradient(
-      0deg,
-      rgba(3, 49, 46, 0.19) 0%,
-      rgba(3, 49, 46, 0.19) 100%
-    ),
-    url('./assets/mainDesktop/projects.png'), lightgray 50%;
+  background-image: url('./assets/mainDesktop/projects.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -599,12 +574,7 @@ RS Page
 }
 @media (max-width: 768px) {
   .projects-bg {
-    background: linear-gradient(
-        0deg,
-        rgba(3, 49, 46, 0.19) 0%,
-        rgba(3, 49, 46, 0.19) 100%
-      ),
-      url('./assets/mainMobile/projectbg.png');
+    background-image: url('./assets/mainMobile/projectbg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -613,14 +583,14 @@ RS Page
   }
 }
 .planners-bg {
-  background: url('./assets/Planners.webp'), lightgray 50%;
+  background-image: url('./assets/Planners.webp');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
 }
 .journal-bg {
-  background: url('./assets/mainDesktop/journalbg.webp'), lightgray 50%;
+  background: url('./assets/mainDesktop/journalbg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -643,7 +613,7 @@ RS Page
 }
 
 .honours-bg {
-  background: url('./assets/mainDesktop/honoursbg.png'), lightgray 50%;
+  background: url('./assets/mainDesktop/honoursbg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -654,7 +624,7 @@ RS Page
   align-items: center;
 }
 .programs-bg {
-  background: url('./assets/mainDesktop/programsbg.webp'), lightgray 50%;
+  background: url('./assets/mainDesktop/programsbg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -672,7 +642,7 @@ RS Page
   transition: all 0.5s linear;
 }
 .faq-bg {
-  background: url('./assets/mainDesktop/faq.webp'), lightgray 50%;
+  background: url('./assets/mainDesktop/faq.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -684,7 +654,7 @@ RS Page
 }
 
 .contact-bg {
-  background: url('./assets/mainDesktop/contactbg.webp'), lightgray 50%;
+  background: url('./assets/mainDesktop/contactbg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -720,7 +690,7 @@ RS Page
     height: 505px;
   }
   .journal-bg {
-    background: url('./assets/mainMobile/journal.png'), lightgray 50%;
+    background: url('./assets/mainMobile/journal.png');
     height: 320px;
   }
   .journal-welcome {

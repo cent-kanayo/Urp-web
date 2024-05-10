@@ -1,9 +1,18 @@
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
-
+import HandbookPdf from "../../assets/URPStudentHandbook2023-2024.pdf"
 import Contact from '../Resuables/Contact';
 import Alarm from '../../assets/alarm.png';
 
 const Handbook = () => {
+  const onButtonClick = () => {
+    const pdfUrl = HandbookPdf;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "URPStudentHandbook2023-2024.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <main>
       <section className="flex mb-[80px] journal-bg">
@@ -30,7 +39,7 @@ const Handbook = () => {
             </div>
           </div>
           <div className="flex flex-col w-[297px] mb-10">
-            <button className="bg-[#03312E] text-[#FDFFFD] text-[20px] rounded-[2px] py-4 px-[46px] flex items-center space-x-2">
+            <button onClick={onButtonClick} className="bg-[#03312E] text-[#FDFFFD] text-[20px] rounded-[2px] py-4 px-[46px] flex items-center space-x-2">
               <span>
                 <VerticalAlignBottomIcon fontSize="small" />
               </span>

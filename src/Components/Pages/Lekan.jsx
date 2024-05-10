@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import HODLight from '../../assets/Fram.png';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -91,7 +90,7 @@ const Lekan = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Bio
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Damilola is currently an Assistant Lecturer in the Department of
             Urban and Regional Planning, at the University of Lagos. She

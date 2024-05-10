@@ -53,7 +53,7 @@ const PlannersPen = () => {
       <section className="mt-[80px] bg-white py-[80px]">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4 lg:px-0">
           <Link
-            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503183/URP/THE-PLANNERS-PEN-VOLUME-3_ea0ap5.pdf"
+            to="https://res.cloudinary.com/dnewvftac/image/upload/v1715243460/urp-website-files/skmul7tcwf2qpff1xp6l.pdf"
             target="_blank"
             className="lg:max-w-[345px] w-full pen-box pb-2"
           >
@@ -90,7 +90,7 @@ const PlannersPen = () => {
             </div>
           </Link>
           <Link
-            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503187/URP/The_Planners__Pen_Second_Edition_r6w9ym.pdf"
+            to="https://res.cloudinary.com/dnewvftac/image/upload/v1715243450/urp-website-files/wumxbb73f3ako7pjibuq.pdf"
             target="_blank"
             className="lg:max-w-[345px] w-full pen-box pb-2"
           >
@@ -127,7 +127,7 @@ const PlannersPen = () => {
             </div>
           </Link>
           <Link
-            to="https://res.cloudinary.com/dypvf2i6y/image/upload/v1702503194/URP/THE_PLANNER_S_PEN_VOLUME_1_APRIL_2020_t6ayy3.pdf"
+            to="https://res.cloudinary.com/dnewvftac/image/upload/v1715243440/urp-website-files/nvv5xsjeyp5ckth2pykl.pdf"
             target="_blank"
             className="lg:max-w-[345px] w-full pen-box pb-4 lg:pb-0"
           >

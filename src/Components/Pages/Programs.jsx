@@ -151,7 +151,7 @@ const Programs = () => {
         <h3 className="text-center text-[32px] lg:text-[40px] font-[600] mb-6">
          Academic Programmes
         </h3>
-        <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6">
           <p>
             The Department of Urban and Regional Planning offers seven
             programmes accredited by the Town Planners Registration Council of

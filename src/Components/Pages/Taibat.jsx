@@ -1,22 +1,15 @@
 import { useEffect, useState } from 'react';
-import HODLight from '../../assets/Fram.png';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Lawanson from '../../assets/lecturers/lawanson.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Activities from '../Resuables/Activities';
@@ -98,7 +91,7 @@ const Taibat = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Bio
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Taibat Lawanson is Professor of Urban Management and Governance at
             the University of Lagos. She is co-director at the Centre for

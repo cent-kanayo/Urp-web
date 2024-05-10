@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -6,11 +6,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Yem from '../../assets/lecturers/Lyemi.png';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Activities from '../Resuables/Activities';
@@ -92,7 +90,7 @@ const Yemi = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Bio
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Dr. Adeyemi is an Urban and Regional Planner who specializes in
             Physical Planning administration, urban policy formulation,

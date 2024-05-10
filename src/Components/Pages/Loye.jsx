@@ -5,11 +5,9 @@ import LQ from '../../assets/quoteL.png';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Nwa from '../../assets/lecturers/Lloye.png';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Activities from '../Resuables/Activities';
@@ -94,7 +92,7 @@ const Loye = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold text-[#011717] mb-6">
           Bio
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6 px-6 lg:px-0">
           <p>
             Dr. Olayinka Agunloye has held various significant roles in the
             fields of logistics, urban planning, and consultancy. He served as

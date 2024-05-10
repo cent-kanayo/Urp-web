@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Journal from '../../assets/journals.png';
 
@@ -22,18 +21,13 @@ import P6 from '../../assets/Students/p6.png';
 import P7 from '../../assets/Students/p7.png';
 
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Excocard from '../Resuables/Excocard';
-import GetHelp from '../Resuables/GetHelp';
 
 import Book from '../../assets/mainMobile/bookbg.png';
 
-import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 const StudentPage = () => {
   return (
@@ -46,7 +40,7 @@ const StudentPage = () => {
             <h2 className="text-center text-[24px] lg:text-[2.5rem] text-black font-bold mb-6">
               The Students’ association 2023/2024
             </h2>
-            <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col gap-6">
+            <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-6">
               <p>
                 The Urban and Regional Planning Students' Association of Nigeria
                 (URPSAN), University of Lagos Chapter is at the heart of student

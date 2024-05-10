@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
-import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -29,7 +27,7 @@ const About = () => {
         <h2 className="text-center text-[24px] lg:text-[32px] font-[600] mb-6">
           WELCOME TO THE DEPARTMENT OF URBAN AND REGIONAL PLANNING
         </h2>
-        <div className="text-[12px] lg:text-[18px] leading-[150%] flex flex-col">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col">
           <p className="mb-6">
             Founded in 1980, the Department of Urban and Regional Planning at
             the University of Lagos is a leading academic department at the
