@@ -3,16 +3,9 @@ import RQ from '../../assets/quoteR.png';
 import LQ from '../../assets/quoteL.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import Nwa from '../../assets/lecturers/nwaokoro.webp';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
+import Nwa from '../../assets/lecturers/Nwaokoro.jpg';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
-import BookCover from '../../assets/mainDesktop/bookCover.png';
 const Nwaokoro = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -44,14 +37,14 @@ const Nwaokoro = () => {
   return (
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
-        <div className="flex-1">
+        <div className="flex-1 lg:h-[600px] relative">
           <img
             src={Nwa}
             alt="Prof. Immaculata I.C. NWOKORO"
-            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
+            className="h-[320px] lg:h-[100%] w-[100%] object-top"
           />
         </div>
-        <div className="flex-1 bg-[#7F554C]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-blue-700  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />

@@ -22,7 +22,6 @@ import ResearchCluster from './ResearchCluster';
 import StudentSpotlight from './StudentSpotlight';
 import NewsPage from './NewsPage';
 import PlannersPen from './PlannersPen';
-import Journal from './Journal';
 import Projects from './Projects';
 import SingleProject from './SingleProject';
 import Handbook from './Handbook';
@@ -36,7 +35,6 @@ import Taofik from './Taofik';
 import Lekan from './Lekan';
 import Anthony from './Anthony';
 import TheJournal from './TheJournal';
-import Journal1 from './Journal1';
 import NewsLanding from './NewsLanding';
 import SingleProject2 from './SingleProject2';
 import SingleProject3 from './SingleProject3';
@@ -68,7 +66,6 @@ export {
   StudentSpotlight,
   NewsPage,
   PlannersPen,
-  Journal,
   Projects,
   SingleProject,
   Handbook,
@@ -79,7 +76,6 @@ export {
   It,
   Gallery,
   TheJournal,
-  Journal1,
   NewsLanding,
   SingleProject2,
   SingleProject3,

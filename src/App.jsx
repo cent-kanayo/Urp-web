@@ -3,7 +3,6 @@ import SharedLayout from './Components/Layout/SharedLayout';
 import {
   Home,
   StudentPage,
-  AlumniPage,
   StaffPage,
   Agunbiade,
   Leke,
@@ -25,7 +24,6 @@ import {
   StudentSpotlight,
   NewsPage,
   PlannersPen,
-  Journal,
   Projects,
   SingleProject,
   Handbook,
@@ -33,13 +31,10 @@ import {
   Programs,
   Faq,
   Contact,
-  It,
-  Gallery,
   Taofik,
   Lekan,
   Anthony,
   TheJournal,
-  Journal1,
   NewsLanding,
   SingleProject2,
   SingleProject3,
@@ -85,8 +80,6 @@ function App() {
           <Route path="news" element={<NewsLanding />} />
           <Route path="planners-pen" element={<PlannersPen />} />
           <Route path="urp-journal" element={<TheJournal />} />
-          <Route path="journal-v8" element={<Journal />} />
-          <Route path="journal-v9" element={<Journal1 />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/single-project" element={<SingleProject />} />
           <Route

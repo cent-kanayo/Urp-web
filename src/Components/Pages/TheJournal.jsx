@@ -1,5 +1,4 @@
 import Contact from '../Resuables/Contact';
-import { Link } from 'react-router-dom';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 const TheJournal = () => {
   return (
@@ -16,7 +15,7 @@ const TheJournal = () => {
           <h2 className="text-center text-[24px] lg:text-[32px] font-bold mb-6">
             Urban and Regional Planning Review
           </h2>
-          <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col">
+          <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col">
             <p className="mb-6">
               Urban and Regional Planning Review (URPR) is a multidisciplinary
               journal devoted to articles that address contemporary urban and
@@ -43,7 +42,7 @@ const TheJournal = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row lg:justify-center gap-6 mt-20">
-            <Link to="/journal-v8" className="lg:w-[345px] pen-box">
+            <a href='http://urpr.unilag.edu.ng/issue/archive' target='_blank' className="lg:w-[345px] pen-box">
               <article className="bg-[#934B00] px-[17px] py-6 h-[241px] text-[#FDFFFD]">
                 <p className="mb-6">2023</p>
                 <h3 className="mb-6 font-bold text-[24px]">The Journal</h3>
@@ -66,8 +65,8 @@ const TheJournal = () => {
                   Sustainable Development
                 </p>
               </div>
-            </Link>
-            <Link to="/journal-v9" className="lg:w-[345px] pen-box">
+            </a>
+            <a href="http://urpr.unilag.edu.ng/issue/view/269" target='_blank' className="lg:w-[345px] pen-box">
               <article className="bg-[#934B00] px-[17px] py-6 h-[241px] text-[#FDFFFD]">
                 <p className="mb-6">2022</p>
                 <h3 className="mb-6 font-bold text-[24px]">The Journal</h3>
@@ -93,7 +92,7 @@ const TheJournal = () => {
                   Land Use
                 </p>
               </div>
-            </Link>
+            </a>
           </div>
         </section>
       </div>

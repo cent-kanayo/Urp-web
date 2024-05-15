@@ -4,8 +4,7 @@ import RightIcon from '../../assets/right.png';
 
 import Contact from '../Resuables/Contact';
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 
 import { urlFor } from '../../../sanity';
 import { PortableText } from '@portabletext/react';
@@ -94,7 +93,7 @@ const NewsPage = () => {
         <h3 className="text-center text-[24px] lg:text-[40px] font-bold mb-6">
           {post?.subtitle}
         </h3>
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col gap-8 lg:gap-6">
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col gap-8 lg:gap-6">
           <PortableText
             value={post?.body}
             components={myPortableTextComponents}

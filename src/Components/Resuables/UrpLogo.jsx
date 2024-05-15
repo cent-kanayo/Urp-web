@@ -1,5 +1,5 @@
 import LogoGreen from '../../assets/green.svg';
-import LogoWhite from '../../assets/mainDesktop/unilag.webp';
+import LogoWhite from '../../assets/white.png';
 
 const UrpLogo = ({ type }) => {
   if (type === 'green') {
