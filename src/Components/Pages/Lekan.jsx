@@ -204,7 +204,7 @@ const Lekan = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2020</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://ng.boell.org/sites/default/files/202010/LUP%20Debunking%20Myths%20FINAL_0.pdf"
+                      href="https://ng.boell.org/sites/default/files/2020-10/LUP%20Debunking%20Myths%20FINAL_0.pdf"
                       target="_blank"
                     >
                       Lagos Urban Planning: Debunking Myths & Stereotypes. Women
@@ -216,7 +216,7 @@ const Lekan = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://ng.boell.org/sites/default/files/202010/LUP%20Debunking%20Myths%20FINAL_0.pdf"
+                        href="https://ng.boell.org/sites/default/files/2020-10/LUP%20Debunking%20Myths%20FINAL_0.pdf"
                         target="_blank"
                       >
                         View Publication

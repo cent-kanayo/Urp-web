@@ -60,7 +60,7 @@ const Fade = () => {
               Dr Victor Onifade is an astute researcher, passionate about
               Housing and Urban management related issues who always looking for
               an opportunity to do better, learn new skills and achieve
-              greatness in my field of choice{' '}
+              greatness in my field of choice.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -220,7 +220,7 @@ const Fade = () => {
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://d1wqtxts1xzle7.cloudfront.net/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria-libre.pdf?1672609787=&response-content-disposition=inline%3B+filename%3DInfluence_of_Housing_Attributes_on_Housi.pdf&Expires=1695127449&Signature=UC6TQJoBIVjeEllGsuz5jz56B1zWUdLVTdz5BV5YQJ3KYvxCa-tVWKZKkNpKWgltSGXMLuj5cfT8~E4R0aH6wgW-lmtEZ5ewt9pLuB-B73M495uilGsbjiE-8QnCTS1kfF7eUt29pRKlHUYI4JKOMZyjrbkh16HLCzXNw5kOubH44lmUJNjssl0CJ4F29JXzrw8LU-nNaVyI1L0D5CIHxGuTil9iMPKamVdN5A9rpYmsvWUQC-3lKQzE6BGvGy-o7kGi-B4kPtLmHrM5ubBYxM0t0FRqlHmXVeJM34kja~Y~0xbzKgjvtsxqAgXqXYKOlvhVkCsvTK4LZztOqqMaAQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+                      href="https://www.academia.edu/download/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria.pdf"
                       target="_blank"
                     >
                       Influence of Housing Attributes on Housing Satisfaction in
@@ -232,7 +232,7 @@ const Fade = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://d1wqtxts1xzle7.cloudfront.net/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria-libre.pdf?1672609787=&response-content-disposition=inline%3B+filename%3DInfluence_of_Housing_Attributes_on_Housi.pdf&Expires=1695127449&Signature=UC6TQJoBIVjeEllGsuz5jz56B1zWUdLVTdz5BV5YQJ3KYvxCa-tVWKZKkNpKWgltSGXMLuj5cfT8~E4R0aH6wgW-lmtEZ5ewt9pLuB-B73M495uilGsbjiE-8QnCTS1kfF7eUt29pRKlHUYI4JKOMZyjrbkh16HLCzXNw5kOubH44lmUJNjssl0CJ4F29JXzrw8LU-nNaVyI1L0D5CIHxGuTil9iMPKamVdN5A9rpYmsvWUQC-3lKQzE6BGvGy-o7kGi-B4kPtLmHrM5ubBYxM0t0FRqlHmXVeJM34kja~Y~0xbzKgjvtsxqAgXqXYKOlvhVkCsvTK4LZztOqqMaAQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+                        href="https://www.academia.edu/download/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria.pdf"
                         target="_blank"
                       >
                         View Publication

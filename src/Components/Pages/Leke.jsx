@@ -58,7 +58,7 @@ const Leke = () => {
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Professor Leke Oduwaye is well-known for his deep appreciation of
               knowledge sharing and his unwavering commitment to fostering an
-              environment of mutual respect among colleagues and peers
+              environment of mutual respect among colleagues and peers.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />

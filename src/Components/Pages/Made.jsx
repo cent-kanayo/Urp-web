@@ -59,7 +59,7 @@ const Made = () => {
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Dr. Farinmade is a saintly scholar, operating with the grace and
-              extraordinary power of God in his scholarly pursuits
+              extraordinary power of God in his scholarly pursuits.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -169,7 +169,7 @@ const Made = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2018</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1016/j.jum.2018.03.001"
+                      href="https://www.researchgate.net/publication/324719678_Urban_Safety_and_Security_in_Lagos_Metropolis_Nigeria_CCTV_Inclusive_Design_for_Sustainable_Urban_Development"
                       target="_blank"
                     >
                       Urban Safety and Security in Lagos Metropolis, Nigeria:
@@ -181,7 +181,7 @@ const Made = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
+                          href="https://www.researchgate.net/publication/324719678_Urban_Safety_and_Security_in_Lagos_Metropolis_Nigeria_CCTV_Inclusive_Design_for_Sustainable_Urban_Development"
                         target="_blank"
                       >
                         View Publication

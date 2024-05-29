@@ -58,7 +58,7 @@ const Niji = () => {
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Olufemi Adeniji is an introverted music enthusiast with a thirst
-              for knowledge and an unwavering commitment to his core values
+              for knowledge and an unwavering commitment to his core values.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />

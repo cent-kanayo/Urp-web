@@ -57,7 +57,7 @@ const Anthony = () => {
               A lifelong learner with an insatiable curiosity on a mission to
               explore the boundless realms of knowledge and creativity, striving
               to positively impact the world through innovation, empathy, and
-              continuous self-improvement
+              continuous self-improvement.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />

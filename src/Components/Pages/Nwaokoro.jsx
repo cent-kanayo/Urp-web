@@ -37,11 +37,11 @@ const Nwaokoro = () => {
   return (
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
-        <div className="flex-1 lg:h-[600px] relative">
+        <div className="flex-1 lg:h-[600px] relative bg-[#f0f0f0]">
           <img
             src={Nwa}
             alt="Prof. Immaculata I.C. NWOKORO"
-            className="h-[320px] lg:h-[100%] w-[100%] object-top"
+            className="h-[320px] lg:h-[100%] w-[100%] object-contain"
           />
         </div>
         <div className="flex-1 bg-blue-700  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">

@@ -28,26 +28,13 @@ const PlannersPen = () => {
         </h2>
       </section>
       <section className="max-w-[800px] mx-auto">
-        <div className="text-[12px] lg:text-[20px] leading-[150%] flex flex-col px-[35px] lg:px-0">
-          <p className="mb-10 lg:mb-20">
-            Since its inception in April, 2020, the aim of The Planners’ Pen has
-            been to demystify Urban Planning -making it relatable, exciting,
-            interesting and innovative for Planning Students in Nigeria. In our
-            last edition, we began a conscious effort to achieve this aim by
-            focusing on one of the current trends in Urban planning –
-            Sustainability.
+        <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col px-[35px] lg:px-0">
+          <p className="mb-10">
+          The Planner’s Pen was a student run magazine which commenced publication in April, 2020. The aim of The Planners’ Pen was to demystify Urban Planning - making it relatable, exciting, interesting and innovative for Planning Students in Nigeria. Each edition featured submissions by students who initiated discussions, fostered knowledge sharing and created a space for improving the perception of the course.
           </p>
           <p className="mb-10 lg:mb-20">
-            In this edition, we bring to your attention, Computed-Aided Design
-            (CAD), a very vital tool in present day Urban Planning. We featured
-            seasoned designers who will walk us through their journey to
-            achieving expertise in popular CAD applications. Poems, spotlights
-            and games are also featured in this edition. It is our desire, as
-            always, that you enjoy reading and recommend the magazine your
-            network. We are very grateful to all our contributors and the Lagos
-            Urban Development Initiative (LUDI) for the continued support.
+          The project was also supported by the Lagos Urban Development Initiative (LUDI). Happy Reading!
           </p>
-          <p>Happy Reading!</p>
         </div>
       </section>
       <section className="mt-[80px] bg-white py-[80px]">
@@ -168,7 +155,7 @@ const PlannersPen = () => {
       <section className="grid place-items-center px-2 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
           <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
-            contact us for sponsorship or partnership
+          for more enquiries
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
           Ready to make a difference and make a meaningful impact?

@@ -17,32 +17,22 @@ const TheJournal = () => {
           </h2>
           <div className="text-[12px] lg:text-[16px] leading-[150%] flex flex-col">
             <p className="mb-6">
-              Urban and Regional Planning Review (URPR) is a multidisciplinary
-              journal devoted to articles that address contemporary urban and
-              regional issues and is directed towards an audience that includes
-              practitioners, policymakers, scholars and students.
+            The Urban and Regional Planning Review (URPR) is a multidisciplinary journal devoted to increasing the knowledge and practice of  contemporary urban and regional planning and is directed towards an audience that includes practitioners, policymakers, scholars and students.
             </p>
             <p className="mb-6">
-              The Journal aspires to contribute to the body of substantive and
-              methodological knowledge concerning public policies, programs, and
-              administration. It particularly seeks to promote scholarship and
+            The Journal aspires to contribute to the body of substantive and methodological knowledge concerning public policies, programs, and administration. It particularly seeks to promote scholarship and research in urban planning, development and management.
               research in urban planning, development and management.
             </p>
             <p className="mb-6">
-              Other areas of emphasis include the relationship of Urban and
-              Regional Planning to environmental management, architecture,
-              building and construction management, estate management, landscape
-              architecture, engineering, pure and applied sciences, arts, law
-              and humanities.
+            Other areas of emphasis include the examining and strengthening interlinkages between Planning and related fields including Environmental Management, Architecture, Building and Construction Management, Estate Management, Landscape Architecture, Engineering, Pure and Applied Sciences, Arts, Law and Humanities.and applied sciences, arts, law
+              
             </p>
             <p className="">
-              Urban and Regional Planning Review (URPR) is published annually by
-              the Department of Urban and Regional Planning of the University of
-              Lagos, Akoka, Yaba, Lagos, Nigeria.
+            The Urban and Regional Planning Review (URPR) is published annually by the Department of Urban and Regional Planning at the University of Lagos, Nigeria.
             </p>
           </div>
           <div className="flex flex-col md:flex-row lg:justify-center gap-6 mt-20">
-            <a href='http://urpr.unilag.edu.ng/issue/archive' target='_blank' className="lg:w-[345px] pen-box">
+            <a href='http://urpr.unilag.edu.ng/issue/view/277' target='_blank' className="lg:w-[345px] pen-box">
               <article className="bg-[#934B00] px-[17px] py-6 h-[241px] text-[#FDFFFD]">
                 <p className="mb-6">2023</p>
                 <h3 className="mb-6 font-bold text-[24px]">The Journal</h3>

@@ -60,7 +60,7 @@ const Alade = () => {
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
               Adewale Alade is recognized as a quiet yet visionary mentor and a
               dedicated team player who consistently contributes to the success
-              and growth of those around him
+              and growth of those around him.
             </p>
             <div className="flex justify-end">
               <img src={RQ} alt="" className="w-[29px] lg:w-auto" />

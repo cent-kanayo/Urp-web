@@ -392,9 +392,7 @@ const Faq = () => {
           </div>
           <div ref={ref6} className="programs-hide mt-6">
             <p>
-              Our faculty are very open to interacting and partnering with
-              prospective students, researchers, partners, and interested
-              members of the public. You can connect directly with our{' '}
+            Our staff are very open to interacting and partnering with prospective students, researchers, partners, and interested members of the public. You can connect directly with our {' '}
               <Link to="/staff" className="text-blue-500 hover:underline">
                 staff{' '}
               </Link>{' '}

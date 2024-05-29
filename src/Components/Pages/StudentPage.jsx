@@ -227,20 +227,10 @@ const StudentPage = () => {
               Access previous projects
             </h2>
             <p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
-              Delve into this repository, where a wealth of projects awaits
-              exploration, each serving as a testament to the intellectual
-              vibrancy, boundless creativity, and unwavering dedication that
-              define our community. The diverse spectrum of projects within
-              reflects the multifaceted nature of our pursuits, ranging from
-              groundbreaking.....
+            Our student projects reflect the intellectual vibrancy, boundless creativity, and unwavering dedication that our students bring to solving contemporary urban challenges in our local context.
             </p>
             <p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-              Delve into this repository, where a wealth of projects awaits
-              exploration, each serving as a testament to the intellectual
-              vibrancy, boundless creativity, and unwavering dedication that
-              define our community. The diverse spectrum of projects within
-              reflects the multifaceted nature of our pursuits, ranging from
-              groundbreaking.....
+            Our student projects reflect the intellectual vibrancy, boundless creativity, and unwavering dedication that our students bring to solving contemporary urban challenges in our local context.
             </p>
             <div>
               <Link
@@ -266,6 +256,9 @@ const StudentPage = () => {
       </section> */}
       <section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3]">
         <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+        <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
+          For more enquiries
+          </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
           Ready to make a difference and make a meaningful impact?
           </p>
