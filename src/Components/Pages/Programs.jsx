@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 const Programs = () => {
 	const [arrowUp1, setArrowUp1] = useState(false);
 	const [arrowUp2, setArrowUp2] = useState(false);
-	const [arrowUp3, setArrowUp3] = useState(false);
 	const [arrowUp4, setArrowUp4] = useState(false);
 	const [arrowUp5, setArrowUp5] = useState(true);
 	const [arrowUp6, setArrowUp6] = useState(false);
@@ -19,7 +18,6 @@ const Programs = () => {
 
 	const ref1 = useRef(null);
 	const ref2 = useRef(null);
-	const ref3 = useRef(null);
 	const ref4 = useRef(null);
 	const ref5 = useRef(null);
 	const ref6 = useRef(null);
@@ -28,14 +26,12 @@ const Programs = () => {
 		if (tarket === "1") {
 			ref1.current.classList.toggle("programs-show");
 			ref2.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref4.current.classList.remove("programs-show");
 			ref5.current.classList.remove("programs-show");
 			ref6.current.classList.remove("programs-show");
 			ref7.current.classList.remove("programs-show");
 			setArrowUp1((prev) => !prev);
 			setArrowUp2(false);
-			setArrowUp3(false);
 			setArrowUp4(false);
 			setArrowUp5(false);
 			setArrowUp6(false);
@@ -44,46 +40,27 @@ const Programs = () => {
 		if (tarket === "2") {
 			ref2.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref4.current.classList.remove("programs-show");
 			ref5.current.classList.remove("programs-show");
 			ref6.current.classList.remove("programs-show");
 			ref7.current.classList.remove("programs-show");
 			setArrowUp2((prev) => !prev);
 			setArrowUp1(false);
-			setArrowUp3(false);
 			setArrowUp4(false);
 			setArrowUp5(false);
 			setArrowUp6(false);
 			setArrowUp7(false);
 		}
-		if (tarket === "3") {
-			ref3.current.classList.toggle("programs-show");
-			ref1.current.classList.remove("programs-show");
-			ref2.current.classList.remove("programs-show");
-			ref4.current.classList.remove("programs-show");
-			ref5.current.classList.remove("programs-show");
-			ref6.current.classList.remove("programs-show");
-			ref7.current.classList.remove("programs-show");
-			setArrowUp3((prev) => !prev);
-			setArrowUp1(false);
-			setArrowUp2(false);
-			setArrowUp4(false);
-			setArrowUp5(false);
-			setArrowUp6(false);
-			setArrowUp7(false);
-		}
+		
 		if (tarket === "4") {
 			ref4.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref2.current.classList.remove("programs-show");
 			ref5.current.classList.remove("programs-show");
 			ref6.current.classList.remove("programs-show");
 			ref7.current.classList.remove("programs-show");
 			setArrowUp2((prev) => !prev);
 			setArrowUp1(false);
-			setArrowUp3(false);
 			setArrowUp2(false);
 			setArrowUp5(false);
 			setArrowUp6(false);
@@ -91,14 +68,12 @@ const Programs = () => {
 		if (tarket === "5") {
 			ref5.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref4.current.classList.remove("programs-show");
 			ref2.current.classList.remove("programs-show");
 			ref6.current.classList.remove("programs-show");
 			ref7.current.classList.remove("programs-show");
 			setArrowUp5((prev) => !prev);
 			setArrowUp1(false);
-			setArrowUp3(false);
 			setArrowUp4(false);
 			setArrowUp2(false);
 			setArrowUp6(false);
@@ -107,14 +82,12 @@ const Programs = () => {
 		if (tarket === "6") {
 			ref6.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref2.current.classList.remove("programs-show");
 			ref4.current.classList.remove("programs-show");
 			ref5.current.classList.remove("programs-show");
 			ref7.current.classList.remove("programs-show");
 			setArrowUp6((prev) => !prev);
 			setArrowUp1(false);
-			setArrowUp3(false);
 			setArrowUp4(false);
 			setArrowUp5(false);
 			setArrowUp7(false);
@@ -123,14 +96,12 @@ const Programs = () => {
 		if (tarket === "7") {
 			ref7.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
-			ref3.current.classList.remove("programs-show");
 			ref4.current.classList.remove("programs-show");
 			ref5.current.classList.remove("programs-show");
 			ref6.current.classList.remove("programs-show");
 			ref2.current.classList.remove("programs-show");
 			setArrowUp7((prev) => !prev);
 			setArrowUp1(false);
-			setArrowUp3(false);
 			setArrowUp4(false);
 			setArrowUp5(false);
 			setArrowUp6(false);
@@ -213,7 +184,7 @@ const Programs = () => {
 						institutions such as Harvard University, the University of Maryland,
 						the University of Melbourne, and Erasmus University, amongst others.
 					</p>
-					<div className="flex justify-between items-center bg-gray-200 px-6 py-4 rounded-sm">
+					<div className="flex flex-col lg:flex-row gap-4 justify-between items-center bg-gray-200 px-6 py-4 rounded-sm">
 						<p>
 							To learn more about academic programmes, check out the student
 							handbook.
@@ -222,8 +193,7 @@ const Programs = () => {
 							<a
 								className="bg-[#03312E] text-[#FDFFFD] text-[14x] rounded-[2px] py-4 px-[16px] flex items-center space-x-2 hover:bg-[#245e5b]"
 								href="http://urp.unilag.edu.ng/assets/URPStudentHandbook2023-2024.pdf"
-                target="_blank"
-                >
+								target="_blank">
 								<span className="whitespace-nowrap">Download Handbook</span>
 								<span>
 									<VerticalAlignBottomIcon fontSize="small" />
@@ -329,48 +299,6 @@ const Programs = () => {
 				<div
 					className="mb-6 py-3 px-6 bg-[#FAFAFA]"
 					role="button"
-					onClick={() => onDropdownClicked("3")}>
-					<div className="flex justify-between items-center">
-						<span className="flex flex-col gap-2">
-							<span className="text-[14px] lg:text-[20px] text-[#1B1B1B]">
-								Master in Urban and Regional Planning (MURP)
-							</span>
-							<span className="text-[12px] text-[#5B5756] lg:hidden">
-								Degree, Postgraduate, Part-time
-							</span>
-						</span>
-
-						<span className="flex items-center space-x-6">
-							<span className="text-[14px] text-[#5B5756] hidden lg:block">
-								Degree, Postgraduate, Part-time
-							</span>
-							{arrowUp3 ? (
-								<KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
-							) : (
-								<KeyboardArrowDownOutlinedIcon htmlColor="#5b5756" />
-							)}
-						</span>
-					</div>
-					<div
-						ref={ref3}
-						className="programs-hide max-w-[750px] mt-6 text-[12px] lg:text-[14px]">
-						<p className="max-w-[900px] text-[#1B1B1B] mb-6">
-							The Master in Urban and Regional Planning emphasises the need for
-							graduate-level training to deepen the understanding of urban
-							planning and environmental problems within the local context. The
-							programme seeks to produce highly skilled town planners capable of
-							solving contemporary planning and development problems, adapting
-							their knowledge to both local and international contexts. Blending
-							integrated lectures, hands-on learning, and experiential practice,
-							the MURP Programme enhances an in-depth understanding of complex
-							environmental issues and equips students in the exploration and
-							design of compatible solutions.
-						</p>
-					</div>
-				</div>
-				<div
-					className="mb-6 py-3 px-6 bg-[#FAFAFA]"
-					role="button"
 					onClick={() => onDropdownClicked("6")}>
 					<div className="flex justify-between items-center">
 						<span className="flex flex-col gap-2">
@@ -378,13 +306,13 @@ const Programs = () => {
 								Master of Urban Logistics and Transport (MULT)
 							</span>
 							<span className="text-[12px] text-[#5B5756] lg:hidden">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-time
 							</span>
 						</span>
 
 						<span className="flex items-center space-x-6">
 							<span className="text-[14px] text-[#5B5756] hidden lg:block">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-time
 							</span>
 							{arrowUp6 ? (
 								<KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
@@ -422,13 +350,13 @@ const Programs = () => {
 								Master in Urban Management (MUM)
 							</span>
 							<span className="text-[12px] text-[#5B5756] lg:hidden">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-time
 							</span>
 						</span>
 
 						<span className="flex items-center space-x-6">
 							<span className="text-[14px] text-[#5B5756] hidden lg:block">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-time
 							</span>
 							{arrowUp7 ? (
 								<KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
@@ -461,13 +389,13 @@ const Programs = () => {
 								Master of Philosophy in Urban and Regional Planning (MPHIL)
 							</span>
 							<span className="text-[12px] text-[#5B5756] lg:hidden">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-Time/Full-time
 							</span>
 						</span>
 
 						<span className="flex items-center space-x-6">
 							<span className="text-[14px] text-[#5B5756] hidden lg:block">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-Time/Full-time
 							</span>
 							{arrowUp4 ? (
 								<KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
@@ -503,13 +431,13 @@ const Programs = () => {
 								Doctor of Philosophy in Urban and Regional Planning (PhD)
 							</span>
 							<span className="text-[12px] text-[#5B5756] lg:hidden">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-Time/Full-time
 							</span>
 						</span>
 
 						<span className="flex items-center space-x-6">
 							<span className="text-[14px] text-[#5B5756] hidden lg:block">
-								Degree, Postgraduate, Full-time
+								Degree, Postgraduate, Part-Time/Full-time
 							</span>
 							{arrowUp5 ? (
 								<KeyboardArrowUpOutlinedIcon htmlColor="#5b5756" />
@@ -551,7 +479,10 @@ const Programs = () => {
 				</div>
 			</section>
 			<section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3] text-[#1B1B1B]">
-				<div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+				<div className="text-center max-w-[844px] mx-auto py-[80px]">
+					<h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
+						For more enquiries
+					</h2>
 					<p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[529px] mx-auto mb-4">
 						Ready to make a difference and make a meaningful impact?
 					</p>
