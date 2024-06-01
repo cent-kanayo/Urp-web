@@ -122,7 +122,7 @@ const ResearchCluster = () => {
 							<div className="flex space-x-4 items-center mt-4">
 								<p>Dr. Agunbiade - Laboratory Director</p>
 								<a
-								href="mailto:magunbiade@unilag.edu.ng"
+									href="mailto:magunbiade@unilag.edu.ng"
 									aria-label="send email"
 									className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in">
 									<img
@@ -160,19 +160,19 @@ const ResearchCluster = () => {
 								urbanisation and population dynamics generally and specifically
 								on the following areas with emphasis on Africa:
 							</p>
-              <ul className="list-disc pl-10 mb-2">
-                <li>Resilient Cities.</li>
-                <li>Sustainable Urban Transport.</li>
-                <li>Cities and Smart Housing.</li>
-                <li>Cities Land Use Dynamics.</li>
-                <li>Environmental Changes in Cities.</li>
-                <li>City Development Policy</li>
-              </ul>
+							<ul className="list-disc pl-10 mb-2">
+								<li>Resilient Cities.</li>
+								<li>Sustainable Urban Transport.</li>
+								<li>Cities and Smart Housing.</li>
+								<li>Cities Land Use Dynamics.</li>
+								<li>Environmental Changes in Cities.</li>
+								<li>City Development Policy</li>
+							</ul>
 							<h3 className="text-[14px] font-semibold">Contact us</h3>
 							<div className="flex space-x-4 items-center mt-4">
 								<p>Prof. Oduwaye - Cluster Lead</p>
 								<a
-								href="mailto:aoduwaye@unilag.edu.ng"
+									href="mailto:aoduwaye@unilag.edu.ng"
 									aria-label="send email"
 									className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in">
 									<img
@@ -260,7 +260,7 @@ const ResearchCluster = () => {
 							<div className="flex space-x-4 items-center mt-4">
 								<p>Prof. Lawanson - Cluster Lead</p>
 								<a
-								href="mailto:tlawanson@unilag.edu.ng"
+									href="mailto:tlawanson@unilag.edu.ng"
 									aria-label="send email"
 									className="bg-gray-100 py-2 px-4 rounded-md hover:animate-pulse hover:shadow-md transition-all duration-300 ease-in">
 									<img
@@ -302,6 +302,9 @@ const ResearchCluster = () => {
 			</section>
 			<section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
 				<div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+					<h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
+						For more enquiries
+					</h2>
 					<p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
 						Ready to make a difference and make a meaningful impact?
 					</p>

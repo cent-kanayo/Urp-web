@@ -33,7 +33,7 @@ import It from './It';
 import Gallery from './Gallery';
 import Taofik from './Taofik';
 import Lekan from './Lekan';
-import Anthony from './Anthony';
+import Richard from './Richard';
 import TheJournal from './TheJournal';
 import NewsLanding from './NewsLanding';
 import SingleProject2 from './SingleProject2';
@@ -60,7 +60,7 @@ export {
   Laja,
   Taofik,
   Lekan,
-  Anthony,
+  Richard,
   About,
   ResearchCluster,
   StudentSpotlight,

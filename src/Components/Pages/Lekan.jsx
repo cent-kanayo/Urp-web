@@ -11,6 +11,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Activities from '../Resuables/Activities';
+
+import Lecturer from "../../assets/lecturers/dami.png"
 const Lekan = () => {
   const [tab1, setTab1] = useState(false);
   const [tab2, setTab2] = useState(false);
@@ -43,13 +45,13 @@ const Lekan = () => {
     <main>
       <section className="h-[600px] flex flex-col lg:flex-row mb-[80px]">
         <div className="flex-1 bg-[#9B9FAB]">
-          {/* <img
-            src={Lawanson}
+          <img
+            src={Lecturer}
             alt="Mrs. Damilola M. OLALEKAN"
            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
-          /> */}
+          />
         </div>
-        <div className="flex-1 bg-[#BF4468] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
+        <div className="flex-1 bg-[#19284a] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
           <div className="lg:w-[525px] mx-auto">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />

@@ -489,7 +489,7 @@ About Page
   align-items: center;
 }
 .research-bg {
-  background-image: url('./assets/mainDesktop/cluster.webp');
+  background-image: url('./assets/mainDesktop/projects.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -590,9 +590,10 @@ RS Page
   width: 100%;
 }
 .journal-bg {
-  background: url('./assets/mainDesktop/journalbg.webp');
+  background: url('./assets/mainDesktop/sports.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 600px;
   position: relative;
   width: 100%;
@@ -624,9 +625,10 @@ RS Page
   align-items: center;
 }
 .programs-bg {
-  background: url('./assets/mainDesktop/programsbg.webp');
+  background: url('./assets/mainDesktop/senate.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 600px;
   position: relative;
   width: 100%;
@@ -642,9 +644,10 @@ RS Page
   transition: all 0.5s linear;
 }
 .faq-bg {
-  background: url('./assets/mainDesktop/faq.webp');
+  background: url('./assets/mainDesktop/senate.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 600px;
   position: relative;
   width: 100%;
@@ -654,9 +657,10 @@ RS Page
 }
 
 .contact-bg {
-  background: url('./assets/mainDesktop/contactbg.webp');
+  background: url('./assets/mainDesktop/mila.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   height: 600px;
   position: relative;
   width: 100%;

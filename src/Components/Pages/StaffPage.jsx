@@ -5,7 +5,7 @@ import AG from '../../assets/admin/agu.webp';
 import Vic from '../../assets/admin/victor.webp';
 import Odu from '../../assets/admin/odu.webp';
 import Law from '../../assets/admin/lawan.webp';
-import Nwa from '../../assets/admin/nwa.webp';
+import Nwa from '../../assets/lecturers/Nwaokoro.jpg';
 import Loye from '../../assets/admin/loye.webp';
 import Farin from '../../assets/admin/farin.webp';
 import jimoh from '../../assets/admin/jimoh.webp';
@@ -18,17 +18,17 @@ import Niji from '../../assets/admin/adeniji.webp';
 import Alade from '../../assets/lecturers/Alade.png';
 import Salau from '../../assets/lecturers/Salau.png';
 import Icon from '../../assets/lecturers/Icon.png';
-import Jet from '../../assets/jet.png';
+import Dami from "../../assets/lecturers/dami.png"
+import Richard from "../../assets/lecturers/Richard.png"
+
+
 
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Excocard from '../Resuables/Excocard';
 
-import GetHelp from '../Resuables/GetHelp';
 const StaffPage = () => {
   return (
     <main>
@@ -146,20 +146,20 @@ const StaffPage = () => {
           <Excocard
             name="Mrs. M.D. OLALEKAN"
             role="Graduate Assistant"
-            image={Icon}
+            image={Dami}
             link={'dami-olalekan'}
           />
 
           <Excocard
             name="Mr. R.E. ONUIGBOJE"
             role="Graduate Assistant"
-            image={Icon}
+            image={Richard}
             link={'richard-onuigboje'}
           />
         </div>
       </section>
       <section className="grid place-items-center px-4 lg:px-0 my-[64px] lg:my-[80px] bg-[#CDE3E3]">
-        <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+        <div className="text-center max-w-[844px] mx-auto py-[80px]">
         <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
           For more enquiries
           </h2>

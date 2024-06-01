@@ -33,7 +33,7 @@ import {
   Contact,
   Taofik,
   Lekan,
-  Anthony,
+  Richard,
   TheJournal,
   NewsLanding,
   SingleProject2,
@@ -72,7 +72,7 @@ function App() {
           <Route path="staff/d-odekunle" element={<Kunle />} />
           <Route path="staff/taofik-salau" element={<Taofik />} />
           <Route path="staff/dami-olalekan" element={<Lekan />} />
-          <Route path="staff/richard-onuigboje" element={<Anthony />} />
+          <Route path="staff/richard-onuigboje" element={<Richard />} />
           <Route path="about" element={<About />} />
           <Route path="research-cluster" element={<ResearchCluster />} />
           <Route path="student-spotlight/:id" element={<StudentSpotlight />} />

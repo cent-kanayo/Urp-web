@@ -255,7 +255,7 @@ const StudentPage = () => {
         />
       </section> */}
       <section className="grid place-items-center px-4 lg:px-0 my-[80px] bg-[#CDE3E3]">
-        <div className="capitalize text-center max-w-[844px] mx-auto py-[80px]">
+        <div className="text-center max-w-[844px] mx-auto py-[80px]">
         <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
           For more enquiries
           </h2>

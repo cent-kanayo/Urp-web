@@ -86,7 +86,7 @@ const TheJournal = () => {
           </div>
         </section>
       </div>
-      <Contact h2="contact us for sponsorship or partnership" />
+      <Contact h2="For more enquiries" />
     </main>
   );
 };

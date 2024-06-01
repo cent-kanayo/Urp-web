@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Contact = ({h2}) => {
   return (
     <section className="grid place-items-center my-[64px] lg:my-[80px] bg-white">
-      <div className="capitalize text-center max-w-[844px] mx-auto py-[40px] px-6 lg:px-0  lg:py-[80px] lg:bg-inherit">
+      <div className="text-center max-w-[844px] mx-auto py-[40px] px-6 lg:px-0  lg:py-[80px] lg:bg-inherit">
       <h2 className="text-[24px] lg:text-[40px] font-bold leading-[150%] text-[#010a09] mb-4">
          {h2}
           </h2>
