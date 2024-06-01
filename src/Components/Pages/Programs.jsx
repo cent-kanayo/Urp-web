@@ -51,7 +51,7 @@ const Programs = () => {
 			setArrowUp6(false);
 			setArrowUp7(false);
 		}
-		
+
 		if (tarket === "4") {
 			ref4.current.classList.toggle("programs-show");
 			ref1.current.classList.remove("programs-show");
@@ -180,7 +180,7 @@ const Programs = () => {
 						</ul>
 					</div>
 					<p>
-						Our students also proceed to advanced studies in reputable
+						Our students have proceeded to advanced studies in reputable
 						institutions such as Harvard University, the University of Maryland,
 						the University of Melbourne, and Erasmus University, amongst others.
 					</p>

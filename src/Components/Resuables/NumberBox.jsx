@@ -1,6 +1,6 @@
 const NumberBox = ({ text, heading, sub, color }) => {
   return (
-    <article className="box capitalize">
+    <article className="box">
       <p className="p1 text-[18px] md:text-[20px]">{text}</p>
       {color === 'green' && (
         <h2 className="text-[#024B4B] text-[56px] font-bold leading-[150%]">

@@ -239,7 +239,7 @@ const Faq = () => {
       </section>
       <section className="max-w-[738px] mx-auto mb-[80px] px-6 lg:px-0">
         <div
-          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          className="py-2 px-4 border-b-[1px] border-[#1B1B1B]"
           role="button"
           onClick={() => onDropdownClicked('1')}
         >
@@ -266,7 +266,7 @@ const Faq = () => {
           </div>
         </div>
         <div
-          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          className="py-2 px-4 border-b-[1px] border-[#1B1B1B]"
           role="button"
           onClick={() => onDropdownClicked('2')}
         >
@@ -290,7 +290,7 @@ const Faq = () => {
           </div>
         </div>
         <div
-          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          className="py-2 px-4 border-b-[1px] border-[#1B1B1B]"
           role="button"
           onClick={() => onDropdownClicked('3')}
         >
@@ -321,7 +321,7 @@ const Faq = () => {
           </div>
         </div>
         <div
-          className="mb-6 py-2 px-4 border-b-[1px] border-[#1B1B1B]"
+          className="py-2 px-4 border-b-[1px] border-[#1B1B1B]"
           role="button"
           onClick={() => onDropdownClicked('4')}
         >
@@ -380,7 +380,7 @@ const Faq = () => {
         >
           <div className="flex justify-between items-center max-w-[1000px]">
             <span className="text-[12px] lg:text-[20px] text-[#1B1B1B]">
-              How can I connect with the department faculty?
+              How can I connect with the department staff?
             </span>
             <span>
               {arrowUp6 ? (

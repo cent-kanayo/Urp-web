@@ -90,8 +90,8 @@ const Home = () => {
               <ArrowBackIosNewOutlinedIcon htmlColor="white" fontSize="small" />
             </span> */}
 						<div className="flex-1 lg:flex-none   px-3 lg:px-10 items-center relative z-10">
-							<h1 className="text-[24px] md:text-[32px] lg:text-[96px] font-semibold text-[#F5FFF6]">
-								Welcome to URP
+							<h1 className="text-[24px] md:text-[32px] lg:text-[64px] font-semibold text-[#F5FFF6] max-w-3xl">
+								Welcome to the Department of Urban and Regional Planning
 							</h1>
 							<p className="text-[12px] md:text-[16px] text-[#F0C808] font-medium leading-[150%] mb-4 max-w-[470px] mx-auto">
 								Reshaping the future of human settlements.
@@ -118,19 +118,19 @@ const Home = () => {
 						<NumberBox
 							text="Programmes"
 							heading="7"
-							sub="Number of degree programmes offered in the department"
+							sub="Number of degree programmes offered in the department."
 							color="green"
 						/>
 						<NumberBox
 							text="Excellence"
 							heading="5"
-							sub="First Class students currently in the Department"
+							sub="First Class students currently in the Department."
 							color="yellow"
 						/>
 						<NumberBox
 							text="Enrollment"
 							heading="200"
-							sub="Number of students currently enrolled in the Department"
+							sub="Number of students currently enrolled in the Department."
 							color="orange"
 						/>
 						{/* <NumberBox
@@ -211,26 +211,22 @@ const Home = () => {
 					<img src={Journal} alt="" className="hidden lg:block h-[100%]" />
 					<img src={Book} alt="" className="lg:hidden h-[100%] w-full" />
 				</div>
-				<div className="lg:flex-1 flex flex-col bg-[#011717] mx-4 md:mx-auto md:w-[564px] py-6 lg:py-0 px-4 lg:px-0 mb-[25px] lg:mb-0">
+				<div className="lg:flex-1 flex flex-col bg-[#011717] mx-4 md:mx-auto md:max-w-[684px] py-6 lg:py-0 px-4 lg:px-0 mb-[25px] lg:mb-0">
 					<div className="md:w-[564px] flex flex-col gap-4 lg:gap-6">
 						<h2 className="text-[#F5FFF6] text-[24px] lg:text-[40px] font-bold">
 							Introducing The Journal
 						</h2>
-						<p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
-							Urban and Regional Planning Review (URPR) is a multidisciplinary
-							journal devoted to articles that address contemporary urban and
-							regional issues and is directed towards an audience that includes
-							practitioners, policymakers, scholars and students.....
-						</p>
-						<p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-							Urban and Regional Planning Review (URPR) is a multidisciplinary
-							journal devoted to articles that address contemporary urban and
-							regional issues and is directed towards an audience that includes
-							practitioners, policymakers, scholars and students.....
+						
+						<p className="text-[#FDFFFD] text-[12px] lg:text-[14px] leading-[150%]">
+							The Urban and Regional Planning Review (URPR) is a
+							multidisciplinary journal devoted to increasing the knowledge and
+							practice of contemporary urban and regional planning and is
+							directed towards an audience that includes practitioners,
+							policymakers, scholars and students.
 						</p>
 						<div>
 							<Link
-								to="http://urpr.unilag.edu.ng/issue/view/277"
+								to="/urp-journal"
 								className="bg-[#F5FFF6] text-[#010A09] rounded-[2px] px-8 py-2 text-[14px] hover:animate-pulse">
 								Go to page
 							</Link>
@@ -258,21 +254,15 @@ const Home = () => {
 						<h2 className="text-[#F5FFF6] text-[24px] lg:text-[40px] font-bold">
 							Innovative research hubs
 						</h2>
-						<p className="text-[#FDFFFD] text-[14px] leading-[150%] hidden lg:block">
+						<p className="text-[#FDFFFD] text-[12px] lg:text-[14px] leading-[150%]">
 							At the Department of Urban and Regional Planning, we are driven by
 							the profound belief in the transformative power of collaborative
 							research. We recognize that the collective intelligence of diverse
 							minds working together has the capacity to transcend conventional
 							limits, opening new frontiers of knowledge and expanding the
-							practice of Urban and Regional Planning.....
+							practice of Urban and Regional Planning.
 						</p>
-						<p className="text-[#FDFFFD] text-[12px] leading-[150%] lg:hidden">
-							At the Department of Urban and Regional Planning, we are driven by
-							the profound belief in the transformative power of collaborative
-							research. We recognize that the collective intelligence of diverse
-							minds working together has the capacity to transcend conventional
-							limits...
-						</p>
+						
 						<div>
 							<Link
 								to="/research-cluster"
