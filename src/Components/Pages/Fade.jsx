@@ -220,7 +220,7 @@ const Fade = () => {
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://www.academia.edu/download/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria.pdf"
+                      href="https://www.researchgate.net/publication/338800842_Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria"
                       target="_blank"
                     >
                       Influence of Housing Attributes on Housing Satisfaction in
@@ -232,7 +232,7 @@ const Fade = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://www.academia.edu/download/96662093/Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria.pdf"
+                        href="https://www.researchgate.net/publication/338800842_Influence_of_Housing_Attributes_on_Housing_Satisfaction_in_Selected_Residential_Areas_of_Ogun_State_Nigeria"
                         target="_blank"
                       >
                         View Publication

@@ -186,10 +186,10 @@ const Alade = () => {
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://www.tandfonline.com/doi/full/10.1080/23748834.2020.1806459"
+                      href="https://www.researchgate.net/publication/271061446_Vision_202020_and_the_Challenges_of_Infrastructural_Development_in_Nigeria"
                       target="_blank"
                     >
-                      Vision 20: 2020 and the Challenges of Infrastructural
+                      Vision 20:2020 and the Challenges of Infrastructural
                       Development in Nigeria
                     </a>
                   </h3>
@@ -198,7 +198,7 @@ const Alade = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://www.tandfonline.com/doi/full/10.1080/23748834.2020.1806459"
+                        href="https://www.researchgate.net/publication/271061446_Vision_202020_and_the_Challenges_of_Infrastructural_Development_in_Nigeria"
                         target="_blank"
                       >
                         View Publication
@@ -250,7 +250,7 @@ const Alade = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2011</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
                     <a
-                      href="https://www.ajol.info/index.php/ejesm/article/view/80299"
+                      href="https://www.researchgate.net/publication/228416961_Locational_Analysis_of_Telecommunications_Infrastructure_in_Residential_Neigbourhoods_of_Lagos_Metropolis"
                       target="_blank"
                     >
                       Locational Analysis of Telecommunications Infrastructure
@@ -262,7 +262,7 @@ const Alade = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://www.ajol.info/index.php/ejesm/article/view/80299"
+                        href="https://www.researchgate.net/publication/228416961_Locational_Analysis_of_Telecommunications_Infrastructure_in_Residential_Neigbourhoods_of_Lagos_Metropolis"
                         target="_blank"
                       >
                         View Publication

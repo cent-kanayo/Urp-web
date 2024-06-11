@@ -497,9 +497,8 @@ const Faq = () => {
           For more enquiries
           </h2>
           <p className="text-[12px] lg:text-[14px] leading-[150%] text-[#5B5756] max-w-[342px] lg:max-w-[529px] mx-auto mb-4">
-            Ready to make a difference? Explore sponsorships and volunteer
-            opportunities to create a meaningful impact
-          </p>
+						Ready to make a difference and make a meaningful impact?
+					</p>
           <Link
             to="/contact"
             className="inline-block px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md"

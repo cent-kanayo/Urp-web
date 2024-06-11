@@ -56,9 +56,9 @@ const Laja = () => {
 							<img src={LQ} alt="" className="w-[29px] lg:w-auto" />
 						</div>
 						<p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
-            Dr. ORELAJA Olabode Philip is an Urban and Regional Planner with
-						research interests in Public Space Management with a focus on
-						Tourism, Recreation and Environmental Management.
+							Dr. ORELAJA Olabode Philip is an Urban and Regional Planner with
+							research interests in Public Space Management with a focus on
+							Tourism, Recreation and Environmental Management.
 						</p>
 						<div className="flex justify-end">
 							<img src={RQ} alt="" className="w-[29px] lg:w-auto" />
@@ -123,13 +123,14 @@ const Laja = () => {
 								/>
 								<div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
 									<p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                  January 2015
+										January 2015
 									</p>
 									<h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
 										<a
 											href="http://dx.doi.org/10.1080/20421338.2014.976990"
 											target="_blank">
-											Effects of climate change on a peri-urban farming community in Lagos, Nigeria
+											Effects of climate change on a peri-urban farming
+											community in Lagos, Nigeria
 										</a>
 									</h3>
 								</div>
@@ -138,97 +139,6 @@ const Laja = () => {
 										<p>
 											<a
 												href="http://dx.doi.org/10.1080/20421338.2014.976990"
-												target="_blank">
-												View Publication
-											</a>
-										</p>
-									</article>
-								</div>
-							</div>
-							<div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-								<img
-									src={BookCover}
-									alt=""
-									className="absolute w-full h-full"
-								/>
-								<div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-									<p className="text-[#7C8A83] mb-[28px] text-[10px]">
-										January 2015
-									</p>
-									<h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
-										<a
-											href="https://www.tandfonline.com/doi/full/10.1080/21650020.2015.1124247"
-											target="_blank">
-											Public transportation in metropolitan Lagos, Nigeria:
-											analysis of public transport users’ socioeconomic
-											characteristics
-										</a>
-									</h3>
-								</div>
-								<div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
-									<article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
-										<p>
-											<a
-												href="https://www.tandfonline.com/doi/full/10.1080/21650020.2015.1124247"
-												target="_blank">
-												View Publication
-											</a>
-										</p>
-									</article>
-								</div>
-							</div>
-							<div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-								<img
-									src={BookCover}
-									alt=""
-									className="absolute w-full h-full"
-								/>
-								<div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-									<p className="text-[#7C8A83] mb-[28px] text-[10px]">
-										May 2013
-									</p>
-									<h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
-										<a
-											href="https://journals.co.za/doi/abs/10.10520/EJC136878"
-											target="_blank">
-											Conceptualizing the liveable African city
-										</a>
-									</h3>
-								</div>
-								<div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
-									<article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
-										<p>
-											<a
-												href="https://doi.org/10.1080/23792949.2017.1399804"
-												target="_blank">
-												View Publication
-											</a>
-										</p>
-									</article>
-								</div>
-							</div>
-							<div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-								<img
-									src={BookCover}
-									alt=""
-									className="absolute w-full h-full"
-								/>
-								<div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-									<p className="text-[#7C8A83] mb-[28px] text-[10px]">2013</p>
-									<h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
-										<a
-											href="https://ir.unilag.edu.ng/handle/123456789/10137"
-											target="_blank">
-											Amoebic Urbanization in Nigerian Cities: The case of Lagos
-											and Ota
-										</a>
-									</h3>
-								</div>
-								<div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
-									<article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
-										<p>
-											<a
-												href="https://ir.unilag.edu.ng/handle/123456789/10137"
 												target="_blank">
 												View Publication
 											</a>

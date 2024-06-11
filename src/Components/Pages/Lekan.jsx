@@ -144,7 +144,7 @@ const Lekan = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2022</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href=" https://ng.boell.org/en/default/fairsharedcitypaper"
+                      href="https://ng.boell.org/sites/default/files/2022-12/fair-shared-city-research-paper_3.pdf"
                       target="_blank"
                     >
                       Fair Shared City: Lagos. Feminist City Planning from the
@@ -156,7 +156,7 @@ const Lekan = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href=" https://ng.boell.org/en/default/fairsharedcitypaper"
+                        href="https://ng.boell.org/sites/default/files/2022-12/fair-shared-city-research-paper_3.pdf"
                         target="_blank"
                       >
                         View Publication
@@ -234,14 +234,13 @@ const Lekan = () => {
                   className="absolute w-full h-full"
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2020</p>
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2016</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
                       target="_blank"
-                      href="https://ir.unilag.edu.ng/items/c554912b-b3ba-4d52-83fc-06c5a02d2171"
+                      href="https://ng.boell.org/sites/default/files/180920_upp_2nd_digital.pdf "
                     >
-                      Local Responses to the Corona virus lockdown:Adapting to
-                      Change in Lagos Island
+                     Strategic Planning and Urban Mega Projects. In Fabienne Hoelzel (Eds), Urban planning processes in Lagos
                     </a>
                   </h3>
                 </div>
@@ -250,7 +249,7 @@ const Lekan = () => {
                     <p>
                       <a
                         target="_blank"
-                        href="https://ir.unilag.edu.ng/items/c554912b-b3ba-4d52-83fc-06c5a02d2171"
+                        href="https://ng.boell.org/sites/default/files/180920_upp_2nd_digital.pdf "
                       >
                         View Publication
                       </a>

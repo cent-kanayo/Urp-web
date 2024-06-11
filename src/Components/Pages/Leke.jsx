@@ -217,7 +217,7 @@ const Leke = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2009</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
+                      href="https://www.researchgate.net/publication/41892387_Challenges_of_Sustainable_Physical_Planning_and_Development_in_Metropolitan_Lagos"
                       target="_blank"
                     >
                       Challenges of sustainable physical planning and
@@ -229,7 +229,7 @@ const Leke = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        href="https://www.researchgate.net/publication/41892387_Challenges_of_Sustainable_Physical_Planning_and_Development_in_Metropolitan_Lagos"
                         target="_blank"
                       >
                         View Publication
@@ -251,7 +251,7 @@ const Leke = () => {
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
                     <a
                       target="_blank"
-                      href="https://doi.org/10.1080/23792949.2017.1399804"
+                      href="https://www.sciencedirect.com/science/article/abs/pii/S0169204697000133"
                     >
                       Urban landscape planning experience in Nigeria
                     </a>
@@ -261,7 +261,7 @@ const Leke = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0169204697000133"
                         target="_blank"
                       >
                         View Publication

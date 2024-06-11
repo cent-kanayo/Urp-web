@@ -206,11 +206,10 @@ const Victor = () => {
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1016/j.jum.2018.03.001"
+                      href="https://www.researchgate.net/publication/376809981_The_Nexus_between_Gated_Community_and_Property_Value_in_Ajah_Lagos_State"
                       target="_blank"
                     >
-                      The urban environment and leisure physical activity during
-                      the COVID-19 pandemic: a view from Lagos
+                      The Nexus between Gated Community and Property Value in Ajah, Lagos State link 
                     </a>
                   </h3>
                 </div>
@@ -218,7 +217,7 @@ const Victor = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.jum.2018.03.001"
+                        href="https://www.researchgate.net/publication/376809981_The_Nexus_between_Gated_Community_and_Property_Value_in_Ajah_Lagos_State"
                         target="_blank"
                       >
                         View Publication
@@ -237,7 +236,7 @@ const Victor = () => {
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">2010</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://corp.at/archive/CORP2011_152.pdf"
+                      href="https://www.researchgate.net/publication/228463818_Socio-Economic_Determinants_of_Urban_Poor_Housing_Types_in_Makoko_Area_Lagos"
                       target="_blank"
                     >
                       Socio-Economic Determinants of Urban Poor Housing Types in
@@ -249,7 +248,7 @@ const Victor = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
+                        href="https://www.researchgate.net/publication/228463818_Socio-Economic_Determinants_of_Urban_Poor_Housing_Types_in_Makoko_Area_Lagos"
                         target="_blank"
                       >
                         View Publication

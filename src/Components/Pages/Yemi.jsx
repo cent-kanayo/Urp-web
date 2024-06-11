@@ -129,15 +129,14 @@ const Yemi = () => {
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                    December 2021
+                    2024
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
+                      href="https://www.researchgate.net/publication/378776481_Correlates_of_Perceived_Safety_in_Nigeria's_Built_Environment_The_Case_of_a_University_Campus"
                       target="_blank"
                     >
-                      COVID-19 Pandemic Experience and Imperatives for Physical
-                      Planning in Ogun State, Nigeria: A Situation Review
+                    Correlates of Perceived Safety in Nigeria's Built Environment: The Case of a University Campus 
                     </a>
                   </h3>
                 </div>
@@ -145,7 +144,7 @@ const Yemi = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://doi.org/10.1016/j.compenvurbsys.2018.06.009"
+                        href="https://www.researchgate.net/publication/378776481_Correlates_of_Perceived_Safety_in_Nigeria's_Built_Environment_The_Case_of_a_University_Campus"
                         target="_blank"
                       >
                         View Publication
@@ -162,16 +161,14 @@ const Yemi = () => {
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
                   <p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                    January 2015
+                    2023
                   </p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
                     <a
-                      href="https://www.tandfonline.com/doi/full/10.1080/21650020.2015.1124247"
+                      href="https://www.researchgate.net/publication/376809709_Urban_Land_Use_Control_Implementation_and_Challenges_in_Osogbo_Osun_State_Nigeria"
                       target="_blank"
                     >
-                      Public transportation in metropolitan Lagos, Nigeria:
-                      analysis of public transport users’ socioeconomic
-                      characteristics
+                      Urban Land Use Control Implementation and Challenges in Osogbo, Osun State, Nigeria
                     </a>
                   </h3>
                 </div>
@@ -179,7 +176,7 @@ const Yemi = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://www.tandfonline.com/doi/full/10.1080/21650020.2015.1124247"
+                        href="https://www.researchgate.net/publication/376809709_Urban_Land_Use_Control_Implementation_and_Challenges_in_Osogbo_Osun_State_Nigeria"
                         target="_blank"
                       >
                         View Publication
@@ -195,46 +192,13 @@ const Yemi = () => {
                   className="absolute w-full h-full"
                 />
                 <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
-                    May 2013
-                  </p>
-                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
-                    <a
-                      href="https://journals.co.za/doi/abs/10.10520/EJC136878"
-                      target="_blank"
-                    >
-                      Conceptualizing the liveable African city
-                    </a>
-                  </h3>
-                </div>
-                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
-                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
-                    <p>
-                      <a
-                        href="https://doi.org/10.1080/23792949.2017.1399804"
-                        target="_blank"
-                      >
-                        View Publication
-                      </a>
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
-                <img
-                  src={BookCover}
-                  alt=""
-                  className="absolute w-full h-full"
-                />
-                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
-                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2013</p>
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">2021`</p>
                   <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[15px] leading-[150%]">
                     <a
-                      href="https://ir.unilag.edu.ng/handle/123456789/10137"
+                      href="https://www.researchgate.net/publication/351753358_Evaluation_of_Infrastructure_in_Ibadan_Metropolis_Nigeria"
                       target="_blank"
                     >
-                      Amoebic Urbanization in Nigerian Cities: The case of Lagos
-                      and Ota
+                      Evaluation of Infrastructure in Ibadan Metropolis, Nigeria 
                     </a>
                   </h3>
                 </div>
@@ -242,7 +206,7 @@ const Yemi = () => {
                   <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
                     <p>
                       <a
-                        href="https://ir.unilag.edu.ng/handle/123456789/10137"
+                        href="https://www.researchgate.net/publication/351753358_Evaluation_of_Infrastructure_in_Ibadan_Metropolis_Nigeria"
                         target="_blank"
                       >
                         View Publication
@@ -251,6 +215,39 @@ const Yemi = () => {
                   </article>
                 </div>
               </div>
+              <div className="relative w-[162px] lg:w-[260px] h-[200px] lg:h-[360px] bg-[#b7b5b6] rounded-[2px] flex justify-center items-end">
+                <img
+                  src={BookCover}
+                  alt=""
+                  className="absolute w-full h-full"
+                />
+                <div className="absolute  top-10 lg:top-[74px] lg:max-w-[174px] lg:pl-[4px]">
+                  <p className="text-[#7C8A83] mb-[28px] text-[10px]">
+                    2017
+                  </p>
+                  <h3 className="w-[102px] lg:w-auto text-[#1B1B1B] font-bold text-[10px] lg:text-[16px]">
+                    <a
+                      href=" https://www.researchgate.net/publication/318869027_Putting_small-scale_mining_in_perspective_an_analysis_of_risk_perception_of_a_southwestern_Nigerian_community"
+                      target="_blank"
+                    >
+                     Putting small-scale mining in perspective: an analysis of risk perception of a southwestern Nigerian community 
+                    </a>
+                  </h3>
+                </div>
+                <div className="w-full h-[40px] lg:h-[72px] bg-white py-2 lg:py-[18px] lg:px-5 z-10 opacity-[0.92]">
+                  <article className="border-[#010A09] border-[2px] py-2 px-4 lg:px-6">
+                    <p>
+                      <a
+                        href=" https://www.researchgate.net/publication/318869027_Putting_small-scale_mining_in_perspective_an_analysis_of_risk_perception_of_a_southwestern_Nigerian_community"
+                        target="_blank"
+                      >
+                        View Publication
+                      </a>
+                    </p>
+                  </article>
+                </div>
+              </div>
+          
             </div>
             <div className="mt-[24px] px-6 lg:px-0">
               <p className="mb-4">
@@ -315,28 +312,6 @@ const Yemi = () => {
           </div>
           <div className="w-[400px] pr-[24px] h-[400px] accordion overflow-y-scroll">
             <article className={tab1 ? 'tabs' : 'hidden'}>
-              <div className="mb-10">
-                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  2020
-                </p>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Best Graduating Student, Msc Sociology
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Ile-Ife
-                </p>
-              </div>
-              <div className="mb-10">
-                <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
-                  2020
-                </p>
-                <h4 className="text-[#090302] text-[20px] leading-[150%]">
-                  Best Graduating Student, Msc Sociology
-                </h4>
-                <p className="text-[#5B5756] text-[16px] leading-[150%]">
-                  University of Ile-Ife
-                </p>
-              </div>
               <div className="mb-10">
                 <p className="text-[#ADABAB] pb-2 mb-2 border-b-[#ADABAB] border-b-[1px] rounded-[2px]">
                   2020
