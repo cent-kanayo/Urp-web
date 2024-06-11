@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NumberBox from "../Resuables/NumberBox";
 import HODDark from "../../assets/mainDesktop/DrAD.webp";
-import HODLight from "../../assets/mainDesktop/DrAL.webp";
+import HODLight from "../../assets/mainDesktop/Dr Agunbiade.jpg";
 import Journal from "../../assets/journals.png";
 
 import Spotlight from "../Resuables/Spotlight";
@@ -18,8 +18,7 @@ import Bg3 from "../../assets/mainDesktop/homebg3.webp";
 import Bg4 from "../../assets/mainDesktop/homebg4.webp";
 import Bg5 from "../../assets/mainDesktop/homebg5.webp";
 
-import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+
 import { Link } from "react-router-dom";
 import { getPosts } from "../../../sanity";
 import { useGlobalContext } from "../../Context/AppContext";
@@ -165,9 +164,9 @@ const Home = () => {
 					</div>
 					<div className="lg:hidden absolute h-[100%] w-full">
 						<img
-							src={Hod}
+							src={HODLight}
 							alt=""
-							className="block w-[100%] h-[100%] object-cover md:object-fill absolute lg:hidden"
+							className="block w-[100%] h-[100%] object-cover object-center md:object-fill absolute lg:hidden"
 						/>
 					</div>
 					<div className="h-[220px] lg:h-auto w-full  lg:mx-0  lg:max-w-none">

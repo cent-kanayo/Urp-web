@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Journal from '../../assets/journals.png';
 
-import AG from '../../assets/admin/agu.webp';
+import AG from '../../assets/mainDesktop/Dr Agunbiade.jpg';
 import Vic from '../../assets/admin/victor.webp';
 import Odu from '../../assets/admin/odu.webp';
 import Law from '../../assets/admin/lawan.webp';
@@ -17,7 +17,6 @@ import Yemi from '../../assets/admin/adeyemi.webp';
 import Niji from '../../assets/admin/adeniji.webp';
 import Alade from '../../assets/lecturers/Alade.png';
 import Salau from '../../assets/lecturers/Salau.png';
-import Icon from '../../assets/lecturers/Icon.png';
 import Dami from "../../assets/lecturers/dami.png"
 import Richard from "../../assets/lecturers/Richard.png"
 

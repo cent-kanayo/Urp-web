@@ -9,7 +9,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import AG from '../../assets/lecturers/agunbiade.webp';
+import AG from '../../assets/mainDesktop/Dr Agunbiade.jpg';
 import MarkunreadOutlinedIcon from '@mui/icons-material/MarkunreadOutlined';
 import BookCover from '../../assets/mainDesktop/bookCover.png';
 import Activities from '../Resuables/Activities';
@@ -48,7 +48,7 @@ const Agunbiade = () => {
           <img
             src={AG}
             alt="Our HOD"
-            className="h-[320px] lg:h-[600px] w-[100%] object-cover"
+            className="h-[320px] lg:h-[600px] w-[100%] object-cover object-top"
           />
         </div>
         <div className="flex-1 bg-[#192C69]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">

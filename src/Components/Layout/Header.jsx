@@ -61,7 +61,7 @@ const Header = ({ setSidebar }) => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4 z-50">
                     <div className="flex flex-col text-[#333231]">
                       <Link to="/urp-programs">
                         <Popover.Button className="popup">
@@ -107,7 +107,7 @@ const Header = ({ setSidebar }) => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4 z-50">
                     <div className="flex flex-col text-[#333231]">
                       <Link to="/students">
                         <Popover.Button className="popup">
@@ -135,7 +135,7 @@ const Header = ({ setSidebar }) => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4 z-50">
                     <div className="flex flex-col text-[#333231]">
                       <Link to="/faqs">
                         <Popover.Button className="popup">FAQs</Popover.Button>
@@ -166,7 +166,7 @@ const Header = ({ setSidebar }) => {
                     <ExpandMoreIcon fontSize="small" className="ml-2" />
                   </Popover.Button>
 
-                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4">
+                  <Popover.Panel className="absolute z-10 -left-10 top-12 bg-white w-[228px] p-4 z-50">
                     <div className="flex flex-col text-[#333231]">
                       <Link to="/about">
                         <Popover.Button className="popup">
