@@ -18,14 +18,14 @@ const Spotlight = ({ student }) => {
         <SpotlightBox
           image={City}
           h2="Design Projects"
-          p="Request access to past projects."
+          p="Explore some of the amazing projects."
           btn="View projects"
           link="/projects"
         />
         <SpotlightBox
           image={Pen}
           h2="The Planner’s pen"
-          p="Request access to past projects."
+          p="Get access to previous editions."
           btn="Open planner’s pen"
           link="/planners-pen"
         />

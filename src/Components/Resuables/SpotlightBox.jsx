@@ -6,7 +6,7 @@ const SpotlightBox = ({ image, h2, p, btn, link }) => {
       to={link}
       className="lg:flex flex-col spotlight-box hover:shadow-xl duration-300 transition-all ease-linear"
     >
-      <div className="h-[200px] relative">
+      <div className="h-[200px] md:h-[400px] lg:h-[200px] relative">
         <img
           src={image}
           alt="Spotlight avatar"

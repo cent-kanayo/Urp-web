@@ -694,8 +694,9 @@ RS Page
     height: 505px;
   }
   .journal-bg {
-    background: url('./assets/mainMobile/journal.png');
+    background: url('./assets/mainDesktop/sports.webp');
     height: 320px;
+    background-position: top;
   }
   .journal-welcome {
     max-width: 270px;

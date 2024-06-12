@@ -147,26 +147,21 @@ const Home = () => {
 						<img
 							src={HODLight}
 							alt=""
-							className="block w-[100%] h-[100%] object-cover"
+							className="block w-[100%] h-[100%] object-cover object-top"
 						/>
 					</div>
 					<div className="hidden lg:block lg:absolute h-[100%] right-0 w-[50%]">
 						<img
 							src={HODDark}
 							alt=""
-							className="block w-[100%] h-[100%] object-cover"
-						/>
-						<img
-							src={Hod}
-							alt=""
-							className="block w-[100%] h-[100%] object-cover absolute lg:hidden"
+							className="block w-[100%] h-[100%] object-cover object-center"
 						/>
 					</div>
 					<div className="lg:hidden absolute h-[100%] w-full">
 						<img
 							src={HODLight}
 							alt=""
-							className="block w-[100%] h-[100%] object-cover object-center md:object-fill absolute lg:hidden"
+							className="block w-[100%] h-[100%] object-cover object-center md:object-top absolute lg:hidden"
 						/>
 					</div>
 					<div className="h-[220px] lg:h-auto w-full  lg:mx-0  lg:max-w-none">
