@@ -26,7 +26,6 @@ import { useGlobalContext } from "../../Context/AppContext";
 const BGS = [Bg1, Bg2, Bg3, Bg4, Bg5];
 
 const Home = () => {
-	document.title = "URP UNILAG";
 	const [bgs, setBgs] = useState(BGS);
 	const [index, setIndex] = useState(0);
 	const { posts, students, isLoading } = useGlobalContext();
