@@ -23,6 +23,6 @@ urp-prod
 *.njsproj
 *.sln
 *.sw?
-
+urpdb
 # Local Netlify folder
 .netlify

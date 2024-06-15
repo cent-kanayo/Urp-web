@@ -491,7 +491,7 @@ const Programs = () => {
 						className="inline-block px-6 py-2 bg-[#03312E] text-white text-[1rem] capitalize rounded-[2px] hover:bg-[#011312] transition-all duration-300 ease-linear mb-[60px] shadow-md">
 						contact us
 					</Link>
-					<div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
+					{/* <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
 						<span className="lg:hidden">
 							<EmailIcon htmlColor="#934B00" fontSize="medium" />
 						</span>
@@ -510,7 +510,7 @@ const Programs = () => {
 						<span className="hidden lg:block">
 							<TwitterIcon htmlColor="#934B00" fontSize="large" />
 						</span>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		</main>

@@ -48,7 +48,7 @@ const Agunbiade = () => {
           <img
             src={AG}
             alt="Our HOD"
-            className="h-[320px] lg:h-[600px] w-[100%] object-cover object-top"
+            className="h-[320px] md:h-[420px] lg:h-[600px] w-[100%] object-cover object-top"
           />
         </div>
         <div className="flex-1 bg-[#192C69]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">

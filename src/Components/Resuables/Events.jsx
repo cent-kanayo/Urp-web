@@ -48,7 +48,7 @@ const Events = ({ posts }) => {
             </div>
           </Link>
           <div className="flex flex-col gap-6 lg:gap-[20px]">
-            {posts?.slice(1)?.map((post) => (
+            {posts?.slice(1, 3)?.map((post) => (
               <EventCard
                 image={urlFor(post?.mainImage).width(300).url()}
                 text={post?.subtitle}

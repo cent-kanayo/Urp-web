@@ -505,7 +505,7 @@ const Faq = () => {
           >
             contact us
           </Link>
-          <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
+          {/* <div className="flex justify-center gap-x-5 lg:gap-x-10 lg:px-0">
             <span className="lg:hidden">
               <EmailIcon htmlColor="#934B00" fontSize="medium" />
             </span>
@@ -524,7 +524,7 @@ const Faq = () => {
             <span className="hidden lg:block">
               <TwitterIcon htmlColor="#934B00" fontSize="large" />
             </span>
-          </div>
+          </div> */}
         </div>
       </section>
     </main>

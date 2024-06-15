@@ -149,7 +149,7 @@ const SingleProject3 = () => {
           </p>
         </div>
       </section>
-      <Contact h2="contact us for sponsorship or partnership" />
+      <Contact h2="For more enquiries" />
     </main>
   );
 };

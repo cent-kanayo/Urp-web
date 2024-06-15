@@ -18,14 +18,12 @@ const EventCard = ({ image, text, date, id }) => {
         <p className="text-[#934B00] text-[14px] capitalize mb-3">
           {months[new Date(date).getMonth()]}, {new Date(date).getFullYear()}
         </p>
-        <h3 className="text-[14px] text-[#010A09] leading-7 mb-3">{text}</h3>
-        <div className="w-[146px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px] py-2 hover:bg-[#57A0A0] transition-all duration-300 ease-linear">
-          <span>
-            <a href="#" className="text-[14px] text-[#010A09] capitalize">
-              view event
-            </a>
+        <h3 className="text-[14px] text-[#010A09] leading-7 mb-3 font-medium">{text}</h3>
+        <div className="w-[146px] flex justify-center items-center gap-2 border-[0.5px] border-[#010A09] rounded-[2px] py-2 hover:bg-[#e6f7f7] transition-all duration-300 ease-linear">
+          <span className="text-[14px] text-[#010A09] capitalize">
+              Read more
           </span>
-          <EastOutlinedIcon fontSize="small" />
+          <EastOutlinedIcon fontSize="small"  />
         </div>
       </div>
     </Link>

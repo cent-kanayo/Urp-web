@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 const Comment = () => {
   const [formSuccess, setFormSuccess] = useState("idle")
+  const [loading, setLoading] = useState(false)
   const form = useRef()
   const email = useRef()
   const message = useRef()
@@ -9,6 +10,7 @@ const Comment = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true)
     if (!email.current.value || !message.current.value) return
     emailjs
     .sendForm('service_s20o61n', 'template_sl69e6u', form.current, {
@@ -17,12 +19,14 @@ const Comment = () => {
       .then(
         () => {
           setFormSuccess("success")
+          setLoading(false)
           email.current.value = ""
           message.current.value = ""
           window.scrollTo({top: formLocation.current?.getBoundingClientRect()?.height - 100, behavior: "smooth"});
         },
         (error) => {
           setFormSuccess("failed")
+          setLoading(false)
           console.log('FAILED...', error.text);
           window.scrollTo({top: formLocation.current?.getBoundingClientRect()?.height - 100, behavior: "smooth"});
         },
@@ -71,8 +75,8 @@ const Comment = () => {
             ></textarea>
           </div>
           <div className="flex flex-col">
-            <button type='submit' className="bg-[#03312E] border-[#02211F] border-[1px] p-4 text-[16px] text-[#FDFFFD]">
-              Submit Comment
+            <button type='submit' className="bg-[#03312E] hover:bg-[#183836] border-[1px] p-4 text-[16px] text-[#FDFFFD]">
+              {loading ===  false ? "Submit Comment" : "please wait"}
             </button>
           </div>
         </form>

@@ -92,7 +92,7 @@ const NewsLanding = () => {
                   />
                 </div>
                 <div className="max-w-[548px]">
-                  <p className="text-[#934B00] text-[20px] capitalize mb-3">
+                  <p className="text-[#934B00] text-[14px] capitalize mb-3 mt-2">
                     {months[new Date().getMonth(item?._createdAt)]},{' '}
                     {new Date().getFullYear(item?._createdAt)}
                   </p>
