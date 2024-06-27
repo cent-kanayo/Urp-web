@@ -52,7 +52,7 @@ const Lekan = () => {
           />
         </div>
         <div className="flex-1 bg-[#19284a] h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
-          <div className="lg:w-[525px] mx-auto">
+          <div className="lg:w-[525px] mx-auto lg:px-4">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
@@ -127,7 +127,7 @@ const Lekan = () => {
           </p>
         </div>
       </section>
-      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
+      <section className="lg:px-4 bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
         <div>
           <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs

@@ -52,12 +52,12 @@ const Agunbiade = () => {
           />
         </div>
         <div className="flex-1 bg-[#192C69]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
-          <div className="lg:w-[525px] mx-auto">
+          <div className="lg:w-[525px] mx-auto lg:px-4">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
             <p className="text-white text-[12px] lg:text-[20px] leading-[150%] my-6 lg:my-[59px]">
-              Muyiwa Agunbiade is a visionary with a creative and innovative
+              Muyiwa Agunbiade is a visionary scholar with a creative and innovative
               approach. He's all about using technology to make our communities
               smarter and more eco-friendly. It's his passion to create
               sustainable human settlements that are both innovative and good
@@ -129,7 +129,7 @@ const Agunbiade = () => {
           </p>
         </div>
       </section>
-      <section className="lg:h-[680px] bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px]">
+      <section className="bg-[#FAFAFA] py-[52px] my-[64px] lg:my-[80px] lg:px-4">
         <div>
           <h3 className="text-center text-[#011717] text-[24px] lg:text-[32px] font-[600] capitalize mb-[40px]">
             Articles and Research hubs

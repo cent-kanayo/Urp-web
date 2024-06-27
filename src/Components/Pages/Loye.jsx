@@ -50,7 +50,7 @@ const Loye = () => {
           />
         </div>
         <div className="flex-1 bg-[#311B23]  h-[232px] lg:h-auto flex justify-center items-center px-[27px] lg:px-0 py-[17px] lg:py-0">
-          <div className="lg:w-[525px] mx-auto">
+          <div className="lg:w-[525px] mx-auto lg:px-4">
             <div className="flex">
               <img src={LQ} alt="" className="w-[29px] lg:w-auto" />
             </div>
